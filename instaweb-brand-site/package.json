@@ -1,0 +1,8 @@
+{
+  "name": "Instaweb Brand Site",
+  "version": "1.0.0",
+  "description": "Core Instaweb brand landing page — premium websites for service businesses at disruptive pricing.",
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}
