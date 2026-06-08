@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Five Kitchen | Where Every Meal Tells a Story</title>
+  <meta name="description" content="Five Kitchen in Jamestown — fine dining with fresh ingredients. Reserve your table today!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary: #b91c1c;
+      --primary-dark: #991b1b;
+      --secondary: #f59e0b;
+      --secondary-dark: #d97706;
+      --dark: #1a1a2e;
+      --dark-2: #16213e;
+      --light: #fef3c7;
+      --cream: #fdf6ec;
+      --gray: #6b7280;
+      --gray-light: #e5e7eb;
+      --accent: #d4a574;
+      --white: #ffffff;
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* === HEADER === */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(26, 26, 46, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(212, 165, 116, 0.15);
+      padding: 14px 0;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: var(--white);
+    }
+    .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .logo-text span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; align-items: center; }
+    .nav-links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all 0.3s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    .btn-secondary {
+      background: var(--secondary);
+      color: var(--dark);
+    }
+    .btn-secondary:hover { background: var(--secondary-dark); transform: translateY(-2px); }
+    .btn-outline {
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      background: transparent;
+    }
+    .btn-outline:hover { background: var(--accent); color: var(--white); }
+    .btn-lg { padding: 16px 36px; font-size: 16px; }
+
+    /* === HERO === */
+    .hero {
+      min-height: 95vh;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 50%, #0f0f23 100%);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse at 20% 50%, rgba(185,28,28,0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(212,165,116,0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 80%, rgba(245,158,11,0.06) 0%, transparent 50%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero-tag {
+      display: inline-block;
+      font-family: 'Playfair Display', serif;
+      font-size: 14px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 64px;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+    .hero h1 .highlight { color: var(--accent); font-style: italic; }
+    .hero p {
+      font-size: 18px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 36px;
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.7;
+    }
+    .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .hero-ambient {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .hero-ambient-item {
+      text-align: center;
+      color: rgba(255,255,255,0.5);
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .hero-ambient-item i {
+      display: block;
+      font-size: 28px;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    /* === MENU / FOOD SHOWCASE === */
+    .menu {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+    .section-header .subtitle {
+      font-family: 'Playfair Display', serif;
+      font-size: 15px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    .section-header h2 span { color: var(--primary); }
+    .section-header p {
+      font-size: 17px;
+      color: var(--gray);
+    }
+    .menu-category { margin-bottom: 48px; }
+    .menu-category-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+      background: var(--white);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+    }
+    .menu-item:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+    .menu-item-info { flex: 1; }
+    .menu-item-name {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .menu-item-desc {
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+    .menu-item-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      white-space: nowrap;
+      margin-left: 16px;
+    }
+
+    /* === ABOUT / STORY === */
+    .story {
+      padding: 100px 0;
+      background: var(--white);
+    }
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .story-visual {
+      background: linear-gradient(135deg, var(--dark), var(--dark-2));
+      border-radius: 20px;
+      padding: 50px;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .story-visual::before {
+      content: '✦';
+      position: absolute;
+      font-size: 200px;
+      opacity: 0.04;
+      top: -30px;
+      right: -30px;
+    }
+    .story-visual .quote-mark {
+      font-family: 'Playfair Display', serif;
+      font-size: 64px;
+      color: var(--accent);
+      line-height: 1;
+      opacity: 0.5;
+    }
+    .story-visual .quote {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--white);
+      line-height: 1.6;
+      margin: 16px 0;
+    }
+    .story-visual .quote-author {
+      color: var(--accent);
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    .story-content .subtitle {
+      font-family: 'Playfair Display', serif;
+      font-size: 15px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+    .story-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .story-content h2 span { color: var(--primary); }
+    .story-content p {
+      font-size: 16px;
+      color: var(--gray);
+      margin-bottom: 16px;
+      line-height: 1.8;
+    }
+    .story-highlights {
+      display: flex;
+      gap: 30px;
+      margin-top: 24px;
+    }
+    .story-highlight { text-align: center; }
+    .story-highlight-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .story-highlight-label {
+      font-size: 12px;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+
+    /* === AMBIANCE GALLERY === */
+    .ambiance {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+    .ambiance-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .ambiance-card {
+      border-radius: 16px;
+      overflow: hidden;
+      height: 250px;
+      position: relative;
+      cursor: pointer;
+    }
+    .ambiance-card-bg {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      transition: transform 0.5s;
+    }
+    .ambiance-card:hover .ambiance-card-bg { transform: scale(1.05); }
+    .ambiance-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+    }
+    .ambiance-card-overlay span {
+      color: var(--white);
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    /* === TESTIMONIALS === */
+    .testimonials {
+      padding: 100px 0;
+      background: var(--white);
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .testimonial-card {
+      background: var(--cream);
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+    .testimonial-stars { color: var(--secondary); margin-bottom: 16px; font-size: 16px; }
+    .testimonial-card blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      color: var(--dark);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .testimonial-name { font-weight: 600; font-size: 14px; }
+    .testimonial-role { font-size: 12px; color: var(--gray); }
+
+    /* === RESERVATION CTA === */
+    .reservation {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--dark), var(--dark-2));
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .reservation::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      position: absolute;
+      font-size: 300px;
+      opacity: 0.03;
+      color: var(--accent);
+      top: -60px;
+      left: 30px;
+    }
+    .reservation-inner { position: relative; z-index: 1; }
+    .reservation .subtitle {
+      font-family: 'Playfair Display', serif;
+      font-size: 14px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 12px;
+    }
+    .reservation h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .reservation p {
+      font-size: 17px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 32px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .reservation .phone-big {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    /* === FOOTER === */
+    .footer {
+      background: var(--dark);
+      padding: 60px 0 30px;
+      border-top: 1px solid rgba(212,165,116,0.1);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand p {
+      color: rgba(255,255,255,0.5);
+      font-size: 14px;
+      margin-top: 16px;
+      line-height: 1.7;
+    }
+    .footer h4 {
+      color: var(--accent);
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .footer a, .footer span {
+      display: block;
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 10px;
+      transition: color 0.2s;
+    }
+    .footer a:hover { color: var(--accent); }
+    .footer-bottom {
+      border-top: 1px solid rgba(212,165,116,0.1);
+      padding-top: 24px;
+      text-align: center;
+      color: rgba(255,255,255,0.3);
+      font-size: 13px;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 968px) {
+      .hero h1 { font-size: 42px; }
+      .menu-grid { grid-template-columns: 1fr; }
+      .story-grid { grid-template-columns: 1fr; }
+      .ambiance-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 32px; }
+      .hero-ambient { gap: 24px; }
+      .btn-lg { width: 100%; text-align: center; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .story-highlights { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+        <div class="logo-text">Five Kitchen<span>.</span></div>
+      </a>
+      <nav class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our Story</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#reservation" class="btn btn-primary">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">✦ Fine Dining Experience ✦</div>
+        <h1>A Symphony of <span class="highlight">Flavors & Passion</span></h1>
+        <p>Experience exceptional cuisine in the heart of Jamestown. Every dish crafted with passion, every visit a celebration of flavor.</p>
+        <div class="hero-buttons">
+          <a href="#reservation" class="btn btn-secondary btn-lg"><i class="fas fa-calendar-check"></i> Reserve a Table</a>
+          <a href="#menu" class="btn btn-outline btn-lg">Learn More →</a>
+        </div>
+        <div class="hero-ambient">
+          <div class="hero-ambient-item">
+            <i class="fas fa-clock"></i>
+            Open Today 11AM-10PM
+          </div>
+          <div class="hero-ambient-item">
+            <i class="fas fa-map-pin"></i>
+            Jamestown, NY
+          </div>
+          <div class="hero-ambient-item">
+            <i class="fas fa-star"></i>
+            4.8 ★ Rating
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <div class="subtitle">✦ Our Menu ✦</div>
+        <h2>Crafted with <span>Passion</span></h2>
+        <p>Every dish tells a story — explore our carefully curated menu crafted with the finest ingredients.</p>
+      </div>
+      
+      <div class="menu-category">
+        <h3 class="menu-category-title">Appetizers</h3>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Crispy Calamari</div>
+              <div class="menu-item-desc">Lightly fried calamari served with marinara and lemon aioli</div>
+            </div>
+            <div class="menu-item-price">14</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Truffle Fries</div>
+              <div class="menu-item-desc">Hand-cut fries tossed in truffle oil with parmesan and herbs</div>
+            </div>
+            <div class="menu-item-price">12</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Bruschetta Trio</div>
+              <div class="menu-item-desc">Classic tomato basil, roasted pepper, and mushroom truffle bruschetta</div>
+            </div>
+            <div class="menu-item-price">13</div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category-title">Main Course</h3>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Herb-Roasted Salmon</div>
+              <div class="menu-item-desc">Atlantic salmon with seasonal vegetables and lemon butter sauce</div>
+            </div>
+            <div class="menu-item-price">28</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Filet Mignon</div>
+              <div class="menu-item-desc">8oz prime filet with truffle mashed potatoes and red wine reduction</div>
+            </div>
+            <div class="menu-item-price">42</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Wild Mushroom Risotto</div>
+              <div class="menu-item-desc">Arborio rice with wild mushrooms, white wine, and aged parmesan</div>
+            </div>
+            <div class="menu-item-price">24</div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h3 class="menu-category-title">Desserts</h3>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Tiramisu</div>
+              <div class="menu-item-desc">Classic Italian tiramisu with mascarpone and espresso</div>
+            </div>
+            <div class="menu-item-price">11</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Crème Brûlée</div>
+              <div class="menu-item-desc">Vanilla bean crème brûlée with caramelized sugar top</div>
+            </div>
+            <div class="menu-item-price">10</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <div class="menu-item-name">Chocolate Lava Cake</div>
+              <div class="menu-item-desc">Warm dark chocolate cake with vanilla ice cream</div>
+            </div>
+            <div class="menu-item-price">12</div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-visual">
+          <div class="quote-mark">"</div>
+          <div class="quote">Great food is the foundation of genuine happiness. Every ingredient tells a story, every dish is a memory waiting to be made.</div>
+          <div class="quote-author">— Five Kitchen</div>
+        </div>
+        <div class="story-content">
+          <div class="subtitle">✦ Our Story ✦</div>
+          <h2>The <span>Five Kitchen</span> Difference</h2>
+          <p>At Five Kitchen, we believe dining is more than a meal—it's an experience. Nestled in the heart of Jamestown, we've been crafting unforgettable moments since day one.</p>
+          <p>Our chefs source only the freshest local ingredients, combining time-honored techniques with modern creativity to bring you dishes that delight all the senses.</p>
+          <div class="story-highlights">
+            <div class="story-highlight">
+              <div class="story-highlight-value">10+</div>
+              <div class="story-highlight-label">Years Serving</div>
+            </div>
+            <div class="story-highlight">
+              <div class="story-highlight-value">50+</div>
+              <div class="story-highlight-label">Signature Dishes</div>
+            </div>
+            <div class="story-highlight">
+              <div class="story-highlight-value">25K+</div>
+              <div class="story-highlight-label">Happy Guests</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMBIANCE GALLERY -->
+  <section class="ambiance">
+    <div class="container">
+      <div class="section-header">
+        <div class="subtitle">✦ Gallery ✦</div>
+        <h2>Our <span>Ambiance</span></h2>
+        <p>Step into a world of warmth, elegance, and culinary artistry.</p>
+      </div>
+      <div class="ambiance-grid">
+        
+      <div class="ambiance-card">
+        <div class="ambiance-card-bg" style="background:linear-gradient(135deg, #1a1a2e, #16213e);">
+          <i class="fas fa-couch" style="color:#d4a574; opacity:0.3;"></i>
+        </div>
+        <div class="ambiance-card-overlay">
+          <span>Cozy Lounge</span>
+        </div>
+      </div>
+    
+
+      <div class="ambiance-card">
+        <div class="ambiance-card-bg" style="background:linear-gradient(135deg, #2d1b1b, #1a1a2e);">
+          <i class="fas fa-wine-glass-alt" style="color:#b91c1c; opacity:0.3;"></i>
+        </div>
+        <div class="ambiance-card-overlay">
+          <span>Wine Bar</span>
+        </div>
+      </div>
+    
+
+      <div class="ambiance-card">
+        <div class="ambiance-card-bg" style="background:linear-gradient(135deg, #1a2e1a, #16213e);">
+          <i class="fas fa-leaf" style="color:#4ade80; opacity:0.3;"></i>
+        </div>
+        <div class="ambiance-card-overlay">
+          <span>Garden Patio</span>
+        </div>
+      </div>
+    
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="subtitle">✦ Testimonials ✦</div>
+        <h2>What Our <span>Guests Say</span></h2>
+        <p>Our guests' smiles are our greatest reward. Here's what they have to say.</p>
+      </div>
+      <div class="testimonials-grid">
+        
+    <div class="testimonial-card">
+      <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <blockquote>"Absolutely divine! The tasting menu was a journey through incredible flavors. The wine pairing was perfect."</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">EC</div>
+        <div>
+          <div class="testimonial-name">Emily C.</div>
+          <div class="testimonial-role">Food Critic</div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="testimonial-card">
+      <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <blockquote>"The ambiance is magical and the service is impeccable. Our anniversary dinner was unforgettable."</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">MR</div>
+        <div>
+          <div class="testimonial-name">Michael R.</div>
+          <div class="testimonial-role">Regular Guest</div>
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="testimonial-card">
+      <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <blockquote>"Best restaurant in town! The chef's special always surprises and delights. We come here every month."</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">LK</div>
+        <div>
+          <div class="testimonial-name">Lisa K.</div>
+          <div class="testimonial-role">Loyal Patron</div>
+        </div>
+      </div>
+    </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section class="reservation" id="reservation">
+    <div class="container reservation-inner">
+      <div class="subtitle">✦ Reserve Your Experience ✦</div>
+      <h2>Reserve Your Table Today</h2>
+      <p>Join us for an unforgettable dining experience. Book your table now.</p>
+      <div class="phone-big">(646) 468-6314</div>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="tel:(646) 468-6314" class="btn btn-secondary btn-lg"><i class="fas fa-phone-alt"></i> Call to Reserve</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon"><i class="fas fa-utensils"></i></div>
+            <div class="logo-text" style="font-size:18px;">Five Kitchen<span>.</span></div>
+          </a>
+          <p>Jamestown's premier dining destination. Fresh ingredients, exceptional service, unforgettable experiences.</p>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          
+      <span style="display:block;color:#94a3b8;font-size:14px;margin-bottom:10px;">Mon-Fri: 8:00 AM - 6:00 PM</span>
+    
+
+      <span style="display:block;color:#94a3b8;font-size:14px;margin-bottom:10px;">Saturday: 9:00 AM - 4:00 PM</span>
+    
+
+      <span style="display:block;color:#94a3b8;font-size:14px;margin-bottom:10px;">Sunday: Closed</span>
+    
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="tel:(646) 468-6314"><i class="fas fa-phone"></i> (646) 468-6314</a>
+          <a href="mailto:info@fivekitchenjamestown.com"><i class="fas fa-envelope"></i> info@fivekitchenjamestown.com</a>
+          <span><i class="fas fa-map-marker-alt"></i> Jamestown, NY</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {{year}} Five Kitchen. All rights reserved. Powered by Instaweb.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
