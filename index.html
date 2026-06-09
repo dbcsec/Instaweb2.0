@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instaweb — Premium Websites. Disruptive Price.</title>
+  <meta name="description" content="Instaweb delivers $10,000-quality websites for service-based businesses at just $399 setup + $248/mo. HVAC, Roofing, Restaurants — get online fast.">
+  <meta property="og:title" content="Instaweb — Premium Websites. Disruptive Price.">
+  <meta property="og:description" content="$10,000-quality websites for service businesses at just $399 setup + $248/mo. Industry-specific design for HVAC, Roofing &amp; Restaurants.">
+  <meta property="og:image" content="https://instaweb.ai/assets/instaweb-og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Instaweb — Premium Websites. Disruptive Price.">
+  <meta name="twitter:description" content="Premium websites for service businesses at a fraction of the cost.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --primary: #4F46E5;
+      --primary-light: #6366F1;
+      --primary-dark: #3730A3;
+      --primary-glow: rgba(79, 70, 229, 0.3);
+      --secondary: #F59E0B;
+      --secondary-dark: #D97706;
+      --accent: #10B981;
+      --accent-glow: rgba(16, 185, 129, 0.25);
+      --dark: #0B0F19;
+      --dark-2: #111827;
+      --dark-3: #1F2937;
+      --light: #F9FAFB;
+      --gray-100: #F3F4F6;
+      --gray-200: #E5E7EB;
+      --gray-300: #D1D5DB;
+      --gray-400: #9CA3AF;
+      --gray-500: #6B7280;
+      --gray-600: #4B5563;
+      --white: #FFFFFF;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+      --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+      --shadow-glow: 0 0 40px rgba(79, 70, 229, 0.15);
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-display);
+      line-height: 1.2;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gradient-text-gold {
+      background: linear-gradient(135deg, var(--secondary), #F97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(79, 70, 229, 0.08);
+      border: 1px solid rgba(79, 70, 229, 0.15);
+      border-radius: 100px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+    .section-tag i { font-size: 10px; }
+
+    /* ===== BUTTONS ===== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      border: none;
+      font-family: var(--font-body);
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--white);
+      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(79, 70, 229, 0.45);
+    }
+    .btn-secondary {
+      background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+      color: var(--dark);
+    }
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+    }
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,0.2);
+      color: var(--white);
+      background: transparent;
+    }
+    .btn-outline:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,0.05);
+      transform: translateY(-2px);
+    }
+    .btn-outline-dark {
+      border: 2px solid var(--gray-300);
+      color: var(--dark);
+      background: transparent;
+    }
+    .btn-outline-dark:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+    .btn-lg { padding: 16px 40px; font-size: 16px; border-radius: 12px; }
+    .btn-sm { padding: 8px 20px; font-size: 13px; border-radius: 8px; }
+
+    /* ===== HEADER / NAV ===== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(11, 15, 25, 0.92);
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 14px 0;
+      transition: all 0.3s;
+    }
+    .header.scrolled {
+      background: rgba(11, 15, 25, 0.98);
+      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: var(--white);
+      font-family: var(--font-display);
+      font-weight: 700;
+      box-shadow: 0 2px 10px rgba(79, 70, 229, 0.3);
+    }
+    .logo-text {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    .logo-text span {
+      background: linear-gradient(135deg, var(--secondary), #F97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .nav-links { display: flex; gap: 36px; align-items: center; }
+    .nav-links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary-light);
+      transition: width 0.3s;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      padding: 10px 24px !important;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+      color: var(--white) !important;
+      border-radius: 8px !important;
+      font-weight: 600 !important;
+    }
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover { transform: translateY(-1px) !important; box-shadow: 0 4px 14px rgba(79, 70, 229, 0.4) !important; }
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      background: var(--dark);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-content { position: relative; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(79, 70, 229, 0.15);
+      border: 1px solid rgba(79, 70, 229, 0.25);
+      border-radius: 100px;
+      color: var(--primary-light);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+    }
+    .hero-badge i { font-size: 10px; color: var(--accent); }
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.08;
+      margin-bottom: 20px;
+      letter-spacing: -2px;
+    }
+    .hero h1 .gradient-text {
+      display: inline-block;
+    }
+    .hero p {
+      font-size: 18px;
+      color: var(--gray-400);
+      margin-bottom: 36px;
+      max-width: 520px;
+      line-height: 1.7;
+    }
+    .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-stats-row {
+      display: flex;
+      gap: 32px;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .hero-stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-stat-value {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .hero-stat-label {
+      font-size: 13px;
+      color: var(--gray-500);
+    }
+
+    /* Hero Visual - Premium Showcase Card */
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-showcase {
+      width: 100%;
+      max-width: 520px;
+      position: relative;
+    }
+    .hero-showcase-card {
+      background: linear-gradient(145deg, rgba(31, 41, 55, 0.9), rgba(17, 24, 39, 0.95));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 36px;
+      backdrop-filter: blur(20px);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-showcase-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(79, 70, 229, 0.12), transparent 70%);
+      border-radius: 50%;
+    }
+    .showcase-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .showcase-header h3 {
+      font-size: 18px;
+      color: var(--white);
+      font-weight: 600;
+    }
+    .showcase-header span {
+      font-size: 12px;
+      color: var(--accent);
+      background: rgba(16, 185, 129, 0.15);
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-weight: 600;
+    }
+    .showcase-devices {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .showcase-device {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .showcase-device:hover {
+      border-color: rgba(79, 70, 229, 0.3);
+      background: rgba(79, 70, 229, 0.05);
+    }
+    .showcase-device i {
+      font-size: 32px;
+      color: var(--primary-light);
+      margin-bottom: 8px;
+    }
+    .showcase-device h4 {
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .showcase-device p {
+      color: var(--gray-500);
+      font-size: 11px;
+    }
+    .showcase-price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(79, 70, 229, 0.08);
+      border: 1px solid rgba(79, 70, 229, 0.15);
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    .showcase-price-left {
+      display: flex;
+      flex-direction: column;
+    }
+    .showcase-price-label {
+      font-size: 12px;
+      color: var(--gray-500);
+    }
+    .showcase-price-amount {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .showcase-price-amount span {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--gray-500);
+    }
+    .showcase-price-badge {
+      font-size: 12px;
+      color: var(--accent);
+      background: rgba(16, 185, 129, 0.15);
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-weight: 600;
+    }
+
+    /* Hero Background Effects */
+    .hero-glow-1 {
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(79, 70, 229, 0.12), transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero-glow-2 {
+      position: absolute;
+      bottom: -30%;
+      left: -15%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.06), transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero-particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: rgba(79, 70, 229, 0.3);
+      border-radius: 50%;
+      animation: float 20s infinite;
+    }
+    .particle:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+    .particle:nth-child(2) { top: 60%; left: 30%; animation-delay: -3s; width: 6px; height: 6px; background: rgba(16, 185, 129, 0.2); }
+    .particle:nth-child(3) { top: 30%; left: 70%; animation-delay: -7s; }
+    .particle:nth-child(4) { top: 70%; left: 85%; animation-delay: -11s; width: 3px; height: 3px; background: rgba(245, 158, 11, 0.2); }
+    .particle:nth-child(5) { top: 45%; left: 50%; animation-delay: -5s; width: 5px; height: 5px; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) scale(1); opacity: 0.3; }
+      50% { transform: translateY(-30px) scale(1.5); opacity: 0.8; }
+    }
+
+    /* ===== TRUSTED BY / SOCIAL PROOF ===== */
+    .trusted-by {
+      padding: 60px 0;
+      background: var(--light);
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .trusted-by p {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--gray-400);
+      margin-bottom: 32px;
+    }
+    .trusted-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .trusted-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gray-400);
+      font-size: 13px;
+      font-weight: 500;
+      opacity: 0.6;
+      transition: opacity 0.3s;
+    }
+    .trusted-logo i { font-size: 28px; }
+    .trusted-logo:hover { opacity: 1; }
+
+    /* ===== VALUE PROPOSITION ===== */
+    .value-prop {
+      padding: 120px 0;
+      background: var(--white);
+    }
+    .vp-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 80px;
+    }
+    .vp-header h2 {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      letter-spacing: -1.5px;
+    }
+    .vp-header h2 span { color: var(--primary); }
+    .vp-header p {
+      font-size: 18px;
+      color: var(--gray-500);
+      line-height: 1.7;
+    }
+    .vp-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .vp-card {
+      padding: 40px 32px;
+      border-radius: 20px;
+      border: 1px solid var(--gray-200);
+      background: var(--white);
+      transition: all 0.4s;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .vp-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .vp-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+      border-color: transparent;
+    }
+    .vp-card:hover::before { opacity: 1; }
+    .vp-card-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 24px;
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.08), rgba(79, 70, 229, 0.02));
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: var(--primary);
+    }
+    .vp-card h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .vp-card p {
+      font-size: 15px;
+      color: var(--gray-500);
+      line-height: 1.7;
+    }
+    .vp-card .vp-highlight {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 4px 14px;
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      background: rgba(79, 70, 229, 0.08);
+    }
+
+    /* ===== INDUSTRY SHOWCASES ===== */
+    .industries {
+      padding: 120px 0;
+      background: var(--dark);
+      position: relative;
+      overflow: hidden;
+    }
+    .industries::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 20% 50%, rgba(79, 70, 229, 0.06), transparent 50%),
+                  radial-gradient(circle at 80% 50%, rgba(16, 185, 129, 0.04), transparent 50%);
+      pointer-events: none;
+    }
+    .industries .section-tag { background: rgba(79, 70, 229, 0.15); border-color: rgba(79, 70, 229, 0.2); }
+    .industries-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px;
+      position: relative;
+      z-index: 1;
+    }
+    .industries-header h2 {
+      font-size: 44px;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -1.5px;
+    }
+    .industries-header p {
+      font-size: 17px;
+      color: var(--gray-400);
+    }
+    .industry-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 48px;
+      position: relative;
+      z-index: 1;
+    }
+    .industry-tab {
+      padding: 12px 28px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      color: var(--gray-400);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: var(--font-body);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .industry-tab:hover {
+      border-color: rgba(79, 70, 229, 0.3);
+      color: var(--white);
+    }
+    .industry-tab.active {
+      background: rgba(79, 70, 229, 0.15);
+      border-color: rgba(79, 70, 229, 0.3);
+      color: var(--primary-light);
+    }
+    .industry-tab i { font-size: 16px; }
+    .industry-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .industry-content h3 {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .industry-content h3 .gradient-text-gold { display: inline-block; }
+    .industry-content p {
+      font-size: 16px;
+      color: var(--gray-400);
+      margin-bottom: 24px;
+      line-height: 1.8;
+    }
+    .industry-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .industry-feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--gray-300);
+    }
+    .industry-feature i {
+      color: var(--accent);
+      font-size: 14px;
+    }
+    .industry-mockup {
+      background: linear-gradient(145deg, rgba(31, 41, 55, 0.8), rgba(17, 24, 39, 0.9));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px;
+      padding: 32px;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .industry-mockup-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .industry-mockup-dot {
+      width: 10px; height: 10px; border-radius: 50%;
+    }
+    .industry-mockup-dot:nth-child(1) { background: #EF4444; }
+    .industry-mockup-dot:nth-child(2) { background: #F59E0B; }
+    .industry-mockup-dot:nth-child(3) { background: #10B981; }
+    .industry-mockup-url {
+      margin-left: auto;
+      font-size: 11px;
+      color: var(--gray-500);
+      font-family: monospace;
+    }
+    .industry-mockup-preview {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .industry-mockup-item {
+      padding: 16px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .industry-mockup-item .bar {
+      height: 6px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+      background: rgba(255,255,255,0.08);
+      overflow: hidden;
+    }
+    .industry-mockup-item .bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    }
+    .industry-mockup-item .bar-fill.gold { background: linear-gradient(90deg, var(--secondary), #F97316); }
+    .industry-mockup-item .bar-fill.green { background: linear-gradient(90deg, var(--accent), #34D399); }
+    .industry-mockup-item .label {
+      font-size: 11px;
+      color: var(--gray-500);
+    }
+    .industry-mockup-item .value {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    /* ===== HOW IT WORKS ===== */
+    .how-it-works {
+      padding: 120px 0;
+      background: var(--white);
+    }
+    .hiw-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 80px;
+    }
+    .hiw-header h2 {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      letter-spacing: -1.5px;
+    }
+    .hiw-header p {
+      font-size: 17px;
+      color: var(--gray-500);
+    }
+    .hiw-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+    .hiw-steps::before {
+      content: '';
+      position: absolute;
+      top: 48px;
+      left: 12.5%;
+      right: 12.5%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--accent), var(--secondary));
+      opacity: 0.3;
+    }
+    .hiw-step {
+      text-align: center;
+      position: relative;
+    }
+    .hiw-step-number {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      box-shadow: 0 4px 14px rgba(79, 70, 229, 0.3);
+      position: relative;
+      z-index: 2;
+    }
+    .hiw-step:nth-child(2) .hiw-step-number { background: linear-gradient(135deg, var(--accent), #059669); }
+    .hiw-step:nth-child(3) .hiw-step-number { background: linear-gradient(135deg, var(--secondary), var(--secondary-dark)); }
+    .hiw-step:nth-child(4) .hiw-step-number { background: linear-gradient(135deg, var(--primary-light), var(--primary)); }
+    .hiw-step h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .hiw-step p {
+      font-size: 14px;
+      color: var(--gray-500);
+      line-height: 1.6;
+      max-width: 240px;
+      margin: 0 auto;
+    }
+
+    /* ===== PRICING ===== */
+    .pricing {
+      padding: 120px 0;
+      background: var(--light);
+      position: relative;
+      overflow: hidden;
+    }
+    .pricing::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(79, 70, 229, 0.05), transparent 70%);
+      border-radius: 50%;
+    }
+    .pricing-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px;
+      position: relative;
+      z-index: 1;
+    }
+    .pricing-header h2 {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      letter-spacing: -1.5px;
+    }
+    .pricing-header h2 span { color: var(--primary); }
+    .pricing-header p {
+      font-size: 17px;
+      color: var(--gray-500);
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .pricing-card {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 24px;
+      padding: 40px 36px;
+      transition: all 0.4s;
+      position: relative;
+    }
+    .pricing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+    .pricing-card.featured {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 1px var(--primary), var(--shadow-lg);
+      transform: scale(1.03);
+    }
+    .pricing-card.featured:hover {
+      transform: scale(1.03) translateY(-4px);
+    }
+    .pricing-card.featured .pricing-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 20px;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .pricing-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .pricing-card h3 i { color: var(--primary); font-size: 18px; }
+    .pricing-sub {
+      font-size: 14px;
+      color: var(--gray-500);
+      margin-bottom: 24px;
+    }
+    .pricing-amount {
+      font-family: var(--font-display);
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    .pricing-amount .price {
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--dark);
+    }
+    .pricing-amount .price span { font-size: 20px; font-weight: 500; color: var(--gray-500); }
+    .pricing-amount-light {
+      font-size: 14px;
+      color: var(--gray-400);
+      margin-bottom: 24px;
+    }
+    .pricing-features {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+    .pricing-features li {
+      padding: 10px 0;
+      font-size: 14px;
+      color: var(--gray-600);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .pricing-features li:last-child { border-bottom: none; }
+    .pricing-features li i {
+      color: var(--accent);
+      font-size: 14px;
+      width: 18px;
+    }
+    .pricing-cta {
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials {
+      padding: 120px 0;
+      background: var(--white);
+    }
+    .testimonials-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+    .testimonials-header h2 {
+      font-size: 44px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      letter-spacing: -1.5px;
+    }
+    .testimonials-header p {
+      font-size: 17px;
+      color: var(--gray-500);
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .testimonial-card {
+      background: var(--white);
+      padding: 32px;
+      border-radius: 20px;
+      border: 1px solid var(--gray-200);
+      transition: all 0.3s;
+    }
+    .testimonial-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+    .testimonial-stars {
+      color: var(--secondary);
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+    .testimonial-card blockquote {
+      font-size: 15px;
+      color: var(--gray-600);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .testimonial-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .testimonial-name { font-weight: 600; font-size: 14px; }
+    .testimonial-role { font-size: 12px; color: var(--gray-400); }
+    .testimonial-industry {
+      font-size: 11px;
+      color: var(--primary);
+      background: rgba(79, 70, 229, 0.06);
+      padding: 2px 10px;
+      border-radius: 100px;
+      margin-top: 4px;
+      display: inline-block;
+    }
+
+    /* ===== CONTACT / LEAD CAPTURE ===== */
+    .contact {
+      padding: 120px 0;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .contact::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(79, 70, 229, 0.08), transparent 70%);
+      border-radius: 50%;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .contact-info h2 {
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 16px;
+      letter-spacing: -1.5px;
+    }
+    .contact-info p {
+      font-size: 17px;
+      color: var(--gray-400);
+      margin-bottom: 32px;
+      max-width: 440px;
+    }
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--gray-300);
+      font-size: 14px;
+    }
+    .contact-detail i {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(79, 70, 229, 0.1);
+      border: 1px solid rgba(79, 70, 229, 0.15);
+      border-radius: 10px;
+      color: var(--primary-light);
+      font-size: 16px;
+    }
+    .contact-form {
+      background: linear-gradient(145deg, rgba(31, 41, 55, 0.9), rgba(17, 24, 39, 0.95));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 40px;
+      backdrop-filter: blur(20px);
+    }
+    .contact-form h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--gray-400);
+      margin-bottom: 6px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px;
+      color: var(--white);
+      font-size: 14px;
+      font-family: var(--font-body);
+      transition: all 0.3s;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder { color: var(--gray-500); }
+    .form-group select option { background: var(--dark-2); color: var(--white); }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    /* ===== FAQ ===== */
+    .faq {
+      padding: 100px 0;
+      background: var(--light);
+    }
+    .faq-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+    .faq-header h2 {
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+    .faq-header p { color: var(--gray-500); }
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 16px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+    .faq-item:hover { border-color: var(--gray-300); }
+    .faq-question {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .faq-question i {
+      color: var(--primary);
+      transition: transform 0.3s;
+    }
+    .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      padding: 0 24px 20px;
+      font-size: 14px;
+      color: var(--gray-500);
+      line-height: 1.7;
+      display: none;
+    }
+    .faq-item.active .faq-answer { display: block; }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--dark);
+      padding: 60px 0 30px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand .logo {
+      margin-bottom: 16px;
+    }
+    .footer-brand p {
+      color: var(--gray-500);
+      font-size: 14px;
+      line-height: 1.7;
+      max-width: 320px;
+    }
+    .footer h4 {
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    .footer a {
+      display: block;
+      color: var(--gray-500);
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 10px;
+      transition: color 0.2s;
+    }
+    .footer a:hover { color: var(--primary-light); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.04);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--gray-500);
+      font-size: 13px;
+    }
+    .footer-social {
+      display: flex;
+      gap: 12px;
+    }
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray-400);
+      font-size: 14px;
+      margin-bottom: 0;
+      transition: all 0.3s;
+    }
+    .footer-social a:hover {
+      background: rgba(79, 70, 229, 0.15);
+      border-color: rgba(79, 70, 229, 0.3);
+      color: var(--primary-light);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .hero h1 { font-size: 44px; }
+      .hiw-steps { grid-template-columns: 1fr 1fr; }
+      .hiw-steps::before { display: none; }
+    }
+    @media (max-width: 968px) {
+      .hero-grid,
+      .industry-showcase,
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero h1 { font-size: 36px; }
+      .hero-visual { display: none; }
+      .vp-grid { grid-template-columns: 1fr; }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 500px; }
+      .pricing-card.featured { transform: none; }
+      .pricing-card.featured:hover { transform: translateY(-4px); }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+      .mobile-toggle { display: block; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(11, 15, 25, 0.98);
+        padding: 24px;
+        gap: 16px;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 28px; letter-spacing: -1px; }
+      .hero p { font-size: 16px; }
+      .hero-buttons { flex-direction: column; }
+      .btn-lg { width: 100%; text-align: center; justify-content: center; }
+      .hero-stats-row { flex-wrap: wrap; gap: 16px; }
+      .vp-header h2 { font-size: 32px; }
+      .industries-header h2 { font-size: 32px; }
+      .industry-tabs { flex-direction: column; align-items: stretch; }
+      .industry-features { grid-template-columns: 1fr; }
+      .hiw-header h2 { font-size: 32px; }
+      .hiw-steps { grid-template-columns: 1fr; }
+      .pricing-header h2 { font-size: 32px; }
+      .pricing-card { padding: 28px 24px; }
+      .testimonials-header h2 { font-size: 32px; }
+      .contact-info h2 { font-size: 32px; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .industry-mockup-preview { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <div class="logo-mark">I</div>
+        <div class="logo-text">Insta<span>web</span></div>
+      </a>
+      <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#industries">Industries</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="/dashboard" class="nav-cta">Dashboard Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge"><i class="fas fa-bolt"></i> The Industrial Blitz</span>
+          <h1>
+            Premium Websites.<br>
+            <span class="gradient-text">Disruptive Price.</span>
+          </h1>
+          <p>Stop paying $10,000 for a website. Instaweb delivers stunning, high-converting sites for HVAC, Roofing &amp; Restaurant businesses at a fraction of the cost — without cutting corners.</p>
+          <div class="hero-buttons">
+            <a href="#pricing" class="btn btn-secondary btn-lg"><i class="fas fa-rocket"></i> See Plans &amp; Pricing</a>
+            <a href="#contact" class="btn btn-outline btn-lg"><i class="far fa-comment"></i> Get a Free Demo</a>
+          </div>
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <span class="hero-stat-value">$399</span>
+              <span class="hero-stat-label">One-time setup</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-value">$248</span>
+              <span class="hero-stat-label">Per month</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-value">100+</span>
+              <span class="hero-stat-label">Sites launched</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-value">48h</span>
+              <span class="hero-stat-label">Avg. turnaround</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-showcase">
+            <div class="hero-showcase-card">
+              <div class="showcase-header">
+                <h3>Your New Website</h3>
+                <span><i class="fas fa-check-circle"></i> Ready in 48h</span>
+              </div>
+              <div class="showcase-devices">
+                <div class="showcase-device">
+                  <i class="fas fa-laptop-house"></i>
+                  <h4>Desktop</h4>
+                  <p>Pixel-perfect on every screen</p>
+                </div>
+                <div class="showcase-device">
+                  <i class="fas fa-mobile-alt"></i>
+                  <h4>Mobile</h4>
+                  <p>Fully responsive design</p>
+                </div>
+                <div class="showcase-device">
+                  <i class="fas fa-chart-line"></i>
+                  <h4>SEO Optimized</h4>
+                  <p>Rank higher on Google</p>
+                </div>
+                <div class="showcase-device">
+                  <i class="fas fa-headset"></i>
+                  <h4>24/7 Support</h4>
+                  <p>We've got your back</p>
+                </div>
+              </div>
+              <div class="showcase-price">
+                <div class="showcase-price-left">
+                  <span class="showcase-price-label">Starting at</span>
+                  <span class="showcase-price-amount">$399 <span>+ $248/mo</span></span>
+                </div>
+                <span class="showcase-price-badge">Save 96%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUSTED BY ===== -->
+  <section class="trusted-by">
+    <div class="container">
+      <p><i class="fas fa-heart" style="color:var(--primary);"></i> Trusted by service businesses across the country</p>
+      <div class="trusted-logos">
+        <span class="trusted-logo"><i class="fas fa-wrench"></i> HVAC Pros</span>
+        <span class="trusted-logo"><i class="fas fa-home"></i> Roofing Contractors</span>
+        <span class="trusted-logo"><i class="fas fa-utensils"></i> Restaurants</span>
+        <span class="trusted-logo"><i class="fas fa-bolt"></i> Electricians</span>
+        <span class="trusted-logo"><i class="fas fa-tint"></i> Plumbers</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VALUE PROPOSITION ===== -->
+  <section class="value-prop" id="value-prop">
+    <div class="container">
+      <div class="vp-header">
+        <span class="section-tag"><i class="fas fa-gem"></i> Why Instaweb</span>
+        <h2>$10,000 Quality. <span>Fraction of the Price.</span></h2>
+        <p>We've reimagined how service businesses get online. Premium design, blazing-fast delivery, and a price that makes traditional agencies blush.</p>
+      </div>
+      <div class="vp-grid">
+        <div class="vp-card">
+          <div class="vp-card-icon"><i class="fas fa-palette"></i></div>
+          <h3>Premium Design</h3>
+          <p>Every site is crafted with the same attention to detail as a $10k agency build — custom layouts, refined typography, and pixel-perfect responsiveness.</p>
+          <span class="vp-highlight">Agency-grade quality</span>
+        </div>
+        <div class="vp-card">
+          <div class="vp-card-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Industrial Blitz Speed</h3>
+          <p>Our automated pipeline delivers your complete, polished website in 48 hours. No waiting weeks for a freelancer to get back to you.</p>
+          <span class="vp-highlight">48h turnaround</span>
+        </div>
+        <div class="vp-card">
+          <div class="vp-card-icon"><i class="fas fa-chart-simple"></i></div>
+          <h3>Built to Convert</h3>
+          <p>Strategic calls-to-action, trust signals, and mobile-first design ensure your site doesn't just look good — it brings in leads and phone calls.</p>
+          <span class="vp-highlight">Conversion-optimized</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INDUSTRIES ===== -->
+  <section class="industries" id="industries">
+    <div class="container">
+      <div class="industries-header">
+        <span class="section-tag"><i class="fas fa-industry"></i> Specialized Solutions</span>
+        <h2>Built for Your Industry</h2>
+        <p>We don't do one-size-fits-all. Each template is purpose-built for the unique needs of your business.</p>
+      </div>
+      <div class="industry-tabs">
+        <button class="industry-tab active" onclick="switchIndustry('hvac', this)">
+          <i class="fas fa-wind"></i> HVAC
+        </button>
+        <button class="industry-tab" onclick="switchIndustry('roofing', this)">
+          <i class="fas fa-hard-hat"></i> Roofing
+        </button>
+        <button class="industry-tab" onclick="switchIndustry('restaurant', this)">
+          <i class="fas fa-utensils"></i> Restaurants
+        </button>
+      </div>
+
+      <!-- HVAC Showcase -->
+      <div class="industry-showcase" id="showcase-hvac">
+        <div class="industry-content">
+          <h3>HVAC <span class="gradient-text-gold">Done Right</span></h3>
+          <p>Showcase your AC repair, heating installation, and maintenance services with a professional website that builds trust and generates calls. Complete with service areas, emergency badges, and seasonal promotions.</p>
+          <div class="industry-features">
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Service menu &amp; pricing</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Emergency callout CTA</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Service area maps</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Customer reviews board</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Seasonal promotion banners</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Same-day booking integration</div>
+          </div>
+        </div>
+        <div class="industry-mockup">
+          <div class="industry-mockup-header">
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-url">yourhvaccompany.com</span>
+          </div>
+          <div class="industry-mockup-preview">
+            <div class="industry-mockup-item">
+              <div class="value">Emergency AC Repair</div>
+              <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+              <span class="label">Most requested service</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Schedule Maintenance</div>
+              <div class="bar"><div class="bar-fill gold" style="width:78%"></div></div>
+              <span class="label">Seasonal tune-ups</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">New Installation</div>
+              <div class="bar"><div class="bar-fill green" style="width:62%"></div></div>
+              <span class="label">Furnace &amp; AC units</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Free Quote</div>
+              <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+              <span class="label">High-converting CTA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Roofing Showcase -->
+      <div class="industry-showcase" id="showcase-roofing" style="display:none">
+        <div class="industry-content">
+          <h3>Roofing <span class="gradient-text-gold">You Can Trust</span></h3>
+          <p>From residential re-roofs to commercial flat roofs, your website should reflect the quality of your workmanship. We'll feature your before/after portfolio, certifications, and service guarantees.</p>
+          <div class="industry-features">
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Project portfolio gallery</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Insurance &amp; warranty badges</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Free estimate request form</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Service area coverage</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Certifications showcase</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Customer testimonial carousel</div>
+          </div>
+        </div>
+        <div class="industry-mockup">
+          <div class="industry-mockup-header">
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-url">yourroofingco.com</span>
+          </div>
+          <div class="industry-mockup-preview">
+            <div class="industry-mockup-item">
+              <div class="value">Residential Roofing</div>
+              <div class="bar"><div class="bar-fill gold" style="width:90%"></div></div>
+              <span class="label">Shingle, tile &amp; metal</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Commercial Roofing</div>
+              <div class="bar"><div class="bar-fill" style="width:72%"></div></div>
+              <span class="label">Flat roofs &amp; repairs</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Storm Damage Repair</div>
+              <div class="bar"><div class="bar-fill green" style="width:85%"></div></div>
+              <span class="label">Emergency services</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Free Inspection</div>
+              <div class="bar"><div class="bar-fill" style="width:92%"></div></div>
+              <span class="label">High-intent lead magnet</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Showcase -->
+      <div class="industry-showcase" id="showcase-restaurant" style="display:none">
+        <div class="industry-content">
+          <h3>Restaurants <span class="gradient-text-gold">That Dine In</span></h3>
+          <p>Your menu is your best sales tool. We build mouth-watering sites with online menus, reservation systems, photo galleries, and delivery integration that turn visitors into hungry customers.</p>
+          <div class="industry-features">
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Digital menu with pricing</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Online reservation widget</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Food photography gallery</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Delivery partner links</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Hours &amp; location maps</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Catering inquiry form</div>
+          </div>
+        </div>
+        <div class="industry-mockup">
+          <div class="industry-mockup-header">
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-url">yourrestaurant.com</span>
+          </div>
+          <div class="industry-mockup-preview">
+            <div class="industry-mockup-item">
+              <div class="value">Signature Dishes</div>
+              <div class="bar"><div class="bar-fill gold" style="width:88%"></div></div>
+              <span class="label">Chef's specials menu</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Reservations</div>
+              <div class="bar"><div class="bar-fill" style="width:76%"></div></div>
+              <span class="label">Book a table online</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Online Orders</div>
+              <div class="bar"><div class="bar-fill green" style="width:94%"></div></div>
+              <span class="label">Takeout &amp; delivery</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Catering</div>
+              <div class="bar"><div class="bar-fill" style="width:65%"></div></div>
+              <span class="label">Events &amp; parties</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="hiw-header">
+        <span class="section-tag"><i class="fas fa-gears"></i> The Industrial Blitz</span>
+        <h2>Your Website in <span class="gradient-text">4 Simple Steps</span></h2>
+        <p>Our automated pipeline combines premium templates with AI-powered content to deliver your site at lightning speed.</p>
+      </div>
+      <div class="hiw-steps">
+        <div class="hiw-step">
+          <div class="hiw-step-number">1</div>
+          <h3>Tell Us About You</h3>
+          <p>Fill out a quick form with your business details, services, and preferences. Takes less than 5 minutes.</p>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-step-number">2</div>
+          <h3>We Build Your Site</h3>
+          <p>Our engine generates a stunning, fully responsive website tailored to your industry and brand.</p>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-step-number">3</div>
+          <h3>Review &amp; Refine</h3>
+          <p>We send you a preview link. You get one round of revisions to make it perfect — included free.</p>
+        </div>
+        <div class="hiw-step">
+          <div class="hiw-step-number">4</div>
+          <h3>Go Live!</h3>
+          <p>We deploy to your custom domain, set up hosting, and hand you the keys. You're in business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="pricing-header">
+        <span class="section-tag"><i class="fas fa-tag"></i> Simple Pricing</span>
+        <h2>One Low Price. <span>No Surprises.</span></h2>
+        <p>No hidden fees, no markups, no "enterprise" nonsense. Just premium websites at a price that makes sense.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3><i class="fas fa-rocket"></i> Setup &amp; Launch</h3>
+          <p class="pricing-sub">One-time fee to get your site built and live</p>
+          <div class="pricing-amount">
+            <span class="price">$399</span>
+          </div>
+          <p class="pricing-amount-light">One-time payment</p>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Premium industry-specific design</li>
+            <li><i class="fas fa-check"></i> Up to 5 pages</li>
+            <li><i class="fas fa-check"></i> Mobile-responsive layout</li>
+            <li><i class="fas fa-check"></i> Contact forms &amp; CTAs</li>
+            <li><i class="fas fa-check"></i> SEO meta setup</li>
+            <li><i class="fas fa-check"></i> 1 round of revisions</li>
+            <li><i class="fas fa-check"></i> 48-hour delivery</li>
+            <li><i class="fas fa-check"></i> Custom domain setup</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary pricing-cta"><i class="fas fa-arrow-right"></i> Get Started</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <span class="pricing-badge">Most Popular</span>
+          <h3><i class="fas fa-infinity"></i> Hosting &amp; Support</h3>
+          <p class="pricing-sub">Everything you need to keep your site running smoothly</p>
+          <div class="pricing-amount">
+            <span class="price">$248 <span>/mo</span></span>
+          </div>
+          <p class="pricing-amount-light">Cancel anytime, no contracts</p>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Fast, secure hosting</li>
+            <li><i class="fas fa-check"></i> SSL certificate included</li>
+            <li><i class="fas fa-check"></i> Automatic backups</li>
+            <li><i class="fas fa-check"></i> 24/7 uptime monitoring</li>
+            <li><i class="fas fa-check"></i> Content updates included</li>
+            <li><i class="fas fa-check"></i> Monthly performance reports</li>
+            <li><i class="fas fa-check"></i> Priority email support</li>
+            <li><i class="fas fa-check"></i> Analytics dashboard</li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary pricing-cta"><i class="fas fa-star"></i> Start Your Site</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header">
+        <span class="section-tag"><i class="fas fa-star"></i> Client Love</span>
+        <h2>What Our <span class="gradient-text">Clients Say</span></h2>
+        <p>Real feedback from real service business owners who've launched with Instaweb.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote>"I was quoted $8,000 by a local agency. Instaweb delivered a better-looking site in 2 days for a fraction of the cost. Unreal."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MT</div>
+            <div>
+              <div class="testimonial-name">Mike Torres</div>
+              <div class="testimonial-role">Owner, Torres HVAC</div>
+              <span class="testimonial-industry">HVAC</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote>"Our old site was embarrassing. Instaweb gave us a modern, professional website that actually brings in leads. Best decision we made this year."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SR</div>
+            <div>
+              <div class="testimonial-name">Sarah Reynolds</div>
+              <div class="testimonial-role">Co-owner, Reynolds Roofing</div>
+              <span class="testimonial-industry">Roofing</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <blockquote>"The online menu and reservation system alone have transformed our booking rate. Our customers love how easy it is to find us."</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JL</div>
+            <div>
+              <div class="testimonial-name">James Liu</div>
+              <div class="testimonial-role">Chef/Owner, Bamboo Bistro</div>
+              <span class="testimonial-industry">Restaurant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq-header">
+        <span class="section-tag"><i class="fas fa-question-circle"></i> FAQ</span>
+        <h2>Got Questions?</h2>
+        <p>Everything you need to know about getting started with Instaweb.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            How is the price so low compared to other agencies?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            We've built an automated design pipeline that handles the heavy lifting. Our "Industrial Blitz" system combines premium templates, AI-powered content generation, and streamlined deployment — so you get agency-quality results without the agency overhead.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            How long does it take to get my website?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Most sites go live within 48 hours of your initial form submission. That includes design, content, mobile optimization, and deployment. We're fast because we're systematic.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            Can I update the website myself after it's live?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Absolutely. Your monthly subscription includes content updates — just send us what you want changed and we handle it. If you prefer DIY access, we can set that up too.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            What if I already have a domain name?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Perfect. We'll set up your site on your existing domain. If you don't have one yet, we'll help you pick and register one — included in the setup fee.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            Is there a contract or can I cancel anytime?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            No long-term contracts. You pay $399 upfront for the build, then $248/month for hosting and support. Cancel anytime with 30 days notice. No exit fees.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            Do you work with businesses outside HVAC, Roofing, and Restaurants?
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            Currently we specialize in these three verticals, which allows us to deliver exceptional quality at our price point. If you're in a related trade (electricians, plumbers, landscapers), get in touch — we may be able to help.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / LEAD CAPTURE ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag" style="background:rgba(79,70,229,0.15);border-color:rgba(79,70,229,0.2);color:var(--primary-light);">
+            <i class="fas fa-paper-plane"></i> Get Started
+          </span>
+          <h2>Ready to Transform<br>Your Online Presence?</h2>
+          <p>Fill out the form and we'll build a custom demo site for your business — completely free, with zero obligation.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <i class="fas fa-envelope"></i>
+              <span>hello@instaweb.ai</span>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-clock"></i>
+              <span>Average response time: under 2 hours</span>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-shield-halved"></i>
+              <span>Your information is safe with us. No spam, ever.</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+          <h3>Get Your Free Demo Site</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Business Name</label>
+              <input type="text" placeholder="e.g. Torres HVAC" required>
+            </div>
+            <div class="form-group">
+              <label>Industry</label>
+              <select required>
+                <option value="">Select industry</option>
+                <option>HVAC</option>
+                <option>Roofing</option>
+                <option>Restaurant / Food Service</option>
+                <option>Other Trade</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="(555) 123-4567" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="you@yourbusiness.com" required>
+          </div>
+          <div class="form-group">
+            <label>Anything else we should know?</label>
+            <textarea placeholder="Tell us about your business, specific services you want to highlight, or any design preferences..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary btn-lg" style="width:100%;justify-content:center;">
+            <i class="fas fa-rocket"></i> Get My Free Demo Site
+          </button>
+          <p style="text-align:center;margin-top:12px;font-size:12px;color:var(--gray-500);">
+            No credit card required. Free demo site delivered within 48 hours.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-mark">I</div>
+            <div class="logo-text" style="font-size:18px;">Insta<span>web</span></div>
+          </a>
+          <p>Premium websites for service-based businesses. Stunning design, blazing delivery, disruptive pricing.</p>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#industries">Industries</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#testimonials">Testimonials</a>
+        </div>
+        <div>
+          <h4>Industries</h4>
+          <a href="#industries">HVAC</a>
+          <a href="#industries">Roofing</a>
+          <a href="#industries">Restaurants</a>
+          <a href="#contact">Other Trades</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:hello@instaweb.ai">hello@instaweb.ai</a>
+          <a href="#contact">Get a Demo</a>
+          <span style="display:block;color:var(--gray-500);font-size:13px;margin-top:8px;">
+            <i class="fas fa-map-pin"></i> Serving TX, AZ &amp; NY
+          </span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Instaweb. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* Header scroll effect */
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    /* Industry tab switching */
+    function switchIndustry(industry, btn) {
+      document.querySelectorAll('.industry-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.industry-showcase').forEach(s => s.style.display = 'none');
+      document.getElementById('showcase-' + industry).style.display = 'grid';
+    }
+
+    /* Form submission handler */
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      const originalText = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fas fa-check-circle"></i> Thanks! We\'ll be in touch.';
+        btn.style.background = 'linear-gradient(135deg, var(--accent), #059669)';
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.innerHTML = originalText;
+          btn.style.background = '';
+          e.target.reset();
+        }, 3000);
+      }, 1500);
+    }
+
+    /* Close mobile nav on link click */
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+
+    /* Smooth scroll for nav links */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

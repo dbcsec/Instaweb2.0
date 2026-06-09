@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instaweb — Operational Dashboard v2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* ===== INSTAWEB DASHBOARD v2 ===== */
+    /* Brand: Indigo #4F46E5 · Amber #F59E0B · Emerald #10B981 */
+    /* Typography: Space Grotesk (display) · Inter (body) */
+
+    :root {
+      /* Brand Core */
+      --primary: #4F46E5;
+      --primary-light: #6366F1;
+      --primary-dark: #3730A3;
+      --primary-glow: rgba(79, 70, 229, 0.12);
+      --secondary: #F59E0B;
+      --secondary-dark: #D97706;
+      --accent: #10B981;
+      --accent-glow: rgba(16, 185, 129, 0.12);
+
+      /* Backgrounds */
+      --bg-primary: #0B0F19;
+      --bg-secondary: #111827;
+      --bg-tertiary: #1F2937;
+      --bg-card: #1A1F2E;
+      --bg-card-hover: #1E2538;
+      --bg-input: rgba(255,255,255,0.04);
+
+      /* Text */
+      --text-primary: #F9FAFB;
+      --text-secondary: #9CA3AF;
+      --text-tertiary: #6B7280;
+      --text-muted: #4B5563;
+
+      /* Borders */
+      --border-primary: rgba(255,255,255,0.08);
+      --border-secondary: rgba(255,255,255,0.04);
+      --border-accent: rgba(79, 70, 229, 0.2);
+
+      /* Shadows */
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+      --shadow: 0 4px 6px -1px rgba(0,0,0,0.3);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.3);
+      --shadow-glow: 0 0 30px rgba(79, 70, 229, 0.08);
+
+      /* Radii */
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 20px;
+
+      /* Typography */
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-body: 'Inter', sans-serif;
+
+      /* Transitions */
+      --ease: cubic-bezier(0.4, 0, 0.2, 1);
+      --transition: 0.25s var(--ease);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      overflow: hidden; clip: rect(0,0,0,0);
+      white-space: nowrap;
+    }
+
+    /* ===== DASHBOARD WRAPPER ===== */
+    .dash {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      position: relative;
+    }
+
+    /* Subtle background glow */
+    .dash::before {
+      content: '';
+      position: fixed;
+      top: -30%;
+      right: -15%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(79, 70, 229, 0.04), transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ===== HEADER ===== */
+    .dash-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .wordmark {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .wordmark-mark {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 700;
+      box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+    }
+    .wordmark span {
+      background: linear-gradient(135deg, var(--secondary), #F97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .dash-header-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .badge-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 5px 12px;
+      border-radius: 100px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      color: #34D399;
+    }
+    .badge-live::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 6px rgba(16, 185, 129, 0.5);
+    }
+
+    .badge-period {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      padding: 5px 12px;
+      border-radius: 100px;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-primary);
+    }
+
+    /* ===== KPI ROW ===== */
+    .kpi-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .kpi {
+      background: var(--bg-card);
+      border: 1px solid var(--border-primary);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.25rem 1rem;
+      transition: all var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .kpi::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+    .kpi:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-glow);
+    }
+    .kpi:hover::before { opacity: 1; }
+
+    .kpi-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+    .kpi-icon.primary { background: rgba(79, 70, 229, 0.12); color: var(--primary-light); }
+    .kpi-icon.amber { background: rgba(245, 158, 11, 0.12); color: var(--secondary); }
+    .kpi-icon.emerald { background: rgba(16, 185, 129, 0.12); color: var(--accent); }
+    .kpi-icon.blue { background: rgba(59, 130, 246, 0.12); color: #60A5FA; }
+
+    .kpi-label {
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-tertiary);
+      margin-bottom: 6px;
+    }
+    .kpi-val {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+    }
+    .kpi-sub {
+      font-size: 11px;
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .kpi-up { color: #34D399; }
+    .kpi-down { color: #F87171; }
+    .kpi-neutral { color: var(--text-tertiary); }
+
+    /* ===== TWO COLUMN LAYOUT ===== */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ===== CARDS ===== */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-primary);
+      border-radius: var(--radius-xl);
+      padding: 1.5rem;
+      transition: all var(--transition);
+    }
+    .card:hover {
+      border-color: rgba(255,255,255,0.1);
+    }
+
+    .card-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-tertiary);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card-title i {
+      font-size: 12px;
+      color: var(--primary-light);
+    }
+
+    /* ===== PIPELINE ===== */
+    .pipeline-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-secondary);
+      transition: background var(--transition);
+      border-radius: var(--radius-sm);
+      margin: 0 -4px;
+      padding: 10px 4px;
+    }
+    .pipeline-item:hover {
+      background: rgba(255,255,255,0.02);
+    }
+    .pipeline-item:last-child { border-bottom: none; }
+
+    .biz-avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .biz-info { flex: 1; min-width: 0; }
+    .biz-name {
+      font-size: 13px;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .biz-niche {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      margin-top: 1px;
+    }
+
+    .pipeline-status {
+      font-size: 10px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .s-demo {
+      background: rgba(79, 70, 229, 0.12);
+      color: #818CF8;
+    }
+    .s-sent {
+      background: rgba(245, 158, 11, 0.12);
+      color: #FBBF24;
+    }
+    .s-close {
+      background: rgba(16, 185, 129, 0.12);
+      color: #34D399;
+    }
+    .s-hunt {
+      background: rgba(107, 114, 128, 0.12);
+      color: #9CA3AF;
+    }
+
+    /* ===== REVENUE BREAKDOWN ===== */
+    .revenue-breakdown { }
+
+    .rb-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-secondary);
+    }
+    .rb-row:last-child { border-bottom: none; }
+    .rb-label { font-size: 13px; font-weight: 500; }
+    .rb-sub { font-size: 11px; color: var(--text-tertiary); margin-top: 1px; }
+    .rb-val { font-size: 15px; font-weight: 600; font-family: var(--font-display); }
+    .rb-recur {
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--accent);
+    }
+    .rb-total {
+      background: rgba(79, 70, 229, 0.06);
+      border: 1px solid rgba(79, 70, 229, 0.12);
+      border-radius: var(--radius-md);
+      margin: 0 -4px;
+      padding: 10px 4px !important;
+      border-bottom: none !important;
+    }
+    .rb-total .rb-val {
+      font-size: 20px;
+      font-family: var(--font-display);
+      font-weight: 700;
+      color: var(--primary-light);
+    }
+
+    /* ===== MRR PROGRESS BARS ===== */
+    .mrr-section {
+      margin-top: 16px;
+    }
+    .mrr-bar-wrap {
+      margin-bottom: 12px;
+    }
+    .mrr-bar-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      margin-bottom: 6px;
+    }
+    .mrr-bar-label span:last-child {
+      color: var(--text-tertiary);
+    }
+    .bar-track {
+      height: 6px;
+      background: var(--bg-tertiary);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 1.5s var(--ease);
+      position: relative;
+    }
+    .bar-fill::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+      animation: shimmer 2s infinite;
+    }
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    /* ===== SALES STEPS (Bespoke Demo Loop) ===== */
+    .sales-steps { }
+    .step {
+      display: flex;
+      gap: 12px;
+      padding-bottom: 18px;
+      position: relative;
+    }
+    .step:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: 38px;
+      bottom: 0;
+      width: 1.5px;
+      background: linear-gradient(to bottom, var(--primary), var(--accent));
+      opacity: 0.3;
+    }
+    .step-num {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 600;
+      font-family: var(--font-display);
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+    .step-body { flex: 1; }
+    .step-title {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .step-desc {
+      font-size: 11px;
+      color: var(--text-tertiary);
+      margin-top: 3px;
+      line-height: 1.5;
+    }
+
+    /* ===== NICHE SCORE ===== */
+    .niche-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .niche-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-secondary);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      transition: all var(--transition);
+    }
+    .niche-card:hover {
+      border-color: var(--border-accent);
+      background: rgba(79, 70, 229, 0.06);
+    }
+    .niche-name {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .niche-name .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+    .niche-score {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .niche-score-bar {
+      flex: 1;
+      height: 4px;
+      background: var(--bg-tertiary);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .niche-score-fill {
+      height: 100%;
+      border-radius: 2px;
+      transition: width 1s var(--ease);
+    }
+    .niche-pct {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      font-family: var(--font-display);
+    }
+    .niche-note {
+      font-size: 10px;
+      color: var(--text-tertiary);
+      margin-top: 4px;
+    }
+
+    .nicge-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-secondary);
+      font-size: 11px;
+      color: var(--text-tertiary);
+    }
+
+    /* ===== KPI TARGETS / GOALS ===== */
+    .goal-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-secondary);
+      transition: background var(--transition);
+      border-radius: var(--radius-sm);
+      margin: 0 -4px;
+      padding: 10px 4px;
+    }
+    .goal-row:hover {
+      background: rgba(255,255,255,0.02);
+    }
+    .goal-row:last-child { border-bottom: none; }
+
+    .goal-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 14px;
+    }
+    .goal-info { flex: 1; }
+    .goal-label { font-size: 12px; font-weight: 500; }
+    .goal-target { font-size: 10px; color: var(--text-tertiary); margin-top: 1px; }
+    .goal-pct {
+      font-size: 13px;
+      font-weight: 600;
+      font-family: var(--font-display);
+    }
+
+    .section-divider {
+      height: 1px;
+      background: var(--border-secondary);
+      margin: 1rem 0;
+    }
+
+    /* ===== ACTION BUTTON ===== */
+    .add-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-primary);
+      border-radius: var(--radius-md);
+      padding: 7px 14px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all var(--transition);
+      font-family: var(--font-body);
+    }
+    .add-btn:hover {
+      background: rgba(79, 70, 229, 0.08);
+      border-color: var(--border-accent);
+      color: var(--primary-light);
+    }
+    .add-btn i {
+      font-size: 11px;
+      transition: transform var(--transition);
+    }
+    .add-btn:hover i {
+      transform: translateX(2px);
+    }
+
+    /* ===== REVENUE DETAIL CARD LAYOUT VARIANT ===== */
+    .rev-breakdown-inline {
+      display: flex;
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .rev-stat {
+      flex: 1;
+      background: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      text-align: center;
+      border: 1px solid var(--border-secondary);
+    }
+    .rev-stat-val {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary-light);
+    }
+    .rev-stat-label {
+      font-size: 10px;
+      color: var(--text-tertiary);
+      margin-top: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .rev-stat.recur .rev-stat-val { color: var(--accent); }
+    .rev-stat.setup .rev-stat-val { color: var(--secondary); }
+
+    /* ===== ANIMATED LOADING ENTRY ===== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .dash > * {
+      animation: fadeInUp 0.5s var(--ease) both;
+    }
+    .kpi-row { animation-delay: 0.05s; }
+    .two-col { animation-delay: 0.1s; }
+    .three-col { animation-delay: 0.15s; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1200px) {
+      .three-col { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 968px) {
+      .kpi-row { grid-template-columns: 1fr 1fr; }
+      .two-col { grid-template-columns: 1fr; }
+      .three-col { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 640px) {
+      .dash { padding: 1rem; }
+      .kpi-row { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .kpi { padding: 1rem; }
+      .kpi-val { font-size: 22px; }
+      .three-col { grid-template-columns: 1fr; }
+      .dash-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .niche-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 420px) {
+      .kpi-row { grid-template-columns: 1fr; }
+    }
+
+    /* ===== SCROLLBAR ===== */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg-primary); }
+    ::-webkit-scrollbar-thumb { background: var(--bg-tertiary); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+  </style>
+</head>
+<body>
+<div class="dash">
+  <h2 class="sr-only">Instaweb Premium Autonomous Agency — Operational Dashboard v2. KPIs, pipeline, revenue model, and sales strategy powered by the Industrial Blitz.</h2>
+
+  <!-- ===== HEADER ===== -->
+  <div class="dash-header">
+    <a href="/" class="wordmark" style="text-decoration:none;color:inherit;">
+      <div class="wordmark-mark">I</div>
+      Insta<span>web</span>
+    </a>
+    <div class="dash-header-right">
+      <span class="badge-live">Operational Dashboard</span>
+      <span class="badge-period">Industrial Blitz: Execution Phase</span>
+    </div>
+  </div>
+
+  <!-- ===== KPI ROW ===== -->
+  <div class="kpi-row">
+    <div class="kpi">
+      <div class="kpi-icon emerald"><i class="fas fa-chart-line"></i></div>
+      <div class="kpi-label">Current MRR</div>
+      <div class="kpi-val">$0</div>
+      <div class="kpi-sub kpi-up"><i class="fas fa-arrow-up"></i> 0% this week</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-icon amber"><i class="fas fa-bullseye"></i></div>
+      <div class="kpi-label">MRR Target</div>
+      <div class="kpi-val">$5,000</div>
+      <div class="kpi-sub kpi-neutral"><i class="far fa-calendar"></i> by Month 2</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-icon primary"><i class="fas fa-rocket"></i></div>
+      <div class="kpi-label">Demos Sent</div>
+      <div class="kpi-val">2520</div>
+      <div class="kpi-sub kpi-up"><i class="fas fa-check-circle"></i> 5% conv. target</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-icon blue"><i class="fas fa-coins"></i></div>
+      <div class="kpi-label">Setup Revenue</div>
+      <div class="kpi-val">$0</div>
+      <div class="kpi-sub kpi-neutral">0 clients × $399</div>
+    </div>
+  </div>
+
+  <!-- ===== TWO COLUMN: Pipeline + Revenue ===== -->
+  <div class="two-col">
+    <!-- Pipeline -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-list-check"></i> Active Pipeline</div>
+      <div class="pipeline-item">
+        <div class="biz-avatar" style="background:rgba(79,70,229,0.15);color:#818CF8;">RR</div>
+        <div class="biz-info">
+          <div class="biz-name">Ridgeline Roofing Co.</div>
+          <div class="biz-niche">Roofer · Portland, OR</div>
+        </div>
+        <span class="pipeline-status s-demo">Demo Built</span>
+      </div>
+      <div class="pipeline-item">
+        <div class="biz-avatar" style="background:rgba(245,158,11,0.15);color:#FBBF24;">AH</div>
+        <div class="biz-info">
+          <div class="biz-name">Alpine HVAC Solutions</div>
+          <div class="biz-niche">HVAC · Beaverton, OR</div>
+        </div>
+        <span class="pipeline-status s-sent">Outreach Sent</span>
+      </div>
+      <div class="pipeline-item">
+        <div class="biz-avatar" style="background:rgba(16,185,129,0.15);color:#34D399;">FP</div>
+        <div class="biz-info">
+          <div class="biz-name">Fitch Plumbing &amp; Drain</div>
+          <div class="biz-niche">Plumber · Lake Oswego</div>
+        </div>
+        <span class="pipeline-status s-close">Closing</span>
+      </div>
+      <div class="pipeline-item">
+        <div class="biz-avatar" style="background:rgba(244,63,94,0.15);color:#FB7185;">SC</div>
+        <div class="biz-info">
+          <div class="biz-name">Sunrise Dental Group</div>
+          <div class="biz-niche">Dentist · Hillsboro, OR</div>
+        </div>
+        <span class="pipeline-status s-hunt">Hunting</span>
+      </div>
+      <div class="pipeline-item">
+        <div class="biz-avatar" style="background:rgba(52,211,153,0.15);color:#34D399;">EP</div>
+        <div class="biz-info">
+          <div class="biz-name">Evergreen Pest Control</div>
+          <div class="biz-niche">Pest · Vancouver, WA</div>
+        </div>
+        <span class="pipeline-status s-demo">Demo Built</span>
+      </div>
+      <a href="/build-demo" class="add-btn"><i class="fas fa-plus"></i> Build New Demo <i class="fas fa-arrow-up-right-from-square"></i></a>
+    </div>
+
+    <!-- Revenue Breakdown -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-chart-pie"></i> Revenue Breakdown</div>
+
+      <div class="rev-breakdown-inline">
+        <div class="rev-stat setup">
+          <div class="rev-stat-val">$0</div>
+          <div class="rev-stat-label">Setup ($399 × 6)</div>
+        </div>
+        <div class="rev-stat">
+          <div class="rev-stat-val">$0/mo</div>
+          <div class="rev-stat-label">Care Plan ($99)</div>
+        </div>
+        <div class="rev-stat recur">
+          <div class="rev-stat-val">$0/mo</div>
+          <div class="rev-stat-label">AI Receptionist</div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <div class="revenue-breakdown">
+        <div class="rb-row">
+          <div>
+            <div class="rb-label">Instaweb Site Setup</div>
+            <div class="rb-sub">One-time · $399/client</div>
+          </div>
+          <div style="text-align:right;">
+            <div class="rb-val">$0</div>
+            <div class="rb-recur">0 clients</div>
+          </div>
+        </div>
+        <div class="rb-row">
+          <div>
+            <div class="rb-label">Care Plan</div>
+            <div class="rb-sub">Recurring · $99/mo · mandatory</div>
+          </div>
+          <div style="text-align:right;">
+            <div class="rb-val">$0/mo</div>
+            <div class="rb-recur"><i class="fas fa-rotate"></i> MRR core</div>
+          </div>
+        </div>
+        <div class="rb-row">
+          <div>
+            <div class="rb-label">AI Receptionist</div>
+            <div class="rb-sub">Recurring add-on · $149/mo</div>
+          </div>
+          <div style="text-align:right;">
+            <div class="rb-val">$0/mo</div>
+            <div class="rb-recur"><i class="fas fa-rotate"></i> 0 active</div>
+          </div>
+        </div>
+        <div class="rb-row rb-total">
+          <div>
+            <div class="rb-label" style="font-weight:600;">Total Monthly Recurring Revenue</div>
+          </div>
+          <div style="text-align:right;">
+            <div class="rb-val">$0</div>
+            <div class="rb-recur">0% to $5k goal</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mrr-section">
+        <div class="mrr-bar-wrap">
+          <div class="mrr-bar-label">
+            <span style="font-weight:500;">MRR Progress to $5,000</span>
+            <span>$0 / $5,000</span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:0%;background:linear-gradient(90deg,#10B981,#34D399);"></div>
+          </div>
+        </div>
+        <div class="mrr-bar-wrap">
+          <div class="mrr-bar-label">
+            <span style="font-weight:500;">Demo → Paid Conv. Rate</span>
+            <span>33.6% / 5% target <i class="fas fa-check-circle" style="color:var(--accent);"></i></span>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:100%;background:linear-gradient(90deg,#4F46E5,#6366F1);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== THREE COLUMN: Demo Loop + Niches + KPIs ===== -->
+  <div class="three-col">
+    <!-- Bespoke Demo Loop -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-gears"></i> Bespoke Demo Loop</div>
+      <div class="sales-steps">
+        <div class="step">
+          <div class="step-num" style="background:rgba(79,70,229,0.15);color:#818CF8;border:1px solid rgba(79,70,229,0.2);">1</div>
+          <div class="step-body">
+            <div class="step-title">Hunt</div>
+            <div class="step-desc">High-revenue businesses with poor or absent web presence. Target local trades.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:rgba(245,158,11,0.15);color:#FBBF24;border:1px solid rgba(245,158,11,0.2);">2</div>
+          <div class="step-body">
+            <div class="step-title">Build</div>
+            <div class="step-desc">Generate premium, personalized demo using high-end UI patterns. 10/10 quality standard.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:rgba(99,102,241,0.15);color:#A5B4FC;border:1px solid rgba(99,102,241,0.2);">3</div>
+          <div class="step-body">
+            <div class="step-title">Showcase</div>
+            <div class="step-desc">"Your New Website is Ready" cold outreach with live demo link.</div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num" style="background:rgba(16,185,129,0.15);color:#34D399;border:1px solid rgba(16,185,129,0.2);">4</div>
+          <div class="step-body">
+            <div class="step-title">Close</div>
+            <div class="step-desc">$399 setup as limited-time "Market Entry" offer. Hook the $99/mo Care Plan.</div>
+          </div>
+        </div>
+      </div>
+      <a href="/outreach" class="add-btn"><i class="fas fa-envelope"></i> Draft outreach email <i class="fas fa-arrow-up-right-from-square"></i></a>
+    </div>
+
+    <!-- Niche Opportunity Score -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-chart-simple"></i> Niche Opportunity Score</div><div class="niche-grid">
+
+        <div class="niche-card">
+          <div class="niche-name"><span class="dot" style="background:#F87171;"></span> HVAC</div>
+          <div class="niche-score">
+            <div class="niche-score-bar"><div class="niche-score-fill" style="width:18.6%;background:#F87171;"></div></div>
+            <span class="niche-pct">18.6%</span>
+          </div>
+          <div class="niche-note">1,395 Prospects</div>
+        </div>
+
+        <div class="niche-card">
+          <div class="niche-name"><span class="dot" style="background:#60A5FA;"></span> Restaurant</div>
+          <div class="niche-score">
+            <div class="niche-score-bar"><div class="niche-score-fill" style="width:18.5%;background:#60A5FA;"></div></div>
+            <span class="niche-pct">18.5%</span>
+          </div>
+          <div class="niche-note">1,388 Prospects</div>
+        </div>
+
+        <div class="niche-card">
+          <div class="niche-name"><span class="dot" style="background:#34D399;"></span> Roofing</div>
+          <div class="niche-score">
+            <div class="niche-score-bar"><div class="niche-score-fill" style="width:18.5%;background:#34D399;"></div></div>
+            <span class="niche-pct">18.5%</span>
+          </div>
+          <div class="niche-note">1,385 Prospects</div>
+        </div>
+
+        <div class="niche-card">
+          <div class="niche-name"><span class="dot" style="background:#A78BFA;"></span> Salon</div>
+          <div class="niche-score">
+            <div class="niche-score-bar"><div class="niche-score-fill" style="width:7.4%;background:#A78BFA;"></div></div>
+            <span class="niche-pct">7.4%</span>
+          </div>
+          <div class="niche-note">558 Prospects</div>
+        </div>
+
+        <div class="niche-card">
+          <div class="niche-name"><span class="dot" style="background:#FBBF24;"></span> Dental</div>
+          <div class="niche-score">
+            <div class="niche-score-bar"><div class="niche-score-fill" style="width:7.4%;background:#FBBF24;"></div></div>
+            <span class="niche-pct">7.4%</span>
+          </div>
+          <div class="niche-note">557 Prospects</div>
+        </div>
+
+        <div class="niche-card">
+          <div class="niche-name"><span class="dot" style="background:#FB7185;"></span> Automotive</div>
+          <div class="niche-score">
+            <div class="niche-score-bar"><div class="niche-score-fill" style="width:7.4%;background:#FB7185;"></div></div>
+            <span class="niche-pct">7.4%</span>
+          </div>
+          <div class="niche-note">555 Prospects</div>
+        </div>
+
+        <div class="niche-card">
+          <div class="niche-name"><span class="dot" style="background:#34D399;"></span> Plumbing</div>
+          <div class="niche-score">
+            <div class="niche-score-bar"><div class="niche-score-fill" style="width:7.4%;background:#34D399;"></div></div>
+            <span class="niche-pct">7.4%</span>
+          </div>
+          <div class="niche-note">555 Prospects</div>
+        </div>
+
+        <div class="niche-card">
+          <div class="niche-name"><span class="dot" style="background:#818CF8;"></span> Landscaping</div>
+          <div class="niche-score">
+            <div class="niche-score-bar"><div class="niche-score-fill" style="width:7.4%;background:#818CF8;"></div></div>
+            <span class="niche-pct">7.4%</span>
+          </div>
+          <div class="niche-note">555 Prospects</div>
+        </div>
+
+        <div class="niche-card">
+          <div class="niche-name"><span class="dot" style="background:#9CA3AF;"></span> Legal</div>
+          <div class="niche-score">
+            <div class="niche-score-bar"><div class="niche-score-fill" style="width:7.4%;background:#9CA3AF;"></div></div>
+            <span class="niche-pct">7.4%</span>
+          </div>
+          <div class="niche-note">552 Prospects</div>
+        </div>
+</div><div class="nicge-footer">
+        <span>Scoring: revenue × web gap × AI add-on fit</span>
+      </div>
+      <a href="/find-leads" class="add-btn"><i class="fas fa-search"></i> Find leads <i class="fas fa-arrow-up-right-from-square"></i></a>
+    </div>
+
+    <!-- KPI Targets -->
+    <div class="card">
+      <div class="card-title"><i class="fas fa-bullseye"></i> KPI Targets & Math</div>
+      <div class="goal-row">
+        <div class="goal-icon" style="background:rgba(16,185,129,0.12);color:#34D399;"><i class="fas fa-star"></i></div>
+        <div class="goal-info">
+          <div class="goal-label">Demo Quality</div>
+          <div class="goal-target">Target: 10 / 10</div>
+        </div>
+        <div class="goal-pct" style="color:#34D399;">10/10</div>
+      </div>
+      
+      <div class="section-divider"></div>
+      
+      <!-- Calculator Inputs -->
+      <style>
+        .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
+        .calc-input-group { display: flex; flex-direction: column; gap: 4px; }
+        .calc-input-group label { font-size: 9px; text-transform: uppercase; color: var(--text-tertiary); font-weight: 600; }
+        .calc-input-group input { 
+          background: var(--bg-secondary); 
+          border: 1px solid var(--border-primary); 
+          border-radius: 6px; 
+          padding: 6px 8px; 
+          color: white; 
+          font-size: 12px; 
+          font-family: var(--font-display);
+          font-weight: 600;
+        }
+        .calc-input-group input:focus { outline: none; border-color: var(--primary-light); }
+        .calc-result {
+          background: rgba(79, 70, 229, 0.08);
+          border: 1px solid var(--border-accent);
+          border-radius: 8px;
+          padding: 12px;
+          margin-top: 8px;
+        }
+        .calc-res-row { display: flex; justify-content: space-between; margin-bottom: 4px; font-size: 12px; }
+        .calc-res-row:last-child { margin-bottom: 0; padding-top: 4px; border-top: 1px solid var(--border-primary); }
+        .calc-res-val { font-weight: 700; color: var(--primary-light); font-family: var(--font-display); }
+      </style>
+
+      <div class="calc-grid">
+        <div class="calc-input-group">
+          <label>Target MRR ($)</label>
+          <input type="number" id="calc-mrr" value="5000" oninput="runCalc()">
+        </div>
+        <div class="calc-input-group">
+          <label>Days to Goal</label>
+          <input type="number" id="calc-days" value="60" oninput="runCalc()">
+        </div>
+        <div class="calc-input-group">
+          <label>Monthly Fee ($)</label>
+          <input type="number" id="calc-fee" value="248" oninput="runCalc()">
+        </div>
+        <div class="calc-input-group">
+          <label>Conv. Rate (%)</label>
+          <input type="number" id="calc-conv" value="5" oninput="runCalc()">
+        </div>
+      </div>
+
+      <div class="calc-result">
+        <div class="calc-res-row">
+          <span>Clients Needed:</span>
+          <span class="calc-res-val" id="res-clients">20</span>
+        </div>
+        <div class="calc-res-row">
+          <span>Total Demos:</span>
+          <span class="calc-res-val" id="res-demos">400</span>
+        </div>
+        <div class="calc-res-row">
+          <span>Demos / Day:</span>
+          <span class="calc-res-val" id="res-perday" style="color:var(--accent);">6.7</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SYSTEM STATUS ===== -->
+  <div class="card" style="margin-top: 12px;">
+    <div class="card-title"><i class="fas fa-terminal"></i> System Status & Notes</div>
+    <div id="system-status-container">
+      <div class="goal-row">
+        <div class="goal-icon" style="background:rgba(245,158,11,0.12);color:#FBBF24;"><i class="fas fa-exclamation-triangle"></i></div>
+        <div class="goal-info">
+          <div class="goal-label">Outreach Paused</div>
+          <div class="goal-target">Daily send limit reached at 2026-06-08T22:46:42.122Z. Resuming in 24h.</div>
+        </div>
+      </div>
+
+      <div class="goal-row">
+        <div class="goal-icon" style="background:rgba(16,185,129,0.12);color:#34D399;"><i class="fas fa-check-circle"></i></div>
+        <div class="goal-info">
+          <div class="goal-label">System Healthy</div>
+          <div class="goal-target">Last successful demo delivery: contact@north-star-comfort-systems-of-jamestown.com</div>
+        </div>
+      </div></div>
+  </div>
+</div>
+
+<script>
+  function runCalc() {
+    const targetMrr = parseFloat(document.getElementById('calc-mrr').value) || 0;
+    const days = parseFloat(document.getElementById('calc-days').value) || 1;
+    const monthlyFee = parseFloat(document.getElementById('calc-fee').value) || 1;
+    const conv = parseFloat(document.getElementById('calc-conv').value) || 1;
+
+    const clients = Math.ceil(targetMrr / monthlyFee);
+    const totalDemos = Math.ceil(clients / (conv / 100));
+    const perDay = (totalDemos / days).toFixed(1);
+
+    document.getElementById('res-clients').innerText = clients;
+    document.getElementById('res-demos').innerText = totalDemos;
+    document.getElementById('res-perday').innerText = perDay;
+  }
+  
+  /* Initial run */
+  window.addEventListener('load', runCalc);
+
+  function sendPrompt(text) {
+    console.log('Prompt:', text);
+  }
+</script>
+</body>
+</html>

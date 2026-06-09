@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instaweb — Find Leads</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary: #4F46E5;
+      --primary-light: #6366F1;
+      --primary-dark: #3730A3;
+      --secondary: #F59E0B;
+      --accent: #10B981;
+      --bg-primary: #0B0F19;
+      --bg-secondary: #111827;
+      --bg-card: #1A1F2E;
+      --text-primary: #F9FAFB;
+      --text-secondary: #9CA3AF;
+      --text-tertiary: #6B7280;
+      --border-primary: rgba(255,255,255,0.08);
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --radius-lg: 16px;
+      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .form-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-primary);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      position: relative;
+    }
+
+    .form-card::before {
+      content: '';
+      position: absolute;
+      top: -2px; left: -2px; right: -2px; bottom: -2px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      z-index: -1;
+      border-radius: calc(var(--radius-lg) + 2px);
+      opacity: 0.3;
+    }
+
+    .header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .wordmark {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    .wordmark span {
+      background: linear-gradient(135deg, var(--secondary), #F97316);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-tertiary);
+      margin-bottom: 0.5rem;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-primary);
+      border-radius: 8px;
+      padding: 12px 16px;
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 15px;
+      transition: all var(--transition);
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary-light);
+      background: rgba(255,255,255,0.02);
+      box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 1rem;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 1.5rem;
+      color: var(--text-tertiary);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color var(--transition);
+    }
+
+    .back-link:hover {
+      color: var(--text-primary);
+    }
+  </style>
+</head>
+<body>
+  <div class="form-card">
+    <div class="header">
+      <div class="wordmark">Insta<span>web</span></div>
+      <h1>Find New Leads</h1>
+      <p>Configure your Industrial Blitz search parameters.</p>
+    </div>
+
+    <form id="leadForm">
+      <div class="form-group">
+        <label for="niche">Target Niche</label>
+        <select id="niche" required>
+          <option value="">Select an industry...</option>
+          <option value="roofing">Roofing & Exteriors</option>
+          <option value="hvac">HVAC & Mechanical</option>
+          <option value="restaurant">Restaurants & Dining</option>
+          <option value="plumbing">Plumbing Services</option>
+          <option value="landscaping">Landscaping & Design</option>
+          <option value="other">Other (Specify in notes)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="location">City / State</label>
+        <input type="text" id="location" placeholder="e.g. Portland, OR" required>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Search Notes & Target Type</label>
+        <textarea id="notes" placeholder="e.g. Look for small mom and pop shops, focus on businesses with no website or very old designs..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">
+        <i class="fas fa-rocket"></i> Launch Lead Hunt
+      </button>
+    </form>
+
+    <a href="/dashboard" class="back-link"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+  </div>
+
+  <script>
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const niche = document.getElementById('niche').value;
+      const location = document.getElementById('location').value;
+      const notes = document.getElementById('notes').value;
+      
+      alert(`Industrial Blitz initiated!\n\nNiche: ${niche}\nLocation: ${location}\nNotes: ${notes}\n\nThe AI agents are now scanning for matching businesses.`);
+    });
+  </script>
+</body>
+</html>
