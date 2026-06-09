@@ -1,6 +1,8 @@
-# Instaweb 2.0 — Mirror Repository
+# Instaweb Agency — Mirror Repository
 
 **Business:** Premium website development for service-based businesses (HVAC, Roofing, Restaurants)
+**Website:** https://instaweb.agency
+**Outreach:** info@instaweb.agency
 **Pricing:** $399 setup + $248/mo recurring
 **Target Markets:** Texas, Arizona, New York
 

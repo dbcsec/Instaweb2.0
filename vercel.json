@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "instaweb-brand",
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/dashboard", "dest": "/dashboard.html" },
+    { "src": "/find-leads", "dest": "/find-leads.html" },
+    { "src": "/build-demo", "dest": "/build-demo.html" },
+    { "src": "/outreach", "dest": "/outreach.html" }
+  ]
+}
