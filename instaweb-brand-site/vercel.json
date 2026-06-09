@@ -1,10 +1,11 @@
 {
   "version": 2,
   "name": "instaweb-brand",
-  "builds": [
-    { "src": "*.html", "use": "@vercel/static" }
-  ],
   "routes": [
-    { "src": "/", "dest": "/index.html" }
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/dashboard", "dest": "/dashboard.html" },
+    { "src": "/find-leads", "dest": "/find-leads.html" },
+    { "src": "/build-demo", "dest": "/build-demo.html" },
+    { "src": "/outreach", "dest": "/outreach.html" }
   ]
 }
