@@ -1,5 +1,10 @@
 {
+  "VERCEL_TOKEN": "REPLACE_WITH_YOUR_TOKEN",
+  "TURSO_URL": "libsql://instaweb-dbcsec.aws-us-west-2.turso.io",
+  "TURSO_TOKEN": "REPLACE_WITH_YOUR_TOKEN",
+  "RESEND_KEY": "REPLACE_WITH_YOUR_KEY",
+  "HUNTER_API_KEY": "REPLACE_WITH_YOUR_KEY",
+  "SERPER_API_KEY": "REPLACE_WITH_YOUR_KEY",
   "GROQ_API_KEY": "your_groq_api_key_here",
-  "GOOGLE_GEMINI_API_KEY": "your_google_gemini_api_key_here",
-  "NOTE": "Replace with actual keys. Never commit real API keys to GitHub."
+  "GOOGLE_GEMINI_API_KEY": "your_google_gemini_api_key_here"
 }
