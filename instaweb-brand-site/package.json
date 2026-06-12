@@ -4,5 +4,8 @@
   "description": "Core Instaweb brand landing page — premium websites for service businesses at disruptive pricing.",
   "scripts": {
     "dev": "npx serve ."
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
   }
 }
