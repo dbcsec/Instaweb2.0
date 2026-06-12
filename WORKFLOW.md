@@ -11,7 +11,7 @@
 3. Before starting new work, members should pull the latest default branch so they branch from up-to-date code
 
 ## Notes
-- Brand Domain: https://instaweb.agency
+- Brand Domain: https://www.instaweb.agency
 - Demo Subdomain: https://demos.instaweb.agency
 - Outreach Email: info@instaweb.agency (using the official domain to prevent spam)
 - The team lead can update this file to reflect the owner's preferences (outside the managed block above, which is overwritten when the owner changes the allow-listed repositories)
