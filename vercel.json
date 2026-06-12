@@ -11,7 +11,11 @@
     { "src": "/data", "dest": "/data.html" },
     { "src": "/demo/(.*)", "dest": "/data/demos/mass_output/$1.html" },
     { "src": "/partners", "dest": "/agency-partners.html" },
-    { "src": "/agency-partners", "dest": "/agency-partners.html" }
+    { "src": "/agency-partners", "dest": "/agency-partners.html" },
+    { "src": "/buy/gbp", "dest": "https://buy.stripe.com/28EeVd3fQ6567h285ldjO04", "type": "redirect" },
+    { "src": "/buy/leads", "dest": "https://buy.stripe.com/eVq5kDg2CalmateetJdjO06", "type": "redirect" },
+    { "src": "/buy/leads-big", "dest": "https://buy.stripe.com/4gM6oHbMmctueJu85ldjO07", "type": "redirect" },
+    { "src": "/buy/setup", "dest": "https://buy.stripe.com/28E5kD9Ee51244Q4T9djO03", "type": "redirect" }
   ],
   "functions": {
     "api/stats.js": {
