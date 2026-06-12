@@ -1,0 +1,811 @@
+[
+  {
+    "timestamp": "2026-06-11 20:42:46",
+    "to": "contact@five-star-heating-cooling-of-houston.com",
+    "business_name": "Five Star Heating & Cooling of Houston",
+    "subject": "Your New Website for Five Star Heating & Cooling of Houston is Ready",
+    "response": {
+      "id": "e8c9c641-be8a-4a5a-bfd8-5206b3ac2ab2"
+    },
+    "batch": "houston_hvac_verified_1",
+    "status": "sent",
+    "resend_id": "e8c9c641-be8a-4a5a-bfd8-5206b3ac2ab2"
+  },
+  {
+    "timestamp": "2026-06-11 20:42:46",
+    "to": "contact@pinnacle-hvac-services-of-houston.com",
+    "business_name": "Pinnacle HVAC Services of Houston",
+    "subject": "Your New Website for Pinnacle HVAC Services of Houston is Ready",
+    "response": {
+      "id": "4ade03d9-3834-4588-aafa-81e11744dd51"
+    },
+    "batch": "houston_hvac_verified_1",
+    "status": "sent",
+    "resend_id": "4ade03d9-3834-4588-aafa-81e11744dd51"
+  },
+  {
+    "timestamp": "2026-06-11 20:42:46",
+    "to": "contact@payless-houston-hvac-services.com",
+    "business_name": "Payless Houston HVAC Services",
+    "subject": "Your New Website for Payless Houston HVAC Services is Ready",
+    "response": {
+      "id": "35cc0001-5722-43bf-a0f8-062098097e21"
+    },
+    "batch": "houston_hvac_verified_1",
+    "status": "sent",
+    "resend_id": "35cc0001-5722-43bf-a0f8-062098097e21"
+  },
+  {
+    "timestamp": "2026-06-11 20:42:46",
+    "to": "contact@sahara-heating-air-of-houston.com",
+    "business_name": "Sahara Heating & Air of Houston",
+    "subject": "Your New Website for Sahara Heating & Air of Houston is Ready",
+    "response": {
+      "id": "e9a5f526-2f83-4ad1-a838-b9342704f587"
+    },
+    "batch": "houston_hvac_verified_1",
+    "status": "sent",
+    "resend_id": "e9a5f526-2f83-4ad1-a838-b9342704f587"
+  },
+  {
+    "timestamp": "2026-06-11 20:42:47",
+    "to": "emily@cactusclimatecontrolofhouston.com",
+    "business_name": "Cactus Climate Control of Houston",
+    "subject": "Your New Website for Cactus Climate Control of Houston is Ready",
+    "response": {
+      "id": "6d187eb9-a1a2-4e39-84f1-deee11d24071"
+    },
+    "batch": "houston_hvac_verified_1",
+    "status": "sent",
+    "resend_id": "6d187eb9-a1a2-4e39-84f1-deee11d24071"
+  },
+  {
+    "timestamp": "2026-06-11 20:42:47",
+    "to": "edward@imperialhvacservices.com",
+    "business_name": "Imperial HVAC Services",
+    "subject": "Your New Website for Imperial HVAC Services is Ready",
+    "response": {
+      "id": "88c8452b-6829-4fe8-bee3-8a233d3f6ee9"
+    },
+    "batch": "houston_hvac_verified_1",
+    "status": "sent",
+    "resend_id": "88c8452b-6829-4fe8-bee3-8a233d3f6ee9"
+  },
+  {
+    "timestamp": "2026-06-11 20:42:47",
+    "to": "kenneth@rapidheatingair.com",
+    "business_name": "Rapid Heating & Air",
+    "subject": "Your New Website for Rapid Heating & Air is Ready",
+    "response": {
+      "id": "23d6af8e-e538-4c54-a47a-228a0ebbdf6a"
+    },
+    "batch": "houston_hvac_verified_1",
+    "status": "sent",
+    "resend_id": "23d6af8e-e538-4c54-a47a-228a0ebbdf6a"
+  },
+  {
+    "timestamp": "2026-06-11 20:46:07",
+    "to": "contact@five-star-heating-cooling-of-houston.com",
+    "business_name": "Five Star Heating & Cooling of Houston",
+    "subject": "3-5 New HVAC Leads Per Week for Five Star Heating & Cooling of Houston?",
+    "response": {
+      "id": "81b03476-16da-46e2-bc4a-78cf0dde39b4"
+    },
+    "batch": "houston_hvac_followup_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:46:08",
+    "to": "contact@pinnacle-hvac-services-of-houston.com",
+    "business_name": "Pinnacle HVAC Services of Houston",
+    "subject": "3-5 New HVAC Leads Per Week for Pinnacle HVAC Services of Houston?",
+    "response": {
+      "id": "a70f5d3c-2e2f-4426-82c5-4f858284b224"
+    },
+    "batch": "houston_hvac_followup_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:46:09",
+    "to": "contact@payless-houston-hvac-services.com",
+    "business_name": "Payless Houston HVAC Services",
+    "subject": "3-5 New HVAC Leads Per Week for Payless Houston HVAC Services?",
+    "response": {
+      "id": "b77a2e9c-3657-4d7b-a9da-f850c1910408"
+    },
+    "batch": "houston_hvac_followup_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:46:10",
+    "to": "contact@sahara-heating-air-of-houston.com",
+    "business_name": "Sahara Heating & Air of Houston",
+    "subject": "3-5 New HVAC Leads Per Week for Sahara Heating & Air of Houston?",
+    "response": {
+      "id": "589c43a9-ff97-4a50-ae6b-d7c06abcece2"
+    },
+    "batch": "houston_hvac_followup_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:46:10",
+    "to": "emily@cactusclimatecontrolofhouston.com",
+    "business_name": "Cactus Climate Control of Houston",
+    "subject": "3-5 New HVAC Leads Per Week for Cactus Climate Control of Houston?",
+    "response": {
+      "id": "6a774f66-b322-4322-854d-9894ba53d994"
+    },
+    "batch": "houston_hvac_followup_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:46:11",
+    "to": "edward@imperialhvacservices.com",
+    "business_name": "Imperial HVAC Services",
+    "subject": "3-5 New HVAC Leads Per Week for Imperial HVAC Services?",
+    "response": {
+      "id": "f65fced9-4f70-45b9-b0b9-239855c876cf"
+    },
+    "batch": "houston_hvac_followup_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:46:12",
+    "to": "kenneth@rapidheatingair.com",
+    "business_name": "Rapid Heating & Air",
+    "subject": "3-5 New HVAC Leads Per Week for Rapid Heating & Air?",
+    "response": {
+      "id": "12ca4289-39aa-4297-b754-d02ca7db19fe"
+    },
+    "batch": "houston_hvac_followup_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:34",
+    "to": "contact@arrow-galveston-air-systems.com",
+    "business_name": "Arrow Galveston Air Systems",
+    "subject": "Your New Website for Arrow Galveston Air Systems is Ready",
+    "response": {
+      "id": "9498d26c-cb71-49cc-a09f-d5596e947b74"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:36",
+    "to": "contact@valley-temperature-control-of-conroe.com",
+    "business_name": "Valley Temperature Control of Conroe",
+    "subject": "Your New Website for Valley Temperature Control of Conroe is Ready",
+    "response": {
+      "id": "2bce1876-310f-46c5-af35-0f06b77d3ca6"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:38",
+    "to": "contact@red-texas-city-temperature-control.com",
+    "business_name": "Red Texas City Temperature Control",
+    "subject": "Your New Website for Red Texas City Temperature Control is Ready",
+    "response": {
+      "id": "690c20e9-6878-4e69-b5a7-d19244968951"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:40",
+    "to": "contact@clear-missouri-city-hvac.com",
+    "business_name": "Clear Missouri City HVAC",
+    "subject": "Your New Website for Clear Missouri City HVAC is Ready",
+    "response": {
+      "id": "dc64baaa-1dfd-41da-a8b4-e25431d7a7f1"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:42",
+    "to": "contact@gulf-sugar-land-hvac-services.com",
+    "business_name": "Gulf Sugar Land HVAC Services",
+    "subject": "Your New Website for Gulf Sugar Land HVAC Services is Ready",
+    "response": {
+      "id": "5105bf82-e285-4569-8072-e2b812c093d6"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:44",
+    "to": "contact@tri-state-hvac-services-of-rosenberg.com",
+    "business_name": "Tri-State HVAC Services of Rosenberg",
+    "subject": "Your New Website for Tri-State HVAC Services of Rosenberg is Ready",
+    "response": {
+      "id": "6c7435b6-fa80-4c1f-947e-76f81187e6d9"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:46",
+    "to": "contact@diamond-hvac-services.com",
+    "business_name": "Diamond HVAC Services",
+    "subject": "Your New Website for Diamond HVAC Services is Ready",
+    "response": {
+      "id": "0bab6bf9-3486-4ea8-8f54-f95f1568c9c6"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:48",
+    "to": "contact@prime-service-experts-of-baytown.com",
+    "business_name": "Prime Service Experts of Baytown",
+    "subject": "Your New Website for Prime Service Experts of Baytown is Ready",
+    "response": {
+      "id": "ef36fcac-ba17-40ce-842d-8c119c1e55f4"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:50",
+    "to": "contact@one-hour-heating-air.com",
+    "business_name": "One Hour Heating & Air",
+    "subject": "Your New Website for One Hour Heating & Air is Ready",
+    "response": {
+      "id": "fa1d8483-b20e-4766-ac8a-0f9b1091a26c"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:52",
+    "to": "contact@integrity-pearland-cooling-heating.com",
+    "business_name": "Integrity Pearland Cooling & Heating",
+    "subject": "Your New Website for Integrity Pearland Cooling & Heating is Ready",
+    "response": {
+      "id": "5ca91a72-e3eb-4417-9207-5676fd8518aa"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:54",
+    "to": "contact@patriot-air-systems-of-galveston.com",
+    "business_name": "Patriot Air Systems of Galveston",
+    "subject": "Your New Website for Patriot Air Systems of Galveston is Ready",
+    "response": {
+      "id": "c285eab0-d66a-49de-92e3-cd01d7f5a0aa"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:56",
+    "to": "contact@pacific-cooling-heating-of-conroe.com",
+    "business_name": "Pacific Cooling & Heating of Conroe",
+    "subject": "Your New Website for Pacific Cooling & Heating of Conroe is Ready",
+    "response": {
+      "id": "b026f324-5968-42b8-982f-6642ca97fea5"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:54:58",
+    "to": "contact@service-mechanical.com",
+    "business_name": "Service Mechanical",
+    "subject": "Your New Website for Service Mechanical is Ready",
+    "response": {
+      "id": "309e2872-8a16-4062-b964-c3f0dfc93801"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:55:00",
+    "to": "contact@city-missouri-city-ac-heating.com",
+    "business_name": "City Missouri City AC & Heating",
+    "subject": "Your New Website for City Missouri City AC & Heating is Ready",
+    "response": {
+      "id": "03c1b2b1-d7da-4e0a-9c40-c229c847ea81"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:55:02",
+    "to": "contact@heritage-service-experts-of-sugar-land.com",
+    "business_name": "Heritage Service Experts of Sugar Land",
+    "subject": "Your New Website for Heritage Service Experts of Sugar Land is Ready",
+    "response": {
+      "id": "a4948d53-0428-438e-89a2-f52ea18cb61c"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:55:04",
+    "to": "contact@gulf-climate-control-of-rosenberg.com",
+    "business_name": "Gulf Climate Control of Rosenberg",
+    "subject": "Your New Website for Gulf Climate Control of Rosenberg is Ready",
+    "response": {
+      "id": "cfc57f6b-10b5-4212-af46-2a519b83131e"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:55:06",
+    "to": "contact@king-mechanical-of-league-city.com",
+    "business_name": "King Mechanical of League City",
+    "subject": "Your New Website for King Mechanical of League City is Ready",
+    "response": {
+      "id": "f439cccb-8202-47e6-b64b-f97166aedad8"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 20:55:08",
+    "to": "contact@family-baytown-cooling-heating.com",
+    "business_name": "Family Baytown Cooling & Heating",
+    "subject": "Your New Website for Family Baytown Cooling & Heating is Ready",
+    "response": {
+      "id": "79bd19be-bf6a-4d47-94a5-0aea4a79a246"
+    },
+    "batch": "houston_hvac_batch_2_scaled",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:20",
+    "to": "contact@gulf-pasadena-ac-heating.com",
+    "business_name": "Gulf Pasadena AC & Heating",
+    "subject": "Your New Website for Gulf Pasadena AC & Heating is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:21",
+    "to": "contact@sunrise-pearland-mechanical.com",
+    "business_name": "Sunrise Pearland Mechanical",
+    "subject": "Your New Website for Sunrise Pearland Mechanical is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:22",
+    "to": "contact@express-service-experts-of-galveston.com",
+    "business_name": "Express Service Experts of Galveston",
+    "subject": "Your New Website for Express Service Experts of Galveston is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:23",
+    "to": "contact@universal-conroe-air-systems.com",
+    "business_name": "Universal Conroe Air Systems",
+    "subject": "Your New Website for Universal Conroe Air Systems is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:25",
+    "to": "contact@west-air-heating.com",
+    "business_name": "West Air & Heating",
+    "subject": "Your New Website for West Air & Heating is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:26",
+    "to": "contact@new-air-systems-of-missouri-city.com",
+    "business_name": "New Air Systems of Missouri City",
+    "subject": "Your New Website for New Air Systems of Missouri City is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:27",
+    "to": "contact@atlas-air-systems.com",
+    "business_name": "Atlas Air Systems",
+    "subject": "Your New Website for Atlas Air Systems is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:28",
+    "to": "contact@king-heating-cooling.com",
+    "business_name": "King Heating & Cooling",
+    "subject": "Your New Website for King Heating & Cooling is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:29",
+    "to": "contact@pinnacle-cooling-heating.com",
+    "business_name": "Pinnacle Cooling & Heating",
+    "subject": "Your New Website for Pinnacle Cooling & Heating is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:30",
+    "to": "contact@new-baytown-mechanical.com",
+    "business_name": "New Baytown Mechanical",
+    "subject": "Your New Website for New Baytown Mechanical is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:31",
+    "to": "contact@state-pasadena-cooling-solutions.com",
+    "business_name": "State Pasadena Cooling Solutions",
+    "subject": "Your New Website for State Pasadena Cooling Solutions is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:32",
+    "to": "contact@town-pearland-cooling-heating.com",
+    "business_name": "Town Pearland Cooling & Heating",
+    "subject": "Your New Website for Town Pearland Cooling & Heating is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:33",
+    "to": "contact@abc-galveston-heating-cooling.com",
+    "business_name": "ABC Galveston Heating & Cooling",
+    "subject": "Your New Website for ABC Galveston Heating & Cooling is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:34",
+    "to": "contact@home-conroe-ac-heating.com",
+    "business_name": "Home Conroe AC & Heating",
+    "subject": "Your New Website for Home Conroe AC & Heating is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:35",
+    "to": "contact@imperial-air-conditioning-of-texas-city.com",
+    "business_name": "Imperial Air Conditioning of Texas City",
+    "subject": "Your New Website for Imperial Air Conditioning of Texas City is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:36",
+    "to": "contact@western-air-conditioning-heating-of-missouri-city.com",
+    "business_name": "Western Air Conditioning & Heating of Missouri City",
+    "subject": "Your New Website for Western Air Conditioning & Heating of Missouri City is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:38",
+    "to": "contact@white-mechanical.com",
+    "business_name": "White Mechanical",
+    "subject": "Your New Website for White Mechanical is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:39",
+    "to": "contact@universal-rosenberg-hvac-solutions.com",
+    "business_name": "Universal Rosenberg HVAC Solutions",
+    "subject": "Your New Website for Universal Rosenberg HVAC Solutions is Ready",
+    "response": {
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:40",
+    "to": "contact@gulf-pasadena-ac-heating.com",
+    "business_name": "Gulf Pasadena AC & Heating",
+    "subject": "Your New Website for Gulf Pasadena AC & Heating is Ready",
+    "response": {
+      "id": "1500f348-3300-4383-980d-9718be108099"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:41",
+    "to": "contact@sunrise-pearland-mechanical.com",
+    "business_name": "Sunrise Pearland Mechanical",
+    "subject": "Your New Website for Sunrise Pearland Mechanical is Ready",
+    "response": {
+      "id": "a387e5b0-e59e-4a63-a6ae-05de3968c966"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:43",
+    "to": "contact@express-service-experts-of-galveston.com",
+    "business_name": "Express Service Experts of Galveston",
+    "subject": "Your New Website for Express Service Experts of Galveston is Ready",
+    "response": {
+      "id": "d50f6654-8da0-4d77-9d65-a82aecb7cd82"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:44",
+    "to": "contact@universal-conroe-air-systems.com",
+    "business_name": "Universal Conroe Air Systems",
+    "subject": "Your New Website for Universal Conroe Air Systems is Ready",
+    "response": {
+      "id": "e054f5a9-aae1-452f-876a-c607909c283a"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:45",
+    "to": "contact@west-air-heating.com",
+    "business_name": "West Air & Heating",
+    "subject": "Your New Website for West Air & Heating is Ready",
+    "response": {
+      "id": "f313994b-4a71-4413-a18c-700054210b80"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:46",
+    "to": "contact@new-air-systems-of-missouri-city.com",
+    "business_name": "New Air Systems of Missouri City",
+    "subject": "Your New Website for New Air Systems of Missouri City is Ready",
+    "response": {
+      "id": "efe71b79-258c-4d55-906a-0f9ef85cd59f"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:48",
+    "to": "contact@atlas-air-systems.com",
+    "business_name": "Atlas Air Systems",
+    "subject": "Your New Website for Atlas Air Systems is Ready",
+    "response": {
+      "id": "2cc8386b-d432-4cd2-bbfe-22d6da77b74b"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:49",
+    "to": "contact@king-heating-cooling.com",
+    "business_name": "King Heating & Cooling",
+    "subject": "Your New Website for King Heating & Cooling is Ready",
+    "response": {
+      "id": "de121e0b-4a60-40ec-869b-815729ed58bb"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:50",
+    "to": "contact@pinnacle-cooling-heating.com",
+    "business_name": "Pinnacle Cooling & Heating",
+    "subject": "Your New Website for Pinnacle Cooling & Heating is Ready",
+    "response": {
+      "id": "a4b328e2-ca15-4059-a5d8-3e2a26ca906f"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:52",
+    "to": "contact@new-baytown-mechanical.com",
+    "business_name": "New Baytown Mechanical",
+    "subject": "Your New Website for New Baytown Mechanical is Ready",
+    "response": {
+      "id": "976d5c5d-522e-439e-8b07-8a853f38930a"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:53",
+    "to": "contact@state-pasadena-cooling-solutions.com",
+    "business_name": "State Pasadena Cooling Solutions",
+    "subject": "Your New Website for State Pasadena Cooling Solutions is Ready",
+    "response": {
+      "id": "d14819ff-822c-4f6e-82fc-725843877569"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:54",
+    "to": "contact@town-pearland-cooling-heating.com",
+    "business_name": "Town Pearland Cooling & Heating",
+    "subject": "Your New Website for Town Pearland Cooling & Heating is Ready",
+    "response": {
+      "id": "57407576-be5d-4da3-8244-91fb978fc853"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:55",
+    "to": "contact@abc-galveston-heating-cooling.com",
+    "business_name": "ABC Galveston Heating & Cooling",
+    "subject": "Your New Website for ABC Galveston Heating & Cooling is Ready",
+    "response": {
+      "id": "a69f1021-b5a5-4049-90b1-dd8843681ade"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:57",
+    "to": "contact@home-conroe-ac-heating.com",
+    "business_name": "Home Conroe AC & Heating",
+    "subject": "Your New Website for Home Conroe AC & Heating is Ready",
+    "response": {
+      "id": "c4bcb7b7-a1ae-48f8-ad14-ada9adefdb2f"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:58",
+    "to": "contact@imperial-air-conditioning-of-texas-city.com",
+    "business_name": "Imperial Air Conditioning of Texas City",
+    "subject": "Your New Website for Imperial Air Conditioning of Texas City is Ready",
+    "response": {
+      "id": "aafd62cc-50b9-4582-ac57-848517344e24"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:06:59",
+    "to": "contact@western-air-conditioning-heating-of-missouri-city.com",
+    "business_name": "Western Air Conditioning & Heating of Missouri City",
+    "subject": "Your New Website for Western Air Conditioning & Heating of Missouri City is Ready",
+    "response": {
+      "id": "01d378d5-2ae0-4fc1-933a-e64d09281aa4"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:07:00",
+    "to": "contact@white-mechanical.com",
+    "business_name": "White Mechanical",
+    "subject": "Your New Website for White Mechanical is Ready",
+    "response": {
+      "id": "f04ed4be-c1c8-4734-9483-7dc2d1d37339"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-11 21:07:02",
+    "to": "contact@universal-rosenberg-hvac-solutions.com",
+    "business_name": "Universal Rosenberg HVAC Solutions",
+    "subject": "Your New Website for Universal Rosenberg HVAC Solutions is Ready",
+    "response": {
+      "id": "1142dc55-4394-45ba-8371-e0b9bf16c672"
+    },
+    "batch": "houston_hvac_wave_2",
+    "template": "template_1",
+    "status": "sent"
+  }
+]
