@@ -807,5 +807,588 @@
     "batch": "houston_hvac_wave_2",
     "template": "template_1",
     "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:09",
+    "to": "contact@universal-rosenberg-hvac-solutions.com",
+    "business_name": "Universal Rosenberg HVAC Solutions",
+    "subject": "Quick optimization for Universal Rosenberg HVAC Solutions?",
+    "response": {
+      "id": "f73a325f-cc5a-473c-8beb-c53cd44fc112"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:11",
+    "to": "contact@five-star-heating-cooling-of-houston.com",
+    "business_name": "Five Star Heating & Cooling of Houston",
+    "subject": "Quick optimization for Five Star Heating & Cooling of Houston?",
+    "response": {
+      "id": "4887d08d-c013-4e52-ae48-3204fc8eac57"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:12",
+    "to": "contact@pinnacle-hvac-services-of-houston.com",
+    "business_name": "Pinnacle HVAC Services of Houston",
+    "subject": "Quick optimization for Pinnacle HVAC Services of Houston?",
+    "response": {
+      "id": "f554a7c8-2f62-4302-a3d3-7f18918c0e2c"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:13",
+    "to": "contact@payless-houston-hvac-services.com",
+    "business_name": "Payless Houston HVAC Services",
+    "subject": "Quick optimization for Payless Houston HVAC Services?",
+    "response": {
+      "id": "7d375d51-e851-42db-9a23-13d03e9d56ac"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:14",
+    "to": "contact@sahara-heating-air-of-houston.com",
+    "business_name": "Sahara Heating & Air of Houston",
+    "subject": "Quick optimization for Sahara Heating & Air of Houston?",
+    "response": {
+      "id": "e6f18640-6292-41f2-af0e-985bc1f87af4"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:15",
+    "to": "emily@cactusclimatecontrolofhouston.com",
+    "business_name": "Cactus Climate Control of Houston",
+    "subject": "Quick optimization for Cactus Climate Control of Houston?",
+    "response": {
+      "id": "cacccb34-cd30-46e3-b3a6-4d3aaacf97ad"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:17",
+    "to": "edward@imperialhvacservices.com",
+    "business_name": "Imperial HVAC Services",
+    "subject": "Quick optimization for Imperial HVAC Services?",
+    "response": {
+      "id": "6ab61b10-f374-4b7a-ad37-2c9c2ce47677"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:18",
+    "to": "kenneth@rapidheatingair.com",
+    "business_name": "Rapid Heating & Air",
+    "subject": "Quick optimization for Rapid Heating & Air?",
+    "response": {
+      "id": "a22d48c0-ea89-4ce7-a1f6-73285c67b3c2"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:19",
+    "to": "contact@arrow-galveston-air-systems.com",
+    "business_name": "Arrow Galveston Air Systems",
+    "subject": "Quick optimization for Arrow Galveston Air Systems?",
+    "response": {
+      "id": "6e014b64-3ada-47fa-b801-4f338640bf54"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:20",
+    "to": "contact@valley-temperature-control-of-conroe.com",
+    "business_name": "Valley Temperature Control of Conroe",
+    "subject": "Quick optimization for Valley Temperature Control of Conroe?",
+    "response": {
+      "id": "4dec53a4-98d5-4617-bac9-198b3dda3171"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:21",
+    "to": "contact@red-texas-city-temperature-control.com",
+    "business_name": "Red Texas City Temperature Control",
+    "subject": "Quick optimization for Red Texas City Temperature Control?",
+    "response": {
+      "id": "dcd5457b-4439-46f2-a886-da15100968ff"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:23",
+    "to": "contact@clear-missouri-city-hvac.com",
+    "business_name": "Clear Missouri City HVAC",
+    "subject": "Quick optimization for Clear Missouri City HVAC?",
+    "response": {
+      "id": "e47c6b97-824e-4394-97ea-1738b4dd8ad9"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:24",
+    "to": "contact@gulf-sugar-land-hvac-services.com",
+    "business_name": "Gulf Sugar Land HVAC Services",
+    "subject": "Quick optimization for Gulf Sugar Land HVAC Services?",
+    "response": {
+      "id": "0ef08996-dd6f-434f-96e0-a8f447b113ea"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:25",
+    "to": "contact@tri-state-hvac-services-of-rosenberg.com",
+    "business_name": "Tri-State HVAC Services of Rosenberg",
+    "subject": "Quick optimization for Tri-State HVAC Services of Rosenberg?",
+    "response": {
+      "id": "7af8bb4e-f9ab-4a57-8152-f16711846c14"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:26",
+    "to": "contact@diamond-hvac-services.com",
+    "business_name": "Diamond HVAC Services",
+    "subject": "Quick optimization for Diamond HVAC Services?",
+    "response": {
+      "id": "cdaee50a-177a-4bde-b4fd-b5d027173d5f"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:27",
+    "to": "contact@prime-service-experts-of-baytown.com",
+    "business_name": "Prime Service Experts of Baytown",
+    "subject": "Quick optimization for Prime Service Experts of Baytown?",
+    "response": {
+      "id": "ed0dbb42-7aa5-4182-b3b6-eb6f2aa77f6e"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:29",
+    "to": "contact@one-hour-heating-air.com",
+    "business_name": "One Hour Heating & Air",
+    "subject": "Quick optimization for One Hour Heating & Air?",
+    "response": {
+      "id": "3e1d5cec-8fa3-4573-ae1b-0bec8ddc0c20"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:30",
+    "to": "contact@integrity-pearland-cooling-heating.com",
+    "business_name": "Integrity Pearland Cooling & Heating",
+    "subject": "Quick optimization for Integrity Pearland Cooling & Heating?",
+    "response": {
+      "id": "1a78fabb-5f2a-4b11-93b0-e474171aa49d"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:31",
+    "to": "contact@patriot-air-systems-of-galveston.com",
+    "business_name": "Patriot Air Systems of Galveston",
+    "subject": "Quick optimization for Patriot Air Systems of Galveston?",
+    "response": {
+      "id": "d1787d43-5ca3-4142-b73b-68675271242f"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:32",
+    "to": "contact@pacific-cooling-heating-of-conroe.com",
+    "business_name": "Pacific Cooling & Heating of Conroe",
+    "subject": "Quick optimization for Pacific Cooling & Heating of Conroe?",
+    "response": {
+      "id": "d86c5f99-439b-4720-8843-2e942c74a65a"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:34",
+    "to": "contact@service-mechanical.com",
+    "business_name": "Service Mechanical",
+    "subject": "Quick optimization for Service Mechanical?",
+    "response": {
+      "id": "c9170417-785f-4504-b12a-8182d41ca914"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:35",
+    "to": "contact@city-missouri-city-ac-heating.com",
+    "business_name": "City Missouri City AC & Heating",
+    "subject": "Quick optimization for City Missouri City AC & Heating?",
+    "response": {
+      "id": "0ed97fa4-a61b-4f3d-ab1f-c48ab6959bad"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:36",
+    "to": "contact@heritage-service-experts-of-sugar-land.com",
+    "business_name": "Heritage Service Experts of Sugar Land",
+    "subject": "Quick optimization for Heritage Service Experts of Sugar Land?",
+    "response": {
+      "id": "e3d61e1f-d267-44fc-88fe-679c4ea5a224"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:39",
+    "to": "contact@gulf-climate-control-of-rosenberg.com",
+    "business_name": "Gulf Climate Control of Rosenberg",
+    "subject": "Quick optimization for Gulf Climate Control of Rosenberg?",
+    "response": {
+      "id": "53cf2af8-d376-4b5c-a349-53bbb9f99365"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:40",
+    "to": "contact@king-mechanical-of-league-city.com",
+    "business_name": "King Mechanical of League City",
+    "subject": "Quick optimization for King Mechanical of League City?",
+    "response": {
+      "id": "b8f8fe1c-b4ed-4d3c-9012-bac554063a49"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:42",
+    "to": "contact@family-baytown-cooling-heating.com",
+    "business_name": "Family Baytown Cooling & Heating",
+    "subject": "Quick optimization for Family Baytown Cooling & Heating?",
+    "response": {
+      "id": "27704c8c-5423-4c50-ace9-74ab4b727102"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:43",
+    "to": "contact@express-service-experts-of-galveston.com",
+    "business_name": "Express Service Experts of Galveston",
+    "subject": "Quick optimization for Express Service Experts of Galveston?",
+    "response": {
+      "id": "f6ce5f07-55d0-4e56-b9fb-7a0daa78f283"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:44",
+    "to": "contact@universal-conroe-air-systems.com",
+    "business_name": "Universal Conroe Air Systems",
+    "subject": "Quick optimization for Universal Conroe Air Systems?",
+    "response": {
+      "id": "1db65d10-3189-4404-81c1-14e78e2d5aeb"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:45",
+    "to": "contact@west-air-heating.com",
+    "business_name": "West Air & Heating",
+    "subject": "Quick optimization for West Air & Heating?",
+    "response": {
+      "id": "5563cfe1-d781-49a9-b381-1cc5a0b43f9f"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:46",
+    "to": "contact@new-air-systems-of-missouri-city.com",
+    "business_name": "New Air Systems of Missouri City",
+    "subject": "Quick optimization for New Air Systems of Missouri City?",
+    "response": {
+      "id": "5ba79ce6-1998-45af-a150-5d3daa75121d"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:48",
+    "to": "contact@atlas-air-systems.com",
+    "business_name": "Atlas Air Systems",
+    "subject": "Quick optimization for Atlas Air Systems?",
+    "response": {
+      "id": "a47b8b01-9820-47a0-9044-1de7d4325dc7"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:49",
+    "to": "contact@king-heating-cooling.com",
+    "business_name": "King Heating & Cooling",
+    "subject": "Quick optimization for King Heating & Cooling?",
+    "response": {
+      "id": "132f5453-e38d-4a97-b343-7e55e79d6f82"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:50",
+    "to": "contact@pinnacle-cooling-heating.com",
+    "business_name": "Pinnacle Cooling & Heating",
+    "subject": "Quick optimization for Pinnacle Cooling & Heating?",
+    "response": {
+      "id": "0dd500b9-b425-4cc5-a6d1-27d0083857ae"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:52",
+    "to": "contact@new-baytown-mechanical.com",
+    "business_name": "New Baytown Mechanical",
+    "subject": "Quick optimization for New Baytown Mechanical?",
+    "response": {
+      "id": "8f1c6de4-7c36-4e1b-9912-8451b377767f"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:53",
+    "to": "contact@state-pasadena-cooling-solutions.com",
+    "business_name": "State Pasadena Cooling Solutions",
+    "subject": "Quick optimization for State Pasadena Cooling Solutions?",
+    "response": {
+      "id": "9c3a844f-ae09-459e-8f5c-b750110ebded"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:54",
+    "to": "contact@town-pearland-cooling-heating.com",
+    "business_name": "Town Pearland Cooling & Heating",
+    "subject": "Quick optimization for Town Pearland Cooling & Heating?",
+    "response": {
+      "id": "95b209fc-0089-496e-a90c-a1ae2811aeb4"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:55",
+    "to": "contact@abc-galveston-heating-cooling.com",
+    "business_name": "ABC Galveston Heating & Cooling",
+    "subject": "Quick optimization for ABC Galveston Heating & Cooling?",
+    "response": {
+      "id": "982a6512-cf0f-4e10-9e9d-c88bfb4f8861"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:57",
+    "to": "contact@home-conroe-ac-heating.com",
+    "business_name": "Home Conroe AC & Heating",
+    "subject": "Quick optimization for Home Conroe AC & Heating?",
+    "response": {
+      "id": "3081b0db-4096-4115-a9cc-5f6602d6ff49"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:58",
+    "to": "contact@imperial-air-conditioning-of-texas-city.com",
+    "business_name": "Imperial Air Conditioning of Texas City",
+    "subject": "Quick optimization for Imperial Air Conditioning of Texas City?",
+    "response": {
+      "id": "466a89c0-7e6a-4c88-ac69-8c373cdc4d0e"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:52:59",
+    "to": "contact@western-air-conditioning-heating-of-missouri-city.com",
+    "business_name": "Western Air Conditioning & Heating of Missouri City",
+    "subject": "Quick optimization for Western Air Conditioning & Heating of Missouri City?",
+    "response": {
+      "id": "dac91cdd-b7f8-430c-9f96-092fb2bc0a86"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:00",
+    "to": "contact@white-mechanical.com",
+    "business_name": "White Mechanical",
+    "subject": "Quick optimization for White Mechanical?",
+    "response": {
+      "id": "12f0581c-abaa-4676-a1cb-6722344f9e8f"
+    },
+    "batch": "fast_money_gbp_99",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:44",
+    "to": "brenda.love@loveadv.com",
+    "name": "Brenda",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "f7d6c8d6-3b1b-42c2-a34c-d556d5f3f117"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:46",
+    "to": "kevin-eisenbaum@loveadv.com",
+    "name": "Kevin",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "0fa99a68-3bf5-48d6-b861-d5edc325a85c"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:47",
+    "to": "eshekari@versacreative.com",
+    "name": "Eshekari",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "ecc9123d-cd37-4c7c-92f8-d4a000c4829c"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:48",
+    "to": "mshekari@versacreative.com",
+    "name": "Mshekari",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "20db78a0-8098-4b6c-b533-909c5b1ed6c8"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:49",
+    "to": "mhightower@adcetera.com",
+    "name": "Mhightower",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "1b239084-9bb5-4c69-851d-25db7a55f5a1"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:50",
+    "to": "ssuggs@adcetera.com",
+    "name": "Ssuggs",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "7fe6366a-f9b8-4741-8a90-21d84446ca02"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:52",
+    "to": "chris.omotosho@gravityglobal.com",
+    "name": "Chris",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "4be43bdb-badc-4504-a76d-39971221208a"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:53",
+    "to": "desiree.gates@gravityglobal.com",
+    "name": "Desiree",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "ba7c5e9f-feb5-4b13-99b3-8c0aa191dde0"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:54",
+    "to": "cpsillas@forthea.com",
+    "name": "Cpsillas",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "206ab073-da48-4bbf-9741-f6c2a0af36c3"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:55",
+    "to": "dbaker@forthea.com",
+    "name": "Dbaker",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "f5b3ec5b-f4cc-4541-9763-c45696d47ea9"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:56",
+    "to": "gparker@oakinteractive.com",
+    "name": "Gparker",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "78e86077-87a8-4eb2-96a9-5c494fe7e988"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 05:53:58",
+    "to": "mrobles@oakinteractive.com",
+    "name": "Mrobles",
+    "subject": "Houston HVAC Leads (2,500 verified) - Quick data acquisition?",
+    "response": {
+      "id": "21ee1da9-9944-4fe8-9758-3d6efb7ddacc"
+    },
+    "batch": "fast_money_lead_batch_500",
+    "status": "sent"
   }
 ]

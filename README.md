@@ -1,10 +1,11 @@
 # Instaweb Agency — Mirror Repository
 
-**Business:** Premium website development for service-based businesses (HVAC, Roofing, Restaurants)
+**Business:** Premium website development for service-based businesses across 10 industry verticals nationwide
 **Website:** https://www.instaweb.agency
 **Outreach:** info@instaweb.agency
 **Pricing:** $399 setup + $248/mo recurring
-**Target Markets:** Texas, Arizona, New York
+**Industries Served:** HVAC, Plumbing, Roofing, Electrical, Restaurant, Salon, Dental, Landscaping, Automotive, Legal
+**Coverage:** Nationwide (US)
 
 ## Repository Structure
 
@@ -25,7 +26,7 @@
 │   ├── mirror-sync.sh    # Automated mirror sync script
 │   └── monitor-mirror.sh # Mirroring compliance monitor
 └── templates/
-    ├── modern-trade/     # "Modern Trade" (HVAC/Roofing) templates
+    ├── modern-trade/     # "Modern Trade" (HVAC/Plumbing/Roofing/Electrical) templates
     └── elegant-food/     # "Elegant Food" (Restaurants) templates
 ```
 

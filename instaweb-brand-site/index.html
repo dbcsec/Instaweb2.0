@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instaweb — Premium Websites. Disruptive Price.</title>
-  <meta name="description" content="Instaweb delivers $10,000-quality websites for service-based businesses at just $399 setup + $248/mo. HVAC, Roofing, Restaurants — get online fast.">
-  <meta property="og:title" content="Instaweb — Premium Websites. Disruptive Price.">
-  <meta property="og:description" content="$10,000-quality websites for service businesses at just $399 setup + $248/mo. Industry-specific design for HVAC, Roofing &amp; Restaurants.">
+  <title>Instaweb — Premium Websites. Nationwide. Disruptive Price.</title>
+  <meta name="description" content="Instaweb delivers $10,000-quality websites for service businesses nationwide at just $399 setup + $248/mo. HVAC, Plumbing, Roofing, Electrical, Restaurant, Salon, Dental, Landscaping, Automotive &amp; Legal — get online fast.">
+  <meta property="og:title" content="Instaweb — Premium Websites. Nationwide. Disruptive Price.">
+  <meta property="og:description" content="$10,000-quality websites for service businesses nationwide at just $399 setup + $248/mo. Industry-specific design for 10+ service niches.">
   <meta property="og:image" content="https://www.instaweb.agency/assets/instaweb-og-image.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Instaweb — Premium Websites. Disruptive Price.">
-  <meta name="twitter:description" content="Premium websites for service businesses at a fraction of the cost.">
+  <meta name="twitter:title" content="Instaweb — Premium Websites. Nationwide. Disruptive Price.">
+  <meta name="twitter:description" content="Premium websites for service businesses nationwide at a fraction of the cost. 10+ industry niches.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1402,7 +1402,7 @@
             Premium Websites.<br>
             <span class="gradient-text">Disruptive Price.</span>
           </h1>
-          <p>Stop paying $10,000 for a website. Instaweb delivers stunning, high-converting sites for HVAC, Roofing &amp; Restaurant businesses at a fraction of the cost — without cutting corners.</p>
+          <p>Stop paying $10,000 for a website. Instaweb delivers stunning, high-converting sites for 10+ service industries nationwide — including HVAC, Plumbing, Roofing, Electrical, Restaurant, Salon, Dental, Landscaping, Automotive &amp; Legal — at a fraction of the cost, without cutting corners.</p>
           <div class="hero-buttons">
             <a href="#pricing" class="btn btn-secondary btn-lg"><i class="fas fa-rocket"></i> See Plans &amp; Pricing</a>
             <a href="#contact" class="btn btn-outline btn-lg"><i class="far fa-comment"></i> Get a Free Demo</a>
@@ -1476,9 +1476,14 @@
       <div class="trusted-logos">
         <span class="trusted-logo"><i class="fas fa-wrench"></i> HVAC Pros</span>
         <span class="trusted-logo"><i class="fas fa-home"></i> Roofing Contractors</span>
-        <span class="trusted-logo"><i class="fas fa-utensils"></i> Restaurants</span>
-        <span class="trusted-logo"><i class="fas fa-bolt"></i> Electricians</span>
         <span class="trusted-logo"><i class="fas fa-tint"></i> Plumbers</span>
+        <span class="trusted-logo"><i class="fas fa-bolt"></i> Electricians</span>
+        <span class="trusted-logo"><i class="fas fa-utensils"></i> Restaurants</span>
+        <span class="trusted-logo"><i class="fas fa-cut"></i> Salons</span>
+        <span class="trusted-logo"><i class="fas fa-tooth"></i> Dentists</span>
+        <span class="trusted-logo"><i class="fas fa-tree"></i> Landscapers</span>
+        <span class="trusted-logo"><i class="fas fa-car"></i> Automotive</span>
+        <span class="trusted-logo"><i class="fas fa-gavel"></i> Legal</span>
       </div>
     </div>
   </section>
@@ -1526,11 +1531,32 @@
         <button class="industry-tab active" onclick="switchIndustry('hvac', this)">
           <i class="fas fa-wind"></i> HVAC
         </button>
+        <button class="industry-tab" onclick="switchIndustry('plumbing', this)">
+          <i class="fas fa-tint"></i> Plumbing
+        </button>
         <button class="industry-tab" onclick="switchIndustry('roofing', this)">
           <i class="fas fa-hard-hat"></i> Roofing
         </button>
+        <button class="industry-tab" onclick="switchIndustry('electrical', this)">
+          <i class="fas fa-bolt"></i> Electrical
+        </button>
         <button class="industry-tab" onclick="switchIndustry('restaurant', this)">
-          <i class="fas fa-utensils"></i> Restaurants
+          <i class="fas fa-utensils"></i> Restaurant
+        </button>
+        <button class="industry-tab" onclick="switchIndustry('salon', this)">
+          <i class="fas fa-cut"></i> Salon
+        </button>
+        <button class="industry-tab" onclick="switchIndustry('dental', this)">
+          <i class="fas fa-tooth"></i> Dental
+        </button>
+        <button class="industry-tab" onclick="switchIndustry('landscaping', this)">
+          <i class="fas fa-tree"></i> Landscaping
+        </button>
+        <button class="industry-tab" onclick="switchIndustry('automotive', this)">
+          <i class="fas fa-car"></i> Automotive
+        </button>
+        <button class="industry-tab" onclick="switchIndustry('legal', this)">
+          <i class="fas fa-gavel"></i> Legal
         </button>
       </div>
 
@@ -1575,6 +1601,52 @@
               <div class="value">Free Quote</div>
               <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
               <span class="label">High-converting CTA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plumbing Showcase -->
+      <div class="industry-showcase" id="showcase-plumbing" style="display:none">
+        <div class="industry-content">
+          <h3>Plumbing <span class="gradient-text-gold">You Can Count On</span></h3>
+          <p>From emergency pipe repairs to full bathroom remodels, your website needs to communicate trust and availability. We build plumbing sites that drive calls 24/7 with clear service menus and instant contact.</p>
+          <div class="industry-features">
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Emergency service badges</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Service area coverage</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Before/after project gallery</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> License &amp; insurance badges</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Same-day booking form</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Customer review carousel</div>
+          </div>
+        </div>
+        <div class="industry-mockup">
+          <div class="industry-mockup-header">
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-url">yourplumbingco.com</span>
+          </div>
+          <div class="industry-mockup-preview">
+            <div class="industry-mockup-item">
+              <div class="value">Emergency Repairs</div>
+              <div class="bar"><div class="bar-fill" style="width:92%"></div></div>
+              <span class="label">24/7 call-out service</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Water Heater Installs</div>
+              <div class="bar"><div class="bar-fill gold" style="width:76%"></div></div>
+              <span class="label">Tank &amp; tankless</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Drain Cleaning</div>
+              <div class="bar"><div class="bar-fill green" style="width:68%"></div></div>
+              <span class="label">Clog removal &amp; cameras</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Free Estimate</div>
+              <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+              <span class="label">No-obligation quote</span>
             </div>
           </div>
         </div>
@@ -1626,6 +1698,52 @@
         </div>
       </div>
 
+      <!-- Electrical Showcase -->
+      <div class="industry-showcase" id="showcase-electrical" style="display:none">
+        <div class="industry-content">
+          <h3>Electrical <span class="gradient-text-gold">Wired for Success</span></h3>
+          <p>Whether residential rewiring or commercial panel upgrades, your electrical contracting business needs a site that demonstrates expertise and safety credentials while making it easy for customers to request service.</p>
+          <div class="industry-features">
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Licensed &amp; insured badges</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Emergency electrical service</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Service menu with pricing</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Project portfolio</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Service area maps</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Quick quote request form</div>
+          </div>
+        </div>
+        <div class="industry-mockup">
+          <div class="industry-mockup-header">
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-url">yourelectricco.com</span>
+          </div>
+          <div class="industry-mockup-preview">
+            <div class="industry-mockup-item">
+              <div class="value">Emergency Repairs</div>
+              <div class="bar"><div class="bar-fill" style="width:93%"></div></div>
+              <span class="label">24/7 electrical call-outs</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Panel Upgrades</div>
+              <div class="bar"><div class="bar-fill gold" style="width:70%"></div></div>
+              <span class="label">200A service upgrades</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Home Rewiring</div>
+              <div class="bar"><div class="bar-fill green" style="width:58%"></div></div>
+              <span class="label">Full &amp; partial rewires</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Free Quote</div>
+              <div class="bar"><div class="bar-fill" style="width:87%"></div></div>
+              <span class="label">Online estimate request</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Restaurant Showcase -->
       <div class="industry-showcase" id="showcase-restaurant" style="display:none">
         <div class="industry-content">
@@ -1667,6 +1785,236 @@
               <div class="value">Catering</div>
               <div class="bar"><div class="bar-fill" style="width:65%"></div></div>
               <span class="label">Events &amp; parties</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Salon Showcase -->
+      <div class="industry-showcase" id="showcase-salon" style="display:none">
+        <div class="industry-content">
+          <h3>Salon <span class="gradient-text-gold">Beautifully Styled</span></h3>
+          <p>Your salon website should be as gorgeous as the looks you create. Showcase your work with a stunning gallery, online booking, and service menus that make clients eager to book their next appointment.</p>
+          <div class="industry-features">
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Service menu &amp; pricing</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Online booking widget</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Portfolio &amp; gallery</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Stylist profiles</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Product shop integration</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Gift card sales</div>
+          </div>
+        </div>
+        <div class="industry-mockup">
+          <div class="industry-mockup-header">
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-url">yoursalon.com</span>
+          </div>
+          <div class="industry-mockup-preview">
+            <div class="industry-mockup-item">
+              <div class="value">Hair Styling</div>
+              <div class="bar"><div class="bar-fill" style="width:91%"></div></div>
+              <span class="label">Cuts, color &amp; styling</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Nail Services</div>
+              <div class="bar"><div class="bar-fill gold" style="width:74%"></div></div>
+              <span class="label">Manicure &amp; pedicure</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Spa Treatments</div>
+              <div class="bar"><div class="bar-fill green" style="width:62%"></div></div>
+              <span class="label">Facials &amp; massages</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Book Online</div>
+              <div class="bar"><div class="bar-fill" style="width:86%"></div></div>
+              <span class="label">24/7 appointment booking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dental Showcase -->
+      <div class="industry-showcase" id="showcase-dental" style="display:none">
+        <div class="industry-content">
+          <h3>Dental <span class="gradient-text-gold">Brighten Smiles</span></h3>
+          <p>A modern dental website builds trust from the first click. We feature your services, patient resources, and a seamless booking experience that turns visitors into loyal patients.</p>
+          <div class="industry-features">
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Service list with pricing</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Online appointment booking</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Patient testimonials</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Insurance info badges</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Office tour gallery</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> New patient specials</div>
+          </div>
+        </div>
+        <div class="industry-mockup">
+          <div class="industry-mockup-header">
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-url">yourdentalco.com</span>
+          </div>
+          <div class="industry-mockup-preview">
+            <div class="industry-mockup-item">
+              <div class="value">General Dentistry</div>
+              <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+              <span class="label">Cleanings &amp; checkups</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Cosmetic</div>
+              <div class="bar"><div class="bar-fill gold" style="width:72%"></div></div>
+              <span class="label">Whitening &amp; veneers</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Emergency Care</div>
+              <div class="bar"><div class="bar-fill green" style="width:66%"></div></div>
+              <span class="label">Same-day emergency slots</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Book Appointment</div>
+              <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+              <span class="label">Online scheduling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Landscaping Showcase -->
+      <div class="industry-showcase" id="showcase-landscaping" style="display:none">
+        <div class="industry-content">
+          <h3>Landscaping <span class="gradient-text-gold">Grow Your Business</span></h3>
+          <p>Showcase your landscaping portfolio with stunning before/after galleries, service packages, and an easy way for homeowners to request a quote for their outdoor project.</p>
+          <div class="industry-features">
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Portfolio gallery</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Service packages</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Free estimate form</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Seasonal promotion banners</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Service area coverage</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Customer reviews</div>
+          </div>
+        </div>
+        <div class="industry-mockup">
+          <div class="industry-mockup-header">
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-url">yourlandscapingco.com</span>
+          </div>
+          <div class="industry-mockup-preview">
+            <div class="industry-mockup-item">
+              <div class="value">Lawn Care</div>
+              <div class="bar"><div class="bar-fill" style="width:89%"></div></div>
+              <span class="label">Mowing, treatment &amp; aeration</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Hardscaping</div>
+              <div class="bar"><div class="bar-fill gold" style="width:71%"></div></div>
+              <span class="label">Patios, walkways &amp; walls</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Design &amp; Install</div>
+              <div class="bar"><div class="bar-fill green" style="width:63%"></div></div>
+              <span class="label">Full landscape design</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Get a Quote</div>
+              <div class="bar"><div class="bar-fill" style="width:84%"></div></div>
+              <span class="label">Free project estimate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Automotive Showcase -->
+      <div class="industry-showcase" id="showcase-automotive" style="display:none">
+        <div class="industry-content">
+          <h3>Automotive <span class="gradient-text-gold">Drive More Business</span></h3>
+          <p>Whether you run an auto repair shop, dealership, or detailing service, your website needs to inspire confidence and make it simple for customers to book service or browse inventory.</p>
+          <div class="industry-features">
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Service menu &amp; pricing</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Online appointment booking</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Inventory showcase</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Customer reviews</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Special offers banners</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Location &amp; hours</div>
+          </div>
+        </div>
+        <div class="industry-mockup">
+          <div class="industry-mockup-header">
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-url">yourautoshop.com</span>
+          </div>
+          <div class="industry-mockup-preview">
+            <div class="industry-mockup-item">
+              <div class="value">Oil &amp; Maintenance</div>
+              <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+              <span class="label">Routine service &amp; inspections</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Repairs</div>
+              <div class="bar"><div class="bar-fill gold" style="width:76%"></div></div>
+              <span class="label">Engine, brake &amp; transmission</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Detailing</div>
+              <div class="bar"><div class="bar-fill green" style="width:58%"></div></div>
+              <span class="label">Full interior &amp; exterior</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Book Service</div>
+              <div class="bar"><div class="bar-fill" style="width:82%"></div></div>
+              <span class="label">Online appointment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal Showcase -->
+      <div class="industry-showcase" id="showcase-legal" style="display:none">
+        <div class="industry-content">
+          <h3>Legal <span class="gradient-text-gold">Trust &amp; Authority</span></h3>
+          <p>A law firm website must convey credibility, expertise, and accessibility. We build clean, professional legal sites with practice area pages, attorney profiles, and easy consultation booking.</p>
+          <div class="industry-features">
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Practice area pages</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Attorney profiles</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Consultation booking</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Case results showcase</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Client testimonials</div>
+            <div class="industry-feature"><i class="fas fa-check-circle"></i> Office location &amp; maps</div>
+          </div>
+        </div>
+        <div class="industry-mockup">
+          <div class="industry-mockup-header">
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-dot"></span>
+            <span class="industry-mockup-url">yourlawfirm.com</span>
+          </div>
+          <div class="industry-mockup-preview">
+            <div class="industry-mockup-item">
+              <div class="value">Personal Injury</div>
+              <div class="bar"><div class="bar-fill" style="width:86%"></div></div>
+              <span class="label">Most common practice area</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Family Law</div>
+              <div class="bar"><div class="bar-fill gold" style="width:72%"></div></div>
+              <span class="label">Divorce &amp; custody</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Business Law</div>
+              <div class="bar"><div class="bar-fill green" style="width:58%"></div></div>
+              <span class="label">Contracts &amp; entity formation</span>
+            </div>
+            <div class="industry-mockup-item">
+              <div class="value">Free Consultation</div>
+              <div class="bar"><div class="bar-fill" style="width:91%"></div></div>
+              <span class="label">Case evaluation form</span>
             </div>
           </div>
         </div>
@@ -1875,7 +2223,7 @@
             <i class="fas fa-chevron-down"></i>
           </div>
           <div class="faq-answer">
-            Currently we specialize in these three verticals, which allows us to deliver exceptional quality at our price point. If you're in a related trade (electricians, plumbers, landscapers), get in touch — we may be able to help.
+            Absolutely! We now serve <strong>10 industry verticals nationwide</strong>: HVAC, Plumbing, Roofing, Electrical, Restaurant, Salon, Dental, Landscaping, Automotive, and Legal. Each comes with a purpose-built template designed specifically for that industry's unique needs and conversions goals.
           </div>
         </div>
       </div>
@@ -1919,9 +2267,16 @@
               <select required>
                 <option value="">Select industry</option>
                 <option>HVAC</option>
+                <option>Plumbing</option>
                 <option>Roofing</option>
+                <option>Electrical</option>
                 <option>Restaurant / Food Service</option>
-                <option>Other Trade</option>
+                <option>Salon / Beauty</option>
+                <option>Dental</option>
+                <option>Landscaping</option>
+                <option>Automotive</option>
+                <option>Legal</option>
+                <option>Other</option>
               </select>
             </div>
           </div>
@@ -1975,16 +2330,22 @@
         <div>
           <h4>Industries</h4>
           <a href="#industries">HVAC</a>
+          <a href="#industries">Plumbing</a>
           <a href="#industries">Roofing</a>
-          <a href="#industries">Restaurants</a>
-          <a href="#contact">Other Trades</a>
+          <a href="#industries">Electrical</a>
+          <a href="#industries">Restaurant</a>
+          <a href="#industries">Salon</a>
+          <a href="#industries">Dental</a>
+          <a href="#industries">Landscaping</a>
+          <a href="#industries">Automotive</a>
+          <a href="#industries">Legal</a>
         </div>
         <div>
           <h4>Contact</h4>
           <a href="mailto:hello@instaweb.agency">hello@instaweb.agency</a>
           <a href="#contact">Get a Demo</a>
           <span style="display:block;color:var(--gray-500);font-size:13px;margin-top:8px;">
-            <i class="fas fa-map-pin"></i> Serving TX, AZ &amp; NY
+            <i class="fas fa-globe"></i> Serving Businesses Nationwide
           </span>
         </div>
       </div>
