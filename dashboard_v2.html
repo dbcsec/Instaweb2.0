@@ -1083,8 +1083,29 @@
   window.addEventListener('load', runCalc);
 
   function sendPrompt(text) {
-    console.log('Prompt:', text);
-  }
-</script>
-</body>
-</html>
+          console.log('Prompt:', text);
+        }
+
+        /* ===== LIVE AUTO-UPDATE ===== */
+        async function fetchLiveStats() {
+          try {
+            const resp = await fetch('/api/stats');
+            if (!resp.ok) throw new Error('API error');
+            const data = await resp.json();
+            if (data.status === 'ok') {
+              const tlEl = document.querySelector('.kpi-val');
+              if (tlEl) tlEl.textContent = data.total_leads.toLocaleString();
+              const pvEls = document.querySelectorAll('.kpi-val');
+              if (pvEls.length > 1) pvEls[1].textContent = data.phone_verified.toLocaleString();
+              if (pvEls.length > 3) pvEls[3].textContent = data.total_clients.toLocaleString();
+              console.log(`Dashboard updated: ${data.total_leads} leads`);
+            }
+          } catch(e) {
+            console.log('Auto-update unavailable:', e.message);
+          }
+        }
+        fetchLiveStats();
+        setInterval(fetchLiveStats, 30000);
+      </script>
+  </body>
+  </html>
