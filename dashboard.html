@@ -1141,33 +1141,11 @@
       }
 
       /* ===== LIVE AUTO-UPDATE ===== */
-      async function fetchLiveStats() {
-        try {
-          const resp = await fetch('/api/stats');
-          if (!resp.ok) throw new Error('API error');
-          const data = await resp.json();
-          if (data.status === 'ok') {
-            // Update total leads
-            const tlEl = document.querySelector('.kpi-val');
-            if (tlEl) tlEl.textContent = data.total_leads.toLocaleString();
-
-            // Update phone verified
-            const pvEls = document.querySelectorAll('.kpi-val');
-            if (pvEls.length > 1) pvEls[1].textContent = data.phone_verified.toLocaleString();
-
-            // Update clients
-            if (pvEls.length > 3) pvEls[3].textContent = data.total_clients.toLocaleString();
-
-            console.log(`Dashboard updated: ${data.total_leads} leads, ${data.phone_verified} verified, ${data.total_clients} clients`);
-          }
-        } catch(e) {
-          console.log('Auto-update unavailable:', e.message);
-        }
-      }
-
-      // Auto-update every 30 seconds
-      fetchLiveStats();
-      setInterval(fetchLiveStats, 30000);
+      // Auto-refresh dashboard every 60 seconds to show latest data
+      setTimeout(function() {
+        location.reload();
+      }, 60000);
+      console.log('Dashboard will auto-refresh every 60 seconds');
     </script>
   </body>
   </html>
