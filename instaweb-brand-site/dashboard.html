@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instaweb — Operational Dashboard v2</title>
+  <title>Instaweb — Operational Dashboard v2 — Nationwide</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -713,7 +713,7 @@
 </head>
 <body>
 <div class="dash">
-  <h2 class="sr-only">Instaweb Premium Autonomous Agency — Operational Dashboard v2. KPIs, pipeline, revenue model, and sales strategy powered by the Industrial Blitz.</h2>
+  <h2 class="sr-only">Instaweb Premium Autonomous Agency — Operational Dashboard v2. Nationwide KPIs, pipeline, revenue model, and sales strategy powered by the Industrial Blitz.</h2>
 
   <!-- ===== HEADER ===== -->
   <div class="dash-header">
@@ -722,8 +722,8 @@
       Insta<span>web</span>
     </a>
     <div class="dash-header-right">
-      <span class="badge-live">Operational Dashboard</span>
-      <span class="badge-period">Industrial Blitz: Execution Phase</span>
+      <span class="badge-live">Nationwide Dashboard</span>
+      <span class="badge-period">Industrial Blitz: National Scale Phase</span>
     </div>
   </div>
 
@@ -899,7 +899,7 @@
           <div class="step-num" style="background:rgba(79,70,229,0.15);color:#818CF8;border:1px solid rgba(79,70,229,0.2);">1</div>
           <div class="step-body">
             <div class="step-title">Hunt</div>
-            <div class="step-desc">High-revenue businesses with poor or absent web presence. Target local trades.</div>
+            <div class="step-desc">High-revenue businesses with poor or absent web presence. Target nationwide across 10 service verticals.</div>
           </div>
         </div>
         <div class="step">
@@ -1001,6 +1001,15 @@
             <span class="niche-pct">7.4%</span>
           </div>
           <div class="niche-note">555 Prospects</div>
+        </div>
+
+        <div class="niche-card">
+          <div class="niche-name"><span class="dot" style="background:#FBBF24;"></span> Electrical</div>
+          <div class="niche-score">
+            <div class="niche-score-bar"><div class="niche-score-fill" style="width:7.4%;background:#FBBF24;"></div></div>
+            <span class="niche-pct">7.4%</span>
+          </div>
+          <div class="niche-note">553 Prospects</div>
         </div>
 
         <div class="niche-card">
@@ -1137,8 +1146,27 @@
   window.addEventListener('load', runCalc);
 
   function sendPrompt(text) {
-    console.log('Prompt:', text);
-  }
-</script>
-</body>
-</html>
+        console.log('Prompt:', text);
+      }
+
+      /* ===== LIVE AUTO-UPDATE ===== */
+      async function fetchLiveStats() {
+        try {
+          const resp = await fetch('/api/stats');
+          if (!resp.ok) throw new Error('API error');
+          const data = await resp.json();
+          if (data.status === 'ok') {
+            const el = document.querySelector('.kpi-val');
+            if (el) el.textContent = Number(data.total_leads).toLocaleString();
+            document.title = `Instaweb — ${Number(data.total_leads).toLocaleString()} leads`;
+            console.log(`📊 Live: ${data.total_leads} leads, ${data.phone_verified} verified`);
+          }
+        } catch(e) {
+          console.log('Auto-update:', e.message);
+        }
+      }
+      fetchLiveStats();
+      setInterval(fetchLiveStats, 30000);
+    </script>
+  </body>
+  </html>
