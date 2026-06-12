@@ -1141,11 +1141,23 @@
       }
 
       /* ===== LIVE AUTO-UPDATE ===== */
-      // Auto-refresh dashboard every 60 seconds to show latest data
-      setTimeout(function() {
-        location.reload();
-      }, 60000);
-      console.log('Dashboard will auto-refresh every 60 seconds');
+      async function fetchLiveStats() {
+        try {
+          const resp = await fetch('/api/stats');
+          if (!resp.ok) throw new Error('API error');
+          const data = await resp.json();
+          if (data.status === 'ok') {
+            const el = document.querySelector('.kpi-val');
+            if (el) el.textContent = Number(data.total_leads).toLocaleString();
+            document.title = `Instaweb — ${Number(data.total_leads).toLocaleString()} leads`;
+            console.log(`📊 Live: ${data.total_leads} leads, ${data.phone_verified} verified`);
+          }
+        } catch(e) {
+          console.log('Auto-update:', e.message);
+        }
+      }
+      fetchLiveStats();
+      setInterval(fetchLiveStats, 30000);
     </script>
   </body>
   </html>
