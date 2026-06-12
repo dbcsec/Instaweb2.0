@@ -91,11 +91,12 @@ MAJOR_CITIES = {
     "WY": ["Cheyenne", "Casper", "Laramie"]
 }
 
-# All 13+ target industries
+# All 20 target industries (14 original + 6 new)
 ALL_INDUSTRIES = [
     "HVAC", "Plumbing", "Roofing", "Electrical", "Restaurant",
     "Salon", "Dental", "Landscaping", "Automotive", "Legal",
-    "Pest Control", "Cleaning", "Painting", "Moving"
+    "Pest Control", "Cleaning", "Painting", "Moving",
+    "Real Estate", "Insurance", "Financial Services", "Healthcare", "Fitness", "Pet Services"
 ]
 
 AREA_CODES = {
@@ -222,7 +223,36 @@ PREFIXES = {
                "First","Five Star","Golden","Grand","Harbor","Heritage","Integrity","Keystone","King",
                "Liberty","Main","Master","Metro","Modern","National","North","Pacific","Peak","Pioneer",
                "Power","Premier","Pro","Quality","Quick","Red","Reliable","Royal","Select","Silver",
-               "South","Summit","Sun","Superior","Swift","Total","Town","United","Valley","West"]
+               "South","Summit","Sun","Superior","Swift","Total","Town","United","Valley","West"],
+    "Real Estate": ["Apex","Blue","Capital","City","Crown","Elite","First","Golden","Grand","Harbor",
+                    "Heritage","Key","King","Liberty","Main","Metro","National","North","Pacific","Park",
+                    "Peak","Pioneer","Premier","Prime","Pro","Red","Royal","Select","Silver","South",
+                    "Summit","Sun","Superior","Total","Town","United","Valley","West","White"],
+    "Insurance": ["Apex","Allied","American","Blue","Capital","Central","City","Crown","Direct","Eagle",
+                  "First","Golden","Grand","Guardian","Harbor","Heritage","Integrity","Keystone","King",
+                  "Liberty","Main","Metro","National","North","Pacific","Peak","Pioneer","Premier","Prime",
+                  "Pro","Red","Reliable","Royal","Select","Secure","Silver","South","Summit","Sun",
+                  "Superior","Total","Town","United","Valley","West"],
+    "Financial Services": ["Apex","Capital","City","Crown","Elite","First","Golden","Grand","Harbor",
+                           "Heritage","Integrity","Keystone","King","Liberty","Main","Merit","Metro",
+                           "National","North","Pacific","Peak","Pioneer","Premier","Prime","Pro",
+                           "Red","Reliable","Royal","Select","Silver","Summit","Superior","Town",
+                           "Triumph","United","Valley","West"],
+    "Healthcare": ["Apex","Blue","Capital","Care","City","Complete","Crown","First","Golden","Grand",
+                   "Green","Harbor","Health","Heritage","Integrity","Keystone","King","Liberty","Main",
+                   "Maple","Metro","National","North","Oak","Pacific","Park","Peak","Pioneer","Premier",
+                   "Prime","Pro","Red","Reliable","Royal","Select","Silver","South","Summit","Sun",
+                   "Superior","Total","United","Valley","West"],
+    "Fitness": ["Apex","Best","Blue","Body","Capital","City","Crown","Elite","Empire","First","Fit",
+                "Fitness","Golden","Grand","Harbor","Heritage","Iron","King","Liberty","Main","Metro",
+                "National","North","Pacific","Peak","Power","Premier","Prime","Pro","Pulse","Red",
+                "Royal","Select","Silver","South","Summit","Sun","Superior","Total","Titan","United",
+                "Valley","West","Zone"],
+    "Pet Services": ["Apex","Best","Blue","Capital","City","Crown","Dog","Elite","First","Golden",
+                     "Grand","Happy","Harbor","Healthy","Heritage","Happy","King","Liberty","Loving",
+                     "Main","Metro","National","North","Pacific","Pampered","Park","Peak","Paws",
+                     "Pet","Pioneer","Premier","Prime","Pro","Red","Royal","Select","Silver","South",
+                     "Summit","Sun","Superior","Total","United","Valley","West"]
 }
 
 SUFFIXES = {
@@ -260,7 +290,26 @@ SUFFIXES = {
                  "Painting Solutions","Interior & Exterior Painting"],
     "Moving": ["Moving","Moving Co.","Moving Services","Movers","Moving & Storage",
                "Relocation Services","Moving Pros","Moving & Delivery","Logistics",
-               "Transportation"]
+               "Transportation"],
+    "Real Estate": ["Real Estate","Realty","Properties","Real Estate Group","Homes",
+                    "Real Estate Co.","Property Group","Realty Group","Real Estate Partners",
+                    "Property Advisors"],
+    "Insurance": ["Insurance","Insurance Agency","Insurance Group","Insurance Services",
+                  "Insurance Brokers","Insurance Co.","Insurance Solutions","Insurance Partners",
+                  "Insurance Pros","Insurance Advisors"],
+    "Financial Services": ["Financial Services","Financial Group","Financial Advisors",
+                           "Wealth Management","Financial Planning","Investment Group",
+                           "Financial Partners","Finance Co.","Money Management",
+                           "Financial Solutions"],
+    "Healthcare": ["Healthcare","Medical Group","Healthcare Services","Medical Center",
+                   "Health & Wellness","Medical Associates","Healthcare Partners",
+                   "Clinic","Medical Services","Healthcare Solutions"],
+    "Fitness": ["Fitness","Fitness Center","Gym","Health Club","Fitness Studio",
+                "Training Center","Fitness Club","Wellness Center","Athletic Club",
+                "CrossFit","Yoga Studio"],
+    "Pet Services": ["Pet Services","Pet Care","Pet Grooming","Pet Sitting","Dog Walking",
+                     "Pet Resort","Veterinary Clinic","Animal Hospital","Pet Boarding",
+                     "Pet Spa"]
 }
 
 CHAIN_NAMES = {
@@ -288,7 +337,20 @@ CHAIN_NAMES = {
     "Painting": ["CertaPro Painters","Five Star Painting","Fresh Coat","College Hunks",
                  "N-Hance","Budget Blinds"],
     "Moving": ["Two Men and a Truck","Allied Van Lines","United Van Lines","Mayflower",
-               "PODS","U-Haul","Atlas Van Lines"]
+               "PODS","U-Haul","Atlas Van Lines"],
+    "Real Estate": ["Keller Williams","RE/MAX","Century 21","Coldwell Banker","ERA Real Estate",
+                    "Sotheby's","Berkshire Hathaway","eXp Realty","Compass","Redfin"],
+    "Insurance": ["State Farm","Allstate","Geico","Progressive","Nationwide","Farmers",
+                  "Liberty Mutual","Travelers","USAA","Aflac","MetLife","Prudential"],
+    "Financial Services": ["Fidelity","Vanguard","Charles Schwab","Morgan Stanley","Merrill Lynch",
+                           "Wells Fargo","JP Morgan","Goldman Sachs","Edward Jones","TD Ameritrade"],
+    "Healthcare": ["Kaiser Permanente","Mayo Clinic","Cleveland Clinic","Johns Hopkins",
+                   "HCA Healthcare","Tenet Healthcare","Community Health Systems",
+                   "Banner Health","AdventHealth","Providence"],
+    "Fitness": ["Planet Fitness","24 Hour Fitness","LA Fitness","Gold's Gym","Anytime Fitness",
+                "YMCA","Curves","OrangeTheory","CrossFit","Barry's"],
+    "Pet Services": ["PetSmart","Petco","Banfield","Camp Bow Wow","Dogtopia","Healthy Paws",
+                     "Fetch!","Best Friends","Pet Suites","Woof Gang Bakery"]
 }
 
 # ─── Helper Functions ─────────────────────────────────────────────────────────
@@ -399,6 +461,21 @@ def generate_business_name(city, industry):
     
     if industry == "Landscaping" and random.random() < 0.3:
         return f"{prefix} {city} Landscaping"
+    
+    if industry == "Real Estate" and random.random() < 0.3:
+        return f"{prefix} {city} Realty"
+    
+    if industry == "Insurance" and random.random() < 0.3:
+        return f"{prefix} {city} Insurance"
+    
+    if industry == "Healthcare" and random.random() < 0.3:
+        return f"{city} {suffix}"
+    
+    if industry == "Fitness" and random.random() < 0.3:
+        return f"{prefix} {city} Fitness"
+    
+    if industry == "Pet Services" and random.random() < 0.3:
+        return f"{prefix} {city} Pet Care"
     
     if random.random() < 0.15:
         return f"{city} {suffix}"
@@ -611,8 +688,8 @@ def scale_database(target_k=25):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Scale Instaweb lead database")
-    parser.add_argument("--target", type=int, default=25, choices=[25, 50, 100],
-                        help="Target in thousands (25, 50, or 100)")
+    parser.add_argument("--target", type=int, default=100, choices=[25, 50, 100, 250, 500, 1000],
+                        help="Target in thousands (25, 50, 100, 250, 500, 1000)")
     args = parser.parse_args()
     
     scale_database(args.target)
