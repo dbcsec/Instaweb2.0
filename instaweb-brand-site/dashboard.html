@@ -1158,17 +1158,33 @@
       /* ===== LIVE AUTO-UPDATE ===== */
       async function fetchLiveStats() {
         try {
-          const resp = await fetch('/api/stats');
-          if (!resp.ok) throw new Error('API error');
+          const resp = await fetch('/api/stats?t='+Date.now());
+          if (!resp.ok) throw new Error('Stats not available');
           const data = await resp.json();
-          if (data.status === 'ok') {
-            const el = document.querySelector('.kpi-val');
-            if (el) el.textContent = Number(data.total_leads).toLocaleString();
+          if (data.total_leads) {
+            const els = document.querySelectorAll('.kpi-val');
+            if (els.length > 0) els[0].textContent = Number(data.total_leads).toLocaleString();
+            if (els.length > 1) els[1].textContent = Number(data.phone_verified).toLocaleString();
+            if (els.length > 2) els[2].textContent = Number(data.contacted).toLocaleString();
+            if (els.length > 3) els[3].textContent = Number(data.total_clients).toLocaleString();
             document.title = `Instaweb — ${Number(data.total_leads).toLocaleString()} leads`;
-            console.log(`📊 Live: ${data.total_leads} leads, ${data.phone_verified} verified`);
+          }
+          if (data.status_breakdown && document.getElementById('status-table-body')) {
+            const tbody = document.getElementById('status-table-body');
+            tbody.innerHTML = '';
+            data.status_breakdown.forEach(function(s) {
+              const row = document.createElement('tr');
+              const statusCell = document.createElement('td');
+              statusCell.textContent = s.status.charAt(0).toUpperCase() + s.status.slice(1);
+              const countCell = document.createElement('td');
+              countCell.textContent = Number(s.count).toLocaleString();
+              row.appendChild(statusCell);
+              row.appendChild(countCell);
+              tbody.appendChild(row);
+            });
           }
         } catch(e) {
-          console.log('Auto-update:', e.message);
+          /* stats will update on next cycle */
         }
       }
       fetchLiveStats();
