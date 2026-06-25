@@ -1,3 +1,13 @@
+// Helper: extract plain value from Turso typed cell
+function val(cell, fallback = 0) {
+  if (cell && typeof cell === 'object' && cell.value !== undefined) {
+    const v = cell.value;
+    if (cell.type === 'integer') return Number(v);
+    return v;
+  }
+  return cell ?? fallback;
+}
+
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 'no-cache');
@@ -20,14 +30,42 @@ module.exports = async (req, res) => {
     });
     const data = await resp.json();
     const r = data?.results || [];
+    
+    // Extract plain values from Turso typed cells
+    const total_leads = val(r[0]?.response?.result?.rows?.[0]?.[0]);
+    const total_clients = val(r[2]?.response?.result?.rows?.[0]?.[0]);
+    const phone_verified = val(r[3]?.response?.result?.rows?.[0]?.[0]);
+    
+    // Parse status breakdown (typed format)
+    const rawBreakdown = (r[1]?.response?.result?.rows || []);
+    const status_breakdown = rawBreakdown.map(x => ({
+      status: val(x[0], ''),
+      count: val(x[1])
+    }));
+    
+    // Extract contacted count for dashboard compatibility
+    const contacted = status_breakdown.find(s => s.status === 'contacted')?.count || 0;
+    const followed_up = status_breakdown.find(s => s.status === 'followed_up')?.count || 0;
+    
     res.status(200).json({
-      total_leads: r[0]?.response?.result?.rows?.[0]?.[0] ?? 0,
-      status_breakdown: (r[1]?.response?.result?.rows||[]).map(x=>({status:x[0],count:x[1]})),
-      total_clients: r[2]?.response?.result?.rows?.[0]?.[0] ?? 0,
-      phone_verified: r[3]?.response?.result?.rows?.[0]?.[0] ?? 0,
+      total_leads,
+      status_breakdown,
+      contacted,
+      followed_up,
+      total_clients,
+      phone_verified,
       timestamp: new Date().toISOString()
     });
   } catch(err) {
-    res.status(200).json({total_leads:0,total_clients:0,phone_verified:0,timestamp:new Date().toISOString(),error:err.message});
+    res.status(200).json({
+      total_leads: 0,
+      status_breakdown: [],
+      contacted: 0,
+      followed_up: 0,
+      total_clients: 0,
+      phone_verified: 0,
+      timestamp: new Date().toISOString(),
+      error: err.message
+    });
   }
 };
