@@ -23,6 +23,10 @@
     "api/stats.js": {
       "memory": 128,
       "maxDuration": 10
+    },
+    "api/dashboard-stats.js": {
+      "memory": 128,
+      "maxDuration": 10
     }
   }
 }

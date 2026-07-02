@@ -738,28 +738,28 @@
   <!-- ===== KPI ROW ===== -->
   <div class="kpi-row">
     <div class="kpi">
-      <div class="kpi-icon emerald"><i class="fas fa-chart-line"></i></div>
+      <div class="kpi-icon emerald"><i class="fas fa-users"></i></div>
+      <div class="kpi-label">Total Leads</div>
+      <div class="kpi-val" id="kpi-total-leads">0</div>
+      <div class="kpi-sub kpi-up"><i class="fas fa-arrow-up"></i> <span id="kpi-verified-count">0</span> verified</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-icon primary"><i class="fas fa-envelope"></i></div>
+      <div class="kpi-label">Emails Sent</div>
+      <div class="kpi-val" id="kpi-emails-sent">0</div>
+      <div class="kpi-sub kpi-neutral"><i class="fas fa-check-circle"></i> <span id="kpi-email-verified">0</span> email verified</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-icon amber"><i class="fas fa-chart-line"></i></div>
       <div class="kpi-label">Current MRR</div>
-      <div class="kpi-val">$0</div>
-      <div class="kpi-sub kpi-up"><i class="fas fa-arrow-up"></i> 0% this week</div>
+      <div class="kpi-val" id="kpi-mrr">$0</div>
+      <div class="kpi-sub kpi-up"><i class="fas fa-arrow-up"></i> <span id="kpi-clients-count">0</span> active clients</div>
     </div>
     <div class="kpi">
-      <div class="kpi-icon amber"><i class="fas fa-bullseye"></i></div>
-      <div class="kpi-label">MRR Target</div>
-      <div class="kpi-val">$5,000</div>
-      <div class="kpi-sub kpi-neutral"><i class="far fa-calendar"></i> by Month 2</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-icon primary"><i class="fas fa-rocket"></i></div>
-      <div class="kpi-label">Demos Sent</div>
-      <div class="kpi-val">2520</div>
-      <div class="kpi-sub kpi-up"><i class="fas fa-check-circle"></i> 5% conv. target</div>
-    </div>
-    <div class="kpi">
-      <div class="kpi-icon blue"><i class="fas fa-coins"></i></div>
-      <div class="kpi-label">Setup Revenue</div>
-      <div class="kpi-val">$0</div>
-      <div class="kpi-sub kpi-neutral">0 clients × $399</div>
+      <div class="kpi-icon blue"><i class="fas fa-exclamation-triangle"></i></div>
+      <div class="kpi-label">Bounced</div>
+      <div class="kpi-val" id="kpi-bounced">0</div>
+      <div class="kpi-sub kpi-neutral"><i class="far fa-clock"></i> last 24h</div>
     </div>
   </div>
 
@@ -1160,31 +1160,24 @@
       /* ===== LIVE AUTO-UPDATE ===== */
       async function fetchLiveStats() {
         try {
-          const resp = await fetch('/api/stats?t='+Date.now());
+          var resp = await fetch('/api/dashboard-stats?t='+Date.now());
           if (!resp.ok) throw new Error('Stats not available');
-          const data = await resp.json();
-          if (data.total_leads) {
-            const els = document.querySelectorAll('.kpi-val');
-            if (els.length > 0) els[0].textContent = Number(data.total_leads).toLocaleString();
-            if (els.length > 1) els[1].textContent = Number(data.phone_verified).toLocaleString();
-            if (els.length > 2) els[2].textContent = Number(data.contacted).toLocaleString();
-            if (els.length > 3) els[3].textContent = Number(data.total_clients).toLocaleString();
-            document.title = `Instaweb — ${Number(data.total_leads).toLocaleString()} leads`;
-          }
-          // Update status breakdown if there's a table for it
-          if (data.status_breakdown && document.getElementById('status-table-body')) {
-            const tbody = document.getElementById('status-table-body');
-            tbody.innerHTML = '';
-            data.status_breakdown.forEach(function(s) {
-              const row = document.createElement('tr');
-              const statusCell = document.createElement('td');
-              statusCell.textContent = s.status.charAt(0).toUpperCase() + s.status.slice(1);
-              const countCell = document.createElement('td');
-              countCell.textContent = Number(s.count).toLocaleString();
-              row.appendChild(statusCell);
-              row.appendChild(countCell);
-              tbody.appendChild(row);
-            });
+          var data = await resp.json();
+          var el = document.getElementById;
+          if (el('kpi-total-leads')) el('kpi-total-leads').textContent = Number(data.total_leads).toLocaleString();
+          if (el('kpi-verified-count')) el('kpi-verified-count').textContent = Number(data.verified_count).toLocaleString();
+          if (el('kpi-emails-sent')) el('kpi-emails-sent').textContent = Number(data.emails_sent).toLocaleString();
+          if (el('kpi-email-verified')) el('kpi-email-verified').textContent = Number(data.email_verified).toLocaleString();
+          if (el('kpi-mrr')) el('kpi-mrr').textContent = '$' + Number(data.mrr).toLocaleString(undefined, {minimumFractionDigits:2,maximumFractionDigits:2});
+          if (el('kpi-clients-count')) el('kpi-clients-count').textContent = Number(data.clients_count).toLocaleString();
+          if (el('kpi-bounced')) el('kpi-bounced').textContent = Number(data.bounced_count).toLocaleString();
+          document.title = 'Instaweb - ' + Number(data.total_leads).toLocaleString() + ' leads';
+          if (el('mrr-progress-fill')) {
+            var mrr = Number(data.mrr) || 0;
+            var target = 5000;
+            var pct = Math.min(100, (mrr / target) * 100);
+            el('mrr-progress-fill').style.width = pct + '%';
+            el('mrr-progress-fill').textContent = '$' + mrr.toLocaleString();
           }
         } catch(e) {
           /* stats will update on next cycle */
