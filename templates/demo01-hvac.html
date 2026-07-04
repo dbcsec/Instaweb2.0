@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precision Air Pro — Keeping Houston Comfortable — 24/7 Service</title>
+  <meta name="description" content="Precision Air Pro — Keeping Houston Comfortable — 24/7 Service. 15+ years of trusted service. Call (555) 111-2233 for AC Installation and more.">
+  <meta property="og:title" content="Precision Air Pro — Keeping Houston Comfortable — 24/7 Service">
+  <meta property="og:description" content="Premium service. Trusted since 15+ years. 200++ 5-star reviews.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://instaweb.agency/demos/precision-air-pro">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --primary: #4F46E5; --primary-light: #6366F1; --primary-dark: #3730A3;
+      --primary-glow: rgba(79,70,229,0.15); --secondary: #F59E0B; --secondary-glow: rgba(245,158,11,0.12);
+      --accent: #10B981; --accent-glow: rgba(16,185,129,0.12);
+      --bg: #0B0F19; --bg-card: #1A1F2E; --bg-card-hover: #1E2538;
+      --text: #F9FAFB; --text-muted: #9CA3AF; --text-dim: #6B7280;
+      --border: rgba(255,255,255,0.06); --radius: 16px; --radius-sm: 10px;
+      --font-display: 'Space Grotesk', sans-serif; --font-body: 'Inter', sans-serif;
+      --shadow: 0 4px 20px rgba(0,0,0,0.3); --shadow-glow: 0 0 40px rgba(79,70,229,0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+    a { color: var(--primary-light); text-decoration: none; }
+
+    /* ===== HERO ===== */
+    .hero { position: relative; min-height: 100vh; display: flex; align-items: center; padding: 40px 24px; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -30%; left: -20%; width: 80%; height: 80%; background: radial-gradient(ellipse, var(--primary-glow) 0%, transparent 70%); pointer-events: none; }
+    .hero::after { content: ''; position: absolute; bottom: -20%; right: -20%; width: 60%; height: 60%; background: radial-gradient(ellipse, var(--secondary-glow) 0%, transparent 70%); pointer-events: none; }
+    .hero-content { position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    @media (max-width: 900px) { .hero-content { grid-template-columns: 1fr; gap: 40px; } }
+
+    .hero-text h1 { font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+    .hero-text h1 span { background: linear-gradient(135deg, var(--primary-light), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-text p { font-size: 1.15rem; color: var(--text-muted); max-width: 500px; margin-bottom: 32px; line-height: 1.7; }
+    .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: #fff; border-radius: 50px; font-weight: 600; font-size: 1.05rem; transition: all 0.3s ease; border: none; cursor: pointer; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(79,70,229,0.3); }
+    .btn-secondary { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: transparent; color: var(--text); border: 1px solid var(--border); border-radius: 50px; font-weight: 500; transition: all 0.3s ease; }
+    .btn-secondary:hover { border-color: var(--primary); background: rgba(79,70,229,0.05); }
+
+    /* ===== SHOWCASE CARD ===== */
+    .showcase-card { background: var(--bg-card); border-radius: var(--radius); padding: 32px; border: 1px solid var(--border); box-shadow: var(--shadow); position: relative; overflow: hidden; }
+    .showcase-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--secondary)); }
+    .showcase-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .showcase-header h3 { font-family: var(--font-display); font-size: 1.2rem; }
+    .stars { color: var(--secondary); font-size: 0.9rem; letter-spacing: 2px; }
+    .rating-text { color: var(--text-muted); font-size: 0.85rem; margin-left: 4px; }
+
+    .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+    .service-item { display: flex; align-items: center; gap: 12px; padding: 14px; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); transition: all 0.3s ease; cursor: default; }
+    .service-item:hover { background: var(--bg-card-hover); transform: translateY(-2px); }
+    .service-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: var(--primary-glow); color: var(--primary-light); font-size: 1rem; flex-shrink: 0; }
+    .service-info .name { font-weight: 600; font-size: 0.9rem; }
+    .service-info .price { font-size: 0.8rem; color: var(--text-muted); }
+    .showcase-price { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--border); margin-top: 8px; }
+    .showcase-price .amount { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+    .showcase-price .label { color: var(--text-muted); font-size: 0.85rem; }
+    .showcase-price .tag { padding: 6px 14px; background: var(--accent-glow); color: var(--accent); border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+
+    /* ===== TRUST BAR ===== */
+    .trust-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); margin: 0 24px 60px; overflow: hidden; }
+    @media (max-width: 700px) { .trust-bar { grid-template-columns: repeat(2, 1fr); } }
+    .trust-item { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 24px 16px; text-align: center; border-right: 1px solid var(--border); }
+    .trust-item:last-child { border-right: none; }
+    .trust-item i { font-size: 1.4rem; color: var(--accent); }
+    .trust-item .label { font-weight: 600; font-size: 0.85rem; }
+    .trust-item .sub { font-size: 0.75rem; color: var(--text-muted); }
+
+    /* ===== SECTIONS ===== */
+    .section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; }
+    .section-title { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; text-align: center; margin-bottom: 12px; }
+    .section-sub { color: var(--text-muted); text-align: center; max-width: 600px; margin: 0 auto 50px; font-size: 1.05rem; }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    @media (max-width: 700px) { .about-grid { grid-template-columns: 1fr; } }
+    .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 30px; }
+    .stat-block { text-align: center; padding: 20px; background: var(--bg-card); border-radius: var(--radius-sm); border: 1px solid var(--border); }
+    .stat-number { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--primary-light); }
+    .stat-label { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
+
+    /* ===== REVIEWS ===== */
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .review-card { background: var(--bg-card); border-radius: var(--radius-sm); padding: 24px; border: 1px solid var(--border); }
+    .review-card .stars { margin-bottom: 10px; }
+    .review-card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
+    .review-card .author { font-weight: 600; font-size: 0.85rem; margin-top: 12px; color: var(--text); }
+
+    /* ===== STICKY CTA ===== */
+    .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; background: rgba(11,15,25,0.95); backdrop-filter: blur(20px); border-top: 1px solid var(--border); }
+    .sticky-cta .call-btn { display: flex; align-items: center; gap: 10px; padding: 14px 28px; background: linear-gradient(135deg, var(--accent), #059669); color: #fff; border-radius: 50px; font-weight: 600; font-size: 1.1rem; border: none; cursor: pointer; transition: all 0.3s ease; }
+    .sticky-cta .call-btn:hover { transform: scale(1.03); box-shadow: 0 4px 20px rgba(16,185,129,0.3); }
+    .sticky-price { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--text); }
+    .sticky-price span { color: var(--text-muted); font-weight: 400; font-size: 0.85rem; }
+
+    /* ===== FOOTER ===== */
+    .footer { text-align: center; padding: 40px 24px 100px; color: var(--text-dim); font-size: 0.85rem; border-top: 1px solid var(--border); }
+    .footer a { color: var(--primary-light); }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .animate { opacity: 0; }
+    .animate.visible { animation: fadeUp 0.6s ease forwards; }
+    .animate-delay-1 { animation-delay: 0.1s; }
+    .animate-delay-2 { animation-delay: 0.2s; }
+    .animate-delay-3 { animation-delay: 0.3s; }
+
+    @media (max-width: 480px) { .hero { padding: 24px 16px; } .section { padding: 50px 16px; } .services-grid { grid-template-columns: 1fr; } .sticky-cta { padding: 12px 16px; flex-direction: column; gap: 8px; } }
+  </style>
+</head>
+<body>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text animate visible">
+        <h1>Trusted <span>Precision Air Pro</span> — Keeping Houston Comfortable — 24/7 Service</h1>
+        <p>Family-owned and serving our community for <strong>15+ years</strong>. We bring premium quality, transparent pricing, and same-day service to every job.</p>
+        <div class="hero-cta">
+          <a href="tel:(555) 111-2233" class="btn-primary"><i class="fas fa-phone"></i> Call (555) 111-2233</a>
+          <a href="#services" class="btn-secondary"><i class="fas fa-arrow-down"></i> Our Services</a>
+        </div>
+      </div>
+      <div class="showcase-card animate visible animate-delay-1">
+        <div class="showcase-header">
+          <i class="fas fa-certificate" style="color:var(--primary-light); font-size:1.5rem;"></i>
+          <div>
+            <h3>Premium Service Package</h3>
+            <div class="stars">★★★★★ <span class="rating-text">{{rating}} (200+ reviews)</span></div>
+          </div>
+        </div>
+        <div class="services-grid">
+          {{#services}}
+          <div class="service-item">
+            <div class="service-icon"><i class="fas fa-{{icon}}"></i></div>
+            <div class="service-info"><div class="name">{{name}}</div><div class="price">{{price}}</div></div>
+          </div>
+          {{/services}}
+        </div>
+        <div class="showcase-price">
+          <div><div class="amount">Call for Pricing</div><div class="label">No hidden fees · Free estimates</div></div>
+          <span class="tag"><i class="fas fa-bolt"></i> Same Day</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <div class="trust-bar animate">
+    <div class="trust-item"><i class="fas fa-shield-halved"></i><div><div class="label">Licensed & Insured</div><div class="sub">Full coverage</div></div></div>
+    <div class="trust-item"><i class="fas fa-star"></i><div><div class="label">200++ 5-Star Reviews</div><div class="sub">{{rating}} average rating</div></div></div>
+    <div class="trust-item"><i class="fas fa-clock"></i><div><div class="label">Same-Day Service</div><div class="sub">When you need us</div></div></div>
+    <div class="trust-item"><i class="fas fa-file-invoice-dollar"></i><div><div class="label">Free Estimates</div><div class="sub">No obligation</div></div></div>
+  </div>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <h2 class="section-title">Why Choose Precision Air Pro?</h2>
+    <p class="section-sub">We've been serving Houston with pride for 15+ years. Quality work, fair prices, and a 100% satisfaction guarantee.</p>
+    <div class="about-grid">
+      <div>
+        <p style="color:var(--text-muted); line-height:1.8;">Every job starts with a conversation. We listen, assess, and provide honest recommendations — never upselling you on services you don't need. Our team is background-checked, trained, and equipped with the latest technology.</p>
+        <div class="about-stats">
+          <div class="stat-block"><div class="stat-number">15++</div><div class="stat-label">Years Experience</div></div>
+          <div class="stat-block"><div class="stat-number">200+</div><div class="stat-label">Happy Customers</div></div>
+          <div class="stat-block"><div class="stat-number">100%</div><div class="stat-label">Satisfaction</div></div>
+        </div>
+      </div>
+      <div style="background:var(--bg-card); border-radius:var(--radius); padding:32px; border:1px solid var(--border);">
+        <h3 style="font-family:var(--font-display); margin-bottom:16px;">Get Your Free Quote Today</h3>
+        <p style="color:var(--text-muted); margin-bottom:20px;">Call us or fill out our quick form. We'll respond within 30 minutes during business hours.</p>
+        <a href="tel:(555) 111-2233" class="btn-primary"><i class="fas fa-phone"></i> (555) 111-2233</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACCEPT & PAY ===== -->
+  <section class="section" style="text-align:center; padding-top:40px; padding-bottom:40px;">
+    <div style="background:var(--bg-card); border-radius:var(--radius); padding:32px; border:1px solid var(--border); max-width:600px; margin:0 auto;">
+      <i class="fas fa-lock" style="color:var(--accent); font-size:2rem; margin-bottom:12px;"></i>
+      <h3 style="font-family:var(--font-display); margin-bottom:8px;">Secure Payment</h3>
+      <p style="color:var(--text-muted); margin-bottom:16px;">We accept all major cards. Pay securely online.</p>
+      <a href="https://buy.stripe.com/28E5kD9Ee51244Q4T9djO03" class="btn-primary"><i class="fas fa-credit-card"></i> Pay $399 Setup</a>
+    </div>
+  </section>
+
+  <!-- ===== STICKY CTA ===== -->
+  <div class="sticky-cta">
+    <div class="sticky-price">$399 Setup <span>+ $248/mo</span></div>
+    <a href="tel:(555) 111-2233" class="call-btn"><i class="fas fa-phone"></i> Call (555) 111-2233</a>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <div class="footer">
+    <p><strong>Precision Air Pro</strong> · {{address}} · <a href="tel:(555) 111-2233">(555) 111-2233</a> · <a href="mailto:{{email}}">{{email}}</a></p>
+    <p style="margin-top:8px;">Powered by <a href="https://www.instaweb.agency">Instaweb Agency</a></p>
+  </div>
+
+  <script>
+    // Scroll animation observer
+    document.addEventListener('DOMContentLoaded', function() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>
