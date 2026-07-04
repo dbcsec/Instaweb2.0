@@ -179,6 +179,16 @@
       border: 1px solid var(--border-primary);
     }
 
+    .last-updated {
+      text-align: right;
+      font-size: 11px;
+      color: var(--text-tertiary);
+      padding: 4px 0 8px 0;
+      border-bottom: 1px solid var(--border-secondary);
+      margin-bottom: 12px;
+      font-family: var(--font-body);
+    }
+
     /* ===== KPI ROW ===== */
     .kpi-row {
       display: grid;
@@ -736,6 +746,9 @@
     </div>
   </div>
 
+  <!-- ===== LAST UPDATED ===== -->
+  <div class="last-updated" id="last-updated">Last Updated: loading...</div>
+
   <!-- ===== KPI ROW ===== -->
   <div class="kpi-row">
     <div class="kpi">
@@ -1173,6 +1186,11 @@
           if (el('kpi-clients-count')) el('kpi-clients-count').textContent = Number(data.clients_count).toLocaleString();
           if (el('kpi-bounced')) el('kpi-bounced').textContent = Number(data.bounced_count).toLocaleString();
           document.title = 'Instaweb - ' + Number(data.total_leads).toLocaleString() + ' leads';
+          if (el('last-updated') && data.timestamp) {
+            var d = new Date(data.timestamp);
+            var opts = { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZoneName: 'short' };
+            el('last-updated').textContent = 'Last Updated: ' + d.toLocaleDateString('en-US', opts);
+          }
           if (el('mrr-progress-fill')) {
             var mrr = Number(data.mrr) || 0;
             var target = 5000;
