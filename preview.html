@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instaweb Preview</title>
+<script>
+// Read URL params
+const params = new URLSearchParams(window.location.search);
+const biz = params.get('biz') || 'Your Business';
+const ind = params.get('ind') || 'HVAC';
+const city = params.get('city') || 'Your City';
+const phone = params.get('phone') || '(555) 000-0000';
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.title = biz + ' — Demo Preview';
+  document.getElementById('biz-name').textContent = biz;
+  document.getElementById('biz-name2').textContent = biz;
+  document.getElementById('biz-phone').textContent = phone;
+  document.getElementById('biz-phone-link').href = 'tel:' + phone.replace(/[^0-9]/g,'');
+  document.getElementById('biz-city').textContent = city;
+  document.getElementById('hero-tagline').textContent = 'Trusted ' + ind + ' Service in ' + city;
+  
+  const services = {
+    'HVAC': ['AC Installation', 'Heating Repair', 'Maintenance Plans', 'Emergency Service'],
+    'Plumbing': ['Drain Cleaning', 'Pipe Repair', 'Water Heaters', 'Emergency Plumbing'],
+    'Roofing': ['Roof Repair', 'New Roof Installation', 'Storm Damage Repair', 'Inspections'],
+    'Electrical': ['Wiring & Rewiring', 'Panel Upgrades', 'Lighting Installation', 'Emergency Electrical'],
+    'Restaurant': ['Fresh Menu', 'Catering', 'Private Events', 'Takeout & Delivery']
+  };
+  const svcs = services[ind] || services['HVAC'];
+  const items = document.querySelectorAll('.service-item');
+  items.forEach((el, i) => { if (svcs[i]) el.textContent = svcs[i]; });
+  
+  document.getElementById('demo-badge').textContent = 'Demo — ' + biz;
+});
+</script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+body { background: #f8fafc; color: #1e293b; }
+.top-bar { background: #1e293b; color: #94a3b8; text-align: center; padding: 8px; font-size: 13px; }
+.top-bar strong { color: white; }
+.hero { background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%); color: white; padding: 60px 20px; text-align: center; }
+.hero h1 { font-size: 42px; margin-bottom: 12px; }
+.hero p { font-size: 18px; color: #94a3b8; margin-bottom: 30px; }
+.hero .phone-big { font-size: 28px; font-weight: 700; color: #facc15; text-decoration: none; display: block; margin-top: 10px; }
+.cta-btn { display: inline-block; background: #facc15; color: #0f172a; padding: 14px 36px; border-radius: 8px; font-weight: 700; font-size: 16px; text-decoration: none; margin-top: 10px; }
+.section { max-width: 1000px; margin: 0 auto; padding: 50px 20px; }
+.section h2 { font-size: 28px; margin-bottom: 24px; text-align: center; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.service-item { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; text-align: center; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.about-box { background: white; border-radius: 12px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); line-height: 1.7; color: #475569; }
+footer { background: #0f172a; color: #94a3b8; text-align: center; padding: 20px; font-size: 13px; }
+.demo-notice { background: #fef3c7; color: #92400e; text-align: center; padding: 12px; font-weight: 600; font-size: 14px; }
+@media (max-width: 600px) { .hero h1 { font-size: 28px; } .hero .phone-big { font-size: 22px; } }
+</style>
+</head>
+<body>
+<div class="demo-notice" id="demo-badge">Demo Preview</div>
+<div class="top-bar"><strong id="biz-name">Your Business</strong> — Serving <span id="biz-city">Your City</span> & Surrounding Areas</div>
+
+<section class="hero">
+  <h1 id="biz-name2">Your Business</h1>
+  <p id="hero-tagline">Trusted HVAC Service in Your City</p>
+  <a class="phone-big" id="biz-phone-link" href="tel:5550000000"><span id="biz-phone">(555) 000-0000</span></a><br>
+  <a class="cta-btn" href="#">Get a Free Quote</a>
+</section>
+
+<div class="section">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-item">AC Installation</div>
+    <div class="service-item">Heating Repair</div>
+    <div class="service-item">Maintenance Plans</div>
+    <div class="service-item">Emergency Service</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>About <span id="biz-name3">Your Business</span></h2>
+  <div class="about-box">
+    <p>With over 15 years of experience serving <span id="biz-city2">Your City</span> and the surrounding communities, we're committed to providing reliable, high-quality service. Our team of certified professionals is available 24/7 for emergency service. We pride ourselves on honest pricing, same-day service, and 100% customer satisfaction — backed by hundreds of 5-star reviews from our neighbors.</p>
+  </div>
+</div>
+
+<footer>&copy; 2025 <span id="biz-name4">Your Business</span> — Powered by <strong>Instaweb Agency</strong></footer>
+<script>
+document.querySelectorAll('[id^="biz-name"]').forEach(el => el.textContent = biz);
+document.querySelectorAll('[id^="biz-city"]').forEach(el => el.textContent = city);
+</script>
+</body>
+</html>
