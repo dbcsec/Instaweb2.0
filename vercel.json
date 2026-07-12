@@ -10,6 +10,8 @@
     { "src": "/quick-fix", "dest": "/quick-fix.html" },
     { "src": "/data", "dest": "/data.html" },
     { "src": "/data/leads_stats.json", "dest": "/data/leads_stats.json" },
+    { "src": "/data/leads.json", "dest": "/data/leads.json" },
+    { "src": "/caller", "dest": "/caller.html" },
     { "src": "/demo/(.*)", "dest": "/data/demos/mass_output/$1.html" },
     { "src": "/preview", "dest": "/preview.html" },
     { "src": "/partners", "dest": "/agency-partners.html" },
