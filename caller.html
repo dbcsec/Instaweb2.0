@@ -66,7 +66,8 @@ body{background:#0f172a;color:#e2e8f0;padding-bottom:80px}
   <div class="pc"><div class="lbl">Basic (monthly)</div><div class="pr">$99</div><div class="inc">Hosting + Maintenance + Monthly Lead Report</div></div>
   <div class="pc"><div class="lbl">Growth (monthly)</div><div class="pr">$249</div><div class="inc">Basic + Lead Delivery + Priority Support</div></div>
   <div class="pc"><div class="lbl">Scale (monthly)</div><div class="pr">$499</div><div class="inc">Growth + AI Receptionist + GMB Optimization</div></div>
-  <a class="bpay" href="https://buy.stripe.com/28E5kD9Ee51244Q4T9djO03">Send Payment Link</a>
+  <a class="bpay" href="https://buy.stripe.com/28E5kD9Ee51244Q4T9djO03">💳 Open Payment Page</a>
+  <button class="bpay" style="background:#6366f1;margin-top:8px;border:none;cursor:pointer" onclick="shareLink()">📤 Send Payment Link to Customer</button>
 </div>
 <script>
 let D=[],C=JSON.parse(localStorage.getItem('called')||'{}');
@@ -110,6 +111,11 @@ function show(id,el){
   document.querySelectorAll('.pane').forEach(p=>p.classList.remove('on'));
   el.classList.add('on');
   document.getElementById(id).classList.add('on');
+}
+function shareLink(){
+  const url='https://buy.stripe.com/28E5kD9Ee51244Q4T9djO03';
+  if(navigator.share){navigator.share({title:'Instaweb Payment',text:'$399 activation, then $99/month. Live by Thursday.',url:url})}
+  else{navigator.clipboard.writeText(url).then(()=>alert('Link copied!'))}
 }
 const SCRIPTS=[
   {t:'🎯 Opener',b:'"Hi [name], this is [caller] from Instaweb. I sent you an email — your new website preview. Did you see it?"'},
