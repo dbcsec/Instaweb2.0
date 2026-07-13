@@ -8,6 +8,7 @@
     { "src": "/build-demo", "dest": "/build-demo.html" },
     { "src": "/outreach", "dest": "/outreach.html" },
     { "src": "/quick-fix", "dest": "/quick-fix.html" },
+    { "src": "/data/trisha_guide.pdf", "dest": "/data/trisha_guide.pdf" },
     { "src": "/data/leads_data.js", "dest": "/data/leads_data.js" },
     { "src": "/data/leads_stats.json", "dest": "/data/leads_stats.json" },
     { "src": "/data/leads.json", "dest": "/data/leads.json" },
