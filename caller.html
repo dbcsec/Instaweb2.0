@@ -72,18 +72,13 @@ body{background:#0f172a;color:#e2e8f0;padding-bottom:80px}
 <script>
 let D=[],C=JSON.parse(localStorage.getItem('called')||'{}');
 async function init(){
-  try{
-    let r=await fetch('/data/leads_stats.json');
-    let s=await r.json();
-    document.getElementById('st').textContent=s.total_leads||0;
-    document.getElementById('sp').textContent=s.phone_count||0;
-    document.getElementById('se').textContent=s.email_count||0;
-    document.getElementById('sc').textContent=Object.keys(C).length;
-  }catch(e){console.error('stats',e)}
-  try{
-    let r=await fetch('/data/leads.json');
-    D=await r.json();
-  }catch(e){console.error('leads',e)}
+  if(typeof STATS!=='undefined'){
+    document.getElementById('st').textContent=STATS.total||0;
+    document.getElementById('sp').textContent=STATS.phones||0;
+    document.getElementById('se').textContent=STATS.emails||0;
+  }
+  if(typeof LEADS!=='undefined'){D=LEADS;}
+  document.getElementById('sc').textContent=Object.keys(C).length;
   draw();
 }
 function draw(){
@@ -149,5 +144,6 @@ function ts(i){
 renderScript();
 init();
 </script>
+<script src="/data/leads_data.js"></script>
 </body>
 </html>
