@@ -13,7 +13,6 @@
     { "src": "/data/leads.json", "dest": "/data/leads.json" },
     { "src": "/data", "dest": "/data.html" },
     { "src": "/caller", "dest": "/caller.html" },
-    { "src": "/api/sync-calls", "dest": "/api/sync-calls.js" },
     { "src": "/demo/(.*)", "dest": "/data/demos/mass_output/$1.html" },
     { "src": "/preview", "dest": "/preview.html" },
     { "src": "/partners", "dest": "/agency-partners.html" },
