@@ -202,6 +202,8 @@ function saveDetail(){
   a.download='instaweb_call_log.json';
   a.click();
   URL.revokeObjectURL(a.href);
+  // Sync to server
+  fetch('/api/sync-calls',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(lines)}).catch(()=>{});
 }
 function closeDetail(){document.getElementById('detail').classList.remove('on');}
 function show(id,el){
