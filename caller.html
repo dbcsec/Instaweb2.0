@@ -186,6 +186,22 @@ function saveDetail(){
   localStorage.setItem('contacts',JSON.stringify(C));
   closeDetail();
   draw();
+  // Export to downloads
+  let parts=curId.split('|');
+  let lead=D.find(l=>(l.business_name||'')+(l.phone||'')===parts[0]+parts[1]);
+  let lines=[];
+  for(let id in C){
+    let co=C[id];
+    if(!co.status&&!co.notes&&!co.contact) continue;
+    let p=id.split('|');
+    lines.push({business:p[0],phone:p[1],contact:co.contact||'',email:co.email||'',status:co.status||'',notes:co.notes||'',time:new Date().toISOString()});
+  }
+  let blob=new Blob([JSON.stringify(lines,null,2)],{type:'application/json'});
+  let a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='instaweb_call_log.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
 }
 function closeDetail(){document.getElementById('detail').classList.remove('on');}
 function show(id,el){
