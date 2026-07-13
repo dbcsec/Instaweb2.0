@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instaweb Caller Pro — Leads + App</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,system-ui,sans-serif}
+body{background:#0f172a;color:#e2e8f0;min-height:100vh}
+.header{background:linear-gradient(135deg,#1e3a5f,#0f172a);padding:18px 20px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #1e293b}
+.logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;font-weight:700}
+.logo-text{font-size:20px;font-weight:700;letter-spacing:-1px}
+.logo-text span{background:linear-gradient(135deg,#f59e0b,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero{text-align:center;padding:60px 20px 40px;background:linear-gradient(180deg,#1e3a5f20,#0f172a)}
+.hero h1{font-size:36px;font-weight:800;line-height:1.2;margin-bottom:12px}
+.hero h1 span{background:linear-gradient(135deg,#f59e0b,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:18px;color:#94a3b8;max-width:600px;margin:0 auto 24px;line-height:1.6}
+.badge{display:inline-block;background:#1e293b;border:1px solid #334155;border-radius:20px;padding:6px 14px;font-size:12px;color:#facc15;margin-bottom:16px}
+.container{max-width:900px;margin:0 auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:40px 0}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+.card{background:#1e293b;border-radius:12px;padding:24px;border:1px solid #334155;text-align:center}
+.card .icon{font-size:32px;margin-bottom:10px}
+.card h3{font-size:16px;font-weight:700;margin-bottom:6px;color:#f1f5f9}
+.card p{font-size:13px;color:#64748b;line-height:1.5}
+.pricing{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:40px 0}
+@media(max-width:700px){.pricing{grid-template-columns:1fr}}
+.tier{background:#1e293b;border-radius:12px;padding:24px;border:1px solid #334155;position:relative}
+.tier.featured{border-color:#facc15;background:linear-gradient(135deg,#1e293b,#1a1f35)}
+.tier .name{font-size:14px;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:1px}
+.tier .price{font-size:42px;font-weight:800;color:#f1f5f9;margin:8px 0 4px}
+.tier .price span{font-size:16px;color:#64748b;font-weight:400}
+.tier .desc{font-size:13px;color:#64748b;margin-bottom:16px;line-height:1.5}
+.tier ul{list-style:none;font-size:14px;margin-bottom:20px}
+.tier ul li{padding:8px 0;border-bottom:1px solid #1e293b;display:flex;align-items:center;gap:8px}
+.tier ul li:last-child{border:0}
+.tier ul li::before{content:"✓";color:#22c55e;font-weight:700}
+.featured-badge{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:#facc15;color:#0f172a;font-size:11px;font-weight:700;padding:4px 12px;border-radius:10px;text-transform:uppercase;letter-spacing:1px}
+.btn{display:block;padding:14px;border-radius:10px;font-weight:700;font-size:15px;text-align:center;text-decoration:none;cursor:pointer;border:none;width:100%}
+.btn-primary{background:#facc15;color:#0f172a}
+.btn-outline{background:transparent;border:1px solid #334155;color:#e2e8f0}
+.features{margin:40px 0}
+.features h2{font-size:24px;font-weight:700;margin-bottom:20px;text-align:center}
+.feature-row{display:flex;gap:16px;padding:16px;background:#1e293b;border-radius:10px;margin-bottom:8px;align-items:center;border:1px solid #1e293b}
+.feature-row .emoji{font-size:24px;flex-shrink:0}
+.feature-row .text{flex:1}
+.feature-row .text h4{font-size:15px;font-weight:600;margin-bottom:2px}
+.feature-row .text p{font-size:13px;color:#64748b}
+.cta-section{text-align:center;padding:60px 20px;border-top:1px solid #1e293b;margin-top:40px}
+.cta-section h2{font-size:28px;font-weight:700;margin-bottom:8px}
+.cta-section p{color:#94a3b8;margin-bottom:24px;font-size:16px}
+.faq{margin:40px 0}
+.faq h2{font-size:24px;font-weight:700;margin-bottom:20px;text-align:center}
+.faq-item{padding:16px;border-bottom:1px solid #1e293b}
+.faq-item:last-child{border:0}
+.faq-item .q{font-weight:600;font-size:15px;margin-bottom:4px}
+.faq-item .a{font-size:14px;color:#64748b;line-height:1.6}
+.footer{text-align:center;padding:30px;font-size:13px;color:#475569;border-top:1px solid #1e293b;margin-top:40px}
+.footer a{color:#64748b;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="logo-mark">I</div>
+  <div class="logo-text">Insta<span>web</span></div>
+</div>
+
+<div class="hero">
+  <div class="badge">🔥 New — Lead List + Caller App</div>
+  <h1>500 verified leads. <span>Loaded & ready to call.</span></h1>
+  <p>Stop hunting for phone numbers. We deliver fresh, verified local business leads into a purpose-built caller app on your phone. Open, tap, dial.</p>
+  <a class="btn btn-primary" href="https://buy.stripe.com/00wcN503E512fNydpFdjO08" style="display:inline-block;padding:14px 40px;max-width:300px">Subscribe — $49/mo →</a>
+</div>
+
+<div class="container">
+  <div class="grid">
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>Purpose-built app</h3>
+      <p>Not a spreadsheet. A mobile-first caller app with one-tap dial, call tracking, script library, and status logging.</p>
+    </div>
+    <div class="card">
+      <div class="icon">✅</div>
+      <h3>Verified leads</h3>
+      <p>Every lead is pulled from Google Maps with real phone numbers. No bunk data. No fake contacts.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔄</div>
+      <h3>Fresh every month</h3>
+      <p>New leads loaded monthly. Work through your list, mark statuses, and get a fresh batch next month.</p>
+    </div>
+  </div>
+
+  <div class="pricing">
+    <div class="tier">
+      <div class="name">Starter</div>
+      <div class="price">$49<span>/mo</span></div>
+      <div class="desc">For solo operators testing the waters</div>
+      <ul>
+        <li>App access — all features</li>
+        <li>500 fresh leads / month</li>
+        <li>1 city, 1 industry</li>
+        <li>Call tracking & notes</li>
+        <li>Built-in calling script</li>
+      </ul>
+      <a class="btn btn-outline" href="https://buy.stripe.com/00wcN503E512fNydpFdjO08">Subscribe</a>
+    </div>
+    <div class="tier featured"><div class="featured-badge">Best Value</div>
+      <div class="name">Pro</div>
+      <div class="price">$99<span>/mo</span></div>
+      <div class="desc">For serious appointment setters</div>
+      <ul>
+        <li>App access — all features</li>
+        <li>1,500 fresh leads / month</li>
+        <li>Nationwide — all 5 industries</li>
+        <li>Phone + email leads</li>
+        <li>Priority lead refresh</li>
+        <li>Payment link sharing</li>
+      </ul>
+      <a class="btn btn-primary" href="https://buy.stripe.com/cNi9AT9EedxydFqclBdjO09">Subscribe</a>
+    </div>
+    <div class="tier">
+      <div class="name">White Label</div>
+      <div class="price">$199<span>/mo</span></div>
+      <div class="desc">For agencies & sales teams</div>
+      <ul>
+        <li>Everything in Pro</li>
+        <li>Rebrand as your own tool</li>
+        <li>Custom logo & colors</li>
+        <li>Multi-user support</li>
+        <li>Custom lead criteria</li>
+        <li>Priority support</li>
+      </ul>
+      <a class="btn btn-outline" href="mailto:hello@instaweb.agency">Contact →</a>
+    </div>
+  </div>
+
+  <div class="features">
+    <h2>What you get</h2>
+    <div class="feature-row">
+      <div class="emoji">📋</div>
+      <div class="text">
+        <h4>Lead queue — filtered & sortable</h4>
+        <p>Search by business name, city, industry. See who you've called and who's next.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="emoji">📞</div>
+      <div class="text">
+        <h4>One-tap dialing</h4>
+        <p>Tap any lead to call immediately. No copy-pasting phone numbers.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="emoji">✅</div>
+      <div class="text">
+        <h4>Call status tracking</h4>
+        <p>Mark leads as Called, Voicemail, Callback, or Not interested. Status badges on every card.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="emoji">📝</div>
+      <div class="text">
+        <h4>Notes & contact names</h4>
+        <p>Log who you spoke to, what they said, and any follow-up details.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="emoji">📄</div>
+      <div class="text">
+        <h4>Built-in calling script</h4>
+        <p>15 objection-handling rebuttals built right into the app. No memorizing.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="emoji">💰</div>
+      <div class="text">
+        <h4>Send payment links</h4>
+        <p>Share a Stripe payment link in one tap when a lead says yes.</p>
+      </div>
+    </div>
+    <div class="feature-row">
+      <div class="emoji">☁️</div>
+      <div class="text">
+        <h4>Auto-sync to cloud</h4>
+        <p>Every save syncs to the server. Your call log is backed up and accessible.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq">
+    <h2>FAQs</h2>
+    <div class="faq-item">
+      <div class="q">What industries are the leads in?</div>
+      <div class="a">HVAC, Plumbing, Roofing, Electrical, and Restaurant — the highest-spending local service businesses.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">Where do the leads come from?</div>
+      <div class="a">Google Maps. Every business is a real, operating local business with a verified phone number. No generated or fake contacts.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">How do I access the app?</div>
+      <div class="a">After subscribing, you get a link to the caller app. Open it on your phone — it's a PWA, no app store needed. Works on any smartphone.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">Can I export my call log?</div>
+      <div class="a">Yes. Every time you save, the app exports a JSON file to your phone and syncs to the cloud.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">Can I cancel anytime?</div>
+      <div class="a">Yes. Month-to-month. Cancel and keep your existing data.</div>
+    </div>
+    <div class="faq-item">
+      <div class="q">How are leads refreshed each month?</div>
+      <div class="a">We scrape fresh leads from Google Maps at the start of each billing cycle. You keep access to your previous months' data.</div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <h2>Ready to start calling?</h2>
+  <p>500 leads loaded into your phone in 5 minutes.</p>
+  <a class="btn btn-primary" href="https://buy.stripe.com/00wcN503E512fNydpFdjO08" style="display:inline-block;padding:14px 40px;max-width:300px">Subscribe — $49/mo →</a>
+</div>
+
+<div class="footer">
+  <p>Instaweb Agency — <a href="/">instaweb.agency</a></p>
+</div>
+</body>
+</html>
