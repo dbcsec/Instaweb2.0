@@ -3,118 +3,145 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
 <title>Instaweb — Caller</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
-body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#0f172a; color:#e2e8f0; padding:0 0 80px 0; }
-.header { background:linear-gradient(135deg,#1e3a5f,#0f172a); padding:16px; display:flex; align-items:center; gap:12px; position:sticky; top:0; z-index:100; border-bottom:1px solid #1e293b; }
-.logo-mark { width:36px;height:36px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;font-weight:700;flex-shrink:0; }
-.logo-text { font-size:20px;font-weight:700;letter-spacing:-1px; }
-.logo-text span { background:linear-gradient(135deg,#f59e0b,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
-.header-right { margin-left:auto; font-size:12px; color:#94a3b8; }
-.stats-bar { display:flex; gap:4px; padding:8px 12px; background:#1e293b; font-size:11px; color:#94a3b8; }
-.stat { flex:1; text-align:center; }
-.stat strong { display:block; font-size:16px; color:#facc15; }
-.tabs { display:flex; background:#1e293b; border-bottom:1px solid #334155; position:sticky; top:60px; z-index:99; }
-.tab { flex:1; padding:12px; text-align:center; font-size:13px; font-weight:600; color:#64748b; cursor:pointer; border-bottom:2px solid transparent; }
-.tab.active { color:#facc15; border-bottom-color:#facc15; }
-.tab-content { display:none; padding:12px; }
-.tab-content.active { display:block; }
-.lead-card { background:#1e293b; border-radius:10px; padding:12px; margin-bottom:8px; border-left:3px solid #334155; position:relative; }
-.lead-card .name { font-size:15px;font-weight:600;color:#f1f5f9; }
-.lead-card .info { font-size:12px;color:#94a3b8;margin-top:4px; }
-.lead-card .actions { display:flex;gap:8px;margin-top:8px; }
-.btn-call { flex:1;padding:10px;background:#22c55e;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;text-align:center;text-decoration:none; }
-.btn-email { flex:1;padding:10px;background:#6366f1;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;text-align:center;text-decoration:none; }
-.btn-done { padding:8px 16px;background:#334155;color:#94a3b8;border:none;border-radius:6px;font-size:12px;cursor:pointer;position:absolute;top:12px;right:12px; }
-.lead-card.done { opacity:0.5; border-left-color:#22c55e; }
-.lead-card.done .btn-done { background:#22c55e; color:#fff; }
-.script-section { margin-bottom:12px; }
-.script-header { background:#1e293b; padding:12px; border-radius:10px; display:flex; justify-content:space-between; align-items:center; cursor:pointer; font-weight:600; font-size:14px; }
-.script-header .arrow { transition:transform 0.2s; color:#64748b; }
-.script-header.open .arrow { transform:rotate(180deg); }
-.script-body { display:none; background:#0f172a; padding:12px; border-radius:0 0 10px 10px; border:1px solid #1e293b; border-top:0; font-size:13px; line-height:1.6; color:#cbd5e1; white-space:pre-wrap; }
-.script-body.open { display:block; }
-.search-box { width:100%;padding:10px 12px;background:#1e293b;border:1px solid #334155;border-radius:8px;color:#e2e8f0;font-size:14px;margin-bottom:12px;outline:none; }
-.search-box:focus { border-color:#6366f1; }
-.pricing-card { background:linear-gradient(135deg,#1e293b,#0f172a);border:1px solid #334155;border-radius:10px;padding:16px;margin-bottom:8px; }
-.pricing-card .price { font-size:28px;font-weight:700;color:#facc15; }
-.pricing-card .label { font-size:12px;color:#94a3b8; }
-.pricing-card .includes { font-size:12px;color:#64748b;margin-top:6px; }
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,system-ui,sans-serif}
+body{background:#0f172a;color:#e2e8f0;padding-bottom:80px}
+.header{background:linear-gradient(135deg,#1e3a5f,#0f172a);padding:16px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:100}
+.logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;font-weight:700}
+.logo-text{font-size:20px;font-weight:700;letter-spacing:-1px}
+.logo-text span{background:linear-gradient(135deg,#f59e0b,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stats{display:flex;gap:2px;padding:8px;background:#1e293b;font-size:11px;color:#94a3b8}
+.stat{flex:1;text-align:center}
+.stat b{display:block;font-size:18px;color:#facc15}
+.tabs{display:flex;background:#1e293b;position:sticky;top:60px;z-index:99;border-bottom:1px solid #334155}
+.tab{flex:1;padding:12px;text-align:center;font-size:13px;font-weight:600;color:#64748b;cursor:pointer;border-bottom:2px solid transparent}
+.tab.on{color:#facc15;border-bottom-color:#facc15}
+.pane{display:none;padding:10px}
+.pane.on{display:block}
+.card{background:#1e293b;border-radius:10px;padding:12px;margin-bottom:8px;border-left:3px solid #334155}
+.card .n{font-size:15px;font-weight:600;color:#f1f5f9}
+.card .i{font-size:12px;color:#94a3b8;margin-top:4px}
+.card .a{display:flex;gap:8px;margin-top:8px}
+.call{flex:1;padding:10px;background:#22c55e;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;text-align:center;text-decoration:none;display:block}
+.mail{flex:1;padding:10px;background:#6366f1;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;text-align:center;text-decoration:none;display:block}
+.srch{width:100%;padding:10px;background:#1e293b;border:1px solid #334155;border-radius:8px;color:#e2e8f0;font-size:14px;margin-bottom:10px;outline:none}
+.srch:focus{border-color:#6366f1}
+.sb{background:#1e293b;padding:12px;border-radius:10px;margin-bottom:8px;cursor:pointer;font-weight:600;font-size:14px;display:flex;justify-content:space-between;align-items:center}
+.sb .ar{transition:transform .2s;color:#64748b}
+.sb.on .ar{transform:rotate(180deg)}
+.sbd{display:none;background:#0f172a;padding:12px;border-radius:0 0 10px 10px;border:1px solid #1e293b;border-top:0;font-size:13px;line-height:1.6;color:#cbd5e1;white-space:pre-wrap}
+.sbd.on{display:block}
+.pc{background:linear-gradient(135deg,#1e293b,#0f172a);border:1px solid #334155;border-radius:10px;padding:16px;margin-bottom:8px}
+.pc .pr{font-size:28px;font-weight:700;color:#facc15}
+.pc .lbl{font-size:12px;color:#94a3b8}
+.pc .inc{font-size:12px;color:#64748b;margin-top:6px}
+.bpay{display:block;padding:14px;background:#facc15;color:#0f172a;border-radius:10px;font-weight:700;font-size:16px;text-align:center;text-decoration:none;margin-top:16px}
 </style>
 </head>
 <body>
 <div class="header">
   <div class="logo-mark">I</div>
   <div class="logo-text">Insta<span>web</span></div>
-  <div class="header-right">Caller App</div>
+  <div style="margin-left:auto;font-size:12px;color:#94a3b8">Caller App</div>
 </div>
-<div class="stats-bar" id="statsBar">
-  <div class="stat"><strong id="stat-total">0</strong>Leads</div>
-  <div class="stat"><strong id="stat-phones">0</strong>Phones</div>
-  <div class="stat"><strong id="stat-emails">0</strong>Emails</div>
-  <div class="stat"><strong id="stat-called">0</strong>Called</div>
+<div class="stats" id="stats">
+  <div class="stat"><b id="st">0</b>Leads</div>
+  <div class="stat"><b id="sp">0</b>Phones</div>
+  <div class="stat"><b id="se">0</b>Emails</div>
+  <div class="stat"><b id="sc">0</b>Called</div>
 </div>
 <div class="tabs">
-  <div class="tab active" onclick="switchTab('leads',this)">📞 Leads</div>
-  <div class="tab" onclick="switchTab('script',this)">📄 Script</div>
-  <div class="tab" onclick="switchTab('pricing',this)">💵 Pricing</div>
+  <div class="tab on" onclick="show('leads',this)">📞 Leads</div>
+  <div class="tab" onclick="show('script',this)">📄 Script</div>
+  <div class="tab" onclick="show('pricing',this)">💵 Pricing</div>
 </div>
-<div id="tab-leads" class="tab-content active">
-  <input class="search-box" id="searchBox" placeholder="Search name, city, industry..." oninput="filterLeads()">
-  <div id="leadList"></div>
+<div id="leads" class="pane on">
+  <input class="srch" id="q" placeholder="Search..." oninput="draw()">
+  <div id="l"></div>
 </div>
-<div id="tab-script" class="tab-content" id="scriptContent"></div>
-<div id="tab-pricing" class="tab-content">
-  <div class="pricing-card"><div class="label">Activation (one-time)</div><div class="price">$399</div><div class="includes">Normally $2,500 — Market entry rate</div></div>
-  <div class="pricing-card"><div class="label">Basic (monthly)</div><div class="price">$99</div><div class="includes">Hosting + Maintenance + Monthly Lead Report</div></div>
-  <div class="pricing-card"><div class="label">Growth (monthly)</div><div class="price">$249</div><div class="includes">Basic + Lead Delivery + Priority Support</div></div>
-  <div class="pricing-card"><div class="label">Scale (monthly)</div><div class="price">$499</div><div class="includes">Growth + AI Receptionist + GMB Optimization</div></div>
-  <div style="margin-top:16px;text-align:center">
-    <a href="https://buy.stripe.com/28E5kD9Ee51244Q4T9djO03" target="_blank" style="display:block;padding:14px;background:#facc15;color:#0f172a;border-radius:10px;font-weight:700;font-size:16px;text-decoration:none;">Send Payment Link</a>
-  </div>
+<div id="script" class="pane"></div>
+<div id="pricing" class="pane">
+  <div class="pc"><div class="lbl">Activation (one-time)</div><div class="pr">$399</div><div class="inc">Normally $2,500 — Market entry rate</div></div>
+  <div class="pc"><div class="lbl">Basic (monthly)</div><div class="pr">$99</div><div class="inc">Hosting + Maintenance + Monthly Lead Report</div></div>
+  <div class="pc"><div class="lbl">Growth (monthly)</div><div class="pr">$249</div><div class="inc">Basic + Lead Delivery + Priority Support</div></div>
+  <div class="pc"><div class="lbl">Scale (monthly)</div><div class="pr">$499</div><div class="inc">Growth + AI Receptionist + GMB Optimization</div></div>
+  <a class="bpay" href="https://buy.stripe.com/28E5kD9Ee51244Q4T9djO03">Send Payment Link</a>
 </div>
 <script>
-let leads=[]; let called=JSON.parse(localStorage.getItem('called')||'{}');
-async function loadLeads(){ try{
-  const r=await fetch('https://instaweb.agency/data/leads_stats.json'); const s=await r.json();
-  document.getElementById('stat-total').textContent=s.total_leads||0;
-  document.getElementById('stat-phones').textContent=s.phone_count||0;
-  document.getElementById('stat-emails').textContent=s.email_count||0;
-  document.getElementById('stat-called').textContent=Object.keys(called).length;
-}catch(e){} try{
-  const r=await fetch('https://instaweb.agency/data/leads.json'); leads=await r.json();
-}catch(e){} renderLeads(); }
-loadLeads();
-function renderLeads(){ const list=document.getElementById('leadList'); const q=document.getElementById('searchBox').value.toLowerCase();
-  const f=leads.filter(l=>!q||(l.business_name||'').toLowerCase().includes(q)||(l.city||'').toLowerCase().includes(q)||(l.industry||'').toLowerCase().includes(q));
-  list.innerHTML=f.map(l=>{ const id=(l.business_name||'')+(l.phone||''); const d=called[id];
-    return '<div class="lead-card'+(d?' done':'')+'"><button class="btn-done" onclick="toggleDone(\''+id.replace(/'/g,"\\'")+'\')">'+(d?'✓':'Mark')+'</button><div class="name">'+(l.business_name||'?')+'</div><div class="info">'+(l.phone||'')+' '+(l.city||'')+' '+(l.state||'')+' • '+(l.industry||'')+'</div><div class="actions"><a class="btn-call" href="tel:'+(l.phone||'')+'">📞 Call</a>'+(l.email?'<a class="btn-email" href="mailto:'+l.email+'">✉️ Email</a>':'')+'</div></div>';
-  }).join(''); document.getElementById('stat-called').textContent=Object.keys(called).length; }
-function filterLeads(){renderLeads();}
-function toggleDone(id){called[id]=!called[id];localStorage.setItem('called',JSON.stringify(called));renderLeads();}
-function switchTab(n,el){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));el.classList.add('active');document.getElementById('tab-'+n).classList.add('active');}
-const scriptData=[
-{title:'🎯 Opener',body:'"Hi [name], this is [caller name] from Instaweb Agency. I sent you an email earlier — your new website preview. Did you get a chance to look at it?"'},
-{title:'👍 If YES',body:'"Awesome. What did you think? I already mapped out where your logo and photos go — I can have it fully customized and live by Thursday. Your activation is $399, then $99/month. Want me to flip it on?"'},
-{title:'👎 If NO',body:'"No problem — I\\'ll send it again. Quick version: we built a mobile-optimized website that generates leads while you\\'re on job sites. Normally $2,500+, market entry special — $399 to activate, then $99/month."'},
-{title:'💬 "I have a website"',body:'"Most clients had one too — but it wasn\\'t generating leads 24/7. We built yours to capture calls and form submissions. Want me to show you the difference?"'},
-{title:'💰 "Too expensive"',body:'"$399 is less than one ad click. $99/month includes hosting, maintenance, and a monthly lead report. Most clients see a return in the first week."'},
-{title:'🤔 "Need to think"',body:'"I have a slot open Thursday at 10 AM to get this live. If I don\\'t hear from you by then, I\\'ll release it. That work for you?"'},
-{title:'⏰ "I\\'m too busy"',body:'"That\\'s exactly why we built this. While you\\'re working, your website captures leads automatically. You don\\'t have to do anything."'},
-{title:'📈 "Booked solid"',body:'"Good problem. But what about slow months? A lead-generating site means you\\'re never scrambling for work. Insurance for your revenue."'},
-{title:'👨 "Nephew does it"',body:'"Family isn\\'t in the business of generating leads. We build sites that convert for trades. Does your nephew send you a monthly lead report?"'},
-{title:'🏗️ "What about Wix?"',body:'"DIY builders. We design, build, host, and maintain a conversion site for your trade. Done-for-you with a monthly lead report."'},
-{title:'📧 "Send me something"',body:'"Already sent the preview link — check your email. It\\'s a live demo. What specifically would you like to see?"'},
-{title:'🔥 "Got burned before"',body:'"No long contract. Month-to-month. If we don\\'t deliver leads, you cancel. Simple."'},
-{title:'✂️ "Beat this price?"',body:'"This is our market-entry rate — normally $2,500. The price is the price."'},
-{title:'👫 "Talk to partner"',body:'"What concerns will they have? $399 or $99/mo? The monthly pays for itself after one lead. Good time to call you both?"'},
-{title:'✅ Close',body:'"Great — I\\'ll send the payment link. $399 activation, then $99/month. Live by Thursday."'},
+let D=[],C=JSON.parse(localStorage.getItem('called')||'{}');
+async function init(){
+  try{
+    let r=await fetch('https://instaweb.agency/data/leads_stats.json');
+    let s=await r.json();
+    document.getElementById('st').textContent=s.total_leads||0;
+    document.getElementById('sp').textContent=s.phone_count||0;
+    document.getElementById('se').textContent=s.email_count||0;
+    document.getElementById('sc').textContent=Object.keys(C).length;
+  }catch(e){console.error('stats',e)}
+  try{
+    let r=await fetch('https://instaweb.agency/data/leads.json');
+    D=await r.json();
+  }catch(e){console.error('leads',e)}
+  draw();
+}
+function draw(){
+  let q=document.getElementById('q').value.toLowerCase();
+  let f=D.filter(l=>!q||(l.business_name||'').toLowerCase().includes(q)||(l.city||'').toLowerCase().includes(q)||(l.industry||'').toLowerCase().includes(q)||(l.phone||'').includes(q));
+  let h='';
+  for(let l of f){
+    let id=(l.business_name||'')+(l.phone||'');
+    let d=C[id];
+    h+='<div class="card'+(d?' style="opacity:0.5"':'')+'">';
+    h+='<div style="float:right"><button onclick="tk(\''+id.replace(/'/g,"\\'")+'\')" style="padding:6px 12px;background:'+(d?'#22c55e':'#334155')+';color:#fff;border:none;border-radius:6px;font-size:11px;cursor:pointer">'+(d?'✓':'Mark')+'</button></div>';
+    h+='<div class="n">'+(l.business_name||'')+'</div>';
+    h+='<div class="i">'+(l.phone||'')+' '+(l.city||'')+' '+(l.state||'')+' • '+(l.industry||'')+'</div>';
+    h+='<div class="a">';
+    if(l.phone) h+='<a class="call" href="tel:'+l.phone+'">📞 Call</a>';
+    if(l.email) h+='<a class="mail" href="mailto:'+l.email+'">✉️ Email</a>';
+    h+='</div></div>';
+  }
+  document.getElementById('l').innerHTML=h||'<div style="text-align:center;padding:40px;color:#64748b">No leads found</div>';
+  document.getElementById('sc').textContent=Object.keys(C).length;
+}
+function tk(id){C[id]=!C[id];localStorage.setItem('called',JSON.stringify(C));draw();}
+function show(id,el){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  document.querySelectorAll('.pane').forEach(p=>p.classList.remove('on'));
+  el.classList.add('on');
+  document.getElementById(id).classList.add('on');
+}
+const SCRIPTS=[
+  {t:'🎯 Opener',b:'"Hi [name], this is [caller] from Instaweb. I sent you an email — your new website preview. Did you see it?"'},
+  {t:'👍 If YES',b:'"What did you think? I mapped out your logo and photos. I can have it live by Thursday. $399 activation, $99/month. Want me to flip it on?"'},
+  {t:'👎 If NO',b:'"No problem — quick version: we built a mobile-optimized site for your business that generates leads while you\'re on job sites. Normally $2,500+, but market entry — $399 to activate, then $99/month."'},
+  {t:'💬 "I have a website"',b:'"Most clients had one too — but it wasn\'t generating leads 24/7. We built yours to capture calls and form submissions. Want me to show you?"'},
+  {t:'💰 "Too expensive"',b:'"$399 is less than one ad click. $99/month includes hosting, maintenance, and a monthly lead report. Most clients see ROI in the first week."'},
+  {t:'🤔 "Need to think"',b:'"I have a slot open Thursday at 10 AM. If I don\'t hear from you by then, I\'ll release it to the next business. That work?"'},
+  {t:'⏰ "Too busy"',b:'"Exactly why we built this. While you\'re working, your site captures leads automatically. You don\'t have to do anything."'},
+  {t:'📈 "Booked solid"',b:'"Good problem. But what about slow months? A lead-generating site means you\'re never scrambling. Insurance for your revenue."'},
+  {t:'👨 "Nephew does it"',b:'"Family isn\'t in the lead-gen business. We build sites that convert for trades. Does your nephew send you a monthly lead report?"'},
+  {t:'🏗️ "What about Wix?"',b:'"DIY builders. We design, build, host, and maintain a conversion site for your trade. Done-for-you with a monthly report."'},
+  {t:'📧 "Send me something"',b:'"Already sent the preview link — check your email. It\'s a live demo. What specifically would you like to see?"'},
+  {t:'🔥 "Got burned"',b:'"No long contract. Month-to-month. If we don\'t deliver leads, you cancel. Simple."'},
+  {t:'✂️ "Beat price?"',b:'"This is our market-entry rate — normally $2,500. Price is the price."'},
+  {t:'👫 "Talk to partner"',b:'"What concerns will they have? The $399 or $99/mo? The monthly pays for itself after one lead. Want me to call you both?"'},
+  {t:'✅ Close',b:'"Great — I\'ll send the payment link. $399 activation, then $99/month. Live by Thursday."'}
 ];
-function renderScript(){const c=document.getElementById('scriptContent');c.innerHTML=scriptData.map((s,i)=>'<div class="script-section"><div class="script-header" onclick="toggleScript('+i+')">'+s.title+' <span class="arrow">▼</span></div><div class="script-body" id="script-'+i+'">'+s.body+'</div></div>').join('');}
-renderScript(); function toggleScript(i){document.querySelectorAll('.script-header')[i].classList.toggle('open');document.getElementById('script-'+i).classList.toggle('open');}
+function renderScript(){
+  let h='';
+  for(let i=0;i<SCRIPTS.length;i++){
+    h+='<div class="sb" onclick="ts('+i+')"><span>'+SCRIPTS[i].t+'</span><span class="ar">▼</span></div>';
+    h+='<div class="sbd" id="s'+i+'">'+SCRIPTS[i].b+'</div>';
+  }
+  document.getElementById('script').innerHTML=h;
+}
+function ts(i){
+  document.querySelectorAll('.sb')[i].classList.toggle('on');
+  document.getElementById('s'+i).classList.toggle('on');
+}
+renderScript();
+init();
 </script>
 </body>
 </html>
