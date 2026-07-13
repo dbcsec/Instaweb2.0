@@ -73,7 +73,7 @@ body{background:#0f172a;color:#e2e8f0;padding-bottom:80px}
 let D=[],C=JSON.parse(localStorage.getItem('called')||'{}');
 async function init(){
   try{
-    let r=await fetch('https://instaweb.agency/data/leads_stats.json');
+    let r=await fetch('/data/leads_stats.json');
     let s=await r.json();
     document.getElementById('st').textContent=s.total_leads||0;
     document.getElementById('sp').textContent=s.phone_count||0;
@@ -81,7 +81,7 @@ async function init(){
     document.getElementById('sc').textContent=Object.keys(C).length;
   }catch(e){console.error('stats',e)}
   try{
-    let r=await fetch('https://instaweb.agency/data/leads.json');
+    let r=await fetch('/data/leads.json');
     D=await r.json();
   }catch(e){console.error('leads',e)}
   draw();
