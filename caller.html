@@ -29,9 +29,14 @@ body{background:#0f172a;color:#e2e8f0;padding-bottom:80px}
 .badge-callback{background:#6366f1;color:#fff}
 .badge-no{background:#ef4444;color:#fff}
 .badge-other{background:#64748b;color:#fff}
+.badge-emailed{background:#6366f1;color:#fff}
+.badge-cold{background:#475569;color:#94a3b8}
+.card-cold{border-left-color:#475569}
+.card-warm{border-left-color:#6366f1}
 .card .a{display:flex;gap:8px;margin-top:8px}
 .call{flex:1;padding:10px;background:#22c55e;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;text-align:center;text-decoration:none;display:block}
 .mail{flex:1;padding:10px;background:#6366f1;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;text-align:center;text-decoration:none;display:block}
+.preview{flex:1;padding:10px;background:#0f172a;color:#facc15;border:1px solid #334155;border-radius:8px;font-size:14px;font-weight:600;text-align:center;text-decoration:none;display:block}
 .srch{width:100%;padding:10px;background:#1e293b;border:1px solid #334155;border-radius:8px;color:#e2e8f0;font-size:14px;margin-bottom:10px;outline:none}
 .srch:focus{border-color:#6366f1}
 /* Detail view */
@@ -71,6 +76,7 @@ body{background:#0f172a;color:#e2e8f0;padding-bottom:80px}
   <div class="stat"><b id="sp">0</b>Phones</div>
   <div class="stat"><b id="se">0</b>Emails</div>
   <div class="stat"><b id="sc">0</b>Called</div>
+  <div class="stat"><b id="semail">0</b>📧 Sent</div>
 </div>
 <div class="tabs">
   <div class="tab on" onclick="show('leads',this)">📞 Leads</div>
@@ -105,6 +111,10 @@ body{background:#0f172a;color:#e2e8f0;padding-bottom:80px}
     <button onclick="closeDetail()" style="background:#334155;color:#94a3b8;border:none;border-radius:6px;padding:8px 12px;font-size:13px;cursor:pointer">✕</button>
   </div>
   <a class="btn-call-detail" id="det-call" href="">📞 Call Now</a>
+  <div style="display:flex;gap:8px;margin-top:8px">
+    <a class="btn-preview-detail" id="det-preview" href="" target="_blank" style="flex:1;padding:12px;background:#0f172a;color:#facc15;border:1px solid #334155;border-radius:8px;font-size:14px;font-weight:600;text-align:center;text-decoration:none;display:block">👁️ Preview Site</a>
+    <span id="det-emailstatus" style="flex:1;padding:12px;border-radius:8px;font-size:13px;font-weight:600;text-align:center;display:block"></span>
+  </div>
   <label>Contact Name</label>
   <input id="det-contact" placeholder="Who you spoke to">
   <label>Email</label>
@@ -134,6 +144,7 @@ function init(){
     document.getElementById('st').textContent=STATS.total||0;
     document.getElementById('sp').textContent=STATS.phones||0;
     document.getElementById('se').textContent=STATS.emails||0;
+    document.getElementById('semail').textContent=STATS.emailed||0;
   }
   if(typeof LEADS!=='undefined'){D=LEADS;}
   updateStats();draw();
@@ -150,17 +161,20 @@ function draw(){
     let id=(l.business_name||'')+'|'+(l.phone||'');
     let c=C[id]||{};
     let badges='';
+    if(l.emailed) badges+='<span class="badge badge-emailed">📧 Emailed</span>';
+    else badges+='<span class="badge badge-cold">❄️ Cold</span>';
     if(c.status==='called') badges+='<span class="badge badge-called">✅ Called</span>';
     else if(c.status==='voicemail') badges+='<span class="badge badge-voicemail">📞 Voicemail</span>';
     else if(c.status==='callback') badges+='<span class="badge badge-callback">🔄 Callback</span>';
     else if(c.status==='no') badges+='<span class="badge badge-no">❌ No</span>';
     else if(c.status==='other') badges+='<span class="badge badge-other">📋 Other</span>';
-    h+='<div class="card" onclick="openDetail(\''+id.replace(/'/g,"\\'")+'\')">';
+    h+='<div class="card'+(l.emailed?' card-warm':' card-cold')+'" onclick="openDetail(\''+id.replace(/'/g,"\\'")+'\')">';
     h+='<div class="n">'+(l.business_name||'')+(c.contact?' <span style="color:#94a3b8;font-weight:400">→ '+c.contact+'</span>':'')+'</div>';
     h+='<div class="i">'+(l.phone||'')+' '+(l.city||'')+' '+(l.state||'')+' • '+(l.industry||'')+'</div>';
     if(badges) h+='<div class="s">'+badges+'</div>';
     h+='<div class="a"><a class="call" href="tel:'+(l.phone||'')+'" onclick="event.stopPropagation()">📞 Call</a>';
     if(l.email) h+='<a class="mail" href="mailto:'+l.email+'" onclick="event.stopPropagation()">✉️ Email</a>';
+    if(l.demo_url) h+='<a class="preview" href="'+l.demo_url+'" target="_blank" onclick="event.stopPropagation()">👁️ Preview</a>';
     h+='</div></div>';
   }
   document.getElementById('l').innerHTML=h||'<div style="text-align:center;padding:40px;color:#64748b">No leads found</div>';
@@ -175,6 +189,10 @@ function openDetail(id){
   document.getElementById('det-name').textContent=lead.business_name||'';
   document.getElementById('det-sub').textContent=(lead.phone||'')+' '+(lead.city||'')+' '+(lead.state||'')+' • '+(lead.industry||'');
   document.getElementById('det-call').href='tel:'+(lead.phone||'');
+  document.getElementById('det-preview').href=lead.demo_url||'#';
+  let es=document.getElementById('det-emailstatus');
+  if(lead.emailed){es.textContent='📧 Emailed';es.style.background='rgba(99,102,241,0.15)';es.style.color='#6366f1';}
+  else{es.textContent='❄️ Cold';es.style.background='rgba(71,85,105,0.2)';es.style.color='#94a3b8';}
   document.getElementById('det-contact').value=c.contact||'';
   document.getElementById('det-email').value=c.email||lead.email||'';
   document.getElementById('det-status').value=c.status||'';
