@@ -1,0 +1,171 @@
+{
+  "facebook_groups": [
+    {
+      "name": "HVAC Hackers",
+      "url": "https://www.facebook.com/groups/hvachackers/"
+    },
+    {
+      "name": "HVAC School",
+      "url": "https://www.facebook.com/groups/hvacschool/"
+    },
+    {
+      "name": "Roofing Contractor Group",
+      "url": "https://www.facebook.com/groups/roofingcontractorgroup/"
+    },
+    {
+      "name": "Plumbing Talk",
+      "url": "https://www.facebook.com/groups/plumbingtalk/"
+    },
+    {
+      "name": "Service Business Growth",
+      "url": "https://www.facebook.com/groups/servicebusinessgrowth/"
+    },
+    {
+      "name": "HVAC Talk",
+      "url": "https://www.facebook.com/groups/hvactalk/"
+    },
+    {
+      "name": "Roofing Business School",
+      "url": "https://www.facebook.com/groups/roofingbusinessschool/"
+    },
+    {
+      "name": "Plumbers of the World",
+      "url": "https://www.facebook.com/groups/plumbersoftheworld/"
+    },
+    {
+      "name": "HVAC Tech Group",
+      "url": "https://www.facebook.com/groups/hvactechgroup/"
+    },
+    {
+      "name": "Contractor Talk",
+      "url": "https://www.facebook.com/groups/contractortalk/"
+    }
+  ],
+  "linkedin_outreach": [
+    {
+      "target_name": "Enrique Carmona",
+      "target_title": "Social Media Marketing Agency Owner",
+      "link": "https://www.linkedin.com/in/enrique-carmona-35440b19b",
+      "status": "drafted",
+      "outreach_sequence": [
+        "Request: Hi Enrique, noticed you work with local service businesses. We verified 14,500+ high-intent leads (HVAC, etc.) and are looking for partners. Interest in a batch?",
+        "Follow-up: Selling Batch 1 (14,500 leads) for $500. Verified emails/names. Buy here: https://buy.stripe.com/14A5kD6s2dxyfNy4T9djO05"
+      ]
+    },
+    {
+      "target_name": "Alec Gomez",
+      "target_title": "Digital Marketing Agency Owner",
+      "link": "https://www.linkedin.com/in/alec-gomez1",
+      "status": "drafted",
+      "outreach_sequence": [
+        "Request: Hi Alec, I saw your agency helps local businesses scale. We have 14,500+ verified service leads ready for outreach. Interested in a partner batch at $500?",
+        "Follow-up: Full batch of 14,500 leads for $500. Verified data. Link: https://buy.stripe.com/14A5kD6s2dxyfNy4T9djO05"
+      ]
+    },
+    {
+      "target_name": "Peter Markel",
+      "target_title": "Marketing Agency Owner",
+      "link": "https://www.linkedin.com/in/peter-markel",
+      "status": "drafted",
+      "outreach_sequence": [
+        "Request: Hi [Name], saw your agency focuses on service business growth. We have 14,500+ verified niche leads (HVAC/Roofing) available for partner batches. Any interest?",
+        "Follow-up: Full batch of 14,500 leads for $500. All verified. Buy here: https://buy.stripe.com/14A5kD6s2dxyfNy4T9djO05"
+      ]
+    },
+    {
+      "target_name": "Anthony DeFelice",
+      "target_title": "Marketing Agency Owner",
+      "link": "https://www.linkedin.com/in/anthonyamplus",
+      "status": "drafted",
+      "outreach_sequence": [
+        "Request: Hi [Name], saw your agency focuses on service business growth. We have 14,500+ verified niche leads (HVAC/Roofing) available for partner batches. Any interest?",
+        "Follow-up: Full batch of 14,500 leads for $500. All verified. Buy here: https://buy.stripe.com/14A5kD6s2dxyfNy4T9djO05"
+      ]
+    },
+    {
+      "target_name": "Shelby Cohron",
+      "target_title": "Marketing Agency Owner",
+      "link": "https://www.linkedin.com/in/shelbycohron",
+      "status": "drafted",
+      "outreach_sequence": [
+        "Request: Hi [Name], saw your agency focuses on service business growth. We have 14,500+ verified niche leads (HVAC/Roofing) available for partner batches. Any interest?",
+        "Follow-up: Full batch of 14,500 leads for $500. All verified. Buy here: https://buy.stripe.com/14A5kD6s2dxyfNy4T9djO05"
+      ]
+    },
+    {
+      "target_name": "Marcus Johnson",
+      "target_title": "Marketing Agency Owner",
+      "link": "https://www.linkedin.com/in/marcus-johnson-3a546b284",
+      "status": "drafted",
+      "outreach_sequence": [
+        "Request: Hi [Name], saw your agency focuses on service business growth. We have 14,500+ verified niche leads (HVAC/Roofing) available for partner batches. Any interest?",
+        "Follow-up: Full batch of 14,500 leads for $500. All verified. Buy here: https://buy.stripe.com/14A5kD6s2dxyfNy4T9djO05"
+      ]
+    },
+    {
+      "target_name": "Sue Bookhout",
+      "target_title": "Digital Marketing Agency Owner",
+      "link": "https://www.linkedin.com/in/suebookhout",
+      "status": "drafted",
+      "outreach_sequence": [
+        "Request: Hi [Name], saw your agency focuses on service business growth. We have 14,500+ verified niche leads (HVAC/Roofing) available for partner batches. Any interest?",
+        "Follow-up: Full batch of 14,500 leads for $500. All verified. Buy here: https://buy.stripe.com/14A5kD6s2dxyfNy4T9djO05"
+      ]
+    },
+    {
+      "target_name": "Devon Mikeska",
+      "target_title": "Marketing Agency Owner",
+      "link": "https://www.linkedin.com/in/devonmikeska",
+      "status": "drafted",
+      "outreach_sequence": [
+        "Request: Hi [Name], saw your agency focuses on service business growth. We have 14,500+ verified niche leads (HVAC/Roofing) available for partner batches. Any interest?",
+        "Follow-up: Full batch of 14,500 leads for $500. All verified. Buy here: https://buy.stripe.com/14A5kD6s2dxyfNy4T9djO05"
+      ]
+    },
+    {
+      "target_name": "Mike Baker",
+      "target_title": "Business Owner, Web Designer",
+      "link": "https://www.linkedin.com/in/realtimewebmarketing",
+      "status": "drafted",
+      "outreach_sequence": [
+        "Request: Hi [Name], saw your agency focuses on service business growth. We have 14,500+ verified niche leads (HVAC/Roofing) available for partner batches. Any interest?",
+        "Follow-up: Full batch of 14,500 leads for $500. All verified. Buy here: https://buy.stripe.com/14A5kD6s2dxyfNy4T9djO05"
+      ]
+    },
+    {
+      "target_name": "Yusuf Chowdhury",
+      "target_title": "Ads \u2022 AI Marketing",
+      "link": "https://www.linkedin.com/in/yusufchowdhury",
+      "status": "drafted",
+      "outreach_sequence": [
+        "Request: Hi [Name], saw your agency focuses on service business growth. We have 14,500+ verified niche leads (HVAC/Roofing) available for partner batches. Any interest?",
+        "Follow-up: Full batch of 14,500 leads for $500. All verified. Buy here: https://buy.stripe.com/14A5kD6s2dxyfNy4T9djO05"
+      ]
+    }
+  ],
+  "short_form_videos": [
+    {
+      "concept": "Speedrun style site build",
+      "platform": [
+        "TikTok",
+        "Instagram",
+        "LinkedIn"
+      ],
+      "status": "scripted",
+      "script_clips": [
+        "0:00 - Timer starts, browser opens to instaweb.agency",
+        "0:05 - Selection of 'HVAC' niche in the dashboard",
+        "0:15 - Input business name and city",
+        "0:30 - Rapid montage of site generation (industrial blitz theme)",
+        "0:45 - Final conversion-optimized site reveal",
+        "0:55 - CTA text: $10k quality. 60 seconds. instaweb.agency"
+      ]
+    }
+  ],
+  "facebook_posts": [
+    {
+      "content": "Hey guys, just finished cleaning up a massive list of 14.5k HVAC and roofing contractors. If anyone needs fresh leads for their sales team, DM me or check out what we're doing at instaweb.agency. We're also doing $99 GBP fixes if your map pack ranking is struggling.",
+      "status": "ready"
+    }
+  ]
+}

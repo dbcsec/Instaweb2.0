@@ -1,0 +1,154 @@
+[
+  {
+    "timestamp": "2026-06-12 06:53:28",
+    "to": "brian.blades@scorpion.co",
+    "name": "Brian",
+    "company": "Scorpion",
+    "subject": "Clean Lead Data for Scorpion - 14,500+ Verified Service Leads",
+    "response": {
+      "id": "48a1037d-f436-4613-956f-8b561046ab32"
+    },
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 06:53:29",
+    "to": "jamie.adams@scorpion.co",
+    "name": "Jamie",
+    "company": "Scorpion",
+    "subject": "Clean Lead Data for Scorpion - 14,500+ Verified Service Leads",
+    "response": {
+      "id": "b80d8d3a-b78c-498a-8e95-6884e2387360"
+    },
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 06:53:31",
+    "to": "rpretorius@servicetitan.com",
+    "name": "Rikus",
+    "company": "ServiceTitan",
+    "subject": "Clean Lead Data for ServiceTitan - 14,500+ Verified Service Leads",
+    "response": {
+      "id": "dac6fb0a-0192-4960-b425-918fd49cf2d6"
+    },
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 06:53:32",
+    "to": "kfavreau@servicetitan.com",
+    "name": "Keith",
+    "company": "ServiceTitan",
+    "subject": "Clean Lead Data for ServiceTitan - 14,500+ Verified Service Leads",
+    "response": {
+      "id": "7834fba0-392f-41a9-a52b-927c0e34dcc2"
+    },
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 06:53:33",
+    "to": "ahicks@angi.com",
+    "name": "Angie",
+    "company": "Angi",
+    "subject": "Clean Lead Data for Angi - 14,500+ Verified Service Leads",
+    "response": {
+      "id": "5681cb9f-ed50-48ad-b991-8041640bbddb"
+    },
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 06:53:34",
+    "to": "joni.d@getjobber.com",
+    "name": "Joni",
+    "company": "Jobber",
+    "subject": "Clean Lead Data for Jobber - 14,500+ Verified Service Leads",
+    "response": {
+      "id": "a9622a52-ba7d-42f8-ba76-4f7a96446a11"
+    },
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 06:53:35",
+    "to": "jbarnes@modernize.com",
+    "name": "Jeff",
+    "company": "Modernize",
+    "subject": "Clean Lead Data for Modernize - 14,500+ Verified Service Leads",
+    "response": {
+      "id": "fba196c9-397e-4eb0-8196-3e9cfb50dbc9"
+    },
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 06:53:36",
+    "to": "jmangual@modernize.com",
+    "name": "Jose",
+    "company": "Modernize",
+    "subject": "Clean Lead Data for Modernize - 14,500+ Verified Service Leads",
+    "response": {
+      "id": "ee38e393-158c-4cca-b6b4-a94326322d65"
+    },
+    "status": "sent"
+  },
+  {
+    "timestamp": "2026-06-12 07:36:03",
+    "to": "brian.blades@scorpion.co",
+    "type": "elite_followup",
+    "response": {
+      "id": "c1c09461-354d-464e-816b-a39bba7b85a9"
+    }
+  },
+  {
+    "timestamp": "2026-06-12 07:36:04",
+    "to": "jamie.adams@scorpion.co",
+    "type": "elite_followup",
+    "response": {
+      "id": "6f001a5c-0808-459e-be2f-37fc64054121"
+    }
+  },
+  {
+    "timestamp": "2026-06-12 07:36:05",
+    "to": "rpretorius@servicetitan.com",
+    "type": "elite_followup",
+    "response": {
+      "id": "8ca2459f-17d4-46d4-a61b-967158e2b16c"
+    }
+  },
+  {
+    "timestamp": "2026-06-12 07:36:06",
+    "to": "kfavreau@servicetitan.com",
+    "type": "elite_followup",
+    "response": {
+      "id": "c45df086-6eb9-4da8-ba4a-3e215a124d09"
+    }
+  },
+  {
+    "timestamp": "2026-06-12 07:36:07",
+    "to": "ahicks@angi.com",
+    "type": "standard_followup",
+    "response": {
+      "id": "68b3528f-8d2d-4081-ad00-c52f584d69e0"
+    }
+  },
+  {
+    "timestamp": "2026-06-12 07:36:09",
+    "to": "joni.d@getjobber.com",
+    "type": "standard_followup",
+    "response": {
+      "id": "41603443-c332-41d2-8894-4839dea80799"
+    }
+  },
+  {
+    "timestamp": "2026-06-12 07:36:10",
+    "to": "jbarnes@modernize.com",
+    "type": "standard_followup",
+    "response": {
+      "id": "4d88c384-e654-4596-b6be-9c0c92f1d53f"
+    }
+  },
+  {
+    "timestamp": "2026-06-12 07:36:11",
+    "to": "jmangual@modernize.com",
+    "type": "standard_followup",
+    "response": {
+      "id": "13a4b26d-3fbe-4eb0-9cb4-221c3e26c5d5"
+    }
+  }
+]
