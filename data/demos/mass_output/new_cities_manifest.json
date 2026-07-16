@@ -1,0 +1,2874 @@
+[
+  {
+    "business_name": "Champion AC",
+    "industry": "hvac",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/champion-ac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/champion-ac.html"
+  },
+  {
+    "business_name": "Cowboys Air Conditioning & Heating",
+    "industry": "hvac",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/cowboys-air-conditioning-and-heating",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/cowboys-air-conditioning-and-heating.html"
+  },
+  {
+    "business_name": "Air Authority LLC",
+    "industry": "hvac",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/air-authority-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/air-authority-llc.html"
+  },
+  {
+    "business_name": "ASC Heating & Air Conditioning",
+    "industry": "hvac",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/asc-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/asc-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "Plumber  5511 Brewster St",
+    "industry": "plumbing",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-5511-brewster-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-5511-brewster-st.html"
+  },
+  {
+    "business_name": "Plumber",
+    "industry": "plumbing",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber.html"
+  },
+  {
+    "business_name": "Plumber  12 Burwood Ln",
+    "industry": "plumbing",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-12-burwood-ln",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-12-burwood-ln.html"
+  },
+  {
+    "business_name": "Plumber  1875 E Borgfeld Dr",
+    "industry": "plumbing",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-1875-e-borgfeld-dr",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-1875-e-borgfeld-dr.html"
+  },
+  {
+    "business_name": "Plumber  334 Rockwood Ct",
+    "industry": "plumbing",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-334-rockwood-ct",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-334-rockwood-ct.html"
+  },
+  {
+    "business_name": "Plumber  21750 Hardy Oak Blvd Ste 9",
+    "industry": "plumbing",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-21750-hardy-oak-blvd-ste-9",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-21750-hardy-oak-blvd-ste-9.html"
+  },
+  {
+    "business_name": "Jireh Electric - Electrician San Antonio TX",
+    "industry": "electrical",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/jireh-electric-electrician-san-antonio-tx",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/jireh-electric-electrician-san-antonio-tx.html"
+  },
+  {
+    "business_name": "Bolt Electric",
+    "industry": "electrical",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/bolt-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bolt-electric.html"
+  },
+  {
+    "business_name": "Electrician  18847 Redland Rd Ste 105",
+    "industry": "electrical",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-18847-redland-rd-ste-105",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-18847-redland-rd-ste-105.html"
+  },
+  {
+    "business_name": "Mr. Electric of San Antonio",
+    "industry": "electrical",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/mr-electric-of-san-antonio",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-electric-of-san-antonio.html"
+  },
+  {
+    "business_name": "Electrician  4729 Shavano Oak",
+    "industry": "electrical",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-4729-shavano-oak",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-4729-shavano-oak.html"
+  },
+  {
+    "business_name": "Citywide Electric",
+    "industry": "electrical",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/citywide-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/citywide-electric.html"
+  },
+  {
+    "business_name": "Sunbelt Electric San Antonio",
+    "industry": "electrical",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/sunbelt-electric-san-antonio",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sunbelt-electric-san-antonio.html"
+  },
+  {
+    "business_name": "All Star Electric",
+    "industry": "electrical",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/all-star-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/all-star-electric.html"
+  },
+  {
+    "business_name": "Electrician  5911 Rittiman Plaza Bldg. 1",
+    "industry": "electrical",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-5911-rittiman-plaza-bldg-1",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-5911-rittiman-plaza-bldg-1.html"
+  },
+  {
+    "business_name": "The Coolest LLC",
+    "industry": "hvac",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/the-coolest-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/the-coolest-llc.html"
+  },
+  {
+    "business_name": "Smart Air Cooling & Heating",
+    "industry": "hvac",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/smart-air-cooling-and-heating",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/smart-air-cooling-and-heating.html"
+  },
+  {
+    "business_name": "Strand Brothers Service Experts",
+    "industry": "hvac",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/strand-brothers-service-experts",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/strand-brothers-service-experts.html"
+  },
+  {
+    "business_name": "Plumber  12111 Menchaca Rd",
+    "industry": "plumbing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-12111-menchaca-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-12111-menchaca-rd.html"
+  },
+  {
+    "business_name": "Plumber  630 Ralph Ablanedo Dr Bldg 1",
+    "industry": "plumbing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-630-ralph-ablanedo-dr-bldg-1",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-630-ralph-ablanedo-dr-bldg-1.html"
+  },
+  {
+    "business_name": "Plumber  3432 Greystone Dr",
+    "industry": "hvac",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-3432-greystone-dr",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-3432-greystone-dr.html"
+  },
+  {
+    "business_name": "Plumber  701 Tillery St",
+    "industry": "plumbing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-701-tillery-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-701-tillery-st.html"
+  },
+  {
+    "business_name": "Plumber  1408 W Ben White Blvd",
+    "industry": "plumbing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-1408-w-ben-white-blvd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-1408-w-ben-white-blvd.html"
+  },
+  {
+    "business_name": "Plumber  3705 San Antonio St",
+    "industry": "plumbing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-3705-san-antonio-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-3705-san-antonio-st.html"
+  },
+  {
+    "business_name": "Sponsored",
+    "industry": "roofing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/sponsored",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sponsored.html"
+  },
+  {
+    "business_name": "U.S. Electric Contractors",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/u-s-electric-contractors",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/u-s-electric-contractors.html"
+  },
+  {
+    "business_name": "Electrician  1515 E Cesar Chavez St Ste 100",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1515-e-cesar-chavez-st-ste-100",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1515-e-cesar-chavez-st-ste-100.html"
+  },
+  {
+    "business_name": "TruTec Electric",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/trutec-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/trutec-electric.html"
+  },
+  {
+    "business_name": "Electrician  2505 E 6th St Unit g",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-2505-e-6th-st-unit-g",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-2505-e-6th-st-unit-g.html"
+  },
+  {
+    "business_name": "DC Electric",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/dc-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/dc-electric.html"
+  },
+  {
+    "business_name": "Mr. Electric of Austin",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/mr-electric-of-austin",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-electric-of-austin.html"
+  },
+  {
+    "business_name": "Electrician  6448 US-290 Unit A-103",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-6448-us-290-unit-a-103",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-6448-us-290-unit-a-103.html"
+  },
+  {
+    "business_name": "Eskew Electric - Austin, Texas Electrician",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/eskew-electric-austin-texas-electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/eskew-electric-austin-texas-electrician.html"
+  },
+  {
+    "business_name": "Molitor Electric",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/molitor-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/molitor-electric.html"
+  },
+  {
+    "business_name": "Electrician  915 Beaver Trail B",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-915-beaver-trail-b",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-915-beaver-trail-b.html"
+  },
+  {
+    "business_name": "Malco Electric",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/malco-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/malco-electric.html"
+  },
+  {
+    "business_name": "Electrician  10908 US-290",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-10908-us-290",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-10908-us-290.html"
+  },
+  {
+    "business_name": "Texas AirZone LLC",
+    "industry": "hvac",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/texas-airzone-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/texas-airzone-llc.html"
+  },
+  {
+    "business_name": "Dallas Heating and Air Conditioning",
+    "industry": "hvac",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/dallas-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/dallas-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "Mondragon Mechanical LLC",
+    "industry": "hvac",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/mondragon-mechanical-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mondragon-mechanical-llc.html"
+  },
+  {
+    "business_name": "Jade Air, LLC",
+    "industry": "hvac",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/jade-air-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/jade-air-llc.html"
+  },
+  {
+    "business_name": "Alpha Heating & Cooling Llc.",
+    "industry": "hvac",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/alpha-heating-and-cooling-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/alpha-heating-and-cooling-llc.html"
+  },
+  {
+    "business_name": "Public Service Plumbers",
+    "industry": "plumbing",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/public-service-plumbers",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/public-service-plumbers.html"
+  },
+  {
+    "business_name": "Plumber  5610 Dyer St",
+    "industry": "plumbing",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-5610-dyer-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-5610-dyer-st.html"
+  },
+  {
+    "business_name": "Plumber  6211 W Northwest Hwy c251",
+    "industry": "plumbing",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-6211-w-northwest-hwy-c251",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-6211-w-northwest-hwy-c251.html"
+  },
+  {
+    "business_name": "Plumber",
+    "industry": "plumbing",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber.html"
+  },
+  {
+    "business_name": "Vargas & Sons Roof Repair",
+    "industry": "roofing",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/vargas-and-sons-roof-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/vargas-and-sons-roof-repair.html"
+  },
+  {
+    "business_name": "Mr. Electric of Dallas",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/mr-electric-of-dallas",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-electric-of-dallas.html"
+  },
+  {
+    "business_name": "ElectricMan",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electricman",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electricman.html"
+  },
+  {
+    "business_name": "Electrician  13551 Floyd Cir",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-13551-floyd-cir",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-13551-floyd-cir.html"
+  },
+  {
+    "business_name": "Electrician On Call",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-on-call",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-on-call.html"
+  },
+  {
+    "business_name": "Electrician  6703 Levelland Rd Ste B",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-6703-levelland-rd-ste-b",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-6703-levelland-rd-ste-b.html"
+  },
+  {
+    "business_name": "Electrician  5304 Alpha Rd",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-5304-alpha-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-5304-alpha-rd.html"
+  },
+  {
+    "business_name": "Electrician  2626 Cole Ave suit 300",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-2626-cole-ave-suit-300",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-2626-cole-ave-suit-300.html"
+  },
+  {
+    "business_name": "Excell Electric",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/excell-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/excell-electric.html"
+  },
+  {
+    "business_name": "Electrician  11510 Data Dr",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-11510-data-dr",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-11510-data-dr.html"
+  },
+  {
+    "business_name": "TX Dallas Electrician",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/tx-dallas-electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/tx-dallas-electrician.html"
+  },
+  {
+    "business_name": "Electrician  400 S Hall St",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-400-s-hall-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-400-s-hall-st.html"
+  },
+  {
+    "business_name": "Fort Worth Air Conditioning Co. Inc.",
+    "industry": "hvac",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/fort-worth-air-conditioning-co-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/fort-worth-air-conditioning-co-inc.html"
+  },
+  {
+    "business_name": "Comfort Experts",
+    "industry": "hvac",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/comfort-experts",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/comfort-experts.html"
+  },
+  {
+    "business_name": "One Hour Air Conditioning & Heating",
+    "industry": "hvac",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/one-hour-air-conditioning-and-heating",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/one-hour-air-conditioning-and-heating.html"
+  },
+  {
+    "business_name": "Service Experts Fort Worth",
+    "industry": "hvac",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/service-experts-fort-worth",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/service-experts-fort-worth.html"
+  },
+  {
+    "business_name": "Webb Air Heating & Cooling",
+    "industry": "hvac",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/webb-air-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/webb-air-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Lawrence Air Conditioning & Heating",
+    "industry": "hvac",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/lawrence-air-conditioning-and-heating",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/lawrence-air-conditioning-and-heating.html"
+  },
+  {
+    "business_name": "R-10 Heat & Air",
+    "industry": "hvac",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/r-10-heat-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/r-10-heat-and-air.html"
+  },
+  {
+    "business_name": "Plumber  9905 Camp Bowie W Blvd",
+    "industry": "plumbing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-9905-camp-bowie-w-blvd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-9905-camp-bowie-w-blvd.html"
+  },
+  {
+    "business_name": "Plumber  2406 Gravel Dr",
+    "industry": "plumbing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-2406-gravel-dr",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-2406-gravel-dr.html"
+  },
+  {
+    "business_name": "Plumber  410 Missouri Ave",
+    "industry": "plumbing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-410-missouri-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-410-missouri-ave.html"
+  },
+  {
+    "business_name": "Plumber  3932 Benbrook Blvd",
+    "industry": "plumbing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-3932-benbrook-blvd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-3932-benbrook-blvd.html"
+  },
+  {
+    "business_name": "ClearWater Plumbers",
+    "industry": "plumbing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/clearwater-plumbers",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/clearwater-plumbers.html"
+  },
+  {
+    "business_name": "Plumber  9626 Boat Club Rd",
+    "industry": "plumbing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-9626-boat-club-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-9626-boat-club-rd.html"
+  },
+  {
+    "business_name": "Plumber  404 N Cherry Ln",
+    "industry": "plumbing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-404-n-cherry-ln",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-404-n-cherry-ln.html"
+  },
+  {
+    "business_name": "Plumber  4500 McCart Ave",
+    "industry": "plumbing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-4500-mccart-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-4500-mccart-ave.html"
+  },
+  {
+    "business_name": "Henry & Sons Roof Repair",
+    "industry": "roofing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/henry-and-sons-roof-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/henry-and-sons-roof-repair.html"
+  },
+  {
+    "business_name": "Martin & Sons Roof Repair",
+    "industry": "roofing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/martin-and-sons-roof-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/martin-and-sons-roof-repair.html"
+  },
+  {
+    "business_name": "Mr. Electric of Fort Worth",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/mr-electric-of-fort-worth",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-electric-of-fort-worth.html"
+  },
+  {
+    "business_name": "Reliable Electrician Company Fort Worth",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/reliable-electrician-company-fort-worth",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/reliable-electrician-company-fort-worth.html"
+  },
+  {
+    "business_name": "Cross Electric",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/cross-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/cross-electric.html"
+  },
+  {
+    "business_name": "Electrician  9227 Live Oak Ln",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-9227-live-oak-ln",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-9227-live-oak-ln.html"
+  },
+  {
+    "business_name": "Electrician  731 N Commerce St",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-731-n-commerce-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-731-n-commerce-st.html"
+  },
+  {
+    "business_name": "Excellent Electric Fort Worth",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/excellent-electric-fort-worth",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/excellent-electric-fort-worth.html"
+  },
+  {
+    "business_name": "Electrician  2601 Tillar St",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-2601-tillar-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-2601-tillar-st.html"
+  },
+  {
+    "business_name": "Electrician  640 Taylor St Suite 1200",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-640-taylor-st-suite-1200",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-640-taylor-st-suite-1200.html"
+  },
+  {
+    "business_name": "Electrician  5709 Azle Ave",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-5709-azle-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-5709-azle-ave.html"
+  },
+  {
+    "business_name": "Parker & Sons",
+    "industry": "hvac",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/parker-and-sons",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/parker-and-sons.html"
+  },
+  {
+    "business_name": "Desert Diamond Air Cooling & Heating",
+    "industry": "hvac",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/desert-diamond-air-cooling-and-heating",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/desert-diamond-air-cooling-and-heating.html"
+  },
+  {
+    "business_name": "Ideal Air Conditioning and Insulation",
+    "industry": "hvac",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/ideal-air-conditioning-and-insulation",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ideal-air-conditioning-and-insulation.html"
+  },
+  {
+    "business_name": "Scottsdale Air Heating & Cooling",
+    "industry": "hvac",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/scottsdale-air-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/scottsdale-air-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Sponsored",
+    "industry": "plumbing",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/sponsored",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sponsored.html"
+  },
+  {
+    "business_name": "Plumber  8550 North 91st Avenue",
+    "industry": "plumbing",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-8550-north-91st-avenue",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-8550-north-91st-avenue.html"
+  },
+  {
+    "business_name": "Visit Site",
+    "industry": "plumbing",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/visit-site",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/visit-site.html"
+  },
+  {
+    "business_name": "Plumber  2120 E Rose Garden Ln Ste F1",
+    "industry": "plumbing",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-2120-e-rose-garden-ln-ste-f1",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-2120-e-rose-garden-ln-ste-f1.html"
+  },
+  {
+    "business_name": "Plumber  9119 N 7th St Ste 201",
+    "industry": "plumbing",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-9119-n-7th-st-ste-201",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-9119-n-7th-st-ste-201.html"
+  },
+  {
+    "business_name": "Plumber  14039 N 8th Pl",
+    "industry": "plumbing",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-14039-n-8th-pl",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-14039-n-8th-pl.html"
+  },
+  {
+    "business_name": "Plumber  2802 N 37th Ave",
+    "industry": "plumbing",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-2802-n-37th-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-2802-n-37th-ave.html"
+  },
+  {
+    "business_name": "Arizona Roofers",
+    "industry": "roofing",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/arizona-roofers",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/arizona-roofers.html"
+  },
+  {
+    "business_name": "Simple Electric",
+    "industry": "electrical",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/simple-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/simple-electric.html"
+  },
+  {
+    "business_name": "Electrician  1201 E Weldon Ave",
+    "industry": "electrical",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1201-e-weldon-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1201-e-weldon-ave.html"
+  },
+  {
+    "business_name": "Turn It On Electric",
+    "industry": "electrical",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/turn-it-on-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/turn-it-on-electric.html"
+  },
+  {
+    "business_name": "Electrician  1745 W Deer Valley Rd Ste 110",
+    "industry": "electrical",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1745-w-deer-valley-rd-ste-110",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1745-w-deer-valley-rd-ste-110.html"
+  },
+  {
+    "business_name": "Super Electric",
+    "industry": "electrical",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/super-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/super-electric.html"
+  },
+  {
+    "business_name": "Electrician  4640 E McDowell Rd",
+    "industry": "electrical",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-4640-e-mcdowell-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-4640-e-mcdowell-rd.html"
+  },
+  {
+    "business_name": "Phoenix Electrician",
+    "industry": "electrical",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/phoenix-electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/phoenix-electrician.html"
+  },
+  {
+    "business_name": "Electrician  3032 W Pima St",
+    "industry": "electrical",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3032-w-pima-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3032-w-pima-st.html"
+  },
+  {
+    "business_name": "Mr. Electric of Phoenix Metro",
+    "industry": "electrical",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/mr-electric-of-phoenix-metro",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-electric-of-phoenix-metro.html"
+  },
+  {
+    "business_name": "Phoenix Best Electricians",
+    "industry": "electrical",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/phoenix-best-electricians",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/phoenix-best-electricians.html"
+  },
+  {
+    "business_name": "Air Duct LV Heating & Cooling",
+    "industry": "hvac",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/air-duct-lv-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/air-duct-lv-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Sponsored",
+    "industry": "hvac",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/sponsored",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sponsored.html"
+  },
+  {
+    "business_name": "Bulldog Air Conditioning & Heating Repair Las Vegas",
+    "industry": "hvac",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/bulldog-air-conditioning-and-heating-repair-las-vegas",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bulldog-air-conditioning-and-heating-repair-las-vegas.html"
+  },
+  {
+    "business_name": "Legacy Air Conditioning and Heating",
+    "industry": "hvac",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/legacy-air-conditioning-and-heating",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/legacy-air-conditioning-and-heating.html"
+  },
+  {
+    "business_name": "Nevada Residential Services Air Conditioning & Heating",
+    "industry": "hvac",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/nevada-residential-services-air-conditioning-and-heating",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/nevada-residential-services-air-conditioning-and-heating.html"
+  },
+  {
+    "business_name": "Pro Price Heating & Cooling",
+    "industry": "hvac",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/pro-price-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pro-price-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Air Supply Heating and Cooling",
+    "industry": "hvac",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/air-supply-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/air-supply-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Plumber  3230 East Charleston Boulevard",
+    "industry": "plumbing",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-3230-east-charleston-boulevard",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-3230-east-charleston-boulevard.html"
+  },
+  {
+    "business_name": "Visit Site",
+    "industry": "plumbing",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/visit-site",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/visit-site.html"
+  },
+  {
+    "business_name": "Plumber  2470 N Decatur Blvd Ste 170",
+    "industry": "plumbing",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-2470-n-decatur-blvd-ste-170",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-2470-n-decatur-blvd-ste-170.html"
+  },
+  {
+    "business_name": "Plumber  6255 McLeod Dr Unit 13",
+    "industry": "plumbing",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-6255-mcleod-dr-unit-13",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-6255-mcleod-dr-unit-13.html"
+  },
+  {
+    "business_name": "Plumber",
+    "industry": "plumbing",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/plumber",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber.html"
+  },
+  {
+    "business_name": "The Roof Doctor, LLC",
+    "industry": "roofing",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/the-roof-doctor-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/the-roof-doctor-llc.html"
+  },
+  {
+    "business_name": "Canyon Electric Company",
+    "industry": "electrical",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/canyon-electric-company",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/canyon-electric-company.html"
+  },
+  {
+    "business_name": "Eco Electric",
+    "industry": "electrical",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/eco-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/eco-electric.html"
+  },
+  {
+    "business_name": "Allegiant Electric LLC",
+    "industry": "electrical",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/allegiant-electric-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/allegiant-electric-llc.html"
+  },
+  {
+    "business_name": "Pacific Electric Inc",
+    "industry": "electrical",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/pacific-electric-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pacific-electric-inc.html"
+  },
+  {
+    "business_name": "Electrician  3035 E Patrick Ln Ste 13 Suite 14",
+    "industry": "electrical",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3035-e-patrick-ln-ste-13-suite-14",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3035-e-patrick-ln-ste-13-suite-14.html"
+  },
+  {
+    "business_name": "PDQ Electric",
+    "industry": "electrical",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/pdq-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pdq-electric.html"
+  },
+  {
+    "business_name": "Electrician  3111 S Valley View Blvd Ste. A-104",
+    "industry": "electrical",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3111-s-valley-view-blvd-ste-a-104",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3111-s-valley-view-blvd-ste-a-104.html"
+  },
+  {
+    "business_name": "Cordan Electric LLC",
+    "industry": "electrical",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/cordan-electric-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/cordan-electric-llc.html"
+  },
+  {
+    "business_name": "Electrician  8125 Eagle Clan Ct",
+    "industry": "electrical",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-8125-eagle-clan-ct",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-8125-eagle-clan-ct.html"
+  },
+  {
+    "business_name": "Electrician  7473 W Lake Mead Blvd Ste 100",
+    "industry": "electrical",
+    "city": "Las Vegas",
+    "state_code": "NV",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-7473-w-lake-mead-blvd-ste-100",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-7473-w-lake-mead-blvd-ste-100.html"
+  },
+  {
+    "business_name": "The Weather Changers Heating and Air Conditioning",
+    "industry": "hvac",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/the-weather-changers-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/the-weather-changers-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "Premier Heating and Air",
+    "industry": "hvac",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/premier-heating-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/premier-heating-and-air.html"
+  },
+  {
+    "business_name": "All Weather HVAC Denver",
+    "industry": "hvac",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/all-weather-hvac-denver",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/all-weather-hvac-denver.html"
+  },
+  {
+    "business_name": "Apex Clean Air AC & Heating Repair",
+    "industry": "hvac",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/apex-clean-air-ac-and-heating-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/apex-clean-air-ac-and-heating-repair.html"
+  },
+  {
+    "business_name": "Rogers & Sons, Inc.",
+    "industry": "hvac",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/rogers-and-sons-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/rogers-and-sons-inc.html"
+  },
+  {
+    "business_name": "Cool Sunshine Heating and Air Conditioning, Inc.",
+    "industry": "hvac",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/cool-sunshine-heating-and-air-conditioning-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/cool-sunshine-heating-and-air-conditioning-inc.html"
+  },
+  {
+    "business_name": "Plumber",
+    "industry": "hvac",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/plumber",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber.html"
+  },
+  {
+    "business_name": "Plumber  5000 W 29th Ave",
+    "industry": "hvac",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-5000-w-29th-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-5000-w-29th-ave.html"
+  },
+  {
+    "business_name": "Hyper Flow Service",
+    "industry": "plumbing",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/hyper-flow-service",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/hyper-flow-service.html"
+  },
+  {
+    "business_name": "Plumber  1130 S Cherokee St",
+    "industry": "hvac",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-1130-s-cherokee-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-1130-s-cherokee-st.html"
+  },
+  {
+    "business_name": "Air conditioning contractor  1395 S Platte River Dr",
+    "industry": "hvac",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/air-conditioning-contractor-1395-s-platte-river-dr",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/air-conditioning-contractor-1395-s-platte-river-dr.html"
+  },
+  {
+    "business_name": "Plumber  800 E 73rd Ave Unit 2",
+    "industry": "hvac",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-800-e-73rd-ave-unit-2",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-800-e-73rd-ave-unit-2.html"
+  },
+  {
+    "business_name": "Denver Roofers LLC",
+    "industry": "roofing",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/denver-roofers-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/denver-roofers-llc.html"
+  },
+  {
+    "business_name": "Lifetime Roof & Solar - Denver",
+    "industry": "roofing",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/lifetime-roof-and-solar-denver",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/lifetime-roof-and-solar-denver.html"
+  },
+  {
+    "business_name": "New Roof Plus",
+    "industry": "roofing",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/new-roof-plus",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/new-roof-plus.html"
+  },
+  {
+    "business_name": "Williams and Sons Electric, LLC.",
+    "industry": "electrical",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/williams-and-sons-electric-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/williams-and-sons-electric-llc.html"
+  },
+  {
+    "business_name": "Electrician  3125 W Alabama Pl",
+    "industry": "electrical",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3125-w-alabama-pl",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3125-w-alabama-pl.html"
+  },
+  {
+    "business_name": "Electrician",
+    "industry": "electrical",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician.html"
+  },
+  {
+    "business_name": "Sphere Electric LLC",
+    "industry": "electrical",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/sphere-electric-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sphere-electric-llc.html"
+  },
+  {
+    "business_name": "Mr. Electric",
+    "industry": "electrical",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/mr-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-electric.html"
+  },
+  {
+    "business_name": "Red Fox Electric Inc",
+    "industry": "electrical",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/red-fox-electric-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/red-fox-electric-inc.html"
+  },
+  {
+    "business_name": "Electrician  877 Wyandot St",
+    "industry": "electrical",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-877-wyandot-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-877-wyandot-st.html"
+  },
+  {
+    "business_name": "Estes Services",
+    "industry": "hvac",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/estes-services",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/estes-services.html"
+  },
+  {
+    "business_name": "Moncrief Heating & Air Conditioning",
+    "industry": "hvac",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/moncrief-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/moncrief-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "Empire Heating & Air Conditioning",
+    "industry": "hvac",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/empire-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/empire-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "The Air Company of GA",
+    "industry": "hvac",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/the-air-company-of-ga",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/the-air-company-of-ga.html"
+  },
+  {
+    "business_name": "Maintenance Unlimited Heating & Cooling",
+    "industry": "hvac",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/maintenance-unlimited-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/maintenance-unlimited-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Galgon HVAC & Mechanical Service, Inc.",
+    "industry": "hvac",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/galgon-hvac-and-mechanical-service-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/galgon-hvac-and-mechanical-service-inc.html"
+  },
+  {
+    "business_name": "INDOOR EXPERTS HEATING & AIR CONDITIONING",
+    "industry": "hvac",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/indoor-experts-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/indoor-experts-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "Plumber  1433 Mayson St NE",
+    "industry": "plumbing",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-1433-mayson-st-ne",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-1433-mayson-st-ne.html"
+  },
+  {
+    "business_name": "Plumber  691 John Wesley Dobbs Ave NE Unit W",
+    "industry": "plumbing",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-691-john-wesley-dobbs-ave-ne-unit-w",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-691-john-wesley-dobbs-ave-ne-unit-w.html"
+  },
+  {
+    "business_name": "Plumber",
+    "industry": "plumbing",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber.html"
+  },
+  {
+    "business_name": "Plumber  1876 Defoor Ave NW Ste 7",
+    "industry": "plumbing",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-1876-defoor-ave-nw-ste-7",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-1876-defoor-ave-nw-ste-7.html"
+  },
+  {
+    "business_name": "Plumber  1 W Ct Square Ste 750",
+    "industry": "plumbing",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-1-w-ct-square-ste-750",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-1-w-ct-square-ste-750.html"
+  },
+  {
+    "business_name": "Sponsored",
+    "industry": "roofing",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/sponsored",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sponsored.html"
+  },
+  {
+    "business_name": "Colony Roofers",
+    "industry": "roofing",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/colony-roofers",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/colony-roofers.html"
+  },
+  {
+    "business_name": "Mr. Roofer of Atlanta",
+    "industry": "roofing",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/mr-roofer-of-atlanta",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-roofer-of-atlanta.html"
+  },
+  {
+    "business_name": "McCall Enterprises",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/mccall-enterprises",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mccall-enterprises.html"
+  },
+  {
+    "business_name": "Electrician  260 Peachtree St NW Ste 2200",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-260-peachtree-st-nw-ste-2200",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-260-peachtree-st-nw-ste-2200.html"
+  },
+  {
+    "business_name": "Pat Murphy Electric Inc.",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/pat-murphy-electric-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pat-murphy-electric-inc.html"
+  },
+  {
+    "business_name": "Electrician  3571 S Fulton Ave",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3571-s-fulton-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3571-s-fulton-ave.html"
+  },
+  {
+    "business_name": "The Electrician",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/the-electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/the-electrician.html"
+  },
+  {
+    "business_name": "Electrician  20 S Battery Pl",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-20-s-battery-pl",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-20-s-battery-pl.html"
+  },
+  {
+    "business_name": "Handy Electrician",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/handy-electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/handy-electrician.html"
+  },
+  {
+    "business_name": "Electrician  881 Memorial Dr SE",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-881-memorial-dr-se",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-881-memorial-dr-se.html"
+  },
+  {
+    "business_name": "Electrician Atlanta",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-atlanta",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-atlanta.html"
+  },
+  {
+    "business_name": "Electrician",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician.html"
+  },
+  {
+    "business_name": "Yara Electric",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/yara-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/yara-electric.html"
+  },
+  {
+    "business_name": "Electrician  1700 Northside Dr NW Ste A7 PMB 2787",
+    "industry": "electrical",
+    "city": "Atlanta",
+    "state_code": "GA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1700-northside-dr-nw-ste-a7-pmb-2787",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1700-northside-dr-nw-ste-a7-pmb-2787.html"
+  },
+  {
+    "business_name": "Morris-Jenkins",
+    "industry": "hvac",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/morris-jenkins",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/morris-jenkins.html"
+  },
+  {
+    "business_name": "Super Cool HVAC",
+    "industry": "hvac",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/super-cool-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/super-cool-hvac.html"
+  },
+  {
+    "business_name": "Bradham Comfort Services, Inc.",
+    "industry": "hvac",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/bradham-comfort-services-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bradham-comfort-services-inc.html"
+  },
+  {
+    "business_name": "Andy Lewis Heating & Air Conditioning",
+    "industry": "hvac",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/andy-lewis-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/andy-lewis-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "City Air Experts Heating and Cooling",
+    "industry": "hvac",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/city-air-experts-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/city-air-experts-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Andersen Heating & Cooling",
+    "industry": "hvac",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/andersen-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/andersen-heating-and-cooling.html"
+  },
+  {
+    "business_name": "One Hour Heating & Air Conditioning of Charlotte",
+    "industry": "hvac",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/one-hour-heating-and-air-conditioning-of-charlotte",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/one-hour-heating-and-air-conditioning-of-charlotte.html"
+  },
+  {
+    "business_name": "Plumber  2209 Graham Park Dr",
+    "industry": "plumbing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-2209-graham-park-dr",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-2209-graham-park-dr.html"
+  },
+  {
+    "business_name": "Plumber  900 Remount Rd",
+    "industry": "plumbing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-900-remount-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-900-remount-rd.html"
+  },
+  {
+    "business_name": "Plumber  8124 Statesville Rd",
+    "industry": "plumbing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-8124-statesville-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-8124-statesville-rd.html"
+  },
+  {
+    "business_name": "Michael & Son Services",
+    "industry": "hvac",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/michael-and-son-services",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/michael-and-son-services.html"
+  },
+  {
+    "business_name": "Heating contractor",
+    "industry": "hvac",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/heating-contractor",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/heating-contractor.html"
+  },
+  {
+    "business_name": "Plumber  13534 Plaza Rd Extension STE 127",
+    "industry": "plumbing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-13534-plaza-rd-extension-ste-127",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-13534-plaza-rd-extension-ste-127.html"
+  },
+  {
+    "business_name": "Roof Medic",
+    "industry": "roofing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/roof-medic",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/roof-medic.html"
+  },
+  {
+    "business_name": "Carolina Roof Consultants",
+    "industry": "roofing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/carolina-roof-consultants",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/carolina-roof-consultants.html"
+  },
+  {
+    "business_name": "New Roof",
+    "industry": "roofing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/new-roof",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/new-roof.html"
+  },
+  {
+    "business_name": "Elite Roof and Solar - Charlotte",
+    "industry": "roofing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/elite-roof-and-solar-charlotte",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-roof-and-solar-charlotte.html"
+  },
+  {
+    "business_name": "Electrician  224 Foster Ave A",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-224-foster-ave-a",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-224-foster-ave-a.html"
+  },
+  {
+    "business_name": "U.S. Electric Contractors",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/u-s-electric-contractors",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/u-s-electric-contractors.html"
+  },
+  {
+    "business_name": "Electrician  3434 Monroe Rd",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3434-monroe-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3434-monroe-rd.html"
+  },
+  {
+    "business_name": "Electrician  3030 Whitehall Park Dr Ste 3",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3030-whitehall-park-dr-ste-3",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3030-whitehall-park-dr-ste-3.html"
+  },
+  {
+    "business_name": "Electrician  1409 East Blvd",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1409-east-blvd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1409-east-blvd.html"
+  },
+  {
+    "business_name": "Electrician  319 Atando Ave",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-319-atando-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-319-atando-ave.html"
+  },
+  {
+    "business_name": "MACK ELECTRIC LLC",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/mack-electric-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mack-electric-llc.html"
+  },
+  {
+    "business_name": "Electrician  3024 Oak Lndg Dr",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3024-oak-lndg-dr",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3024-oak-lndg-dr.html"
+  },
+  {
+    "business_name": "Ewing Electric Co",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/ewing-electric-co",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ewing-electric-co.html"
+  },
+  {
+    "business_name": "Electrician",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician.html"
+  },
+  {
+    "business_name": "MJ Frick Company, Inc.",
+    "industry": "hvac",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/mj-frick-company-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mj-frick-company-inc.html"
+  },
+  {
+    "business_name": "Hoffmann Brothers",
+    "industry": "hvac",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/hoffmann-brothers",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/hoffmann-brothers.html"
+  },
+  {
+    "business_name": "Premier Heating & Air",
+    "industry": "hvac",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/premier-heating-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/premier-heating-and-air.html"
+  },
+  {
+    "business_name": "South Nashville Heating & Cooling",
+    "industry": "hvac",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/south-nashville-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/south-nashville-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Jewell Mechanical, LLC",
+    "industry": "hvac",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/jewell-mechanical-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/jewell-mechanical-llc.html"
+  },
+  {
+    "business_name": "Service Experts Nashville",
+    "industry": "hvac",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/service-experts-nashville",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/service-experts-nashville.html"
+  },
+  {
+    "business_name": "Temp Control Heating & Air Conditioning",
+    "industry": "hvac",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/temp-control-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/temp-control-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "Plumber  1101 Davidson St",
+    "industry": "plumbing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-1101-davidson-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-1101-davidson-st.html"
+  },
+  {
+    "business_name": "Plumber  3744 Annex Ave",
+    "industry": "hvac",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-3744-annex-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-3744-annex-ave.html"
+  },
+  {
+    "business_name": "Plumber  2317 Cruzen St",
+    "industry": "hvac",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-2317-cruzen-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-2317-cruzen-st.html"
+  },
+  {
+    "business_name": "Plumber",
+    "industry": "plumbing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/plumber",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber.html"
+  },
+  {
+    "business_name": "MidSouth Construction",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/midsouth-construction",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/midsouth-construction.html"
+  },
+  {
+    "business_name": "Music City Roofers",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/music-city-roofers",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/music-city-roofers.html"
+  },
+  {
+    "business_name": "Don Kennedy",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/don-kennedy",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/don-kennedy.html"
+  },
+  {
+    "business_name": "Mr. Roof Nashville",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/mr-roof-nashville",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-roof-nashville.html"
+  },
+  {
+    "business_name": "Greenway Electric of Nashville",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/greenway-electric-of-nashville",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/greenway-electric-of-nashville.html"
+  },
+  {
+    "business_name": "Electrician  1 Music Cir N Ste 400",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1-music-cir-n-ste-400",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1-music-cir-n-ste-400.html"
+  },
+  {
+    "business_name": "Gervais Electric, Inc.",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/gervais-electric-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/gervais-electric-inc.html"
+  },
+  {
+    "business_name": "Electrician  2609 Grandview Ave",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-2609-grandview-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-2609-grandview-ave.html"
+  },
+  {
+    "business_name": "Hardy Electric",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/hardy-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/hardy-electric.html"
+  },
+  {
+    "business_name": "Jacob The Electrician",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/jacob-the-electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/jacob-the-electrician.html"
+  },
+  {
+    "business_name": "Electrician  4826 Brick Church Pike",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-4826-brick-church-pike",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-4826-brick-church-pike.html"
+  },
+  {
+    "business_name": "Telecommunications contractor  300 Hill Ave",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/telecommunications-contractor-300-hill-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/telecommunications-contractor-300-hill-ave.html"
+  },
+  {
+    "business_name": "Dodd Electric",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/dodd-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/dodd-electric.html"
+  },
+  {
+    "business_name": "Electrician  2506 White Ave",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-2506-white-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-2506-white-ave.html"
+  },
+  {
+    "business_name": "Bates Electric",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/bates-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bates-electric.html"
+  },
+  {
+    "business_name": "Electrician",
+    "industry": "electrical",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician.html"
+  },
+  {
+    "business_name": "Belle Air",
+    "industry": "hvac",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/belle-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/belle-air.html"
+  },
+  {
+    "business_name": "Gary Munson Heating & Air Conditioning",
+    "industry": "hvac",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/gary-munson-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/gary-munson-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "ABC Air Conditioning & Heating Specialist",
+    "industry": "hvac",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/abc-air-conditioning-and-heating-specialist",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/abc-air-conditioning-and-heating-specialist.html"
+  },
+  {
+    "business_name": "Local AC",
+    "industry": "hvac",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/local-ac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/local-ac.html"
+  },
+  {
+    "business_name": "One Way Air",
+    "industry": "hvac",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/one-way-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/one-way-air.html"
+  },
+  {
+    "business_name": "Plumber  3550 Old Winter Garden Rd",
+    "industry": "plumbing",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-3550-old-winter-garden-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-3550-old-winter-garden-rd.html"
+  },
+  {
+    "business_name": "El Plomero Latino",
+    "industry": "plumbing",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/el-plomero-latino",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/el-plomero-latino.html"
+  },
+  {
+    "business_name": "Plumber  2311 Henderson Dr Unit A",
+    "industry": "plumbing",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-2311-henderson-dr-unit-a",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-2311-henderson-dr-unit-a.html"
+  },
+  {
+    "business_name": "Jack Rabbit",
+    "industry": "hvac",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/jack-rabbit",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/jack-rabbit.html"
+  },
+  {
+    "business_name": "Plumber  1019 28th St",
+    "industry": "plumbing",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-1019-28th-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-1019-28th-st.html"
+  },
+  {
+    "business_name": "Plumber",
+    "industry": "plumbing",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber.html"
+  },
+  {
+    "business_name": "Associated Piping Services Inc.",
+    "industry": "plumbing",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/associated-piping-services-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/associated-piping-services-inc.html"
+  },
+  {
+    "business_name": "His and Hers Construction",
+    "industry": "roofing",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/his-and-hers-construction",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/his-and-hers-construction.html"
+  },
+  {
+    "business_name": "Central Florida Electrician",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/central-florida-electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/central-florida-electrician.html"
+  },
+  {
+    "business_name": "Electrician  243 N Texas Ave",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-243-n-texas-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-243-n-texas-ave.html"
+  },
+  {
+    "business_name": "Solaris Electric",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/solaris-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/solaris-electric.html"
+  },
+  {
+    "business_name": "Electrician",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician.html"
+  },
+  {
+    "business_name": "In Phaze Electric Inc.",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/in-phaze-electric-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/in-phaze-electric-inc.html"
+  },
+  {
+    "business_name": "Electrician  2200 N Forsyth Rd",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-2200-n-forsyth-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-2200-n-forsyth-rd.html"
+  },
+  {
+    "business_name": "Doc Watts Electric, Inc",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/doc-watts-electric-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/doc-watts-electric-inc.html"
+  },
+  {
+    "business_name": "Electrician  2306 N Forsyth Rd",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-2306-n-forsyth-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-2306-n-forsyth-rd.html"
+  },
+  {
+    "business_name": "Electrician  427 Gaston Foster Rd Ste i",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-427-gaston-foster-rd-ste-i",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-427-gaston-foster-rd-ste-i.html"
+  },
+  {
+    "business_name": "Mr. Electric of Orlando",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/mr-electric-of-orlando",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-electric-of-orlando.html"
+  },
+  {
+    "business_name": "Electrician  3700 34th St Ste 100B",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3700-34th-st-ste-100b",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3700-34th-st-ste-100b.html"
+  },
+  {
+    "business_name": "TrueBright Electric",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/truebright-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/truebright-electric.html"
+  },
+  {
+    "business_name": "Electrician  5048 Tinkham Ave",
+    "industry": "electrical",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-5048-tinkham-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-5048-tinkham-ave.html"
+  },
+  {
+    "business_name": "And Services",
+    "industry": "hvac",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/and-services",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/and-services.html"
+  },
+  {
+    "business_name": "Air Masters of Tampa Bay",
+    "industry": "hvac",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/air-masters-of-tampa-bay",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/air-masters-of-tampa-bay.html"
+  },
+  {
+    "business_name": "REM Air Conditioning of Tampa",
+    "industry": "hvac",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/rem-air-conditioning-of-tampa",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/rem-air-conditioning-of-tampa.html"
+  },
+  {
+    "business_name": "Caldeco Air Conditioning & Heating",
+    "industry": "hvac",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/caldeco-air-conditioning-and-heating",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/caldeco-air-conditioning-and-heating.html"
+  },
+  {
+    "business_name": "One Hour Air Conditioning & Heating",
+    "industry": "hvac",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/one-hour-air-conditioning-and-heating",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/one-hour-air-conditioning-and-heating.html"
+  },
+  {
+    "business_name": "Momentum AC & Electric",
+    "industry": "hvac",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/momentum-ac-and-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/momentum-ac-and-electric.html"
+  },
+  {
+    "business_name": "EVERYDAYPLUMBER.com",
+    "industry": "plumbing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/everydayplumber-com",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/everydayplumber-com.html"
+  },
+  {
+    "business_name": "Plumber",
+    "industry": "plumbing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber.html"
+  },
+  {
+    "business_name": "The Clean Plumbers - Tampa",
+    "industry": "plumbing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/the-clean-plumbers-tampa",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/the-clean-plumbers-tampa.html"
+  },
+  {
+    "business_name": "Plumber  14545 N Florida Ave",
+    "industry": "plumbing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-14545-n-florida-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-14545-n-florida-ave.html"
+  },
+  {
+    "business_name": "Plumber  4706 N Thatcher Ave",
+    "industry": "plumbing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-4706-n-thatcher-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-4706-n-thatcher-ave.html"
+  },
+  {
+    "business_name": "Tampa Bay Plumbers LLC",
+    "industry": "plumbing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/tampa-bay-plumbers-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/tampa-bay-plumbers-llc.html"
+  },
+  {
+    "business_name": "Plumber  6205 Johns Rd Ste 12",
+    "industry": "plumbing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-6205-johns-rd-ste-12",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-6205-johns-rd-ste-12.html"
+  },
+  {
+    "business_name": "Plumber  3201 E 8th Ave",
+    "industry": "plumbing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-3201-e-8th-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-3201-e-8th-ave.html"
+  },
+  {
+    "business_name": "Plumber  3723 E Hillsborough Ave",
+    "industry": "plumbing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-3723-e-hillsborough-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-3723-e-hillsborough-ave.html"
+  },
+  {
+    "business_name": "Plumber  2129 W Marianna St",
+    "industry": "plumbing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-2129-w-marianna-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-2129-w-marianna-st.html"
+  },
+  {
+    "business_name": "Tampa Roof Repair LLC",
+    "industry": "roofing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/tampa-roof-repair-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/tampa-roof-repair-llc.html"
+  },
+  {
+    "business_name": "Prime Roof Repair Tampa",
+    "industry": "roofing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/prime-roof-repair-tampa",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/prime-roof-repair-tampa.html"
+  },
+  {
+    "business_name": "Roof X",
+    "industry": "roofing",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/roof-x",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/roof-x.html"
+  },
+  {
+    "business_name": "Force Electric",
+    "industry": "electrical",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/force-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/force-electric.html"
+  },
+  {
+    "business_name": "Electrician  8910 N Dale Mabry Hwy Unit 36",
+    "industry": "electrical",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-8910-n-dale-mabry-hwy-unit-36",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-8910-n-dale-mabry-hwy-unit-36.html"
+  },
+  {
+    "business_name": "Brandon Electric",
+    "industry": "electrical",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/brandon-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/brandon-electric.html"
+  },
+  {
+    "business_name": "Electrician  1034 Skipper Rd",
+    "industry": "electrical",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1034-skipper-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1034-skipper-rd.html"
+  },
+  {
+    "business_name": "Electrician",
+    "industry": "electrical",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician.html"
+  },
+  {
+    "business_name": "Mr. Electric of Tampa Bay",
+    "industry": "electrical",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/mr-electric-of-tampa-bay",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-electric-of-tampa-bay.html"
+  },
+  {
+    "business_name": "Small Jobs Electric, Inc.",
+    "industry": "electrical",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/small-jobs-electric-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/small-jobs-electric-inc.html"
+  },
+  {
+    "business_name": "Flow -Tech Air Conditioning Corp.",
+    "industry": "hvac",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/flow-tech-air-conditioning-corp",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/flow-tech-air-conditioning-corp.html"
+  },
+  {
+    "business_name": "Beachside AC Repair 24 hour",
+    "industry": "hvac",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/beachside-ac-repair-24-hour",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/beachside-ac-repair-24-hour.html"
+  },
+  {
+    "business_name": "Cool Solution Services",
+    "industry": "hvac",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/cool-solution-services",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/cool-solution-services.html"
+  },
+  {
+    "business_name": "Best Price Mini Splits Miami Fl",
+    "industry": "hvac",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/best-price-mini-splits-miami-fl",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/best-price-mini-splits-miami-fl.html"
+  },
+  {
+    "business_name": "Elite Miami HVAC Repair",
+    "industry": "hvac",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/elite-miami-hvac-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-miami-hvac-repair.html"
+  },
+  {
+    "business_name": "Reliable Air Conditioning",
+    "industry": "hvac",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/reliable-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/reliable-air-conditioning.html"
+  },
+  {
+    "business_name": "Air conditioning repair service",
+    "industry": "hvac",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/air-conditioning-repair-service",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/air-conditioning-repair-service.html"
+  },
+  {
+    "business_name": "Plumber",
+    "industry": "plumbing",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber.html"
+  },
+  {
+    "business_name": "Plumber  300 NW 22nd Ave",
+    "industry": "plumbing",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-300-nw-22nd-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-300-nw-22nd-ave.html"
+  },
+  {
+    "business_name": "Plumber  6008 NW 6th Ave",
+    "industry": "plumbing",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-6008-nw-6th-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-6008-nw-6th-ave.html"
+  },
+  {
+    "business_name": "Plumber  1754 Bay Rd",
+    "industry": "plumbing",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-1754-bay-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-1754-bay-rd.html"
+  },
+  {
+    "business_name": "AAAPLUMBINGSERVICES COM",
+    "industry": "plumbing",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/aaaplumbingservices-com",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/aaaplumbingservices-com.html"
+  },
+  {
+    "business_name": "Plumber  13001 NE 14th Ave",
+    "industry": "plumbing",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-13001-ne-14th-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-13001-ne-14th-ave.html"
+  },
+  {
+    "business_name": "Miami Roof-Tech",
+    "industry": "roofing",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/miami-roof-tech",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/miami-roof-tech.html"
+  },
+  {
+    "business_name": "Elekron Electric Inc",
+    "industry": "electrical",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/elekron-electric-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elekron-electric-inc.html"
+  },
+  {
+    "business_name": "Electrician  2332 Galiano St Second Floor",
+    "industry": "electrical",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-2332-galiano-st-second-floor",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-2332-galiano-st-second-floor.html"
+  },
+  {
+    "business_name": "S.E. Bates Electric",
+    "industry": "electrical",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/s-e-bates-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/s-e-bates-electric.html"
+  },
+  {
+    "business_name": "Electrician  9820 NW 80th Ave Ste 6-C",
+    "industry": "electrical",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-9820-nw-80th-ave-ste-6-c",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-9820-nw-80th-ave-ste-6-c.html"
+  },
+  {
+    "business_name": "Electrician  1410 SW 22nd Ave",
+    "industry": "electrical",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1410-sw-22nd-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1410-sw-22nd-ave.html"
+  },
+  {
+    "business_name": "Electrician  1800 NE 180th St",
+    "industry": "electrical",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1800-ne-180th-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1800-ne-180th-st.html"
+  },
+  {
+    "business_name": "Electrician  1881 79th Street Causeway",
+    "industry": "electrical",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1881-79th-street-causeway",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1881-79th-street-causeway.html"
+  },
+  {
+    "business_name": "Electrician",
+    "industry": "electrical",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician.html"
+  },
+  {
+    "business_name": "All Temp Heating and Air Conditioning",
+    "industry": "hvac",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/all-temp-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/all-temp-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "Besco Air Inc.",
+    "industry": "hvac",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/besco-air-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/besco-air-inc.html"
+  },
+  {
+    "business_name": "Chicago HVAC Repair Doctor, Inc.",
+    "industry": "hvac",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/chicago-hvac-repair-doctor-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/chicago-hvac-repair-doctor-inc.html"
+  },
+  {
+    "business_name": "TDH Mechanical, Heating and Cooling Contractors",
+    "industry": "hvac",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/tdh-mechanical-heating-and-cooling-contractors",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/tdh-mechanical-heating-and-cooling-contractors.html"
+  },
+  {
+    "business_name": "Guardian Heating & Cooling Service",
+    "industry": "hvac",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/guardian-heating-and-cooling-service",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/guardian-heating-and-cooling-service.html"
+  },
+  {
+    "business_name": "Plumber  1137 W Webster Ave",
+    "industry": "plumbing",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-1137-w-webster-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-1137-w-webster-ave.html"
+  },
+  {
+    "business_name": "Plumber  4245 N Elston Ave",
+    "industry": "plumbing",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-4245-n-elston-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-4245-n-elston-ave.html"
+  },
+  {
+    "business_name": "Plumber",
+    "industry": "plumbing",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber.html"
+  },
+  {
+    "business_name": "Plumber  3840 N Ashland Ave",
+    "industry": "plumbing",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-3840-n-ashland-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-3840-n-ashland-ave.html"
+  },
+  {
+    "business_name": "Plumber  4352 N Kenneth Ave",
+    "industry": "plumbing",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-4352-n-kenneth-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-4352-n-kenneth-ave.html"
+  },
+  {
+    "business_name": "Plumber  3343 N Monticello Ave",
+    "industry": "plumbing",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-3343-n-monticello-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-3343-n-monticello-ave.html"
+  },
+  {
+    "business_name": "Highlights Chicago Inc",
+    "industry": "electrical",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/highlights-chicago-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/highlights-chicago-inc.html"
+  },
+  {
+    "business_name": "Electrician  5766 N Lincoln Ave",
+    "industry": "electrical",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-5766-n-lincoln-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-5766-n-lincoln-ave.html"
+  },
+  {
+    "business_name": "Electrician  5470 N Elston Ave",
+    "industry": "electrical",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-5470-n-elston-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-5470-n-elston-ave.html"
+  },
+  {
+    "business_name": "STS Electric",
+    "industry": "electrical",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/sts-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sts-electric.html"
+  },
+  {
+    "business_name": "Electrician",
+    "industry": "electrical",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician.html"
+  },
+  {
+    "business_name": "A to Z Electric Co.",
+    "industry": "electrical",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/a-to-z-electric-co",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/a-to-z-electric-co.html"
+  },
+  {
+    "business_name": "Electrician  5015 W Lawrence Ave",
+    "industry": "plumbing",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-5015-w-lawrence-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-5015-w-lawrence-ave.html"
+  },
+  {
+    "business_name": "Electrician  1338 W Eddy St",
+    "industry": "plumbing",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1338-w-eddy-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1338-w-eddy-st.html"
+  },
+  {
+    "business_name": "Sapphire Electric",
+    "industry": "electrical",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/sapphire-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sapphire-electric.html"
+  },
+  {
+    "business_name": "Electrician  3855 N Cicero Ave",
+    "industry": "electrical",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3855-n-cicero-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3855-n-cicero-ave.html"
+  },
+  {
+    "business_name": "Electrician  3344 W Irving Park Rd",
+    "industry": "electrical",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3344-w-irving-park-rd",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3344-w-irving-park-rd.html"
+  },
+  {
+    "business_name": "GEN3 Electric & HVAC",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/gen3-electric-and-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/gen3-electric-and-hvac.html"
+  },
+  {
+    "business_name": "Green Heating, Cooling & Electric",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/green-heating-cooling-and-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/green-heating-cooling-and-electric.html"
+  },
+  {
+    "business_name": "Daniels HVAC Philadelphia",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/daniels-hvac-philadelphia",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/daniels-hvac-philadelphia.html"
+  },
+  {
+    "business_name": "W.F. Smith, Inc.",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/w-f-smith-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/w-f-smith-inc.html"
+  },
+  {
+    "business_name": "AirMaster Heating & Cooling Specialists",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/airmaster-heating-and-cooling-specialists",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/airmaster-heating-and-cooling-specialists.html"
+  },
+  {
+    "business_name": "NextGen Heating and Air Conditioning",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/nextgen-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/nextgen-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "Superior Comfort Heating & Cooling",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/superior-comfort-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/superior-comfort-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Plumber  2424 E York St Ste 100-B",
+    "industry": "plumbing",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-2424-e-york-st-ste-100-b",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-2424-e-york-st-ste-100-b.html"
+  },
+  {
+    "business_name": "Plumber  1755 N 13th St",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-1755-n-13th-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-1755-n-13th-st.html"
+  },
+  {
+    "business_name": "Plumber  5112 Umbria St",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-5112-umbria-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-5112-umbria-st.html"
+  },
+  {
+    "business_name": "Plumber  8015 Castor Ave",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-8015-castor-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-8015-castor-ave.html"
+  },
+  {
+    "business_name": "Plumber  Storefront, 4260 Manayunk Ave",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-storefront-4260-manayunk-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-storefront-4260-manayunk-ave.html"
+  },
+  {
+    "business_name": "Plumber  5915 Torresdale Ave",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-5915-torresdale-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-5915-torresdale-ave.html"
+  },
+  {
+    "business_name": "Plumber  900 Cottman Ave",
+    "industry": "hvac",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/plumber-900-cottman-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumber-900-cottman-ave.html"
+  },
+  {
+    "business_name": "DISCOUNTED ROOFING LLC",
+    "industry": "roofing",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/discounted-roofing-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/discounted-roofing-llc.html"
+  },
+  {
+    "business_name": "The Roof Doctor",
+    "industry": "roofing",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/the-roof-doctor",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/the-roof-doctor.html"
+  },
+  {
+    "business_name": "Electrician  7000 Lynford St",
+    "industry": "electrical",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-7000-lynford-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-7000-lynford-st.html"
+  },
+  {
+    "business_name": "EP Electric LLC",
+    "industry": "electrical",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/ep-electric-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ep-electric-llc.html"
+  },
+  {
+    "business_name": "Electrician  115 Village Ln",
+    "industry": "electrical",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-115-village-ln",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-115-village-ln.html"
+  },
+  {
+    "business_name": "Lauterborn Electric",
+    "industry": "electrical",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/lauterborn-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/lauterborn-electric.html"
+  },
+  {
+    "business_name": "Electrician  3570 Edgemont St",
+    "industry": "electrical",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-3570-edgemont-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-3570-edgemont-st.html"
+  },
+  {
+    "business_name": "Electrician  6700 Guyer Ave",
+    "industry": "electrical",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-6700-guyer-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-6700-guyer-ave.html"
+  },
+  {
+    "business_name": "Linc Electric Inc",
+    "industry": "electrical",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/linc-electric-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/linc-electric-inc.html"
+  },
+  {
+    "business_name": "Electrician  6915 Castor Ave",
+    "industry": "electrical",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-6915-castor-ave",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-6915-castor-ave.html"
+  },
+  {
+    "business_name": "Electrician  585 Sanger St",
+    "industry": "electrical",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-585-sanger-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-585-sanger-st.html"
+  },
+  {
+    "business_name": "BG Electric Service LLC",
+    "industry": "electrical",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/bg-electric-service-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bg-electric-service-llc.html"
+  },
+  {
+    "business_name": "Electrician  1219 St Vincent St",
+    "industry": "electrical",
+    "city": "Philadelphia",
+    "state_code": "PA",
+    "demo_url": "https://www.instaweb.agency/demo/electrician-1219-st-vincent-st",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electrician-1219-st-vincent-st.html"
+  }
+]
