@@ -18,6 +18,7 @@ const DEMO_HOST = "https://instaweb-demo-sites.vercel.app";
 
 function slugify(text) {
     return text.toString().toLowerCase()
+        .replace(/&/g, 'and')           // & → and (match demo generator)
         .replace(/'/g, '')              // Remove apostrophes
         .replace(/[^a-z0-9]+/g, '-')    // Replace other non-alphanumeric with -
         .replace(/^-+|-+$/g, '')        // Trim dashes

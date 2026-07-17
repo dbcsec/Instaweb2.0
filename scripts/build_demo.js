@@ -27,6 +27,7 @@ const city = args[3] || 'Houston';
 const state = args[4] || 'TX';
 
 const slug = businessName.toLowerCase()
+    .replace(/&/g, 'and')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
 

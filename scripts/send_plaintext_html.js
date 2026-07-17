@@ -90,7 +90,7 @@ async function main() {
   console.log('Sending ' + leads.length + ' emails with plain text + HTML...');
   for (let i = 0; i < leads.length; i++) {
     const l = leads[i];
-    const slug = l.business_name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    const slug = l.business_name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const demoUrl = 'https://instaweb.agency/demo/' + slug;
     try {
       const r = await sendEmail(l.email, l.business_name, demoUrl, l.phone || '');
