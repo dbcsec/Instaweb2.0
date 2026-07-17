@@ -4,7 +4,7 @@ Sends personalized outreach emails via Resend API for generated demo sites.
 """
 import json, subprocess, time, os, sys
 
-RESEND_KEY = "KEY_SECURED"
+RESEND_KEY = os.environ.get("RESEND_API_KEY", "")
 EMAIL_DIR = "/home/team/shared/instaweb-unified/data/outreach/mass_batches"
 SENT_LOG = "/home/team/shared/instaweb-unified/data/outreach/mass_sent_log.json"
 
@@ -12,7 +12,7 @@ def send_email(to, subject, body):
     """Send email via Resend API"""
     import urllib.request
     payload = json.dumps({
-        "from": "Instaweb Agency <sales@instaweb.agency>",
+        "from": "Instaweb Agency <sales@mail.instaweb.agency>",
         "to": to,
         "subject": subject,
         "text": body

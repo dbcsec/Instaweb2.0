@@ -2,8 +2,8 @@ const fs = require('fs');
 const https = require('https');
 
 // ===== CONFIG =====
-const apiKey = 'KEY_SECURED';
-const from = 'Instaweb Agency <sales@instaweb.agency>';
+const apiKey = process.env.RESEND_API_KEY || '';
+const from = 'Instaweb Agency <sales@mail.instaweb.agency>';
 const subject = 'Quick question for {{NAME}}';
 
 // ===== PLAIN TEXT VERSION =====
@@ -60,9 +60,10 @@ function htmlBody(name, demoUrl, phone) {
 function sendEmail(to, name, demoUrl, phone) {
   return new Promise((resolve, reject) => {
     const body = JSON.stringify({
-      from: from,
-      to: [to],
-      subject: subject.replace('{{NAME}}', name),
+            from: from,
+            to: [to],
+            reply_to: ['instaweb-agency-2-0-86138e51@ctomail.io'],
+            subject: subject.replace('{{NAME}}', name),
       text: plainText(name, demoUrl, phone),
       html: htmlBody(name, demoUrl, phone)
     });

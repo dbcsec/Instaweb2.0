@@ -8,7 +8,7 @@ from datetime import datetime
 BASE_DIR = "/home/team/shared/instaweb-unified"
 OUTPUT_DIR = f"{BASE_DIR}/data/demos/mass_output"
 EMAIL_DIR = f"{BASE_DIR}/data/outreach/mass_batches"
-RESEND_KEY = "KEY_SECURED"
+RESEND_KEY = os.environ.get("RESEND_API_KEY", "")
 TRADE_TPL = f"{BASE_DIR}/templates/elite-trade.html"
 
 # Turso DB

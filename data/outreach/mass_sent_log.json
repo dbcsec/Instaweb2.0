@@ -7291,5 +7291,376 @@
     "business_name": "Arrow Sugar Land Mechanical",
     "batch": "batch_1_sendgrid_20260714",
     "status_code": 202
+  },
+  {
+    "timestamp": "2026-07-16 23:15:28",
+    "to": "sarah.newby@allstarairtexas.com",
+    "business_name": "All Star A/C, Plumbing & Electrical",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:30",
+    "to": "david@missionac.com",
+    "business_name": "Mission Air Conditioning & Plumbing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:32",
+    "to": "75degreeacservices@gmail.com",
+    "business_name": "75 Degree AC- Houston",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:34",
+    "to": "listings@bellaireair.com",
+    "business_name": "Bellaire Air Conditioning",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:36",
+    "to": "dcarlsson@google.com",
+    "business_name": "EZ Comfort Air Conditioning & Heating",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:39",
+    "to": "dcarlsson@google.com",
+    "business_name": "One Hour Air Conditioning & Heating\\u00ae of Houston",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:41",
+    "to": "scott@leethompsonac.com",
+    "business_name": "The Lee Thompson Co",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:43",
+    "to": "info@excelairconditioning.com",
+    "business_name": "Excel Air",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:45",
+    "to": "service@airtechofhumble.com",
+    "business_name": "Air Tech of Humble - Elite Comfort",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:47",
+    "to": "service@villageplumbing.com",
+    "business_name": "Village Plumbing, Air & Electric",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:49",
+    "to": "service@nicksplumbing.com",
+    "business_name": "Nick's Plumbing & Air Conditioning",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:51",
+    "to": "Info@allaroundplumbingtx.com",
+    "business_name": "All Around Plumbing LLC",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:53",
+    "to": "Plumbing@geiretail.com",
+    "business_name": "GEI Plumbing Services Houston",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:56",
+    "to": "tom@allthetimeplumbing.com",
+    "business_name": "All The Time Plumbing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:15:58",
+    "to": "houston@1tomplumber.com",
+    "business_name": "1-Tom-Plumber",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:00",
+    "to": "mark.conners@rotorooter.com",
+    "business_name": "Roto-Rooter Plumbing & Water Cleanup",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:02",
+    "to": "frank@amstillroofing.com",
+    "business_name": "Amstill Roofing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:04",
+    "to": "hisham@precisionroofcrafters.com",
+    "business_name": "Precision Roof Crafters, Inc.",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:06",
+    "to": "gretchen@mossroofinghouston.com",
+    "business_name": "Moss Roofing Houston",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:08",
+    "to": "info@myhrc.biz",
+    "business_name": "Houston Roofing & Construction",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:10",
+    "to": "freeroofrepairestimate@gmail.com",
+    "business_name": "Roof Repair Solutions",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:12",
+    "to": "office@roseroofing.com",
+    "business_name": "Rose Roofing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:14",
+    "to": "adam.miller@mrelectric.com",
+    "business_name": "Mr. Electric of Houston Midtown",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:17",
+    "to": "randy@westhoustonelectric.com",
+    "business_name": "West Houston Electric",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:19",
+    "to": "pr@paulrichardelectric.com",
+    "business_name": "Paul Richard Electric",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:21",
+    "to": "luis@harvest-tx.com",
+    "business_name": "Harvest Electrical Solutions",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:23",
+    "to": "brant@righttouchelectrical.com",
+    "business_name": "Right Touch Electrical",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:25",
+    "to": "charles_hargrave@electricalmasterscompany.com",
+    "business_name": "Electrical Masters Company Inc.",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:27",
+    "to": "info@rescueairtx.com",
+    "business_name": "Rescue Air and Plumbing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:29",
+    "to": "sales@texasairzone.com",
+    "business_name": "Texas AirZone LLC",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:48",
+    "to": "service@bluelineac.net",
+    "business_name": "Blueline Heating & Air Conditioning LLC",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:50",
+    "to": "support@reliabee.com",
+    "business_name": "ReliaBee Air Electric Plumbing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:52",
+    "to": "info@tsbpe.state.tx.us",
+    "business_name": "PlumbSmart",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:54",
+    "to": "sanantonio@1tomplumber.com",
+    "business_name": "1-Tom-Plumber",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:57",
+    "to": "Info@4premierroofs.com",
+    "business_name": "Premier Roofing and Contracting",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:16:59",
+    "to": "info@apexroofing.biz",
+    "business_name": "Apex Roofing & General Contractors",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:01",
+    "to": "troy@allgoodelectric.com",
+    "business_name": "Allgood Electric",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:03",
+    "to": "victoria@boltelectricsa.com",
+    "business_name": "Bolt Electric",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:05",
+    "to": "Logo@3x-1.webp",
+    "business_name": "Beyond Wow Plumbing & Drains",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:07",
+    "to": "austinsgreatestplumbing@gmail.com",
+    "business_name": "Austin's Greatest Plumbing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:09",
+    "to": "service@austinplumbing.com",
+    "business_name": "Austin Plumbing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:11",
+    "to": "service@austinplumbing.com",
+    "business_name": "Austin Plumbing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:13",
+    "to": "Info@AustinRoofingAndConstruction.com",
+    "business_name": "Austin Roofing and Construction",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:15",
+    "to": "office@clearchoiceroofingatx.com",
+    "business_name": "Clear Choice Roofing - Austin",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:18",
+    "to": "info@wilsonroofing.com",
+    "business_name": "Wilson Roofing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:20",
+    "to": "sales@jamarroofing.com",
+    "business_name": "Ja-Mar Roofing & Sheet Metal - Austin",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:22",
+    "to": "bradfarr@rocketmail.com",
+    "business_name": "Matthew Lorand Roofing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:24",
+    "to": "info@ndiscovered.com",
+    "business_name": "Eskew Electric - Austin, Texas Electrician",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:26",
+    "to": "user@domain.com",
+    "business_name": "Volthouse Electric",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:28",
+    "to": "dispatch@northvalleymechanical.com",
+    "business_name": "North Valley Mechanical HVAC & Plumbing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:38",
+    "to": "dispatch@go4apes.com",
+    "business_name": "APES HVAC & Plumbing",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:17:48",
+    "to": "office@theaussieplumber.com",
+    "business_name": "The Aussie Plumber",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-07-16 23:18:18",
+    "to": "Scheduling@plumbingtreesd.com",
+    "business_name": "Plumbing Tree",
+    "batch": "verified_campaign_sendgrid",
+    "status_code": 200
   }
 ]
