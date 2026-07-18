@@ -138,18 +138,31 @@ body{background:#0f172a;color:#e2e8f0;padding-bottom:80px}
   </div>
 </div>
 
-<script src="/data/leads_data.js"></script>
 <script>
 let D=[],C=JSON.parse(localStorage.getItem('contacts')||'{}'),curId='';
-function init(){
-  if(typeof STATS!=='undefined'){
-    document.getElementById('st').textContent=STATS.total||0;
-    document.getElementById('sp').textContent=STATS.phones||0;
-    document.getElementById('se').textContent=STATS.emails||0;
-    document.getElementById('semail').textContent=STATS.emailed||0;
+async function init(){
+  try {
+    const resp = await fetch('/api/caller/leads?limit=500');
+    if (resp.ok) {
+      const data = await resp.json();
+      D = data.leads || [];
+      document.getElementById('st').textContent = D.length;
+      document.getElementById('sp').textContent = D.filter(l => l.phone).length;
+      document.getElementById('se').textContent = D.filter(l => l.email).length;
+      document.getElementById('semail').textContent = D.filter(l => l.status !== 'cold').length;
+    }
+  } catch(e) {
+    // Fallback: try loading from static file
+    if (typeof LEADS !== 'undefined') { D = LEADS; }
+    if (typeof STATS !== 'undefined') {
+      document.getElementById('st').textContent = STATS.total || 0;
+      document.getElementById('sp').textContent = STATS.phones || 0;
+      document.getElementById('se').textContent = STATS.emails || 0;
+      document.getElementById('semail').textContent = STATS.emailed || 0;
+    }
   }
-  if(typeof LEADS!=='undefined'){D=LEADS;}
-  updateStats();draw();
+  updateStats();
+  draw();
 }
 function updateStats(){
   const called=Object.values(C).filter(c=>c.status).length;
