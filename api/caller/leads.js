@@ -1,4 +1,4 @@
-// POST /api/caller/leads — Ingest leads with dedup per Instaweb Lead Protocol v1
+// POST /api/caller/leads — Ingest leads with dedup per Instaweb Lead Protocol v1.1
 // GET /api/caller/leads — List leads (paginated, optional ?source= filter)
 // GET /api/caller/leads/:id — Get single lead by lead_id
 
@@ -17,7 +17,6 @@ function normalizeName(name) {
   if (!name) return '';
   const suffixes = ['llc','inc','co','the','&','corp','corporation','ltd','limited'];
   let s = name.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
-  // Strip trailing suffixes
   for (const suffix of suffixes) {
     const re = new RegExp('\\s+' + suffix + '$');
     s = s.replace(re, '');
@@ -31,22 +30,19 @@ function normalizePhone(phone) {
   let digits = phone.replace(/\D/g, '');
   if (digits.length === 10) digits = '1' + digits;
   if (digits.length === 11 && digits[0] === '1') return '+' + digits;
-  return '+' + digits; // best effort
+  return '+' + digits;
 }
 
-// Normalize city: lowercase, strip punctuation, trim
 function normalizeCity(city) {
   if (!city) return '';
   return city.toLowerCase().replace(/[^a-z\s]/g, '').trim();
 }
 
-// Normalize state: lowercase, two-letter
 function normalizeState(state) {
   if (!state) return '';
   return state.toLowerCase().slice(0, 2);
 }
 
-// Compute SHA256 lead_id per protocol
 async function computeLeadId(businessName, phone, city, state) {
   const input = normalizeName(businessName) + '|' + normalizePhone(phone) + '|' + normalizeCity(city) + ',' + normalizeState(state);
   const encoder = new TextEncoder();
@@ -54,6 +50,17 @@ async function computeLeadId(businessName, phone, city, state) {
   const hashBuffer = await crypto.subtle.digest('SHA-256', data);
   const hashArray = Array.from(new Uint8Array(hashBuffer));
   return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function escape(s) {
+  return (s || '').replace(/'/g, "''");
+}
+
+function buildLeadObj(rows, cols) {
+  if (!rows || rows.length === 0) return null;
+  const obj = {};
+  rows[0].forEach((cell, i) => { obj[cols[i]?.name || 'col' + i] = val(cell, null); });
+  return obj;
 }
 
 module.exports = async (req, res) => {
@@ -65,6 +72,15 @@ module.exports = async (req, res) => {
   const DB_TOKEN = process.env.TEAM_DB_AUTH_TOKEN || 'eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3ODEyMDMxMDcsImlkIjoiMDE5ZWI3ZmEtN2UwMS03NDg4LWEyODctMjIzOWNkMWQxZWU0IiwicmlkIjoiY2Q5MDIyYTItMmFmMS00NmY0LWIyYTUtZDc1ODQxNTk0YTI0In0.I74NzuKD7PUSeNbJjA9b8jbZhUywKjbM4QIl0oDFCMs6rLtfToT7Cj25LGXh2zsw2759tLL5mPRsr4GsyOpYBQ';
   const apiUrl = DB_URL.replace('libsql://', 'https://');
 
+  async function dbQuery(sql) {
+    const resp = await fetch(apiUrl + '/v2/pipeline', {
+      method: 'POST',
+      headers: {'Authorization': 'Bearer ' + DB_TOKEN, 'Content-Type': 'application/json'},
+      body: JSON.stringify({requests: [{type:'execute', stmt:{sql: sql}}]})
+    });
+    return await resp.json();
+  }
+
   try {
     // --- GET: List leads ---
     if (req.method === 'GET') {
@@ -74,142 +90,134 @@ module.exports = async (req, res) => {
       const limit = parseInt(url.searchParams.get('limit')) || 50;
       const offset = (page - 1) * limit;
       
-      let sql = 'SELECT * FROM leads_pool';
-      let countSql = 'SELECT COUNT(*) as total FROM leads_pool';
-      if (source) {
-        sql += " WHERE source = '" + source.replace(/'/g, "''") + "'";
-        countSql += " WHERE source = '" + source.replace(/'/g, "''") + "'";
-      }
-      sql += ' ORDER BY first_seen_at DESC LIMIT ' + limit + ' OFFSET ' + offset;
+      let where = '';
+      if (source) where = " WHERE source = '" + source.replace(/'/g, "''") + "'";
       
-      const payload = JSON.stringify({requests: [
-        {type:'execute', stmt:{sql: countSql}},
-        {type:'execute', stmt:{sql: sql}}
-      ]});
-      const resp = await fetch(apiUrl + '/v2/pipeline', {
-        method: 'POST',
-        headers: {'Authorization': 'Bearer ' + DB_TOKEN, 'Content-Type': 'application/json'},
-        body: payload
-      });
-      const data = await resp.json();
-      const r = data?.results || [];
-      const total = val(r[0]?.response?.result?.rows?.[0]?.[0]) || 0;
-      const rows = r[1]?.response?.result?.rows || [];
+      const countResp = await dbQuery("SELECT COUNT(*) as total FROM leads_pool" + where);
+      const total = val(countResp?.results?.[0]?.response?.result?.rows?.[0]?.[0]) || 0;
+      
+      const listResp = await dbQuery("SELECT * FROM leads_pool" + where + " ORDER BY first_seen_at DESC LIMIT " + limit + " OFFSET " + offset);
+      const rows = listResp?.results?.[0]?.response?.result?.rows || [];
+      const cols = listResp?.results?.[0]?.response?.result?.cols || [];
       
       const leads = rows.map(row => {
         const obj = {};
-        const cols = r[1]?.response?.result?.cols || [];
-        row.forEach((cell, i) => {
-          obj[cols[i]?.name || 'col' + i] = val(cell, null);
-        });
+        row.forEach((cell, i) => { obj[cols[i]?.name || 'col' + i] = val(cell, null); });
         return obj;
       });
       
       return res.status(200).json({leads, total, page, limit, total_pages: Math.ceil(total / limit)});
     }
     
-    // --- GET by ID: /api/caller/leads/:id ---
-    if (req.method === 'GET' && req.url.includes('/api/caller/leads/')) {
-      const parts = req.url.split('/');
-      const leadId = parts[parts.length - 1];
-      // Check if it's a simple /api/caller/leads without an ID
-      if (leadId === 'leads' || leadId === '') {
-        // Already handled above
-      } else {
-        const sql = "SELECT * FROM leads_pool WHERE lead_id = '" + leadId.replace(/'/g, "''") + "'";
-        const payload = JSON.stringify({requests: [{type:'execute', stmt:{sql: sql}}]});
-        const resp = await fetch(apiUrl + '/v2/pipeline', {
-          method: 'POST',
-          headers: {'Authorization': 'Bearer ' + DB_TOKEN, 'Content-Type': 'application/json'},
-          body: payload
-        });
-        const data = await resp.json();
-        const rows = data?.results?.[0]?.response?.result?.rows || [];
-        if (rows.length === 0) return res.status(404).json({error: 'Lead not found'});
-        const cols = data?.results?.[0]?.response?.result?.cols || [];
-        const lead = {};
-        rows[0].forEach((cell, i) => { lead[cols[i]?.name || 'col' + i] = val(cell, null); });
-        return res.status(200).json(lead);
-      }
-    }
-    
     // --- POST: Ingest lead ---
     if (req.method === 'POST') {
       let body = '';
-      await new Promise(resolve => {
-        req.on('data', chunk => { body += chunk; });
-        req.on('end', resolve);
-      });
+      await new Promise(resolve => { req.on('data', chunk => { body += chunk; }); req.on('end', resolve); });
       let input;
       try { input = JSON.parse(body); } catch(e) {
         return res.status(422).json({status: 'error', message: 'Invalid JSON body'});
       }
       
+      // A-4: Validate source field — single-valued only, pattern ^[a-z0-9_]+$
+      if (!input.source) {
+        return res.status(422).json({status: 'error', message: 'Missing required field: source'});
+      }
+      if (input.source.includes(',') || input.source.includes(' ') || !/^[a-z0-9_]+$/.test(input.source)) {
+        return res.status(422).json({status: 'error', message: 'Invalid source. Must be single-valued, pattern: ^[a-z0-9_]+$'});
+      }
+      const validSources = ['polsia', 'instaweb', 'manual', 'caller'];
+      if (!validSources.includes(input.source)) {
+        return res.status(422).json({status: 'error', message: 'Invalid source. Must be one of: ' + validSources.join(', ')});
+      }
+      
       // Validate required fields
-      const required = ['business_name', 'phone', 'city', 'state', 'source', 'lead_id'];
+      const required = ['business_name', 'phone', 'city', 'state', 'lead_id'];
       for (const field of required) {
         if (!input[field] || !input[field].toString().trim()) {
           return res.status(422).json({status: 'error', message: 'Missing required field: ' + field});
         }
       }
       
-      // Validate source enum
-      const validSources = ['polsia', 'instaweb', 'manual', 'caller'];
-      if (!validSources.includes(input.source)) {
-        return res.status(422).json({status: 'error', message: 'Invalid source. Must be one of: ' + validSources.join(', ')});
-      }
-      
       const leadId = input.lead_id;
       const phone = normalizePhone(input.phone);
+      const normName = normalizeName(input.business_name);
+      const now = new Date().toISOString();
+      const forceCreate = req.headers['x-lead-force-create'] === 'true';
       
       // Rule 1: Check exact match by lead_id
-      const checkSql = "SELECT * FROM leads_pool WHERE lead_id = '" + leadId.replace(/'/g, "''") + "'";
-      const checkPayload = JSON.stringify({requests: [{type:'execute', stmt:{sql: checkSql}}]});
-      const checkResp = await fetch(apiUrl + '/v2/pipeline', {
-        method: 'POST',
-        headers: {'Authorization': 'Bearer ' + DB_TOKEN, 'Content-Type': 'application/json'},
-        body: checkPayload
-      });
-      const checkData = await checkResp.json();
-      const existingRows = checkData?.results?.[0]?.response?.result?.rows || [];
+      const checkResp = await dbQuery("SELECT * FROM leads_pool WHERE lead_id = '" + escape(leadId) + "'");
+      const existingRows = checkResp?.results?.[0]?.response?.result?.rows || [];
+      const existingCols = checkResp?.results?.[0]?.response?.result?.cols || [];
       
       if (existingRows.length > 0) {
         return res.status(200).json({status: 'duplicate', lead_id: leadId});
       }
       
-      // Rule 2: Check same phone, different name
-      const phoneCheckSql = "SELECT * FROM leads_pool WHERE phone = '" + phone.replace(/'/g, "''") + "'";
-      const phonePayload = JSON.stringify({requests: [{type:'execute', stmt:{sql: phoneCheckSql}}]});
-      const phoneResp = await fetch(apiUrl + '/v2/pipeline', {
-        method: 'POST',
-        headers: {'Authorization': 'Bearer ' + DB_TOKEN, 'Content-Type': 'application/json'},
-        body: phonePayload
-      });
-      const phoneData = await phoneResp.json();
-      const phoneRows = phoneData?.results?.[0]?.response?.result?.rows || [];
-      const phoneCols = phoneData?.results?.[0]?.response?.result?.cols || [];
+      // Check same phone for Rule 2 (conflict) and A-1 (dual-match)
+      const phoneResp = await dbQuery("SELECT * FROM leads_pool WHERE phone = '" + escape(phone) + "'");
+      const phoneRows = phoneResp?.results?.[0]?.response?.result?.rows || [];
+      const phoneCols = phoneResp?.results?.[0]?.response?.result?.cols || [];
       
       if (phoneRows.length > 0) {
-        const existing = {};
-        phoneRows[0].forEach((cell, i) => { existing[phoneCols[i]?.name || 'col' + i] = val(cell, null); });
-        
+        const existing = buildLeadObj(phoneRows, phoneCols);
         const existingNorm = normalizeName(existing.business_name || '');
-        const incomingNorm = normalizeName(input.business_name);
         
-        if (existingNorm !== incomingNorm && existing.lead_id !== leadId) {
-          // Log conflict
-          const conflictSql = "INSERT INTO conflict_log (lead_id_a, lead_id_b, business_name_a, business_name_b, phone) VALUES ('" +
-            existing.lead_id.replace(/'/g, "''") + "', '" +
-            leadId.replace(/'/g, "''") + "', '" +
-            (existing.business_name || '').replace(/'/g, "''") + "', '" +
-            (input.business_name || '').replace(/'/g, "''") + "', '" +
-            phone.replace(/'/g, "''") + "')";
-          
-          await fetch(apiUrl + '/v2/pipeline', {
-            method: 'POST',
-            headers: {'Authorization': 'Bearer ' + DB_TOKEN, 'Content-Type': 'application/json'},
-            body: JSON.stringify({requests: [{type:'execute', stmt:{sql: conflictSql}}]})
-          });
+        // A-1: Dual-match — phone AND business_name both match, but lead_id differs
+        if (existingNorm === normName && existing.lead_id !== leadId) {
+          // Dual-match detected
+          if (forceCreate) {
+            // X-Lead-Force-Create: true — create new record, mark old as superseded
+            const insertSql = "INSERT INTO leads_pool (lead_id, business_name, phone, city, state, industry, email, demo_url, source, notes, metadata, first_seen_at, last_updated_at) VALUES ('" +
+              escape(leadId) + "','" + escape(input.business_name) + "','" + escape(phone) + "','" +
+              escape(input.city) + "','" + escape(input.state) + "','" + escape(input.industry) + "','" +
+              escape(input.email) + "','" + escape(input.demo_url) + "','" + escape(input.source) + "','" +
+              escape(input.notes) + "','" + (input.metadata ? escape(JSON.stringify(input.metadata)) : '') + "','" +
+              (input.first_seen_at || now) + "','" + now + "')";
+            
+            const insertResp = await dbQuery(insertSql);
+            const insertResult = insertResp?.results?.[0];
+            if (insertResult?.type === 'error') {
+              return res.status(500).json({status: 'error', message: insertResult.error.message});
+            }
+            
+            // Mark old record as superseded
+            await dbQuery("UPDATE leads_pool SET superseded_by = '" + escape(leadId) + "', last_updated_at = '" + now + "' WHERE lead_id = '" + escape(existing.lead_id) + "'");
+            
+            // Log conflict
+            await dbQuery("INSERT INTO conflict_log (lead_id_a, lead_id_b, business_name_a, business_name_b, phone, conflict_type) VALUES ('" +
+              escape(existing.lead_id) + "','" + escape(leadId) + "','" + escape(existing.business_name) + "','" +
+              escape(input.business_name) + "','" + escape(phone) + "','dual_match')");
+            
+            return res.status(200).json({status: 'inserted_force', lead_id: leadId, supersedes: existing.lead_id});
+          } else {
+            // Auto-merge into older record (append metadata to merge_history)
+            const existingMeta = existing.merge_history || '[]';
+            let mergeHistory;
+            try { mergeHistory = JSON.parse(existingMeta); } catch(e) { mergeHistory = []; }
+            mergeHistory.push({
+              merged_at: now,
+              inbound_lead_id: leadId,
+              inbound_business_name: input.business_name,
+              inbound_metadata: input.metadata || {}
+            });
+            
+            const updateSql = "UPDATE leads_pool SET merge_history = '" + escape(JSON.stringify(mergeHistory)) + "', last_updated_at = '" + now + "' WHERE lead_id = '" + escape(existing.lead_id) + "'";
+            await dbQuery(updateSql);
+            
+            // Log conflict
+            await dbQuery("INSERT INTO conflict_log (lead_id_a, lead_id_b, business_name_a, business_name_b, phone, conflict_type) VALUES ('" +
+              escape(existing.lead_id) + "','" + escape(leadId) + "','" + escape(existing.business_name) + "','" +
+              escape(input.business_name) + "','" + escape(phone) + "','dual_match')");
+            
+            return res.status(200).json({status: 'merged', lead_id: existing.lead_id, merged_into: existing.lead_id});
+          }
+        }
+        
+        // Rule 2: Same phone, different name (not dual-match)
+        if (existingNorm !== normName && existing.lead_id !== leadId) {
+          await dbQuery("INSERT INTO conflict_log (lead_id_a, lead_id_b, business_name_a, business_name_b, phone, conflict_type) VALUES ('" +
+            escape(existing.lead_id) + "','" + escape(leadId) + "','" + escape(existing.business_name) + "','" +
+            escape(input.business_name) + "','" + escape(phone) + "','phone_match')");
           
           return res.status(409).json({
             status: 'conflict',
@@ -220,29 +228,16 @@ module.exports = async (req, res) => {
         }
       }
       
-      // Insert
-      const now = new Date().toISOString();
-      const insertSql = "INSERT INTO leads_pool (lead_id, business_name, phone, city, state, industry, email, demo_url, source, notes, metadata, first_seen_at, last_updated_at) VALUES ('" +
-        leadId.replace(/'/g, "''") + "', '" +
-        (input.business_name || '').replace(/'/g, "''") + "', '" +
-        phone.replace(/'/g, "''") + "', '" +
-        (input.city || '').replace(/'/g, "''") + "', '" +
-        (input.state || '').replace(/'/g, "''") + "', '" +
-        (input.industry || '').replace(/'/g, "''") + "', '" +
-        (input.email || '').replace(/'/g, "''") + "', '" +
-        (input.demo_url || '').replace(/'/g, "''") + "', '" +
-        input.source.replace(/'/g, "''") + "', '" +
-        (input.notes || '').replace(/'/g, "''") + "', '" +
-        (input.metadata ? JSON.stringify(input.metadata).replace(/'/g, "''") : '') + "', '" +
-        (input.first_seen_at || now) + "', '" + now + "')";
+      // Insert new lead (Rule 3 or clean insert)
+      const insertSql = "INSERT INTO leads_pool (lead_id, business_name, phone, city, state, industry, email, demo_url, source, notes, metadata, first_seen_at, last_updated_at, last_activity_at) VALUES ('" +
+        escape(leadId) + "','" + escape(input.business_name) + "','" + escape(phone) + "','" +
+        escape(input.city) + "','" + escape(input.state) + "','" + escape(input.industry) + "','" +
+        escape(input.email) + "','" + escape(input.demo_url) + "','" + escape(input.source) + "','" +
+        escape(input.notes) + "','" + (input.metadata ? escape(JSON.stringify(input.metadata)) : '') + "','" +
+        (input.first_seen_at || now) + "','" + now + "','" + now + "')";
       
-      const insertResp = await fetch(apiUrl + '/v2/pipeline', {
-        method: 'POST',
-        headers: {'Authorization': 'Bearer ' + DB_TOKEN, 'Content-Type': 'application/json'},
-        body: JSON.stringify({requests: [{type:'execute', stmt:{sql: insertSql}}]})
-      });
-      const insertData = await insertResp.json();
-      const insertResult = insertData?.results?.[0];
+      const insertResp = await dbQuery(insertSql);
+      const insertResult = insertResp?.results?.[0];
       
       if (insertResult?.type === 'error') {
         return res.status(500).json({status: 'error', message: insertResult.error.message});
