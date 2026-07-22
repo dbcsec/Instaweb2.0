@@ -1,5 +1,1021 @@
 [
   {
+    "business_name": "Premier Los Angeles HVAC",
+    "industry": "hvac",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/premier-los-angeles-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/premier-los-angeles-hvac.html"
+  },
+  {
+    "business_name": "Elite San Diego Plumbing",
+    "industry": "plumbing",
+    "city": "San Diego",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/elite-san-diego-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-san-diego-plumbing.html"
+  },
+  {
+    "business_name": "Golden Los Angeles Restaurant",
+    "industry": "restaurant",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/golden-los-angeles-restaurant",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/golden-los-angeles-restaurant.html"
+  },
+  {
+    "business_name": "Reliable Houston HVAC",
+    "industry": "hvac",
+    "city": "Houston",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/reliable-houston-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/reliable-houston-hvac.html"
+  },
+  {
+    "business_name": "Rapid Dallas Plumbing",
+    "industry": "plumbing",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/rapid-dallas-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/rapid-dallas-plumbing.html"
+  },
+  {
+    "business_name": "Fortress Austin Roofing",
+    "industry": "roofing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/fortress-austin-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/fortress-austin-roofing.html"
+  },
+  {
+    "business_name": "Spark Fort Worth Electrical",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/spark-fort-worth-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/spark-fort-worth-electrical.html"
+  },
+  {
+    "business_name": "Green Miami Salon",
+    "industry": "salon",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/green-miami-salon",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/green-miami-salon.html"
+  },
+  {
+    "business_name": "Bright Orlando Dental",
+    "industry": "dental",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/bright-orlando-dental",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bright-orlando-dental.html"
+  },
+  {
+    "business_name": "Green Tampa Landscaping",
+    "industry": "landscaping",
+    "city": "Tampa",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/green-tampa-landscaping",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/green-tampa-landscaping.html"
+  },
+  {
+    "business_name": "Auto New York Repair",
+    "industry": "automotive",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/auto-new-york-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/auto-new-york-repair.html"
+  },
+  {
+    "business_name": "Premier New York Real Estate",
+    "industry": "real estate",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/premier-new-york-real-estate",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/premier-new-york-real-estate.html"
+  },
+  {
+    "business_name": "Secure Chicago Insurance",
+    "industry": "insurance",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/secure-chicago-insurance",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/secure-chicago-insurance.html"
+  },
+  {
+    "business_name": "Care Chicago Healthcare",
+    "industry": "healthcare",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/care-chicago-healthcare",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/care-chicago-healthcare.html"
+  },
+  {
+    "business_name": "Fit Chicago Fitness",
+    "industry": "fitness",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/fit-chicago-fitness",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/fit-chicago-fitness.html"
+  },
+  {
+    "business_name": "Paws Chicago Pet Services",
+    "industry": "pet services",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/paws-chicago-pet-services",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/paws-chicago-pet-services.html"
+  },
+  {
+    "business_name": "Apex Los Angeles Roofing",
+    "industry": "roofing",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/apex-los-angeles-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/apex-los-angeles-roofing.html"
+  },
+  {
+    "business_name": "Pro San Diego HVAC",
+    "industry": "hvac",
+    "city": "San Diego",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/pro-san-diego-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pro-san-diego-hvac.html"
+  },
+  {
+    "business_name": "Rooter Houston Plumbing",
+    "industry": "plumbing",
+    "city": "Houston",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/rooter-houston-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/rooter-houston-plumbing.html"
+  },
+  {
+    "business_name": "Shield San Antonio Roofing",
+    "industry": "roofing",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/shield-san-antonio-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/shield-san-antonio-roofing.html"
+  },
+  {
+    "business_name": "Golden Miami Restaurant",
+    "industry": "restaurant",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/golden-miami-restaurant",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/golden-miami-restaurant.html"
+  },
+  {
+    "business_name": "Volt New York Electrical",
+    "industry": "electrical",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/volt-new-york-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/volt-new-york-electrical.html"
+  },
+  {
+    "business_name": "Elite Orlando Real Estate",
+    "industry": "real estate",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/elite-orlando-real-estate",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-orlando-real-estate.html"
+  },
+  {
+    "business_name": "Spark Dallas Electrical",
+    "industry": "electrical",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/spark-dallas-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/spark-dallas-electrical.html"
+  },
+  {
+    "business_name": "Rapid Austin Plumbing",
+    "industry": "plumbing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/rapid-austin-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/rapid-austin-plumbing.html"
+  },
+  {
+    "business_name": "Circuit Los Angeles Electrical",
+    "industry": "electrical",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/circuit-los-angeles-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/circuit-los-angeles-electrical.html"
+  },
+  {
+    "business_name": "Bright New York Dental",
+    "industry": "dental",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/bright-new-york-dental",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bright-new-york-dental.html"
+  },
+  {
+    "business_name": "Pet Care Miami Grooming",
+    "industry": "pet services",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/pet-care-miami-grooming",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pet-care-miami-grooming.html"
+  },
+  {
+    "business_name": "Secure New York Insurance",
+    "industry": "insurance",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/secure-new-york-insurance",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/secure-new-york-insurance.html"
+  },
+  {
+    "business_name": "Care Miami Healthcare",
+    "industry": "healthcare",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/care-miami-healthcare",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/care-miami-healthcare.html"
+  },
+  {
+    "business_name": "Fit Dallas Fitness",
+    "industry": "fitness",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/fit-dallas-fitness",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/fit-dallas-fitness.html"
+  },
+  {
+    "business_name": "Premier Austin Real Estate",
+    "industry": "real estate",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/premier-austin-real-estate",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/premier-austin-real-estate.html"
+  },
+  {
+    "business_name": "Elite Houston HVAC",
+    "industry": "hvac",
+    "city": "Houston",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/elite-houston-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-houston-hvac.html"
+  },
+  {
+    "business_name": "Golden New York Restaurant",
+    "industry": "restaurant",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/golden-new-york-restaurant",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/golden-new-york-restaurant.html"
+  },
+  {
+    "business_name": "Green Los Angeles Landscaping",
+    "industry": "landscaping",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/green-los-angeles-landscaping",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/green-los-angeles-landscaping.html"
+  },
+  {
+    "business_name": "Auto Houston Service",
+    "industry": "automotive",
+    "city": "Houston",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/auto-houston-service",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/auto-houston-service.html"
+  },
+  {
+    "business_name": "Glamour Miami Salon",
+    "industry": "salon",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/glamour-miami-salon",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/glamour-miami-salon.html"
+  },
+  {
+    "business_name": "Heritage New York Realty",
+    "industry": "real estate",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/heritage-new-york-realty",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/heritage-new-york-realty.html"
+  },
+  {
+    "business_name": "Shield Dallas Insurance",
+    "industry": "insurance",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/shield-dallas-insurance",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/shield-dallas-insurance.html"
+  },
+  {
+    "business_name": "Health Los Angeles Medical",
+    "industry": "healthcare",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/health-los-angeles-medical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/health-los-angeles-medical.html"
+  },
+  {
+    "business_name": "Iron New York Fitness",
+    "industry": "fitness",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/iron-new-york-fitness",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/iron-new-york-fitness.html"
+  },
+  {
+    "business_name": "Happy Miami Pet Care",
+    "industry": "pet services",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/happy-miami-pet-care",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/happy-miami-pet-care.html"
+  },
+  {
+    "business_name": "Apex Dallas HVAC",
+    "industry": "hvac",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/apex-dallas-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/apex-dallas-hvac.html"
+  },
+  {
+    "business_name": "Drain Houston Plumbing",
+    "industry": "plumbing",
+    "city": "Houston",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/drain-houston-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/drain-houston-plumbing.html"
+  },
+  {
+    "business_name": "Spark Austin Electrical",
+    "industry": "electrical",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/spark-austin-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/spark-austin-electrical.html"
+  },
+  {
+    "business_name": "Fortress Dallas Roofing",
+    "industry": "roofing",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/fortress-dallas-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/fortress-dallas-roofing.html"
+  },
+  {
+    "business_name": "Red Austin Restaurant",
+    "industry": "restaurant",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/red-austin-restaurant",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/red-austin-restaurant.html"
+  },
+  {
+    "business_name": "Mercy Los Angeles Clinic",
+    "industry": "healthcare",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/mercy-los-angeles-clinic",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mercy-los-angeles-clinic.html"
+  },
+  {
+    "business_name": "Guardian New York Insurance",
+    "industry": "insurance",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/guardian-new-york-insurance",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/guardian-new-york-insurance.html"
+  },
+  {
+    "business_name": "Power Los Angeles Fitness",
+    "industry": "fitness",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/power-los-angeles-fitness",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/power-los-angeles-fitness.html"
+  },
+  {
+    "business_name": "Loving Miami Pet Care",
+    "industry": "pet services",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/loving-miami-pet-care",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/loving-miami-pet-care.html"
+  },
+  {
+    "business_name": "Royal Los Angeles Restaurant",
+    "industry": "restaurant",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/royal-los-angeles-restaurant",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/royal-los-angeles-restaurant.html"
+  },
+  {
+    "business_name": "Pearl Houston Dental",
+    "industry": "dental",
+    "city": "Houston",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/pearl-houston-dental",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pearl-houston-dental.html"
+  },
+  {
+    "business_name": "Heritage Dallas Properties",
+    "industry": "real estate",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/heritage-dallas-properties",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/heritage-dallas-properties.html"
+  },
+  {
+    "business_name": "Allied Austin Insurance",
+    "industry": "insurance",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/allied-austin-insurance",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/allied-austin-insurance.html"
+  },
+  {
+    "business_name": "Vital Los Angeles Health",
+    "industry": "healthcare",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/vital-los-angeles-health",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/vital-los-angeles-health.html"
+  },
+  {
+    "business_name": "Titan New York Fitness",
+    "industry": "fitness",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/titan-new-york-fitness",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/titan-new-york-fitness.html"
+  },
+  {
+    "business_name": "Pet Miami Services",
+    "industry": "pet services",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/pet-miami-services",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pet-miami-services.html"
+  },
+  {
+    "business_name": "Circuit New York Electrical",
+    "industry": "electrical",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/circuit-new-york-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/circuit-new-york-electrical.html"
+  },
+  {
+    "business_name": "Bright Los Angeles Dental",
+    "industry": "dental",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/bright-los-angeles-dental",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bright-los-angeles-dental.html"
+  },
+  {
+    "business_name": "Auto Los Angeles Repair",
+    "industry": "automotive",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/auto-los-angeles-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/auto-los-angeles-repair.html"
+  },
+  {
+    "business_name": "Garden Houston Landscaping",
+    "industry": "landscaping",
+    "city": "Houston",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/garden-houston-landscaping",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/garden-houston-landscaping.html"
+  },
+  {
+    "business_name": "Beauty Los Angeles Salon",
+    "industry": "salon",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/beauty-los-angeles-salon",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/beauty-los-angeles-salon.html"
+  },
+  {
+    "business_name": "Quick Dallas Auto Care",
+    "industry": "automotive",
+    "city": "Dallas",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/quick-dallas-auto-care",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/quick-dallas-auto-care.html"
+  },
+  {
+    "business_name": "Golden San Antonio Restaurant",
+    "industry": "restaurant",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/golden-san-antonio-restaurant",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/golden-san-antonio-restaurant.html"
+  },
+  {
+    "business_name": "Premier New York Properties",
+    "industry": "real estate",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/premier-new-york-properties",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/premier-new-york-properties.html"
+  },
+  {
+    "business_name": "Secure Los Angeles Insurance",
+    "industry": "insurance",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/secure-los-angeles-insurance",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/secure-los-angeles-insurance.html"
+  },
+  {
+    "business_name": "Health New York Medical",
+    "industry": "healthcare",
+    "city": "New York",
+    "state_code": "NY",
+    "demo_url": "https://www.instaweb.agency/demo/health-new-york-medical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/health-new-york-medical.html"
+  },
+  {
+    "business_name": "Elite Los Angeles Fitness",
+    "industry": "fitness",
+    "city": "Los Angeles",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/elite-los-angeles-fitness",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-los-angeles-fitness.html"
+  },
+  {
+    "business_name": "Paws San Antonio Pet",
+    "industry": "pet services",
+    "city": "San Antonio",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/paws-san-antonio-pet",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/paws-san-antonio-pet.html"
+  },
+  {
+    "business_name": "Pro Miami HVAC",
+    "industry": "hvac",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/pro-miami-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pro-miami-hvac.html"
+  },
+  {
+    "business_name": "Rapid Miami Plumbing",
+    "industry": "plumbing",
+    "city": "Miami",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/rapid-miami-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/rapid-miami-plumbing.html"
+  },
+  {
+    "business_name": "Shield Denver Roofing",
+    "industry": "roofing",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/shield-denver-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/shield-denver-roofing.html"
+  },
+  {
+    "business_name": "Bright Denver Electrical",
+    "industry": "electrical",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/bright-denver-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bright-denver-electrical.html"
+  },
+  {
+    "business_name": "Royal Denver Restaurant",
+    "industry": "restaurant",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/royal-denver-restaurant",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/royal-denver-restaurant.html"
+  },
+  {
+    "business_name": "Glamour Denver Salon",
+    "industry": "salon",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/glamour-denver-salon",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/glamour-denver-salon.html"
+  },
+  {
+    "business_name": "Family Denver Dental",
+    "industry": "dental",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/family-denver-dental",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/family-denver-dental.html"
+  },
+  {
+    "business_name": "Green Denver Landscaping",
+    "industry": "landscaping",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/green-denver-landscaping",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/green-denver-landscaping.html"
+  },
+  {
+    "business_name": "Speed Denver Auto",
+    "industry": "automotive",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/speed-denver-auto",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/speed-denver-auto.html"
+  },
+  {
+    "business_name": "Capital Denver Realty",
+    "industry": "real estate",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/capital-denver-realty",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/capital-denver-realty.html"
+  },
+  {
+    "business_name": "Guardian Denver Insurance",
+    "industry": "insurance",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/guardian-denver-insurance",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/guardian-denver-insurance.html"
+  },
+  {
+    "business_name": "Care Denver Healthcare",
+    "industry": "healthcare",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/care-denver-healthcare",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/care-denver-healthcare.html"
+  },
+  {
+    "business_name": "Power Denver Fitness",
+    "industry": "fitness",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/power-denver-fitness",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/power-denver-fitness.html"
+  },
+  {
+    "business_name": "Happy Denver Pet",
+    "industry": "pet services",
+    "city": "Denver",
+    "state_code": "CO",
+    "demo_url": "https://www.instaweb.agency/demo/happy-denver-pet",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/happy-denver-pet.html"
+  },
+  {
+    "business_name": "Apex Seattle HVAC",
+    "industry": "hvac",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/apex-seattle-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/apex-seattle-hvac.html"
+  },
+  {
+    "business_name": "Rooter Seattle Plumbing",
+    "industry": "plumbing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/rooter-seattle-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/rooter-seattle-plumbing.html"
+  },
+  {
+    "business_name": "Fortress Seattle Roofing",
+    "industry": "roofing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/fortress-seattle-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/fortress-seattle-roofing.html"
+  },
+  {
+    "business_name": "Volt Seattle Electrical",
+    "industry": "electrical",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/volt-seattle-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/volt-seattle-electrical.html"
+  },
+  {
+    "business_name": "Golden Seattle Restaurant",
+    "industry": "restaurant",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/golden-seattle-restaurant",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/golden-seattle-restaurant.html"
+  },
+  {
+    "business_name": "Beauty Seattle Salon",
+    "industry": "salon",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/beauty-seattle-salon",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/beauty-seattle-salon.html"
+  },
+  {
+    "business_name": "Crown Seattle Dental",
+    "industry": "dental",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/crown-seattle-dental",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/crown-seattle-dental.html"
+  },
+  {
+    "business_name": "Emerald Seattle Landscaping",
+    "industry": "landscaping",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/emerald-seattle-landscaping",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/emerald-seattle-landscaping.html"
+  },
+  {
+    "business_name": "Auto Seattle Service",
+    "industry": "automotive",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/auto-seattle-service",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/auto-seattle-service.html"
+  },
+  {
+    "business_name": "Premier Seattle Properties",
+    "industry": "real estate",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/premier-seattle-properties",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/premier-seattle-properties.html"
+  },
+  {
+    "business_name": "Secure Seattle Insurance",
+    "industry": "insurance",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/secure-seattle-insurance",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/secure-seattle-insurance.html"
+  },
+  {
+    "business_name": "Health Seattle Medical",
+    "industry": "healthcare",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/health-seattle-medical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/health-seattle-medical.html"
+  },
+  {
+    "business_name": "Fit Seattle Fitness",
+    "industry": "fitness",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/fit-seattle-fitness",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/fit-seattle-fitness.html"
+  },
+  {
+    "business_name": "Pet Seattle Care",
+    "industry": "pet services",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/pet-seattle-care",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pet-seattle-care.html"
+  },
+  {
+    "business_name": "Reliable Phoenix HVAC",
+    "industry": "hvac",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/reliable-phoenix-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/reliable-phoenix-hvac.html"
+  },
+  {
+    "business_name": "Drain Phoenix Plumbing",
+    "industry": "plumbing",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/drain-phoenix-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/drain-phoenix-plumbing.html"
+  },
+  {
+    "business_name": "Apex Phoenix Roofing",
+    "industry": "roofing",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/apex-phoenix-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/apex-phoenix-roofing.html"
+  },
+  {
+    "business_name": "Circuit Phoenix Electrical",
+    "industry": "electrical",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/circuit-phoenix-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/circuit-phoenix-electrical.html"
+  },
+  {
+    "business_name": "Red Phoenix Restaurant",
+    "industry": "restaurant",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/red-phoenix-restaurant",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/red-phoenix-restaurant.html"
+  },
+  {
+    "business_name": "Divine Phoenix Salon",
+    "industry": "salon",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/divine-phoenix-salon",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/divine-phoenix-salon.html"
+  },
+  {
+    "business_name": "Pearl Phoenix Dental",
+    "industry": "dental",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/pearl-phoenix-dental",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pearl-phoenix-dental.html"
+  },
+  {
+    "business_name": "Garden Phoenix Landscaping",
+    "industry": "landscaping",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/garden-phoenix-landscaping",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/garden-phoenix-landscaping.html"
+  },
+  {
+    "business_name": "Quick Phoenix Auto",
+    "industry": "automotive",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/quick-phoenix-auto",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/quick-phoenix-auto.html"
+  },
+  {
+    "business_name": "Elite Phoenix Realty",
+    "industry": "real estate",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/elite-phoenix-realty",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-phoenix-realty.html"
+  },
+  {
+    "business_name": "Allied Phoenix Insurance",
+    "industry": "insurance",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/allied-phoenix-insurance",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/allied-phoenix-insurance.html"
+  },
+  {
+    "business_name": "Vital Phoenix Healthcare",
+    "industry": "healthcare",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/vital-phoenix-healthcare",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/vital-phoenix-healthcare.html"
+  },
+  {
+    "business_name": "Elite Phoenix Fitness",
+    "industry": "fitness",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/elite-phoenix-fitness",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-phoenix-fitness.html"
+  },
+  {
+    "business_name": "Loving Phoenix Pet",
+    "industry": "pet services",
+    "city": "Phoenix",
+    "state_code": "AZ",
+    "demo_url": "https://www.instaweb.agency/demo/loving-phoenix-pet",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/loving-phoenix-pet.html"
+  },
+  {
+    "business_name": "Pro Boston HVAC",
+    "industry": "hvac",
+    "city": "Boston",
+    "state_code": "MA",
+    "demo_url": "https://www.instaweb.agency/demo/pro-boston-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pro-boston-hvac.html"
+  },
+  {
+    "business_name": "Rapid Boston Plumbing",
+    "industry": "plumbing",
+    "city": "Boston",
+    "state_code": "MA",
+    "demo_url": "https://www.instaweb.agency/demo/rapid-boston-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/rapid-boston-plumbing.html"
+  },
+  {
+    "business_name": "Shield Boston Roofing",
+    "industry": "roofing",
+    "city": "Boston",
+    "state_code": "MA",
+    "demo_url": "https://www.instaweb.agency/demo/shield-boston-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/shield-boston-roofing.html"
+  },
+  {
+    "business_name": "Spark Boston Electrical",
+    "industry": "electrical",
+    "city": "Boston",
+    "state_code": "MA",
+    "demo_url": "https://www.instaweb.agency/demo/spark-boston-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/spark-boston-electrical.html"
+  },
+  {
+    "business_name": "Prime Boston Restaurant",
+    "industry": "restaurant",
+    "city": "Boston",
+    "state_code": "MA",
+    "demo_url": "https://www.instaweb.agency/demo/prime-boston-restaurant",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/prime-boston-restaurant.html"
+  },
+  {
+    "business_name": "Glamour Chicago Salon",
+    "industry": "salon",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/glamour-chicago-salon",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/glamour-chicago-salon.html"
+  },
+  {
+    "business_name": "Crown Chicago Dental",
+    "industry": "dental",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/crown-chicago-dental",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/crown-chicago-dental.html"
+  },
+  {
+    "business_name": "Evergreen Chicago Landscaping",
+    "industry": "landscaping",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/evergreen-chicago-landscaping",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/evergreen-chicago-landscaping.html"
+  },
+  {
+    "business_name": "Power Chicago Auto",
+    "industry": "automotive",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/power-chicago-auto",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/power-chicago-auto.html"
+  },
+  {
+    "business_name": "Metro Chicago Realty",
+    "industry": "real estate",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/metro-chicago-realty",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/metro-chicago-realty.html"
+  },
+  {
+    "business_name": "Shield Chicago Insurance",
+    "industry": "insurance",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/shield-chicago-insurance",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/shield-chicago-insurance.html"
+  },
+  {
+    "business_name": "Mercy Chicago Healthcare",
+    "industry": "healthcare",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/mercy-chicago-healthcare",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mercy-chicago-healthcare.html"
+  },
+  {
+    "business_name": "Iron Chicago Fitness",
+    "industry": "fitness",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/iron-chicago-fitness",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/iron-chicago-fitness.html"
+  },
+  {
+    "business_name": "Paws Chicago Pet",
+    "industry": "pet services",
+    "city": "Chicago",
+    "state_code": "IL",
+    "demo_url": "https://www.instaweb.agency/demo/paws-chicago-pet",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/paws-chicago-pet.html"
+  },
+  {
+    "business_name": "Premier Orlando HVAC",
+    "industry": "hvac",
+    "city": "Orlando",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/premier-orlando-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/premier-orlando-hvac.html"
+  },
+  {
     "business_name": "Mission Air Conditioning & Plumbing",
     "industry": "hvac",
     "city": "Houston",
@@ -2982,1021 +3998,5 @@
     "state_code": "TX",
     "demo_url": "https://www.instaweb.agency/demo/terry-s-a-c-and-heating",
     "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/terry-s-a-c-and-heating.html"
-  },
-  {
-    "business_name": "Your Air Conditioning Company",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/your-air-conditioning-company",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/your-air-conditioning-company.html"
-  },
-  {
-    "business_name": "Roman Cavalry Air Conditioning and Heating",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/roman-cavalry-air-conditioning-and-heating",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/roman-cavalry-air-conditioning-and-heating.html"
-  },
-  {
-    "business_name": "Douglas Mechanical, Inc.",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/douglas-mechanical-inc",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/douglas-mechanical-inc.html"
-  },
-  {
-    "business_name": "Majestic Air Conditioning",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/majestic-air-conditioning",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/majestic-air-conditioning.html"
-  },
-  {
-    "business_name": "Heights A/C & Heating",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/heights-a-c-and-heating",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/heights-a-c-and-heating.html"
-  },
-  {
-    "business_name": "Air Quality Express",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/air-quality-express",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/air-quality-express.html"
-  },
-  {
-    "business_name": "Punbar Air",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/punbar-air",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/punbar-air.html"
-  },
-  {
-    "business_name": "Autumn Air",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/autumn-air",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/autumn-air.html"
-  },
-  {
-    "business_name": "The Woodlands Heating & Air Conditioning",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/the-woodlands-heating-and-air-conditioning",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/the-woodlands-heating-and-air-conditioning.html"
-  },
-  {
-    "business_name": "Jay-B & Group Services, LLC",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/jay-b-and-group-services-llc",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/jay-b-and-group-services-llc.html"
-  },
-  {
-    "business_name": "Fresh Air, L.P.",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/fresh-air-l-p",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/fresh-air-l-p.html"
-  },
-  {
-    "business_name": "New Balance A/C, INC",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/new-balance-a-c-inc",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/new-balance-a-c-inc.html"
-  },
-  {
-    "business_name": "Dave Lane's Hi-Tech Mechanical Inc.",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/dave-lanes-hi-tech-mechanical-inc",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/dave-lanes-hi-tech-mechanical-inc.html"
-  },
-  {
-    "business_name": "Spring Woodlands Air Technicians",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/spring-woodlands-air-technicians",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/spring-woodlands-air-technicians.html"
-  },
-  {
-    "business_name": "GotFlow Plumbing & AC",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/gotflow-plumbing-and-ac",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/gotflow-plumbing-and-ac.html"
-  },
-  {
-    "business_name": "H-Town Services",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/h-town-services",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/h-town-services.html"
-  },
-  {
-    "business_name": "A&M Mechanical Corp",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/aandm-mechanical-corp",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/aandm-mechanical-corp.html"
-  },
-  {
-    "business_name": "Texas Strong Mechanical",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/texas-strong-mechanical",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/texas-strong-mechanical.html"
-  },
-  {
-    "business_name": "Clear the Air",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/clear-the-air",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/clear-the-air.html"
-  },
-  {
-    "business_name": "Marcos AC & Heating",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/marcos-ac-and-heating",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/marcos-ac-and-heating.html"
-  },
-  {
-    "business_name": "Air Check Mechanical Services",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/air-check-mechanical-services",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/air-check-mechanical-services.html"
-  },
-  {
-    "business_name": "AC Man",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/ac-man",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ac-man.html"
-  },
-  {
-    "business_name": "75 Degree AC",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/75-degree-ac",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/75-degree-ac.html"
-  },
-  {
-    "business_name": "Air Dynasty AC & Heating",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/air-dynasty-ac-and-heating",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/air-dynasty-ac-and-heating.html"
-  },
-  {
-    "business_name": "Brown Air Conditioning and Heating",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/brown-air-conditioning-and-heating",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/brown-air-conditioning-and-heating.html"
-  },
-  {
-    "business_name": "Maxx A/C & Heating",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/maxx-a-c-and-heating",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/maxx-a-c-and-heating.html"
-  },
-  {
-    "business_name": "JD Cooling",
-    "industry": "hvac",
-    "city": "Houston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/jd-cooling",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/jd-cooling.html"
-  },
-  {
-    "business_name": "Heritage Hudson Restaurant",
-    "industry": "restaurant",
-    "city": "Hudson",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/heritage-hudson-restaurant",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/heritage-hudson-restaurant.html"
-  },
-  {
-    "business_name": "Red Mamaroneck Kitchen",
-    "industry": "restaurant",
-    "city": "Mamaroneck",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/red-mamaroneck-kitchen",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/red-mamaroneck-kitchen.html"
-  },
-  {
-    "business_name": "Crown Rochester BBQ & Grill",
-    "industry": "restaurant",
-    "city": "Rochester",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/crown-rochester-bbq-and-grill",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/crown-rochester-bbq-and-grill.html"
-  },
-  {
-    "business_name": "Express Buffalo Roofing Solutions",
-    "industry": "roofing",
-    "city": "Buffalo",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/express-buffalo-roofing-solutions",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/express-buffalo-roofing-solutions.html"
-  },
-  {
-    "business_name": "North Star Air & Heating",
-    "industry": "hvac",
-    "city": "Flagstaff",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/north-star-air-and-heating",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/north-star-air-and-heating.html"
-  },
-  {
-    "business_name": "New Kingston HVAC",
-    "industry": "hvac",
-    "city": "Kingston",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/new-kingston-hvac",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/new-kingston-hvac.html"
-  },
-  {
-    "business_name": "Rescue Missouri City Roofers",
-    "industry": "roofing",
-    "city": "Missouri City",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/rescue-missouri-city-roofers",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/rescue-missouri-city-roofers.html"
-  },
-  {
-    "business_name": "Sunset Grille",
-    "industry": "restaurant",
-    "city": "Farmers Branch",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/sunset-grille",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sunset-grille.html"
-  },
-  {
-    "business_name": "Seven Ithaca Deli & Market",
-    "industry": "restaurant",
-    "city": "Ithaca",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/seven-ithaca-deli-and-market",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/seven-ithaca-deli-and-market.html"
-  },
-  {
-    "business_name": "Union Yuma Steakhouse",
-    "industry": "restaurant",
-    "city": "Yuma",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/union-yuma-steakhouse",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/union-yuma-steakhouse.html"
-  },
-  {
-    "business_name": "Mesa Lewisville Bakery & Cafe",
-    "industry": "restaurant",
-    "city": "Lewisville",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/mesa-lewisville-bakery-and-cafe",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mesa-lewisville-bakery-and-cafe.html"
-  },
-  {
-    "business_name": "Secure Lancaster Metal Roofing",
-    "industry": "roofing",
-    "city": "Lancaster",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/secure-lancaster-metal-roofing",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/secure-lancaster-metal-roofing.html"
-  },
-  {
-    "business_name": "Queen's Lackawanna Bakery & Cafe",
-    "industry": "restaurant",
-    "city": "Lackawanna",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/queens-lackawanna-bakery-and-cafe",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/queens-lackawanna-bakery-and-cafe.html"
-  },
-  {
-    "business_name": "Elite Glen Cove Air & Heating",
-    "industry": "hvac",
-    "city": "Glen Cove",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/elite-glen-cove-air-and-heating",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-glen-cove-air-and-heating.html"
-  },
-  {
-    "business_name": "Integrity Exteriors of Port Arthur",
-    "industry": "roofing",
-    "city": "Port Arthur",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/integrity-exteriors-of-port-arthur",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/integrity-exteriors-of-port-arthur.html"
-  },
-  {
-    "business_name": "Theo's Huntsville Sushi Bar",
-    "industry": "restaurant",
-    "city": "Huntsville",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/theos-huntsville-sushi-bar",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/theos-huntsville-sushi-bar.html"
-  },
-  {
-    "business_name": "Southwest Roofing Contractors",
-    "industry": "roofing",
-    "city": "New Rochelle",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/southwest-roofing-contractors",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/southwest-roofing-contractors.html"
-  },
-  {
-    "business_name": "Atlas Heating & Air of Payson",
-    "industry": "hvac",
-    "city": "Payson",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/atlas-heating-and-air-of-payson",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/atlas-heating-and-air-of-payson.html"
-  },
-  {
-    "business_name": "Five Star Cooling & Heating of Johnstown",
-    "industry": "hvac",
-    "city": "Johnstown",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/five-star-cooling-and-heating-of-johnstown",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/five-star-cooling-and-heating-of-johnstown.html"
-  },
-  {
-    "business_name": "All-American Exteriors",
-    "industry": "roofing",
-    "city": "Maricopa",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/all-american-exteriors",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/all-american-exteriors.html"
-  },
-  {
-    "business_name": "Total Construction & Roofing of Haverstraw",
-    "industry": "roofing",
-    "city": "Haverstraw",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/total-construction-and-roofing-of-haverstraw",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/total-construction-and-roofing-of-haverstraw.html"
-  },
-  {
-    "business_name": "State Restaurant",
-    "industry": "restaurant",
-    "city": "Buffalo",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/state-restaurant",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/state-restaurant.html"
-  },
-  {
-    "business_name": "Steadfast Casa Grande Roofing & Construction",
-    "industry": "roofing",
-    "city": "Casa Grande",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/steadfast-casa-grande-roofing-and-construction",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/steadfast-casa-grande-roofing-and-construction.html"
-  },
-  {
-    "business_name": "Western Roofing Co.",
-    "industry": "roofing",
-    "city": "Glen Cove",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/western-roofing-co",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/western-roofing-co.html"
-  },
-  {
-    "business_name": "Five Mesa Diner",
-    "industry": "restaurant",
-    "city": "Mesa",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/five-mesa-diner",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/five-mesa-diner.html"
-  },
-  {
-    "business_name": "Casa Kitchen",
-    "industry": "restaurant",
-    "city": "Parker",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/casa-kitchen",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/casa-kitchen.html"
-  },
-  {
-    "business_name": "Main Rye Cafe & Grill",
-    "industry": "restaurant",
-    "city": "Rye",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/main-rye-cafe-and-grill",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/main-rye-cafe-and-grill.html"
-  },
-  {
-    "business_name": "Red HVAC Services",
-    "industry": "hvac",
-    "city": "Apache Junction",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/red-hvac-services",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/red-hvac-services.html"
-  },
-  {
-    "business_name": "Famous University Park Pizza & Pasta",
-    "industry": "restaurant",
-    "city": "University Park",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/famous-university-park-pizza-and-pasta",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/famous-university-park-pizza-and-pasta.html"
-  },
-  {
-    "business_name": "Mountain Grille",
-    "industry": "restaurant",
-    "city": "Pasadena",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/mountain-grille",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mountain-grille.html"
-  },
-  {
-    "business_name": "City Roofing Company of Prescott",
-    "industry": "roofing",
-    "city": "Prescott",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/city-roofing-company-of-prescott",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/city-roofing-company-of-prescott.html"
-  },
-  {
-    "business_name": "Desert Roofing of Galveston",
-    "industry": "roofing",
-    "city": "Galveston",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/desert-roofing-of-galveston",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/desert-roofing-of-galveston.html"
-  },
-  {
-    "business_name": "Valley Roofing Contractors of Flagstaff",
-    "industry": "roofing",
-    "city": "Flagstaff",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/valley-roofing-contractors-of-flagstaff",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/valley-roofing-contractors-of-flagstaff.html"
-  },
-  {
-    "business_name": "Guardian Big Spring Roofing Company",
-    "industry": "roofing",
-    "city": "Big Spring",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/guardian-big-spring-roofing-company",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/guardian-big-spring-roofing-company.html"
-  },
-  {
-    "business_name": "Texas Fort Worth Temperature Control",
-    "industry": "hvac",
-    "city": "Fort Worth",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/texas-fort-worth-temperature-control",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/texas-fort-worth-temperature-control.html"
-  },
-  {
-    "business_name": "A Cottonwood Pizza & Pasta",
-    "industry": "restaurant",
-    "city": "Cottonwood",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/a-cottonwood-pizza-and-pasta",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/a-cottonwood-pizza-and-pasta.html"
-  },
-  {
-    "business_name": "Tri-State Maricopa HVAC Solutions",
-    "industry": "hvac",
-    "city": "Maricopa",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/tri-state-maricopa-hvac-solutions",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/tri-state-maricopa-hvac-solutions.html"
-  },
-  {
-    "business_name": "Superior Roofing & Remodeling of Plattsburgh",
-    "industry": "roofing",
-    "city": "Plattsburgh",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/superior-roofing-and-remodeling-of-plattsburgh",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/superior-roofing-and-remodeling-of-plattsburgh.html"
-  },
-  {
-    "business_name": "Frontier Schenectady Temperature Control",
-    "industry": "hvac",
-    "city": "Schenectady",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/frontier-schenectady-temperature-control",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/frontier-schenectady-temperature-control.html"
-  },
-  {
-    "business_name": "King HVAC",
-    "industry": "hvac",
-    "city": "Corpus Christi",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/king-hvac",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/king-hvac.html"
-  },
-  {
-    "business_name": "Sahara HVAC of North Richland Hills",
-    "industry": "hvac",
-    "city": "North Richland Hills",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/sahara-hvac-of-north-richland-hills",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sahara-hvac-of-north-richland-hills.html"
-  },
-  {
-    "business_name": "Patriot Heating & Cooling of Yonkers",
-    "industry": "hvac",
-    "city": "Yonkers",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/patriot-heating-and-cooling-of-yonkers",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/patriot-heating-and-cooling-of-yonkers.html"
-  },
-  {
-    "business_name": "Master Richardson Roofing Company",
-    "industry": "roofing",
-    "city": "Richardson",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/master-richardson-roofing-company",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/master-richardson-roofing-company.html"
-  },
-  {
-    "business_name": "Top Temperature Control of Buffalo",
-    "industry": "hvac",
-    "city": "Buffalo",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/top-temperature-control-of-buffalo",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/top-temperature-control-of-buffalo.html"
-  },
-  {
-    "business_name": "House of Rosenberg BBQ & Grill",
-    "industry": "restaurant",
-    "city": "Rosenberg",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/house-of-rosenberg-bbq-and-grill",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/house-of-rosenberg-bbq-and-grill.html"
-  },
-  {
-    "business_name": "Gulf Roofing Solutions of Victoria",
-    "industry": "roofing",
-    "city": "Victoria",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/gulf-roofing-solutions-of-victoria",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/gulf-roofing-solutions-of-victoria.html"
-  },
-  {
-    "business_name": "Cool Temple Heating & Cooling",
-    "industry": "hvac",
-    "city": "Temple",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/cool-temple-heating-and-cooling",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/cool-temple-heating-and-cooling.html"
-  },
-  {
-    "business_name": "One Italian Kitchen",
-    "industry": "restaurant",
-    "city": "Sierra Vista",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/one-italian-kitchen",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/one-italian-kitchen.html"
-  },
-  {
-    "business_name": "ABC Climate Control of Prescott",
-    "industry": "hvac",
-    "city": "Prescott",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/abc-climate-control-of-prescott",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/abc-climate-control-of-prescott.html"
-  },
-  {
-    "business_name": "Pro Exteriors of Avondale",
-    "industry": "roofing",
-    "city": "Avondale",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/pro-exteriors-of-avondale",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pro-exteriors-of-avondale.html"
-  },
-  {
-    "business_name": "Top Yonkers Roof Specialists",
-    "industry": "roofing",
-    "city": "Yonkers",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/top-yonkers-roof-specialists",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/top-yonkers-roof-specialists.html"
-  },
-  {
-    "business_name": "Texas Air Conditioning & Heating of Parker",
-    "industry": "hvac",
-    "city": "Parker",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/texas-air-conditioning-and-heating-of-parker",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/texas-air-conditioning-and-heating-of-parker.html"
-  },
-  {
-    "business_name": "Mountain Heating & Air of Surprise",
-    "industry": "hvac",
-    "city": "Surprise",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/mountain-heating-and-air-of-surprise",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mountain-heating-and-air-of-surprise.html"
-  },
-  {
-    "business_name": "Blue Texas City Pizza & Pasta",
-    "industry": "restaurant",
-    "city": "Texas City",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/blue-texas-city-pizza-and-pasta",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/blue-texas-city-pizza-and-pasta.html"
-  },
-  {
-    "business_name": "Elite Grille",
-    "industry": "restaurant",
-    "city": "The Colony",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/elite-grille",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-grille.html"
-  },
-  {
-    "business_name": "Heritage Roofing Co. of San Luis",
-    "industry": "roofing",
-    "city": "San Luis",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/heritage-roofing-co-of-san-luis",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/heritage-roofing-co-of-san-luis.html"
-  },
-  {
-    "business_name": "Blue Tempe Bakery & Cafe",
-    "industry": "restaurant",
-    "city": "Tempe",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/blue-tempe-bakery-and-cafe",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/blue-tempe-bakery-and-cafe.html"
-  },
-  {
-    "business_name": "River Odessa Grille",
-    "industry": "restaurant",
-    "city": "Odessa",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/river-odessa-grille",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/river-odessa-grille.html"
-  },
-  {
-    "business_name": "Three Bisbee Diner",
-    "industry": "restaurant",
-    "city": "Bisbee",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/three-bisbee-diner",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/three-bisbee-diner.html"
-  },
-  {
-    "business_name": "Southwest Roofers of Prescott Valley",
-    "industry": "roofing",
-    "city": "Prescott Valley",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/southwest-roofers-of-prescott-valley",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/southwest-roofers-of-prescott-valley.html"
-  },
-  {
-    "business_name": "Five Mechanicville Kitchen",
-    "industry": "restaurant",
-    "city": "Mechanicville",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/five-mechanicville-kitchen",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/five-mechanicville-kitchen.html"
-  },
-  {
-    "business_name": "Alpine Roofing Co. of Mission",
-    "industry": "roofing",
-    "city": "Mission",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/alpine-roofing-co-of-mission",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/alpine-roofing-co-of-mission.html"
-  },
-  {
-    "business_name": "American Chino Valley Home Improvements",
-    "industry": "roofing",
-    "city": "Chino Valley",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/american-chino-valley-home-improvements",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/american-chino-valley-home-improvements.html"
-  },
-  {
-    "business_name": "Red HVAC of Amsterdam",
-    "industry": "hvac",
-    "city": "Amsterdam",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/red-hvac-of-amsterdam",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/red-hvac-of-amsterdam.html"
-  },
-  {
-    "business_name": "High Desert Climate Control of Huntsville",
-    "industry": "hvac",
-    "city": "Huntsville",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/high-desert-climate-control-of-huntsville",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/high-desert-climate-control-of-huntsville.html"
-  },
-  {
-    "business_name": "Sunrise Abilene Air & Heating",
-    "industry": "hvac",
-    "city": "Abilene",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/sunrise-abilene-air-and-heating",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sunrise-abilene-air-and-heating.html"
-  },
-  {
-    "business_name": "Silver HVAC Solutions",
-    "industry": "hvac",
-    "city": "Page",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/silver-hvac-solutions",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/silver-hvac-solutions.html"
-  },
-  {
-    "business_name": "Triple Edinburg BBQ & Grill",
-    "industry": "restaurant",
-    "city": "Edinburg",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/triple-edinburg-bbq-and-grill",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/triple-edinburg-bbq-and-grill.html"
-  },
-  {
-    "business_name": "Absolute Shingle & Siding of Cohoes",
-    "industry": "roofing",
-    "city": "Cohoes",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/absolute-shingle-and-siding-of-cohoes",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/absolute-shingle-and-siding-of-cohoes.html"
-  },
-  {
-    "business_name": "Golden Cooling Solutions of Rye",
-    "industry": "hvac",
-    "city": "Rye",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/golden-cooling-solutions-of-rye",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/golden-cooling-solutions-of-rye.html"
-  },
-  {
-    "business_name": "Frontier Olean Air Systems",
-    "industry": "hvac",
-    "city": "Olean",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/frontier-olean-air-systems",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/frontier-olean-air-systems.html"
-  },
-  {
-    "business_name": "Valley Sushi Bar",
-    "industry": "restaurant",
-    "city": "Ogdensburg",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/valley-sushi-bar",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/valley-sushi-bar.html"
-  },
-  {
-    "business_name": "Prime Mechanical of Mechanicville",
-    "industry": "hvac",
-    "city": "Mechanicville",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/prime-mechanical-of-mechanicville",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/prime-mechanical-of-mechanicville.html"
-  },
-  {
-    "business_name": "House of Oro Valley Diner",
-    "industry": "restaurant",
-    "city": "Oro Valley",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/house-of-oro-valley-diner",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/house-of-oro-valley-diner.html"
-  },
-  {
-    "business_name": "Top HVAC Solutions of Rome",
-    "industry": "hvac",
-    "city": "Rome",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/top-hvac-solutions-of-rome",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/top-hvac-solutions-of-rome.html"
-  },
-  {
-    "business_name": "Sky Albany Roofers",
-    "industry": "roofing",
-    "city": "Albany",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/sky-albany-roofers",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sky-albany-roofers.html"
-  },
-  {
-    "business_name": "Service Climate Control of Southlake",
-    "industry": "hvac",
-    "city": "Southlake",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/service-climate-control-of-southlake",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/service-climate-control-of-southlake.html"
-  },
-  {
-    "business_name": "Casa Big Spring Restaurant",
-    "industry": "restaurant",
-    "city": "Big Spring",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/casa-big-spring-restaurant",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/casa-big-spring-restaurant.html"
-  },
-  {
-    "business_name": "Express Climate Control of Keller",
-    "industry": "hvac",
-    "city": "Keller",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/express-climate-control-of-keller",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/express-climate-control-of-keller.html"
-  },
-  {
-    "business_name": "Golden Kitchen",
-    "industry": "restaurant",
-    "city": "Little Elm",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/golden-kitchen",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/golden-kitchen.html"
-  },
-  {
-    "business_name": "Home El Paso HVAC Solutions",
-    "industry": "hvac",
-    "city": "El Paso",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/home-el-paso-hvac-solutions",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/home-el-paso-hvac-solutions.html"
-  },
-  {
-    "business_name": "Guardian Roofing",
-    "industry": "roofing",
-    "city": "Allen",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/guardian-roofing",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/guardian-roofing.html"
-  },
-  {
-    "business_name": "Midtown Little Falls Italian Kitchen",
-    "industry": "restaurant",
-    "city": "Little Falls",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/midtown-little-falls-italian-kitchen",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/midtown-little-falls-italian-kitchen.html"
-  },
-  {
-    "business_name": "Noble North Tonawanda Home Improvements",
-    "industry": "roofing",
-    "city": "North Tonawanda",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/noble-north-tonawanda-home-improvements",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/noble-north-tonawanda-home-improvements.html"
-  },
-  {
-    "business_name": "Silver Service Experts of College Station",
-    "industry": "hvac",
-    "city": "College Station",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/silver-service-experts-of-college-station",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/silver-service-experts-of-college-station.html"
-  },
-  {
-    "business_name": "Little Dallas BBQ & Grill",
-    "industry": "restaurant",
-    "city": "Dallas",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/little-dallas-bbq-and-grill",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/little-dallas-bbq-and-grill.html"
-  },
-  {
-    "business_name": "Quality Chandler Air Conditioning",
-    "industry": "hvac",
-    "city": "Chandler",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/quality-chandler-air-conditioning",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/quality-chandler-air-conditioning.html"
-  },
-  {
-    "business_name": "Santa Fe Jamestown BBQ & Grill",
-    "industry": "restaurant",
-    "city": "Jamestown",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/santa-fe-jamestown-bbq-and-grill",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/santa-fe-jamestown-bbq-and-grill.html"
-  },
-  {
-    "business_name": "West Air Systems of Elmira",
-    "industry": "hvac",
-    "city": "Elmira",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/west-air-systems-of-elmira",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/west-air-systems-of-elmira.html"
-  },
-  {
-    "business_name": "Cool HVAC of Peoria",
-    "industry": "hvac",
-    "city": "Peoria",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/cool-hvac-of-peoria",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/cool-hvac-of-peoria.html"
-  },
-  {
-    "business_name": "Green Air Conditioning & Heating",
-    "industry": "hvac",
-    "city": "Yuma",
-    "state_code": "AZ",
-    "demo_url": "https://www.instaweb.agency/demo/green-air-conditioning-and-heating",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/green-air-conditioning-and-heating.html"
-  },
-  {
-    "business_name": "Reliable New York City Temperature Control",
-    "industry": "hvac",
-    "city": "New York City",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/reliable-new-york-city-temperature-control",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/reliable-new-york-city-temperature-control.html"
-  },
-  {
-    "business_name": "National HVAC of Carrollton",
-    "industry": "hvac",
-    "city": "Carrollton",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/national-hvac-of-carrollton",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/national-hvac-of-carrollton.html"
-  },
-  {
-    "business_name": "Bella Kitchen",
-    "industry": "restaurant",
-    "city": "Saratoga Springs",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/bella-kitchen",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bella-kitchen.html"
-  },
-  {
-    "business_name": "Signature Metal Roofing of Troy",
-    "industry": "roofing",
-    "city": "Troy",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/signature-metal-roofing-of-troy",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/signature-metal-roofing-of-troy.html"
-  },
-  {
-    "business_name": "Southwest HVAC Solutions",
-    "industry": "hvac",
-    "city": "Coppell",
-    "state_code": "TX",
-    "demo_url": "https://www.instaweb.agency/demo/southwest-hvac-solutions",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/southwest-hvac-solutions.html"
-  },
-  {
-    "business_name": "Heritage Climate Control",
-    "industry": "hvac",
-    "city": "Hornell",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/heritage-climate-control",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/heritage-climate-control.html"
-  },
-  {
-    "business_name": "Valley Service Experts of Jamestown",
-    "industry": "hvac",
-    "city": "Jamestown",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/valley-service-experts-of-jamestown",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/valley-service-experts-of-jamestown.html"
-  },
-  {
-    "business_name": "Silver Roof & Gutter",
-    "industry": "roofing",
-    "city": "Hudson",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/silver-roof-and-gutter",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/silver-roof-and-gutter.html"
-  },
-  {
-    "business_name": "Harvest Taqueria",
-    "industry": "restaurant",
-    "city": "White Plains",
-    "state_code": "NY",
-    "demo_url": "https://www.instaweb.agency/demo/harvest-taqueria",
-    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/harvest-taqueria.html"
   }
 ]
