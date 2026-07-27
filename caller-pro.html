@@ -3,228 +3,244 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Instaweb Caller Pro — Leads + App</title>
+<title>Instaweb Caller Pro — Leads + Calling App</title>
+<meta name="description" content="500 verified local business leads loaded into a mobile-first caller app. Open, tap, dial. Starting at $49/mo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,system-ui,sans-serif}
-body{background:#0f172a;color:#e2e8f0;min-height:100vh}
-.header{background:linear-gradient(135deg,#1e3a5f,#0f172a);padding:18px 20px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #1e293b}
-.logo-mark{width:36px;height:36px;background:linear-gradient(135deg,#6366f1,#8b5cf6);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;font-weight:700}
-.logo-text{font-size:20px;font-weight:700;letter-spacing:-1px}
-.logo-text span{background:linear-gradient(135deg,#f59e0b,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero{text-align:center;padding:60px 20px 40px;background:linear-gradient(180deg,#1e3a5f20,#0f172a)}
-.hero h1{font-size:36px;font-weight:800;line-height:1.2;margin-bottom:12px}
-.hero h1 span{background:linear-gradient(135deg,#f59e0b,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero p{font-size:18px;color:#94a3b8;max-width:600px;margin:0 auto 24px;line-height:1.6}
-.badge{display:inline-block;background:#1e293b;border:1px solid #334155;border-radius:20px;padding:6px 14px;font-size:12px;color:#facc15;margin-bottom:16px}
-.container{max-width:900px;margin:0 auto;padding:0 20px}
-.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:40px 0}
-@media(max-width:700px){.grid{grid-template-columns:1fr}}
-.card{background:#1e293b;border-radius:12px;padding:24px;border:1px solid #334155;text-align:center}
-.card .icon{font-size:32px;margin-bottom:10px}
-.card h3{font-size:16px;font-weight:700;margin-bottom:6px;color:#f1f5f9}
-.card p{font-size:13px;color:#64748b;line-height:1.5}
-.pricing{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:40px 0}
-@media(max-width:700px){.pricing{grid-template-columns:1fr}}
-.tier{background:#1e293b;border-radius:12px;padding:24px;border:1px solid #334155;position:relative}
-.tier.featured{border-color:#facc15;background:linear-gradient(135deg,#1e293b,#1a1f35)}
-.tier .name{font-size:14px;color:#94a3b8;font-weight:600;text-transform:uppercase;letter-spacing:1px}
-.tier .price{font-size:42px;font-weight:800;color:#f1f5f9;margin:8px 0 4px}
-.tier .price span{font-size:16px;color:#64748b;font-weight:400}
-.tier .desc{font-size:13px;color:#64748b;margin-bottom:16px;line-height:1.5}
-.tier ul{list-style:none;font-size:14px;margin-bottom:20px}
-.tier ul li{padding:8px 0;border-bottom:1px solid #1e293b;display:flex;align-items:center;gap:8px}
-.tier ul li:last-child{border:0}
-.tier ul li::before{content:"✓";color:#22c55e;font-weight:700}
-.featured-badge{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:#facc15;color:#0f172a;font-size:11px;font-weight:700;padding:4px 12px;border-radius:10px;text-transform:uppercase;letter-spacing:1px}
-.btn{display:block;padding:14px;border-radius:10px;font-weight:700;font-size:15px;text-align:center;text-decoration:none;cursor:pointer;border:none;width:100%}
-.btn-primary{background:#facc15;color:#0f172a}
-.btn-outline{background:transparent;border:1px solid #334155;color:#e2e8f0}
-.features{margin:40px 0}
-.features h2{font-size:24px;font-weight:700;margin-bottom:20px;text-align:center}
-.feature-row{display:flex;gap:16px;padding:16px;background:#1e293b;border-radius:10px;margin-bottom:8px;align-items:center;border:1px solid #1e293b}
-.feature-row .emoji{font-size:24px;flex-shrink:0}
-.feature-row .text{flex:1}
-.feature-row .text h4{font-size:15px;font-weight:600;margin-bottom:2px}
-.feature-row .text p{font-size:13px;color:#64748b}
-.cta-section{text-align:center;padding:60px 20px;border-top:1px solid #1e293b;margin-top:40px}
-.cta-section h2{font-size:28px;font-weight:700;margin-bottom:8px}
-.cta-section p{color:#94a3b8;margin-bottom:24px;font-size:16px}
-.faq{margin:40px 0}
-.faq h2{font-size:24px;font-weight:700;margin-bottom:20px;text-align:center}
-.faq-item{padding:16px;border-bottom:1px solid #1e293b}
-.faq-item:last-child{border:0}
-.faq-item .q{font-weight:600;font-size:15px;margin-bottom:4px}
-.faq-item .a{font-size:14px;color:#64748b;line-height:1.6}
-.footer{text-align:center;padding:30px;font-size:13px;color:#475569;border-top:1px solid #1e293b;margin-top:40px}
-.footer a{color:#64748b;text-decoration:none}
+:root {
+  --primary: #4F46E5; --primary-light: #6366F1; --primary-dark: #3730A3;
+  --primary-glow: rgba(79,70,229,0.15); --secondary: #F59E0B; --secondary-dark: #D97706;
+  --accent: #10B981; --accent-glow: rgba(16,185,129,0.12);
+  --dark: #0B0F19; --dark-2: #111827; --dark-3: #1F2937;
+  --light: #F9FAFB; --gray-400: #9CA3AF; --gray-500: #6B7280;
+  --white: #FFFFFF; --border: rgba(255,255,255,0.08);
+  --font-display: 'Space Grotesk', sans-serif; --font-body: 'Inter', sans-serif;
+  --radius: 16px; --radius-sm: 10px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.3); --shadow-glow: 0 0 40px rgba(79,70,229,0.08);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:var(--font-body); background:var(--dark); color:var(--light); line-height:1.6; overflow-x:hidden; }
+.container { max-width:1100px; margin:0 auto; padding:0 24px; }
+.gradient-text { background:linear-gradient(135deg, var(--secondary), #F97316); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.gradient-text-purple { background:linear-gradient(135deg, var(--primary-light), #a78bfa); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+
+/* NAV */
+.nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:14px 0; background:rgba(11,15,25,0.92); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); }
+.nav-inner { display:flex; align-items:center; justify-content:space-between; max-width:1200px; margin:0 auto; padding:0 24px; }
+.nav-logo { display:flex; align-items:center; gap:12px; color:var(--white); text-decoration:none; }
+.nav-logo .mark { width:40px; height:40px; background:linear-gradient(135deg, var(--primary), var(--primary-light)); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:18px; color:var(--white); font-family:var(--font-display); font-weight:700; }
+.nav-logo .text { font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-1px; }
+.nav-logo .text span { background:linear-gradient(135deg, var(--secondary), #F97316); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.nav-links { display:flex; gap:24px; align-items:center; }
+.nav-links a { color:rgba(255,255,255,0.7); text-decoration:none; font-size:14px; font-weight:500; transition:color .2s; }
+.nav-links a:hover { color:var(--white); }
+
+/* HERO */
+.hero { padding:120px 24px 60px; text-align:center; position:relative; overflow:hidden; }
+.hero::before { content:''; position:absolute; top:-30%; left:50%; transform:translateX(-50%); width:800px; height:800px; background:radial-gradient(circle, var(--primary-glow) 0%, transparent 60%); pointer-events:none; }
+.hero-content { position:relative; z-index:2; }
+.hero-badge { display:inline-flex; align-items:center; gap:8px; padding:6px 16px; background:rgba(79,70,229,0.15); border:1px solid rgba(79,70,229,0.25); border-radius:100px; color:var(--primary-light); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:1px; margin-bottom:20px; }
+.hero-badge i { font-size:10px; color:var(--accent); }
+.hero h1 { font-family:var(--font-display); font-size:clamp(2rem,5vw,3.2rem); font-weight:800; line-height:1.15; margin-bottom:16px; }
+.hero p { color:var(--gray-400); font-size:1.1rem; max-width:600px; margin:0 auto 32px; line-height:1.7; }
+
+/* PRICING CARDS */
+.pricing-section { padding:40px 0 80px; }
+.pricing-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
+@media (max-width:800px) { .pricing-grid { grid-template-columns:1fr; max-width:400px; margin:0 auto; } }
+.tier { background:var(--dark-2); border-radius:var(--radius); padding:32px 28px; border:1px solid var(--border); position:relative; display:flex; flex-direction:column; transition:all .3s; }
+.tier:hover { border-color:rgba(79,70,229,0.3); box-shadow:var(--shadow-glow); transform:translateY(-4px); }
+.tier.featured { border-color:rgba(245,158,11,0.3); background:linear-gradient(180deg, rgba(245,158,11,0.05), var(--dark-2)); }
+.popular-badge { position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg, var(--secondary), var(--secondary-dark)); color:var(--dark); font-size:11px; font-weight:700; padding:5px 16px; border-radius:20px; text-transform:uppercase; letter-spacing:1px; }
+.tier-name { font-size:13px; color:var(--gray-500); font-weight:600; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:8px; }
+.tier-price { font-family:var(--font-display); font-size:44px; font-weight:700; color:var(--white); margin-bottom:4px; }
+.tier-price span { font-size:16px; color:var(--gray-500); font-weight:400; }
+.tier-desc { font-size:13px; color:var(--gray-400); margin-bottom:20px; line-height:1.5; }
+.tier ul { list-style:none; margin-bottom:24px; flex:1; }
+.tier ul li { padding:9px 0; border-bottom:1px solid var(--border); font-size:14px; display:flex; align-items:center; gap:10px; }
+.tier ul li:last-child { border:none; }
+.tier ul li i { color:var(--accent); font-size:12px; flex-shrink:0; }
+.tier .btn { display:block; text-align:center; padding:14px; border-radius:var(--radius-sm); font-weight:600; font-size:15px; text-decoration:none; transition:all .3s; }
+.btn-gold { background:linear-gradient(135deg, var(--secondary), var(--secondary-dark)); color:var(--dark); }
+.btn-gold:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(245,158,11,0.3); }
+.btn-outline { border:2px solid rgba(255,255,255,0.15); color:var(--white); }
+.btn-outline:hover { border-color:var(--white); background:rgba(255,255,255,0.04); transform:translateY(-2px); }
+
+/* COMPARISON TABLE */
+.compare-section { padding:60px 0; }
+.compare-section h2 { font-family:var(--font-display); font-size:clamp(1.5rem,3vw,2rem); font-weight:700; text-align:center; margin-bottom:32px; }
+.table-wrap { overflow-x:auto; border-radius:var(--radius); border:1px solid var(--border); }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+thead { background:var(--dark-3); }
+th { padding:16px 20px; text-align:left; font-weight:600; font-size:13px; color:var(--gray-400); text-transform:uppercase; letter-spacing:0.5px; }
+th:first-child { text-align:left; }
+th:not(:first-child) { text-align:center; }
+td { padding:14px 20px; border-bottom:1px solid var(--border); }
+td:first-child { font-weight:500; }
+td:not(:first-child) { text-align:center; }
+.check { color:var(--accent); }
+.dash { color:var(--gray-500); }
+
+/* FEATURES */
+.features-section { padding:60px 0; }
+.features-section h2 { font-family:var(--font-display); font-size:clamp(1.5rem,3vw,2rem); font-weight:700; text-align:center; margin-bottom:40px; }
+.features-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
+.feature-card { background:var(--dark-2); border-radius:var(--radius-sm); padding:24px; border:1px solid var(--border); transition:all .3s; }
+.feature-card:hover { border-color:rgba(79,70,229,0.2); }
+.feature-card .icon { width:44px; height:44px; background:var(--primary-glow); border-radius:10px; display:flex; align-items:center; justify-content:center; color:var(--primary-light); font-size:18px; margin-bottom:14px; }
+.feature-card h4 { font-weight:600; font-size:15px; margin-bottom:6px; }
+.feature-card p { font-size:13px; color:var(--gray-400); line-height:1.6; }
+
+/* CTA */
+.cta-section { text-align:center; padding:80px 24px; border-top:1px solid var(--border); }
+.cta-section h2 { font-family:var(--font-display); font-size:clamp(1.8rem,3vw,2.5rem); font-weight:700; margin-bottom:12px; }
+.cta-section p { color:var(--gray-400); font-size:1.05rem; margin-bottom:28px; }
+
+/* FOOTER */
+.footer { text-align:center; padding:30px; font-size:13px; color:var(--gray-500); border-top:1px solid var(--border); }
+.footer a { color:var(--primary-light); text-decoration:none; }
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="logo-mark">I</div>
-  <div class="logo-text">Insta<span>web</span></div>
-</div>
 
-<div class="hero">
-  <div class="badge">🔥 New — Lead List + Caller App</div>
-  <h1>500 verified leads. <span>Loaded & ready to call.</span></h1>
-  <p>Stop hunting for phone numbers. We deliver fresh, verified local business leads into a purpose-built caller app on your phone. Open, tap, dial.</p>
-  <a class="btn btn-primary" href="https://buy.stripe.com/00wcN503E512fNydpFdjO08" style="display:inline-block;padding:14px 40px;max-width:300px">Subscribe — $49/mo →</a>
-</div>
-
-<div class="container">
-  <div class="grid">
-    <div class="card">
-      <div class="icon">📱</div>
-      <h3>Purpose-built app</h3>
-      <p>Not a spreadsheet. A mobile-first caller app with one-tap dial, call tracking, script library, and status logging.</p>
-    </div>
-    <div class="card">
-      <div class="icon">✅</div>
-      <h3>Verified leads</h3>
-      <p>Every lead is pulled from Google Maps with real phone numbers. No bunk data. No fake contacts.</p>
-    </div>
-    <div class="card">
-      <div class="icon">🔄</div>
-      <h3>Fresh every month</h3>
-      <p>New leads loaded monthly. Work through your list, mark statuses, and get a fresh batch next month.</p>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="mark">I</div>
+      <div class="text">Insta<span>web</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/caller">Caller App</a>
+      <a href="/dashboard">Dashboard</a>
     </div>
   </div>
+</nav>
 
-  <div class="pricing">
-    <div class="tier">
-      <div class="name">Starter</div>
-      <div class="price">$49<span>/mo</span></div>
-      <div class="desc">For solo operators testing the waters</div>
-      <ul>
-        <li>App access — all features</li>
-        <li>500 fresh leads / month</li>
-        <li>1 city, 1 industry</li>
-        <li>Call tracking & notes</li>
-        <li>Built-in calling script</li>
-      </ul>
-      <a class="btn btn-outline" href="https://buy.stripe.com/00wcN503E512fNydpFdjO08">Subscribe</a>
-    </div>
-    <div class="tier featured"><div class="featured-badge">Best Value</div>
-      <div class="name">Pro</div>
-      <div class="price">$99<span>/mo</span></div>
-      <div class="desc">For serious appointment setters</div>
-      <ul>
-        <li>App access — all features</li>
-        <li>1,500 fresh leads / month</li>
-        <li>Nationwide — all 5 industries</li>
-        <li>Phone + email leads</li>
-        <li>Priority lead refresh</li>
-        <li>Payment link sharing</li>
-      </ul>
-      <a class="btn btn-primary" href="https://buy.stripe.com/cNi9AT9EedxydFqclBdjO09">Subscribe</a>
-    </div>
-    <div class="tier">
-      <div class="name">White Label</div>
-      <div class="price">$199<span>/mo</span></div>
-      <div class="desc">For agencies & sales teams</div>
-      <ul>
-        <li>Everything in Pro</li>
-        <li>Rebrand as your own tool</li>
-        <li>Custom logo & colors</li>
-        <li>Multi-user support</li>
-        <li>Custom lead criteria</li>
-        <li>Priority support</li>
-      </ul>
-      <a class="btn btn-outline" href="mailto:hello@instaweb.agency">Contact →</a>
-    </div>
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-badge"><i class="fas fa-bolt"></i> New — Caller Pro</span>
+    <h1>Verified Leads.<br><span class="gradient-text">Loaded & Ready to Call.</span></h1>
+    <p>Stop hunting for phone numbers. We deliver fresh, verified local business leads into a purpose-built caller app on your phone. Open. Tap. Dial.</p>
   </div>
+</section>
 
-  <div class="features">
-    <h2>What you get</h2>
-    <div class="feature-row">
-      <div class="emoji">📋</div>
-      <div class="text">
-        <h4>Lead queue — filtered & sortable</h4>
-        <p>Search by business name, city, industry. See who you've called and who's next.</p>
+<section class="pricing-section">
+  <div class="container">
+    <div class="pricing-grid">
+      <!-- Starter -->
+      <div class="tier">
+        <div class="tier-name">Starter</div>
+        <div class="tier-price">$49<span>/mo</span></div>
+        <div class="tier-desc">For solo operators who want to test the waters.</div>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Full app access</li>
+          <li><i class="fas fa-check-circle"></i> 500 fresh leads / month</li>
+          <li><i class="fas fa-check-circle"></i> 1 city, 1 industry</li>
+          <li><i class="fas fa-check-circle"></i> Call tracking & notes</li>
+          <li><i class="fas fa-check-circle"></i> Built-in calling script</li>
+        </ul>
+        <a href="https://buy.stripe.com/00wcN503E512fNydpFdjO08" class="btn btn-outline">Start with Starter</a>
       </div>
-    </div>
-    <div class="feature-row">
-      <div class="emoji">📞</div>
-      <div class="text">
-        <h4>One-tap dialing</h4>
-        <p>Tap any lead to call immediately. No copy-pasting phone numbers.</p>
+
+      <!-- Pro (Featured) -->
+      <div class="tier featured">
+        <span class="popular-badge">Most Popular</span>
+        <div class="tier-name">Pro</div>
+        <div class="tier-price">$99<span>/mo</span></div>
+        <div class="tier-desc">For serious appointment setters and closers.</div>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Full app access</li>
+          <li><i class="fas fa-check-circle"></i> 1,500 fresh leads / month</li>
+          <li><i class="fas fa-check-circle"></i> Nationwide — all industries</li>
+          <li><i class="fas fa-check-circle"></i> Phone + email leads</li>
+          <li><i class="fas fa-check-circle"></i> Priority lead refresh</li>
+          <li><i class="fas fa-check-circle"></i> Payment link sharing</li>
+        </ul>
+        <a href="https://buy.stripe.com/cNi9AT9EedxydFqclBdjO09" class="btn btn-gold">Go Pro</a>
       </div>
-    </div>
-    <div class="feature-row">
-      <div class="emoji">✅</div>
-      <div class="text">
-        <h4>Call status tracking</h4>
-        <p>Mark leads as Called, Voicemail, Callback, or Not interested. Status badges on every card.</p>
-      </div>
-    </div>
-    <div class="feature-row">
-      <div class="emoji">📝</div>
-      <div class="text">
-        <h4>Notes & contact names</h4>
-        <p>Log who you spoke to, what they said, and any follow-up details.</p>
-      </div>
-    </div>
-    <div class="feature-row">
-      <div class="emoji">📄</div>
-      <div class="text">
-        <h4>Built-in calling script</h4>
-        <p>15 objection-handling rebuttals built right into the app. No memorizing.</p>
-      </div>
-    </div>
-    <div class="feature-row">
-      <div class="emoji">💰</div>
-      <div class="text">
-        <h4>Send payment links</h4>
-        <p>Share a Stripe payment link in one tap when a lead says yes.</p>
-      </div>
-    </div>
-    <div class="feature-row">
-      <div class="emoji">☁️</div>
-      <div class="text">
-        <h4>Auto-sync to cloud</h4>
-        <p>Every save syncs to the server. Your call log is backed up and accessible.</p>
+
+      <!-- White Label -->
+      <div class="tier">
+        <div class="tier-name">White Label</div>
+        <div class="tier-price">$199<span>/mo</span></div>
+        <div class="tier-desc">For agencies and sales teams. Rebrand as your own.</div>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Everything in Pro</li>
+          <li><i class="fas fa-check-circle"></i> Rebrand as your own tool</li>
+          <li><i class="fas fa-check-circle"></i> Custom logo & colors</li>
+          <li><i class="fas fa-check-circle"></i> Multi-user support</li>
+          <li><i class="fas fa-check-circle"></i> Custom lead criteria</li>
+          <li><i class="fas fa-check-circle"></i> Priority support</li>
+        </ul>
+        <a href="https://buy.stripe.com/4gM6oHbMmctueJu85ldjO07" class="btn btn-outline">Go White Label</a>
       </div>
     </div>
   </div>
+</section>
 
-  <div class="faq">
-    <h2>FAQs</h2>
-    <div class="faq-item">
-      <div class="q">What industries are the leads in?</div>
-      <div class="a">HVAC, Plumbing, Roofing, Electrical, and Restaurant — the highest-spending local service businesses.</div>
-    </div>
-    <div class="faq-item">
-      <div class="q">Where do the leads come from?</div>
-      <div class="a">Google Maps. Every business is a real, operating local business with a verified phone number. No generated or fake contacts.</div>
-    </div>
-    <div class="faq-item">
-      <div class="q">How do I access the app?</div>
-      <div class="a">After subscribing, you get a link to the caller app. Open it on your phone — it's a PWA, no app store needed. Works on any smartphone.</div>
-    </div>
-    <div class="faq-item">
-      <div class="q">Can I export my call log?</div>
-      <div class="a">Yes. Every time you save, the app exports a JSON file to your phone and syncs to the cloud.</div>
-    </div>
-    <div class="faq-item">
-      <div class="q">Can I cancel anytime?</div>
-      <div class="a">Yes. Month-to-month. Cancel and keep your existing data.</div>
-    </div>
-    <div class="faq-item">
-      <div class="q">How are leads refreshed each month?</div>
-      <div class="a">We scrape fresh leads from Google Maps at the start of each billing cycle. You keep access to your previous months' data.</div>
+<section class="compare-section">
+  <div class="container">
+    <h2>Compare <span class="gradient-text-purple">Plans</span></h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Starter <span style="color:var(--gray-500);font-weight:400;">$49/mo</span></th>
+            <th>Pro <span style="color:var(--secondary);font-weight:400;">$99/mo</span></th>
+            <th>White Label <span style="color:var(--gray-500);font-weight:400;">$199/mo</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Fresh leads / month</td><td>500</td><td>1,500</td><td>1,500</td></tr>
+          <tr><td>Geographic coverage</td><td>1 city</td><td>Nationwide</td><td>Nationwide</td></tr>
+          <tr><td>Industry coverage</td><td>1 industry</td><td>All industries</td><td>All industries</td></tr>
+          <tr><td>Lead data</td><td>Phone only</td><td>Phone + email</td><td>Phone + email</td></tr>
+          <tr><td>Caller app access</td><td class="check"><i class="fas fa-check"></i></td><td class="check"><i class="fas fa-check"></i></td><td class="check"><i class="fas fa-check"></i></td></tr>
+          <tr><td>Call tracking & notes</td><td class="check"><i class="fas fa-check"></i></td><td class="check"><i class="fas fa-check"></i></td><td class="check"><i class="fas fa-check"></i></td></tr>
+          <tr><td>Built-in scripts</td><td class="check"><i class="fas fa-check"></i></td><td class="check"><i class="fas fa-check"></i></td><td class="check"><i class="fas fa-check"></i></td></tr>
+          <tr><td>Payment links</td><td class="dash">—</td><td class="check"><i class="fas fa-check"></i></td><td class="check"><i class="fas fa-check"></i></td></tr>
+          <tr><td>Priority refresh</td><td class="dash">—</td><td class="check"><i class="fas fa-check"></i></td><td class="check"><i class="fas fa-check"></i></td></tr>
+          <tr><td>Multi-user</td><td class="dash">—</td><td class="dash">—</td><td class="check"><i class="fas fa-check"></i></td></tr>
+          <tr><td>White label / rebrand</td><td class="dash">—</td><td class="dash">—</td><td class="check"><i class="fas fa-check"></i></td></tr>
+          <tr><td>Custom lead criteria</td><td class="dash">—</td><td class="dash">—</td><td class="check"><i class="fas fa-check"></i></td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
-</div>
+</section>
 
-<div class="cta-section">
-  <h2>Ready to start calling?</h2>
-  <p>500 leads loaded into your phone in 5 minutes.</p>
-  <a class="btn btn-primary" href="https://buy.stripe.com/00wcN503E512fNydpFdjO08" style="display:inline-block;padding:14px 40px;max-width:300px">Subscribe — $49/mo →</a>
-</div>
+<section class="features-section">
+  <div class="container">
+    <h2>Everything <span class="gradient-text">You Get</span></h2>
+    <div class="features-grid">
+      <div class="feature-card"><div class="icon"><i class="fas fa-list-check"></i></div><h4>Lead Queue — Filtered & Sortable</h4><p>Search by business name, city, or industry. See who you've called and who's next.</p></div>
+      <div class="feature-card"><div class="icon"><i class="fas fa-phone"></i></div><h4>One-Tap Dialing</h4><p>Tap any lead to call immediately. No copy-pasting phone numbers.</p></div>
+      <div class="feature-card"><div class="icon"><i class="fas fa-check-double"></i></div><h4>Call Status Tracking</h4><p>Mark leads as Called, Voicemail, Callback, or Not Interested. Status badges on every card.</p></div>
+      <div class="feature-card"><div class="icon"><i class="fas fa-note-sticky"></i></div><h4>Notes & Contact Names</h4><p>Log who you spoke to, what they said, and any follow-up details.</p></div>
+      <div class="feature-card"><div class="icon"><i class="fas fa-file-lines"></i></div><h4>Built-In Calling Script</h4><p>15 objection-handling rebuttals built right into the app. No memorizing.</p></div>
+      <div class="feature-card"><div class="icon"><i class="fas fa-credit-card"></i></div><h4>Payment Link Sharing</h4><p>Share a Stripe payment link in one tap when a lead says yes.</p></div>
+      <div class="feature-card"><div class="icon"><i class="fas fa-cloud-arrow-up"></i></div><h4>Auto-Sync to Cloud</h4><p>Every save syncs to the server. Your call log is always backed up.</p></div>
+      <div class="feature-card"><div class="icon"><i class="fas fa-mobile-screen"></i></div><h4>Works on Any Phone</h4><p>PWA — no app store needed. Open the link and start calling. Works on iOS and Android.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to <span class="gradient-text">start calling?</span></h2>
+    <p>500 leads loaded into your phone in 5 minutes.</p>
+    <a href="https://buy.stripe.com/00wcN503E512fNydpFdjO08" class="btn" style="display:inline-block;padding:16px 40px;background:linear-gradient(135deg,var(--secondary),var(--secondary-dark));color:var(--dark);border-radius:12px;font-weight:700;font-size:16px;text-decoration:none;">Subscribe — $49/mo <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
 
 <div class="footer">
-  <p>Instaweb Agency — <a href="/">instaweb.agency</a></p>
+  <p>Instaweb Agency · <a href="/">instaweb.agency</a> · <a href="/caller">Caller App</a></p>
 </div>
 </body>
 </html>
