@@ -20750,5 +20750,15 @@
     "state_code": "NM",
     "demo_url": "https://www.instaweb.agency/demo/osborne-electric-company",
     "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/osborne-electric-company.html"
+  },
+  {
+    "business_name": "The Palms Motel",
+    "phone": "(305) 555-1234",
+    "city": "Miami Beach",
+    "state": "FL",
+    "industry": "Hospitality",
+    "email": "hello@thepalmsmotel.com",
+    "demo_url": "/demo/the-palms-motel",
+    "template": "premium-motel"
   }
 ]
