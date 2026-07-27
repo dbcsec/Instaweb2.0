@@ -1,0 +1,1282 @@
+[
+  {
+    "business_name": "Mike Counsil Plumbing and Rooter",
+    "industry": "plumbing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/mike-counsil-plumbing-and-rooter",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mike-counsil-plumbing-and-rooter.html"
+  },
+  {
+    "business_name": "Plumbing Tech inc.",
+    "industry": "plumbing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/plumbing-tech-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumbing-tech-inc.html"
+  },
+  {
+    "business_name": "Allstar Plumbing",
+    "industry": "plumbing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/allstar-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/allstar-plumbing.html"
+  },
+  {
+    "business_name": "Gladiator Repipe & Plumbing San Jose",
+    "industry": "plumbing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/gladiator-repipe-and-plumbing-san-jose",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/gladiator-repipe-and-plumbing-san-jose.html"
+  },
+  {
+    "business_name": "Rooter Hero Plumbing & Air of San Jose",
+    "industry": "plumbing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/rooter-hero-plumbing-and-air-of-san-jose",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/rooter-hero-plumbing-and-air-of-san-jose.html"
+  },
+  {
+    "business_name": "Ribbs Plumbing & Sewer",
+    "industry": "plumbing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/ribbs-plumbing-and-sewer",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ribbs-plumbing-and-sewer.html"
+  },
+  {
+    "business_name": "Trout Electric",
+    "industry": "electrical",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/trout-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/trout-electric.html"
+  },
+  {
+    "business_name": "CA Electrical Group 24/7",
+    "industry": "electrical",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/ca-electrical-group-24-7",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ca-electrical-group-24-7.html"
+  },
+  {
+    "business_name": "Dalcon Electric",
+    "industry": "electrical",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/dalcon-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/dalcon-electric.html"
+  },
+  {
+    "business_name": "Safety First Electric",
+    "industry": "electrical",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/safety-first-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/safety-first-electric.html"
+  },
+  {
+    "business_name": "San Jose Electricians",
+    "industry": "electrical",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/san-jose-electricians",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/san-jose-electricians.html"
+  },
+  {
+    "business_name": "JMC Electric Tested and True",
+    "industry": "electrical",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/jmc-electric-tested-and-true",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/jmc-electric-tested-and-true.html"
+  },
+  {
+    "business_name": "Best Roof Repair",
+    "industry": "roofing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/best-roof-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/best-roof-repair.html"
+  },
+  {
+    "business_name": "Los Gatos Roofing",
+    "industry": "roofing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/los-gatos-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/los-gatos-roofing.html"
+  },
+  {
+    "business_name": "Superior Roof Repair",
+    "industry": "roofing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/superior-roof-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/superior-roof-repair.html"
+  },
+  {
+    "business_name": "Ultimate Roof Repair",
+    "industry": "roofing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/ultimate-roof-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ultimate-roof-repair.html"
+  },
+  {
+    "business_name": "Peak Roofing San Jose",
+    "industry": "roofing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/peak-roofing-san-jose",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/peak-roofing-san-jose.html"
+  },
+  {
+    "business_name": "Apollo Roofing Company",
+    "industry": "roofing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/apollo-roofing-company",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/apollo-roofing-company.html"
+  },
+  {
+    "business_name": "Ace Roofer San Jose",
+    "industry": "roofing",
+    "city": "San Jose",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/ace-roofer-san-jose",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ace-roofer-san-jose.html"
+  },
+  {
+    "business_name": "McCullough Heating, Air Conditioning & Plumbing",
+    "industry": "hvac",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/mccullough-heating-air-conditioning-and-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mccullough-heating-air-conditioning-and-plumbing.html"
+  },
+  {
+    "business_name": "Elite Air Conditioning and Plumbing",
+    "industry": "hvac",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/elite-air-conditioning-and-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-air-conditioning-and-plumbing.html"
+  },
+  {
+    "business_name": "1st Home & Commercial Services",
+    "industry": "plumbing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/1st-home-and-commercial-services",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/1st-home-and-commercial-services.html"
+  },
+  {
+    "business_name": "Clarke Kent Plumbing",
+    "industry": "plumbing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/clarke-kent-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/clarke-kent-plumbing.html"
+  },
+  {
+    "business_name": "Economy Plumbing Services, LLC",
+    "industry": "plumbing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/economy-plumbing-services-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/economy-plumbing-services-llc.html"
+  },
+  {
+    "business_name": "Altair Austin Roofing Company",
+    "industry": "roofing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/altair-austin-roofing-company",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/altair-austin-roofing-company.html"
+  },
+  {
+    "business_name": "Austin Roofing Company & Handyman",
+    "industry": "roofing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/austin-roofing-company-and-handyman",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/austin-roofing-company-and-handyman.html"
+  },
+  {
+    "business_name": "Austin Roofing Company & Water Damage | WDR",
+    "industry": "roofing",
+    "city": "Austin",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/austin-roofing-company-and-water-damage-wdr",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/austin-roofing-company-and-water-damage-wdr.html"
+  },
+  {
+    "business_name": "Florida Home Air Conditioning",
+    "industry": "hvac",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/florida-home-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/florida-home-air-conditioning.html"
+  },
+  {
+    "business_name": "Weather Engineers, Inc.",
+    "industry": "hvac",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/weather-engineers-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/weather-engineers-inc.html"
+  },
+  {
+    "business_name": "Air McCall",
+    "industry": "hvac",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/air-mccall",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/air-mccall.html"
+  },
+  {
+    "business_name": "Hammond Heating & Air Conditioning",
+    "industry": "hvac",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/hammond-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/hammond-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "Snyder Air Conditioning, Plumbing & Electric",
+    "industry": "hvac",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/snyder-air-conditioning-plumbing-and-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/snyder-air-conditioning-plumbing-and-electric.html"
+  },
+  {
+    "business_name": "Service Experts Jacksonville",
+    "industry": "hvac",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/service-experts-jacksonville",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/service-experts-jacksonville.html"
+  },
+  {
+    "business_name": "Elite AC",
+    "industry": "hvac",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/elite-ac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-ac.html"
+  },
+  {
+    "business_name": "Turner Plumbing Co",
+    "industry": "plumbing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/turner-plumbing-co",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/turner-plumbing-co.html"
+  },
+  {
+    "business_name": "David Gray Plumbing",
+    "industry": "plumbing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/david-gray-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/david-gray-plumbing.html"
+  },
+  {
+    "business_name": "Touchton Plumbing Contractors Inc",
+    "industry": "plumbing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/touchton-plumbing-contractors-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/touchton-plumbing-contractors-inc.html"
+  },
+  {
+    "business_name": "Premier Plumbing, LLC",
+    "industry": "plumbing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/premier-plumbing-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/premier-plumbing-llc.html"
+  },
+  {
+    "business_name": "Superior Plumbing & Pipe Lining",
+    "industry": "plumbing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/superior-plumbing-and-pipe-lining",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/superior-plumbing-and-pipe-lining.html"
+  },
+  {
+    "business_name": "Harry Hayes Plumbing, Water Heater Repair & Drain Cleaning",
+    "industry": "plumbing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/harry-hayes-plumbing-water-heater-repair-and-drain-cleaning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/harry-hayes-plumbing-water-heater-repair-and-drain-cleaning.html"
+  },
+  {
+    "business_name": "Betros Plumbing Contractors",
+    "industry": "plumbing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/betros-plumbing-contractors",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/betros-plumbing-contractors.html"
+  },
+  {
+    "business_name": "American Electrical Contracting Inc.",
+    "industry": "electrical",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/american-electrical-contracting-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/american-electrical-contracting-inc.html"
+  },
+  {
+    "business_name": "American Electric",
+    "industry": "electrical",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/american-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/american-electric.html"
+  },
+  {
+    "business_name": "Crawford Electric",
+    "industry": "electrical",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/crawford-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/crawford-electric.html"
+  },
+  {
+    "business_name": "Current Electrical Contractors",
+    "industry": "electrical",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/current-electrical-contractors",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/current-electrical-contractors.html"
+  },
+  {
+    "business_name": "Empire Electric Inc.",
+    "industry": "electrical",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/empire-electric-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/empire-electric-inc.html"
+  },
+  {
+    "business_name": "Thompson Electric and Air",
+    "industry": "electrical",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/thompson-electric-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/thompson-electric-and-air.html"
+  },
+  {
+    "business_name": "Jack C. Wilson Roofing Co",
+    "industry": "roofing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/jack-c-wilson-roofing-co",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/jack-c-wilson-roofing-co.html"
+  },
+  {
+    "business_name": "Southern Coast Roofing",
+    "industry": "roofing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/southern-coast-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/southern-coast-roofing.html"
+  },
+  {
+    "business_name": "Baldwin Roofing Company",
+    "industry": "roofing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/baldwin-roofing-company",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/baldwin-roofing-company.html"
+  },
+  {
+    "business_name": "Watson Jacksonville Roofing",
+    "industry": "roofing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/watson-jacksonville-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/watson-jacksonville-roofing.html"
+  },
+  {
+    "business_name": "Model City Roofing",
+    "industry": "roofing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/model-city-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/model-city-roofing.html"
+  },
+  {
+    "business_name": "South Edge Roofing & Construction",
+    "industry": "roofing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/south-edge-roofing-and-construction",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/south-edge-roofing-and-construction.html"
+  },
+  {
+    "business_name": "READY ROOFING, LLC",
+    "industry": "roofing",
+    "city": "Jacksonville",
+    "state_code": "FL",
+    "demo_url": "https://www.instaweb.agency/demo/ready-roofing-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ready-roofing-llc.html"
+  },
+  {
+    "business_name": "1st Choice Plumbing, Heating & Air Solutions",
+    "industry": "hvac",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/1st-choice-plumbing-heating-and-air-solutions",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/1st-choice-plumbing-heating-and-air-solutions.html"
+  },
+  {
+    "business_name": "AirCo Air Conditioning, Heating and Plumbing",
+    "industry": "hvac",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/airco-air-conditioning-heating-and-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/airco-air-conditioning-heating-and-plumbing.html"
+  },
+  {
+    "business_name": "Aire Serv of Fort Worth",
+    "industry": "hvac",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/aire-serv-of-fort-worth",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/aire-serv-of-fort-worth.html"
+  },
+  {
+    "business_name": "Mister Sparky Electric - Fort Worth",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/mister-sparky-electric-fort-worth",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mister-sparky-electric-fort-worth.html"
+  },
+  {
+    "business_name": "Douglas Electrical Services",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/douglas-electrical-services",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/douglas-electrical-services.html"
+  },
+  {
+    "business_name": "A1 Electricians Fort Worth",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/a1-electricians-fort-worth",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/a1-electricians-fort-worth.html"
+  },
+  {
+    "business_name": "EMSR - Electrical Contractors - Fort Worth",
+    "industry": "electrical",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/emsr-electrical-contractors-fort-worth",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/emsr-electrical-contractors-fort-worth.html"
+  },
+  {
+    "business_name": "Lon Smith Roofing & Construction",
+    "industry": "roofing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/lon-smith-roofing-and-construction",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/lon-smith-roofing-and-construction.html"
+  },
+  {
+    "business_name": "Branded Roofing And Construction",
+    "industry": "roofing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/branded-roofing-and-construction",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/branded-roofing-and-construction.html"
+  },
+  {
+    "business_name": "Blue Eagle General Contractors",
+    "industry": "roofing",
+    "city": "Fort Worth",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/blue-eagle-general-contractors",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/blue-eagle-general-contractors.html"
+  },
+  {
+    "business_name": "Dor-Mar Columbus Heating And Air",
+    "industry": "hvac",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/dor-mar-columbus-heating-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/dor-mar-columbus-heating-and-air.html"
+  },
+  {
+    "business_name": "Sears Heating and Cooling",
+    "industry": "hvac",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/sears-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sears-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Custom Air Conditioning and Heating Co.",
+    "industry": "hvac",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/custom-air-conditioning-and-heating-co",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/custom-air-conditioning-and-heating-co.html"
+  },
+  {
+    "business_name": "Columbus Worthington Air",
+    "industry": "hvac",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/columbus-worthington-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/columbus-worthington-air.html"
+  },
+  {
+    "business_name": "CJS Heating and Air",
+    "industry": "hvac",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/cjs-heating-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/cjs-heating-and-air.html"
+  },
+  {
+    "business_name": "Fire & Ice Heating, Cooling, Plumbing & Electrical",
+    "industry": "hvac",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/fire-and-ice-heating-cooling-plumbing-and-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/fire-and-ice-heating-cooling-plumbing-and-electrical.html"
+  },
+  {
+    "business_name": "The Waterworks Plumbing, Drain, Heating & Cooling",
+    "industry": "plumbing",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/the-waterworks-plumbing-drain-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/the-waterworks-plumbing-drain-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Transit & Flow",
+    "industry": "plumbing",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/transit-and-flow",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/transit-and-flow.html"
+  },
+  {
+    "business_name": "Plumbing & Drain Professionals",
+    "industry": "plumbing",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/plumbing-and-drain-professionals",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumbing-and-drain-professionals.html"
+  },
+  {
+    "business_name": "Parson Plumbing and Drains",
+    "industry": "plumbing",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/parson-plumbing-and-drains",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/parson-plumbing-and-drains.html"
+  },
+  {
+    "business_name": "1-Tom-Plumber",
+    "industry": "plumbing",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/1-tom-plumber",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/1-tom-plumber.html"
+  },
+  {
+    "business_name": "Mr. Rooter Plumbing of Columbus",
+    "industry": "plumbing",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/mr-rooter-plumbing-of-columbus",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-rooter-plumbing-of-columbus.html"
+  },
+  {
+    "business_name": "The Local Plumber LLC",
+    "industry": "plumbing",
+    "city": "Columbus",
+    "state_code": "OH",
+    "demo_url": "https://www.instaweb.agency/demo/the-local-plumber-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/the-local-plumber-llc.html"
+  },
+  {
+    "business_name": "Queen City Plumbing",
+    "industry": "plumbing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/queen-city-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/queen-city-plumbing.html"
+  },
+  {
+    "business_name": "Charlotte Plumbing",
+    "industry": "plumbing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/charlotte-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/charlotte-plumbing.html"
+  },
+  {
+    "business_name": "AAA City Plumbing",
+    "industry": "plumbing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/aaa-city-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/aaa-city-plumbing.html"
+  },
+  {
+    "business_name": "WyattWorks Plumbing Charlotte",
+    "industry": "plumbing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/wyattworks-plumbing-charlotte",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/wyattworks-plumbing-charlotte.html"
+  },
+  {
+    "business_name": "Swift Brothers Plumbing, Heating & Air",
+    "industry": "plumbing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/swift-brothers-plumbing-heating-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/swift-brothers-plumbing-heating-and-air.html"
+  },
+  {
+    "business_name": "Charlotte Plumbing Masters",
+    "industry": "plumbing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/charlotte-plumbing-masters",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/charlotte-plumbing-masters.html"
+  },
+  {
+    "business_name": "On Time Electrical",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/on-time-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/on-time-electrical.html"
+  },
+  {
+    "business_name": "LiveWire Electrical",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/livewire-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/livewire-electrical.html"
+  },
+  {
+    "business_name": "Carolina Electric Pro\u2019s",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/carolina-electric-pro-s",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/carolina-electric-pro-s.html"
+  },
+  {
+    "business_name": "Mister Sparky",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/mister-sparky",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mister-sparky.html"
+  },
+  {
+    "business_name": "Mr. Electric of South Charlotte",
+    "industry": "electrical",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/mr-electric-of-south-charlotte",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-electric-of-south-charlotte.html"
+  },
+  {
+    "business_name": "Southern Star Roofing Charlotte",
+    "industry": "roofing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/southern-star-roofing-charlotte",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/southern-star-roofing-charlotte.html"
+  },
+  {
+    "business_name": "Charlotte Roofing Specialists",
+    "industry": "roofing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/charlotte-roofing-specialists",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/charlotte-roofing-specialists.html"
+  },
+  {
+    "business_name": "Gaston Roofing LLC- Charlotte",
+    "industry": "roofing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/gaston-roofing-llc-charlotte",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/gaston-roofing-llc-charlotte.html"
+  },
+  {
+    "business_name": "Premier Roofing Company",
+    "industry": "roofing",
+    "city": "Charlotte",
+    "state_code": "NC",
+    "demo_url": "https://www.instaweb.agency/demo/premier-roofing-company",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/premier-roofing-company.html"
+  },
+  {
+    "business_name": "Hope Plumbing, Heating & Cooling",
+    "industry": "plumbing",
+    "city": "Indianapolis",
+    "state_code": "IN",
+    "demo_url": "https://www.instaweb.agency/demo/hope-plumbing-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/hope-plumbing-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Pristine Plumbing",
+    "industry": "plumbing",
+    "city": "Indianapolis",
+    "state_code": "IN",
+    "demo_url": "https://www.instaweb.agency/demo/pristine-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pristine-plumbing.html"
+  },
+  {
+    "business_name": "L. D. Smith Plumbing & Drains",
+    "industry": "plumbing",
+    "city": "Indianapolis",
+    "state_code": "IN",
+    "demo_url": "https://www.instaweb.agency/demo/l-d-smith-plumbing-and-drains",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/l-d-smith-plumbing-and-drains.html"
+  },
+  {
+    "business_name": "Carter's My Plumber - Plumbers Indianapolis, Water Heater Repair",
+    "industry": "plumbing",
+    "city": "Indianapolis",
+    "state_code": "IN",
+    "demo_url": "https://www.instaweb.agency/demo/carters-my-plumber-plumbers-indianapolis-water-heater-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/carters-my-plumber-plumbers-indianapolis-water-heater-repair.html"
+  },
+  {
+    "business_name": "Benjamin Franklin Plumbing of Indianapolis",
+    "industry": "plumbing",
+    "city": "Indianapolis",
+    "state_code": "IN",
+    "demo_url": "https://www.instaweb.agency/demo/benjamin-franklin-plumbing-of-indianapolis",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/benjamin-franklin-plumbing-of-indianapolis.html"
+  },
+  {
+    "business_name": "Ciriello Plumbing Co",
+    "industry": "plumbing",
+    "city": "Indianapolis",
+    "state_code": "IN",
+    "demo_url": "https://www.instaweb.agency/demo/ciriello-plumbing-co",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ciriello-plumbing-co.html"
+  },
+  {
+    "business_name": "Hamm & Sons Plumbing",
+    "industry": "plumbing",
+    "city": "Indianapolis",
+    "state_code": "IN",
+    "demo_url": "https://www.instaweb.agency/demo/hamm-and-sons-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/hamm-and-sons-plumbing.html"
+  },
+  {
+    "business_name": "BV Electric Inc.",
+    "industry": "electrical",
+    "city": "San Francisco",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/bv-electric-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bv-electric-inc.html"
+  },
+  {
+    "business_name": "Pauric Electric San Francisco",
+    "industry": "electrical",
+    "city": "San Francisco",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/pauric-electric-san-francisco",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/pauric-electric-san-francisco.html"
+  },
+  {
+    "business_name": "Max Electric",
+    "industry": "electrical",
+    "city": "San Francisco",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/max-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/max-electric.html"
+  },
+  {
+    "business_name": "Art Electrical Services And More",
+    "industry": "electrical",
+    "city": "San Francisco",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/art-electrical-services-and-more",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/art-electrical-services-and-more.html"
+  },
+  {
+    "business_name": "Aguilar Electric",
+    "industry": "electrical",
+    "city": "San Francisco",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/aguilar-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/aguilar-electric.html"
+  },
+  {
+    "business_name": "Bay Electric - Electrical Contractors",
+    "industry": "electrical",
+    "city": "San Francisco",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/bay-electric-electrical-contractors",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bay-electric-electrical-contractors.html"
+  },
+  {
+    "business_name": "Zoom Electricians",
+    "industry": "electrical",
+    "city": "San Francisco",
+    "state_code": "CA",
+    "demo_url": "https://www.instaweb.agency/demo/zoom-electricians",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/zoom-electricians.html"
+  },
+  {
+    "business_name": "Nortech Heating, Cooling & Refrigeration",
+    "industry": "hvac",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/nortech-heating-cooling-and-refrigeration",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/nortech-heating-cooling-and-refrigeration.html"
+  },
+  {
+    "business_name": "Craftsman Plumbing",
+    "industry": "plumbing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/craftsman-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/craftsman-plumbing.html"
+  },
+  {
+    "business_name": "Jafco Plumbing and Sewer",
+    "industry": "plumbing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/jafco-plumbing-and-sewer",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/jafco-plumbing-and-sewer.html"
+  },
+  {
+    "business_name": "Gene Johnson Plumbing",
+    "industry": "plumbing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/gene-johnson-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/gene-johnson-plumbing.html"
+  },
+  {
+    "business_name": "Best Plumbing",
+    "industry": "plumbing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/best-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/best-plumbing.html"
+  },
+  {
+    "business_name": "Bee's Plumbing and Heating",
+    "industry": "plumbing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/bees-plumbing-and-heating",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bees-plumbing-and-heating.html"
+  },
+  {
+    "business_name": "Raymark Plumbing & Sewer",
+    "industry": "plumbing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/raymark-plumbing-and-sewer",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/raymark-plumbing-and-sewer.html"
+  },
+  {
+    "business_name": "Exact Electric",
+    "industry": "electrical",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/exact-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/exact-electric.html"
+  },
+  {
+    "business_name": "Electric Company of Seattle",
+    "industry": "electrical",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/electric-company-of-seattle",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electric-company-of-seattle.html"
+  },
+  {
+    "business_name": "Mirsky Electric",
+    "industry": "electrical",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/mirsky-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mirsky-electric.html"
+  },
+  {
+    "business_name": "Kemly Electric",
+    "industry": "electrical",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/kemly-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/kemly-electric.html"
+  },
+  {
+    "business_name": "Premier Plumbing Pros",
+    "industry": "roofing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/premier-plumbing-pros",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/premier-plumbing-pros.html"
+  },
+  {
+    "business_name": "National Economy Plumbers",
+    "industry": "roofing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/national-economy-plumbers",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/national-economy-plumbers.html"
+  },
+  {
+    "business_name": "Smith's Plumbing, Heating & Air",
+    "industry": "roofing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/smiths-plumbing-heating-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/smiths-plumbing-heating-and-air.html"
+  },
+  {
+    "business_name": "Magnolia Plumbing Company",
+    "industry": "roofing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/magnolia-plumbing-company",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/magnolia-plumbing-company.html"
+  },
+  {
+    "business_name": "Traditional Plumbing Co Inc",
+    "industry": "roofing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/traditional-plumbing-co-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/traditional-plumbing-co-inc.html"
+  },
+  {
+    "business_name": "Avantel Plumber of Memphis TN",
+    "industry": "roofing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/avantel-plumber-of-memphis-tn",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/avantel-plumber-of-memphis-tn.html"
+  },
+  {
+    "business_name": "Mr. Rooter Plumbing of Memphis",
+    "industry": "roofing",
+    "city": "Seattle",
+    "state_code": "WA",
+    "demo_url": "https://www.instaweb.agency/demo/mr-rooter-plumbing-of-memphis",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-rooter-plumbing-of-memphis.html"
+  },
+  {
+    "business_name": "Ignitify HVAC",
+    "industry": "plumbing",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/ignitify-hvac",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ignitify-hvac.html"
+  },
+  {
+    "business_name": "Empire Refrigeration",
+    "industry": "plumbing",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/empire-refrigeration",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/empire-refrigeration.html"
+  },
+  {
+    "business_name": "Expert HVAC & Refrigeration",
+    "industry": "plumbing",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/expert-hvac-and-refrigeration",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/expert-hvac-and-refrigeration.html"
+  },
+  {
+    "business_name": "Mechanical Technologies",
+    "industry": "plumbing",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/mechanical-technologies",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mechanical-technologies.html"
+  },
+  {
+    "business_name": "TOTAL AIR",
+    "industry": "plumbing",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/total-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/total-air.html"
+  },
+  {
+    "business_name": "SoBellas Home Services El Paso",
+    "industry": "plumbing",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/sobellas-home-services-el-paso",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sobellas-home-services-el-paso.html"
+  },
+  {
+    "business_name": "Diaz Services",
+    "industry": "plumbing",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/diaz-services",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/diaz-services.html"
+  },
+  {
+    "business_name": "Goodman Construction",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/goodman-construction",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/goodman-construction.html"
+  },
+  {
+    "business_name": "Ad \u00b7 Roofing OKC \u00b7 Experience the Goodman Difference\u2014where integrity meets artistry. Upgrade your <b>roof</b> today. \u00b7 Visit Site \u00b7 goodmanconstructionok.com",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/ad-roofing-okc-experience-the-goodman-difference-where-integrity-meets-artistry-",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ad-roofing-okc-experience-the-goodman-difference-where-integrity-meets-artistry-.html"
+  },
+  {
+    "business_name": "OKC Roofers",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/okc-roofers",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/okc-roofers.html"
+  },
+  {
+    "business_name": "City Roofing and Construction",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/city-roofing-and-construction",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/city-roofing-and-construction.html"
+  },
+  {
+    "business_name": "Oklahoma All State Roofing",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/oklahoma-all-state-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/oklahoma-all-state-roofing.html"
+  },
+  {
+    "business_name": "Hiner Roofing OKC",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/hiner-roofing-okc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/hiner-roofing-okc.html"
+  },
+  {
+    "business_name": "Patriot Roofing",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/patriot-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/patriot-roofing.html"
+  },
+  {
+    "business_name": "Shamrock Roofing and Construction",
+    "industry": "roofing",
+    "city": "Nashville",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/shamrock-roofing-and-construction",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/shamrock-roofing-and-construction.html"
+  },
+  {
+    "business_name": "Commercial Roofing Rana",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/commercial-roofing-rana",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/commercial-roofing-rana.html"
+  },
+  {
+    "business_name": "Wells Roofing and Remodeling",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/wells-roofing-and-remodeling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/wells-roofing-and-remodeling.html"
+  },
+  {
+    "business_name": "Haven Roofing and Exteriors",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/haven-roofing-and-exteriors",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/haven-roofing-and-exteriors.html"
+  },
+  {
+    "business_name": "Excellent Roofing",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/excellent-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/excellent-roofing.html"
+  },
+  {
+    "business_name": "Cool Roofs - Memphis",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/cool-roofs-memphis",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/cool-roofs-memphis.html"
+  },
+  {
+    "business_name": "Southern Roofing & Renovations",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/southern-roofing-and-renovations",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/southern-roofing-and-renovations.html"
+  },
+  {
+    "business_name": "Elite Roofing Solutions",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/elite-roofing-solutions",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/elite-roofing-solutions.html"
+  },
+  {
+    "business_name": "Bryant Heating, Cooling, Plumbing, & Electric",
+    "industry": "roofing",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/bryant-heating-cooling-plumbing-and-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bryant-heating-cooling-plumbing-and-electric.html"
+  },
+  {
+    "business_name": "Aire Serv of Louisville",
+    "industry": "roofing",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/aire-serv-of-louisville",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/aire-serv-of-louisville.html"
+  },
+  {
+    "business_name": "One Choice Mechanical",
+    "industry": "roofing",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/one-choice-mechanical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/one-choice-mechanical.html"
+  },
+  {
+    "business_name": "Tom Drexler Plumbing, Air & Electric",
+    "industry": "roofing",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/tom-drexler-plumbing-air-and-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/tom-drexler-plumbing-air-and-electric.html"
+  },
+  {
+    "business_name": "Prudential Heating & Air Conditioning",
+    "industry": "roofing",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/prudential-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/prudential-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "A+ Derr Heating & Cooling",
+    "industry": "roofing",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/a-derr-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/a-derr-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Element Air Heating and Cooling",
+    "industry": "roofing",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/element-air-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/element-air-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Mr. Electric of Tucson",
+    "industry": "hvac",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/mr-electric-of-tucson",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-electric-of-tucson.html"
+  },
+  {
+    "business_name": "Plugged In Electric, LLC",
+    "industry": "hvac",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/plugged-in-electric-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plugged-in-electric-llc.html"
+  },
+  {
+    "business_name": "Volt Vikings",
+    "industry": "hvac",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/volt-vikings",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/volt-vikings.html"
+  },
+  {
+    "business_name": "Buddy & Sons Electric",
+    "industry": "hvac",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/buddy-and-sons-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/buddy-and-sons-electric.html"
+  },
+  {
+    "business_name": "SPE Electrical Services",
+    "industry": "hvac",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/spe-electrical-services",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/spe-electrical-services.html"
+  },
+  {
+    "business_name": "Tucson Fast House Electric",
+    "industry": "hvac",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/tucson-fast-house-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/tucson-fast-house-electric.html"
+  },
+  {
+    "business_name": "Arizona Electrical Solutions",
+    "industry": "hvac",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/arizona-electrical-solutions",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/arizona-electrical-solutions.html"
+  }
+]
