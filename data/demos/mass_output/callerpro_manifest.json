@@ -1,0 +1,514 @@
+[
+  {
+    "business_name": "Chapman Heating, Air Conditioning, Plumbing and Electrical",
+    "industry": "plumbing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/chapman-heating-air-conditioning-plumbing-and-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/chapman-heating-air-conditioning-plumbing-and-electrical.html"
+  },
+  {
+    "business_name": "Service Experts Indianapolis",
+    "industry": "plumbing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/service-experts-indianapolis",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/service-experts-indianapolis.html"
+  },
+  {
+    "business_name": "Bolls Heating & Cooling",
+    "industry": "plumbing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/bolls-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bolls-heating-and-cooling.html"
+  },
+  {
+    "business_name": "LCS Heating and Cooling",
+    "industry": "plumbing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/lcs-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/lcs-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Roy Rogers Heating & Air",
+    "industry": "plumbing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/roy-rogers-heating-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/roy-rogers-heating-and-air.html"
+  },
+  {
+    "business_name": "Northern Comfort Systems",
+    "industry": "plumbing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/northern-comfort-systems",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/northern-comfort-systems.html"
+  },
+  {
+    "business_name": "Howald Heating, Air Conditioning & Plumbing",
+    "industry": "plumbing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/howald-heating-air-conditioning-and-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/howald-heating-air-conditioning-and-plumbing.html"
+  },
+  {
+    "business_name": "DAVID-ELECTRIC",
+    "industry": "roofing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/david-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/david-electric.html"
+  },
+  {
+    "business_name": "Mister Sparky of Indianapolis",
+    "industry": "roofing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/mister-sparky-of-indianapolis",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mister-sparky-of-indianapolis.html"
+  },
+  {
+    "business_name": "Zimmerman Electric Indy",
+    "industry": "roofing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/zimmerman-electric-indy",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/zimmerman-electric-indy.html"
+  },
+  {
+    "business_name": "Electric Today",
+    "industry": "roofing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/electric-today",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/electric-today.html"
+  },
+  {
+    "business_name": "Indianapolis Electricians",
+    "industry": "roofing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/indianapolis-electricians",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/indianapolis-electricians.html"
+  },
+  {
+    "business_name": "Rinder Electric",
+    "industry": "roofing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/rinder-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/rinder-electric.html"
+  },
+  {
+    "business_name": "Barth Electric Co Inc",
+    "industry": "roofing",
+    "city": "Washington",
+    "state_code": "DC",
+    "demo_url": "https://www.instaweb.agency/demo/barth-electric-co-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/barth-electric-co-inc.html"
+  },
+  {
+    "business_name": "Indy Roof & Restoration",
+    "industry": "hvac",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/indy-roof-and-restoration",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/indy-roof-and-restoration.html"
+  },
+  {
+    "business_name": "Big Boy's Construction",
+    "industry": "hvac",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/big-boys-construction",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/big-boys-construction.html"
+  },
+  {
+    "business_name": "Bone Dry Roofing",
+    "industry": "hvac",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/bone-dry-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/bone-dry-roofing.html"
+  },
+  {
+    "business_name": "Trojan Roofing",
+    "industry": "hvac",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/trojan-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/trojan-roofing.html"
+  },
+  {
+    "business_name": "Indianapolis Roofing LLC",
+    "industry": "hvac",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/indianapolis-roofing-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/indianapolis-roofing-llc.html"
+  },
+  {
+    "business_name": "Indy Rooftops - Roofing Replacement Contractor",
+    "industry": "hvac",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/indy-rooftops-roofing-replacement-contractor",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/indy-rooftops-roofing-replacement-contractor.html"
+  },
+  {
+    "business_name": "WaterTight Roofing Indy",
+    "industry": "hvac",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/watertight-roofing-indy",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/watertight-roofing-indy.html"
+  },
+  {
+    "business_name": "Magic Plumbing Heating & Cooling",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/magic-plumbing-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/magic-plumbing-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Advanced Plumbing & Drain",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/advanced-plumbing-and-drain",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/advanced-plumbing-and-drain.html"
+  },
+  {
+    "business_name": "Heise's Plumbing",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/heises-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/heises-plumbing.html"
+  },
+  {
+    "business_name": "Arch Plumbing Inc.",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/arch-plumbing-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/arch-plumbing-inc.html"
+  },
+  {
+    "business_name": "Cabrillo Plumbing, Heating & Air",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/cabrillo-plumbing-heating-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/cabrillo-plumbing-heating-and-air.html"
+  },
+  {
+    "business_name": "Precision Flow Plumbing",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/precision-flow-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/precision-flow-plumbing.html"
+  },
+  {
+    "business_name": "Ace Plumbing & Rooter, Inc.",
+    "industry": "electrical",
+    "city": "El Paso",
+    "state_code": "TX",
+    "demo_url": "https://www.instaweb.agency/demo/ace-plumbing-and-rooter-inc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ace-plumbing-and-rooter-inc.html"
+  },
+  {
+    "business_name": "Eco Smart Roofer",
+    "industry": "hvac",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/eco-smart-roofer",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/eco-smart-roofer.html"
+  },
+  {
+    "business_name": "San Francisco Roofing Pro",
+    "industry": "hvac",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/san-francisco-roofing-pro",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/san-francisco-roofing-pro.html"
+  },
+  {
+    "business_name": "SF Roof Specialists",
+    "industry": "hvac",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/sf-roof-specialists",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/sf-roof-specialists.html"
+  },
+  {
+    "business_name": "ROOF EXPRESS",
+    "industry": "hvac",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/roof-express",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/roof-express.html"
+  },
+  {
+    "business_name": "Marina Bay Roofing",
+    "industry": "hvac",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/marina-bay-roofing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/marina-bay-roofing.html"
+  },
+  {
+    "business_name": "Equinox Roofing Solutions",
+    "industry": "hvac",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/equinox-roofing-solutions",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/equinox-roofing-solutions.html"
+  },
+  {
+    "business_name": "Greenwood Heating and Home Services",
+    "industry": "plumbing",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/greenwood-heating-and-home-services",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/greenwood-heating-and-home-services.html"
+  },
+  {
+    "business_name": "Brennan Heating, Air Conditioning, & Electric",
+    "industry": "plumbing",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/brennan-heating-air-conditioning-and-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/brennan-heating-air-conditioning-and-electric.html"
+  },
+  {
+    "business_name": "Olson Energy Service",
+    "industry": "plumbing",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/olson-energy-service",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/olson-energy-service.html"
+  },
+  {
+    "business_name": "HotWire Furnace, Air Conditioning & Appliance Repair Seattle",
+    "industry": "plumbing",
+    "city": "Oklahoma City",
+    "state_code": "OK",
+    "demo_url": "https://www.instaweb.agency/demo/hotwire-furnace-air-conditioning-and-appliance-repair-seattle",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/hotwire-furnace-air-conditioning-and-appliance-repair-seattle.html"
+  },
+  {
+    "business_name": "Ultimate Heating, Cooling, Plumbing & Electric",
+    "industry": "plumbing",
+    "city": "Memphis",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/ultimate-heating-cooling-plumbing-and-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/ultimate-heating-cooling-plumbing-and-electric.html"
+  },
+  {
+    "business_name": "Heart Heating, Cooling, Plumbing & Electric",
+    "industry": "plumbing",
+    "city": "Memphis",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/heart-heating-cooling-plumbing-and-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/heart-heating-cooling-plumbing-and-electric.html"
+  },
+  {
+    "business_name": "Denver's Best Heating & AC Repair",
+    "industry": "plumbing",
+    "city": "Memphis",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/denvers-best-heating-and-ac-repair",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/denvers-best-heating-and-ac-repair.html"
+  },
+  {
+    "business_name": "Absolute Plumbing, Electrical, Heating & Air",
+    "industry": "plumbing",
+    "city": "Memphis",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/absolute-plumbing-electrical-heating-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/absolute-plumbing-electrical-heating-and-air.html"
+  },
+  {
+    "business_name": "Roots Heating & Air",
+    "industry": "plumbing",
+    "city": "Memphis",
+    "state_code": "TN",
+    "demo_url": "https://www.instaweb.agency/demo/roots-heating-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/roots-heating-and-air.html"
+  },
+  {
+    "business_name": "Heating Ventilation Air Conditioning Mechanical Service",
+    "industry": "hvac",
+    "city": "Louisville",
+    "state_code": "KY",
+    "demo_url": "https://www.instaweb.agency/demo/heating-ventilation-air-conditioning-mechanical-service",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/heating-ventilation-air-conditioning-mechanical-service.html"
+  },
+  {
+    "business_name": "McMurrays Heating & A.C.",
+    "industry": "hvac",
+    "city": "Louisville",
+    "state_code": "KY",
+    "demo_url": "https://www.instaweb.agency/demo/mcmurrays-heating-and-a-c",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mcmurrays-heating-and-a-c.html"
+  },
+  {
+    "business_name": "DC AIR CONDITIONING &Heating",
+    "industry": "hvac",
+    "city": "Louisville",
+    "state_code": "KY",
+    "demo_url": "https://www.instaweb.agency/demo/dc-air-conditioning-andheating",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/dc-air-conditioning-andheating.html"
+  },
+  {
+    "business_name": "Magnolia Plumbing, Heating & Cooling",
+    "industry": "hvac",
+    "city": "Louisville",
+    "state_code": "KY",
+    "demo_url": "https://www.instaweb.agency/demo/magnolia-plumbing-heating-and-cooling",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/magnolia-plumbing-heating-and-cooling.html"
+  },
+  {
+    "business_name": "Riley Heat & Air",
+    "industry": "hvac",
+    "city": "Louisville",
+    "state_code": "KY",
+    "demo_url": "https://www.instaweb.agency/demo/riley-heat-and-air",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/riley-heat-and-air.html"
+  },
+  {
+    "business_name": "Spartan Plumbing, Heating and Air Conditioning",
+    "industry": "hvac",
+    "city": "Louisville",
+    "state_code": "KY",
+    "demo_url": "https://www.instaweb.agency/demo/spartan-plumbing-heating-and-air-conditioning",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/spartan-plumbing-heating-and-air-conditioning.html"
+  },
+  {
+    "business_name": "Jimmy Gusky Heating & Air LLC",
+    "industry": "hvac",
+    "city": "Louisville",
+    "state_code": "KY",
+    "demo_url": "https://www.instaweb.agency/demo/jimmy-gusky-heating-and-air-llc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/jimmy-gusky-heating-and-air-llc.html"
+  },
+  {
+    "business_name": "Reliable Plumbing",
+    "industry": "hvac",
+    "city": "Milwaukee",
+    "state_code": "WI",
+    "demo_url": "https://www.instaweb.agency/demo/reliable-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/reliable-plumbing.html"
+  },
+  {
+    "business_name": "Plumbing Guys of El Paso",
+    "industry": "hvac",
+    "city": "Milwaukee",
+    "state_code": "WI",
+    "demo_url": "https://www.instaweb.agency/demo/plumbing-guys-of-el-paso",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/plumbing-guys-of-el-paso.html"
+  },
+  {
+    "business_name": "INNOVATIVE TRADES, LLC PLUMBING & ELECTRICAL",
+    "industry": "hvac",
+    "city": "Milwaukee",
+    "state_code": "WI",
+    "demo_url": "https://www.instaweb.agency/demo/innovative-trades-llc-plumbing-and-electrical",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/innovative-trades-llc-plumbing-and-electrical.html"
+  },
+  {
+    "business_name": "Union Plumbing",
+    "industry": "hvac",
+    "city": "Milwaukee",
+    "state_code": "WI",
+    "demo_url": "https://www.instaweb.agency/demo/union-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/union-plumbing.html"
+  },
+  {
+    "business_name": "Mr. Rooter Plumbing of El Paso",
+    "industry": "hvac",
+    "city": "Milwaukee",
+    "state_code": "WI",
+    "demo_url": "https://www.instaweb.agency/demo/mr-rooter-plumbing-of-el-paso",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-rooter-plumbing-of-el-paso.html"
+  },
+  {
+    "business_name": "Oasis Plumbing Repair Co",
+    "industry": "hvac",
+    "city": "Milwaukee",
+    "state_code": "WI",
+    "demo_url": "https://www.instaweb.agency/demo/oasis-plumbing-repair-co",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/oasis-plumbing-repair-co.html"
+  },
+  {
+    "business_name": "Amador and sons plumbing",
+    "industry": "hvac",
+    "city": "Milwaukee",
+    "state_code": "WI",
+    "demo_url": "https://www.instaweb.agency/demo/amador-and-sons-plumbing",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/amador-and-sons-plumbing.html"
+  },
+  {
+    "business_name": "Mr. Electric of Oklahoma City",
+    "industry": "hvac",
+    "city": "Albuquerque",
+    "state_code": "NM",
+    "demo_url": "https://www.instaweb.agency/demo/mr-electric-of-oklahoma-city",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mr-electric-of-oklahoma-city.html"
+  },
+  {
+    "business_name": "Arrow Electric | OKC",
+    "industry": "hvac",
+    "city": "Albuquerque",
+    "state_code": "NM",
+    "demo_url": "https://www.instaweb.agency/demo/arrow-electric-okc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/arrow-electric-okc.html"
+  },
+  {
+    "business_name": "Mister Sparky Electrician OKC",
+    "industry": "hvac",
+    "city": "Albuquerque",
+    "state_code": "NM",
+    "demo_url": "https://www.instaweb.agency/demo/mister-sparky-electrician-okc",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/mister-sparky-electrician-okc.html"
+  },
+  {
+    "business_name": "Oklahoma City Electricians",
+    "industry": "hvac",
+    "city": "Albuquerque",
+    "state_code": "NM",
+    "demo_url": "https://www.instaweb.agency/demo/oklahoma-city-electricians",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/oklahoma-city-electricians.html"
+  },
+  {
+    "business_name": "Caliber Electric",
+    "industry": "hvac",
+    "city": "Albuquerque",
+    "state_code": "NM",
+    "demo_url": "https://www.instaweb.agency/demo/caliber-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/caliber-electric.html"
+  },
+  {
+    "business_name": "Edge Electric",
+    "industry": "hvac",
+    "city": "Albuquerque",
+    "state_code": "NM",
+    "demo_url": "https://www.instaweb.agency/demo/edge-electric",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/edge-electric.html"
+  },
+  {
+    "business_name": "Osborne Electric Company",
+    "industry": "hvac",
+    "city": "Albuquerque",
+    "state_code": "NM",
+    "demo_url": "https://www.instaweb.agency/demo/osborne-electric-company",
+    "file": "/home/team/shared/instaweb-unified/data/demos/mass_output/osborne-electric-company.html"
+  }
+]
