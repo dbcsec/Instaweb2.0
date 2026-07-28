@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Palms Motel — Miami Beach, FL</title>
+<meta name="description" content="The Palms Motel — A boutique Miami Beach retreat with poolside charm, modern rooms, and legendary service. Book your stay today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root {
+  --palm: #1A5C3A;
+  --palm-light: #2D8B5E;
+  --sand: #F5E6D3;
+  --sand-dark: #E8D5BC;
+  --sand-light: #FBF6F0;
+  --sunset: #E8774B;
+  --sunset-glow: #F4A261;
+  --ocean: #264653;
+  --ocean-light: #2A9D8F;
+  --cream: #FAF7F2;
+  --charcoal: #2D2D2D;
+  --text: #3D3D3D;
+  --text-light: #6B6B6B;
+  --white: #FFFFFF;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:var(--font-body); color:var(--text); background:var(--cream); line-height:1.7; font-weight:400; }
+
+.container { max-width:1200px; margin:0 auto; padding:0 24px; }
+
+/* ── HEADER ── */
+.header { position:fixed; top:0; left:0; right:0; z-index:100; padding:16px 0; transition:all 0.3s; }
+.header.scrolled { background:rgba(255,255,255,0.95); backdrop-filter:blur(16px); box-shadow:var(--shadow-sm); padding:10px 0; }
+.header .container { display:flex; align-items:center; justify-content:space-between; }
+.logo { font-family:var(--font-display); font-size:28px; font-weight:600; color:var(--white); letter-spacing:-0.5px; text-decoration:none; transition:color 0.3s; }
+.header.scrolled .logo { color:var(--palm); }
+.logo-icon { font-size:22px; margin-right:4px; }
+.nav-links { display:flex; gap:32px; align-items:center; }
+.nav-links a { font-size:14px; font-weight:500; color:rgba(255,255,255,0.9); text-decoration:none; letter-spacing:0.5px; transition:color 0.2s; }
+.nav-links a:hover { color:var(--sunset-glow); }
+.header.scrolled .nav-links a { color:var(--text); }
+.header.scrolled .nav-links a:hover { color:var(--palm); }
+.nav-cta { padding:10px 24px; background:var(--sunset); color:var(--white); border:none; border-radius:50px; font-size:13px; font-weight:600; letter-spacing:0.5px; cursor:pointer; font-family:var(--font-body); text-decoration:none; transition:all 0.2s; }
+.nav-cta:hover { background:var(--sunset-glow); transform:translateY(-1px); box-shadow:0 4px 12px rgba(232,119,75,0.3); }
+.mobile-toggle { display:none; background:none; border:none; color:var(--white); font-size:24px; cursor:pointer; }
+.header.scrolled .mobile-toggle { color:var(--palm); }
+
+/* ── HERO ── */
+.hero { min-height:100vh; position:relative; display:flex; align-items:center; overflow:hidden; }
+.hero-bg { position:absolute; inset:0; z-index:0; }
+.hero-bg::before { content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(26,92,58,0.85) 0%, rgba(26,92,58,0.5) 40%, rgba(232,119,75,0.3) 100%); z-index:1; }
+.hero-bg .gradient-overlay { position:absolute; inset:0; background:linear-gradient(135deg, rgba(26,92,58,0.6) 0%, transparent 50%, rgba(232,119,75,0.2) 100%); z-index:2; }
+.hero-bg .img { width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; }
+.hero-bg .palm-silhouette { position:absolute; right:-40px; bottom:-20px; width:50%; max-width:600px; z-index:3; opacity:0.15; }
+.hero-content { position:relative; z-index:10; max-width:680px; padding-top:80px; }
+.hero-badge { display:inline-block; padding:8px 20px; background:rgba(255,255,255,0.15); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.2); border-radius:50px; color:var(--white); font-size:13px; font-weight:500; letter-spacing:2px; text-transform:uppercase; margin-bottom:24px; }
+.hero h1 { font-family:var(--font-display); font-size:clamp(42px,7vw,80px); font-weight:600; color:var(--white); line-height:1.05; margin-bottom:20px; letter-spacing:-1px; }
+.hero h1 em { font-style:italic; font-weight:400; }
+.hero p { font-size:18px; color:rgba(255,255,255,0.85); max-width:500px; margin-bottom:36px; line-height:1.6; }
+.hero-actions { display:flex; gap:16px; flex-wrap:wrap; }
+.btn-primary { padding:16px 36px; background:var(--sunset); color:var(--white); border:none; border-radius:50px; font-size:15px; font-weight:600; cursor:pointer; font-family:var(--font-body); text-decoration:none; display:inline-flex; align-items:center; gap:8px; transition:all 0.25s; letter-spacing:0.5px; }
+.btn-primary:hover { background:var(--sunset-glow); transform:translateY(-2px); box-shadow:0 8px 25px rgba(232,119,75,0.4); }
+.btn-outline { padding:16px 36px; background:transparent; color:var(--white); border:2px solid rgba(255,255,255,0.3); border-radius:50px; font-size:15px; font-weight:600; cursor:pointer; font-family:var(--font-body); text-decoration:none; display:inline-flex; align-items:center; gap:8px; transition:all 0.25s; letter-spacing:0.5px; }
+.btn-outline:hover { border-color:var(--white); background:rgba(255,255,255,0.1); }
+.hero-scroll { position:absolute; bottom:40px; left:50%; transform:translateX(-50%); z-index:10; color:rgba(255,255,255,0.6); font-size:13px; display:flex; flex-direction:column; align-items:center; gap:8px; animation:bounce 2s infinite; }
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(-8px)} }
+
+/* ── SECTION COMMON ── */
+section { padding:100px 0; }
+.section-label { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:3px; color:var(--sunset); margin-bottom:12px; }
+.section-title { font-family:var(--font-display); font-size:clamp(32px,5vw,52px); font-weight:600; color:var(--ocean); line-height:1.15; margin-bottom:16px; }
+.section-subtitle { font-size:17px; color:var(--text-light); max-width:560px; line-height:1.7; }
+
+/* ── ABOUT ── */
+.about { background:var(--white); }
+.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
+.about-image { position:relative; border-radius:var(--radius); overflow:hidden; aspect-ratio:4/5; }
+.about-image .img-placeholder { width:100%; height:100%; background:linear-gradient(135deg, var(--palm-light), var(--ocean-light)); display:flex; align-items:center; justify-content:center; }
+.about-image .img-placeholder .icon { font-size:80px; color:rgba(255,255,255,0.3); }
+.about-image .badge-float { position:absolute; bottom:-20px; right:-20px; background:var(--sunset); color:var(--white); padding:20px 28px; border-radius:var(--radius-sm); text-align:center; box-shadow:var(--shadow-md); }
+.about-image .badge-float b { display:block; font-size:24px; font-family:var(--font-display); }
+.about-image .badge-float span { font-size:12px; opacity:0.9; }
+.about-features { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:32px; }
+.about-feature { display:flex; gap:12px; align-items:flex-start; }
+.about-feature .icon-box { width:44px; height:44px; background:var(--sand-light); border-radius:12px; display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--palm); font-size:18px; }
+.about-feature h4 { font-size:15px; font-weight:600; color:var(--ocean); margin-bottom:4px; }
+.about-feature p { font-size:13px; color:var(--text-light); line-height:1.5; }
+
+/* ── ROOMS ── */
+.rooms { background:var(--sand-light); }
+.rooms-header { text-align:center; margin-bottom:60px; }
+.rooms-header .section-subtitle { margin:0 auto; }
+.rooms-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+.room-card { background:var(--white); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-sm); transition:all 0.3s; }
+.room-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-lg); }
+.room-image { height:220px; position:relative; overflow:hidden; }
+.room-image .img-placeholder { width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:48px; color:rgba(255,255,255,0.5); }
+.room-image .img-placeholder.garden { background:linear-gradient(135deg, #2D8B5E, #1A5C3A); }
+.room-image .img-placeholder.pool { background:linear-gradient(135deg, #2A9D8F, #264653); }
+.room-image .img-placeholder.sunset { background:linear-gradient(135deg, #E8774B, #F4A261); }
+.room-image .img-placeholder.palm { background:linear-gradient(135deg, #1A5C3A, #264653); }
+.room-image .tag { position:absolute; top:12px; left:12px; padding:6px 14px; background:rgba(0,0,0,0.5); backdrop-filter:blur(8px); color:var(--white); border-radius:50px; font-size:11px; font-weight:600; letter-spacing:0.5px; }
+.room-body { padding:20px; }
+.room-body h3 { font-family:var(--font-display); font-size:22px; font-weight:600; color:var(--ocean); margin-bottom:6px; }
+.room-body .room-desc { font-size:13px; color:var(--text-light); line-height:1.6; margin-bottom:12px; }
+.room-body .room-amenities { display:flex; gap:16px; font-size:12px; color:var(--text-light); margin-bottom:16px; }
+.room-body .room-amenities span { display:flex; align-items:center; gap:4px; }
+.room-price { font-family:var(--font-display); font-size:24px; font-weight:600; color:var(--palm); }
+.room-price small { font-size:14px; color:var(--text-light); font-weight:400; }
+
+/* ── AMENITIES ── */
+.amenities { background:var(--white); }
+.amenities-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; margin-top:50px; }
+.amenity-card { text-align:center; padding:36px 24px; background:var(--sand-light); border-radius:var(--radius); transition:all 0.3s; }
+.amenity-card:hover { background:var(--sand); transform:translateY(-4px); }
+.amenity-card .icon { width:64px; height:64px; margin:0 auto 16px; background:var(--white); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:26px; color:var(--palm); box-shadow:var(--shadow-sm); }
+.amenity-card h4 { font-size:17px; font-weight:600; color:var(--ocean); margin-bottom:8px; }
+.amenity-card p { font-size:13px; color:var(--text-light); line-height:1.6; }
+
+/* ── LOCATION ── */
+.location { background:var(--ocean); color:var(--white); }
+.location-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+.location .section-label { color:var(--sunset-glow); }
+.location .section-title { color:var(--white); }
+.location .section-subtitle { color:rgba(255,255,255,0.7); }
+.location-details { display:flex; flex-direction:column; gap:20px; margin-top:28px; }
+.location-item { display:flex; gap:14px; align-items:flex-start; }
+.location-item .icon-box { width:48px; height:48px; background:rgba(255,255,255,0.1); border-radius:12px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:18px; color:var(--sunset-glow); }
+.location-item h4 { font-size:16px; font-weight:600; margin-bottom:2px; }
+.location-item p { font-size:13px; color:rgba(255,255,255,0.6); line-height:1.5; }
+.map-placeholder { border-radius:var(--radius); overflow:hidden; aspect-ratio:1; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; border:1px solid rgba(255,255,255,0.1); }
+.map-placeholder .inner { text-align:center; }
+.map-placeholder .inner i { font-size:60px; color:rgba(255,255,255,0.15); display:block; margin-bottom:12px; }
+.map-placeholder .inner span { font-size:13px; color:rgba(255,255,255,0.4); }
+
+/* ── REVIEWS ── */
+.reviews { background:var(--sand-light); }
+.reviews-header { text-align:center; margin-bottom:50px; }
+.rating-big { display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:12px; }
+.rating-big .score { font-family:var(--font-display); font-size:48px; font-weight:700; color:var(--palm); }
+.rating-big .stars { color:var(--sunset); font-size:22px; }
+.rating-big .count { font-size:14px; color:var(--text-light); }
+.reviews-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.review-card { background:var(--white); padding:28px; border-radius:var(--radius); box-shadow:var(--shadow-sm); }
+.review-card .stars { color:var(--sunset); font-size:14px; margin-bottom:12px; }
+.review-card .text { font-size:14px; color:var(--text); line-height:1.7; font-style:italic; margin-bottom:16px; }
+.review-card .author { font-size:13px; font-weight:600; color:var(--ocean); }
+.review-card .author span { font-weight:400; color:var(--text-light); font-size:12px; }
+
+/* ── CTA BANNER ── */
+.cta-banner { background:linear-gradient(135deg, var(--palm), var(--ocean-light)); padding:80px 0; text-align:center; position:relative; overflow:hidden; }
+.cta-banner::before { content:''; position:absolute; top:-50%; right:-20%; width:60%; height:200%; background:radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%); }
+.cta-banner .container { position:relative; z-index:1; }
+.cta-banner .section-label { color:var(--sunset-glow); }
+.cta-banner h2 { font-family:var(--font-display); font-size:clamp(32px,5vw,52px); font-weight:600; color:var(--white); margin-bottom:16px; }
+.cta-banner p { color:rgba(255,255,255,0.75); max-width:500px; margin:0 auto 32px; font-size:17px; }
+.cta-banner .cta-group { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+.cta-banner .btn-primary { background:var(--sunset); }
+.cta-banner .btn-outline { border-color:rgba(255,255,255,0.4); }
+
+/* ── FOOTER ── */
+.footer { background:var(--ocean); color:rgba(255,255,255,0.6); padding:60px 0 30px; }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; margin-bottom:40px; }
+.footer-brand { font-family:var(--font-display); font-size:24px; font-weight:600; color:var(--white); margin-bottom:12px; }
+.footer p { font-size:13px; line-height:1.7; }
+.footer h4 { font-size:14px; font-weight:600; color:var(--white); margin-bottom:16px; letter-spacing:0.5px; }
+.footer a { display:block; font-size:13px; color:rgba(255,255,255,0.5); text-decoration:none; margin-bottom:8px; transition:color 0.2s; }
+.footer a:hover { color:var(--sunset-glow); }
+.footer-bottom { border-top:1px solid rgba(255,255,255,0.08); padding-top:24px; display:flex; justify-content:space-between; align-items:center; font-size:12px; }
+.footer-bottom .socials { display:flex; gap:12px; }
+.footer-bottom .socials a { color:rgba(255,255,255,0.4); font-size:16px; }
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .rooms-grid { grid-template-columns:repeat(2,1fr); }
+  .amenities-grid { grid-template-columns:repeat(2,1fr); }
+  .reviews-grid { grid-template-columns:1fr; }
+}
+@media(max-width:768px){
+  .nav-links { display:none; }
+  .mobile-toggle { display:block; }
+  .hero h1 { font-size:42px; }
+  .about-grid, .location-grid { grid-template-columns:1fr; gap:40px; }
+  .rooms-grid { grid-template-columns:1fr; max-width:400px; margin:0 auto; }
+  .amenities-grid { grid-template-columns:1fr; max-width:400px; margin:50px auto 0; }
+  .footer-grid { grid-template-columns:1fr 1fr; }
+  section { padding:60px 0; }
+}
+@media(max-width:480px){
+  .container { padding:0 16px; }
+  .hero-actions { flex-direction:column; }
+  .hero-actions .btn-outline, .hero-actions .btn-primary { width:100%; text-align:center; justify-content:center; }
+  .about-features { grid-template-columns:1fr; }
+  .footer-grid { grid-template-columns:1fr; }
+  .footer-bottom { flex-direction:column; gap:12px; text-align:center; }
+}
+</style>
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container">
+    <a href="#" class="logo">🌴 The Palms</a>
+    <nav class="nav-links">
+      <a href="#rooms">Rooms</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#location">Location</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#book" class="nav-cta">Book Now</a>
+    </nav>
+    <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<!-- ████████ HERO ████████ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="img" style="background:linear-gradient(135deg, #1A5C3A 0%, #2D8B5E 30%, #264653 60%, #E8774B 100%);"></div>
+    <div class="gradient-overlay"></div>
+    <svg class="palm-silhouette" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><ellipse cx="200" cy="450" rx="180" ry="60" fill="white"/><path d="M200 100 C180 150, 140 200, 100 280 C130 250, 160 220, 180 200 C200 250, 250 180, 300 280 C280 220, 260 180, 240 150 C260 170, 300 200, 330 240 C280 190, 230 160, 200 100Z" fill="white"/></svg>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-badge">Est. 1962 · Miami Beach</span>
+      <h1>A <em>quiet</em> place to<br>come home to.</h1>
+      <p>Where mid-century charm meets modern comfort. Sun-drenched mornings by the pool, palm-shaded afternoons, and sunsets that stop you in your tracks.</p>
+      <div class="hero-actions">
+        <a href="#book" class="btn-primary">Book Your Stay <i class="fas fa-arrow-right"></i></a>
+        <a href="#rooms" class="btn-outline">Explore Rooms <i class="fas fa-chevron-down"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll to discover</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ████████ ABOUT ████████ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image">
+        <div class="img-placeholder">
+          <i class="fas fa-umbrella-beach icon"></i>
+        </div>
+        <div class="badge-float">
+          <b>4.9</b>
+          <span>300+ Reviews</span>
+        </div>
+      </div>
+      <div>
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">Sixty years of<br>tropical hospitality.</h2>
+        <p class="section-subtitle">The Palms opened its doors in 1962 as an 8-room motor lodge. Today, it's a 42-room boutique motel that still feels like a family secret — the kind of place where the staff knows your name by breakfast and the pool is never too crowded.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="icon-box"><i class="fas fa-tree"></i></div>
+            <div><h4>Tropical Gardens</h4><p>Half an acre of landscaped palms, bougainvillea, and shaded hammocks.</p></div>
+          </div>
+          <div class="about-feature">
+            <div class="icon-box"><i class="fas fa-swimming-pool"></i></div>
+            <div><h4>Heated Pool</h4><p>Saltwater pool open year-round, surrounded by private cabanas.</p></div>
+          </div>
+          <div class="about-feature">
+            <div class="icon-box"><i class="fas fa-martini-glass"></i></div>
+            <div><h4>Poolside Bar</h4><p>Craft cocktails, fresh coconuts, and small plates until sunset.</p></div>
+          </div>
+          <div class="about-feature">
+            <div class="icon-box"><i class="fas fa-wifi"></i></div>
+            <div><h4>Fast WiFi</h4><p>Fiber internet throughout the property — work or stream without a hiccup.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ████████ ROOMS ████████ -->
+<section class="rooms" id="rooms">
+  <div class="container">
+    <div class="rooms-header">
+      <span class="section-label">Accommodations</span>
+      <h2 class="section-title">Find your perfect room.</h2>
+      <p class="section-subtitle">Every room is designed for comfort — premium linens, rainfall showers, and private patios or balconies.</p>
+    </div>
+    <div class="rooms-grid">
+      <div class="room-card">
+        <div class="room-image">
+          <div class="img-placeholder garden">🌿</div>
+          <span class="tag">Most Popular</span>
+        </div>
+        <div class="room-body">
+          <h3>Garden King</h3>
+          <p class="room-desc">Ground-floor room with private patio opening onto our tropical gardens. King bed, rainfall shower.</p>
+          <div class="room-amenities">
+            <span><i class="fas fa-bed"></i> King</span>
+            <span><i class="fas fa-user"></i> 2 Guests</span>
+            <span><i class="fas fa-ruler"></i> 320 sq ft</span>
+          </div>
+          <div class="room-price">$189<small>/night</small></div>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-image">
+          <div class="img-placeholder pool">🏊</div>
+          <span class="tag">Poolside</span>
+        </div>
+        <div class="room-body">
+          <h3>Poolside Queen</h3>
+          <p class="room-desc">Steps from the pool. Two queen beds, separate sitting area, and blackout curtains for lazy mornings.</p>
+          <div class="room-amenities">
+            <span><i class="fas fa-bed"></i> 2 Queens</span>
+            <span><i class="fas fa-user"></i> 4 Guests</span>
+            <span><i class="fas fa-ruler"></i> 420 sq ft</span>
+          </div>
+          <div class="room-price">$229<small>/night</small></div>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-image">
+          <div class="img-placeholder sunset">🌅</div>
+        </div>
+        <div class="room-body">
+          <h3>Sunset Suite</h3>
+          <p class="room-desc">Top-floor suite with wraparound balcony. King bed, soaking tub, panoramic sunset views over the bay.</p>
+          <div class="room-amenities">
+            <span><i class="fas fa-bed"></i> King</span>
+            <span><i class="fas fa-user"></i> 2 Guests</span>
+            <span><i class="fas fa-ruler"></i> 520 sq ft</span>
+          </div>
+          <div class="room-price">$319<small>/night</small></div>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-image">
+          <div class="img-placeholder palm">🌴</div>
+        </div>
+        <div class="room-body">
+          <h3>The Palm House</h3>
+          <p class="room-desc">Our signature standalone bungalow. Full kitchen, private plunge pool, outdoor shower, and garden terrace.</p>
+          <div class="room-amenities">
+            <span><i class="fas fa-bed"></i> King</span>
+            <span><i class="fas fa-user"></i> 2 Guests</span>
+            <span><i class="fas fa-ruler"></i> 650 sq ft</span>
+          </div>
+          <div class="room-price">$489<small>/night</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ████████ AMENITIES ████████ -->
+<section class="amenities" id="amenities">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-label">The Experience</span>
+      <h2 class="section-title">Everything you need,<br>nothing you don't.</h2>
+    </div>
+    <div class="amenities-grid">
+      <div class="amenity-card">
+        <div class="icon"><i class="fas fa-swimming-pool"></i></div>
+        <h4>Heated Saltwater Pool</h4>
+        <p>Open 7am–10pm daily. Towel service, poolside cabanas, and underwater lighting for evening swims.</p>
+      </div>
+      <div class="amenity-card">
+        <div class="icon"><i class="fas fa-wifi"></i></div>
+        <h4>Gigabit WiFi</h4>
+        <p>Fiber internet throughout the entire property. Stream 4K, take video calls, or upload your vacation photos instantly.</p>
+      </div>
+      <div class="amenity-card">
+        <div class="icon"><i class="fas fa-car"></i></div>
+        <h4>Free Parking</h4>
+        <p>Secure, gated parking with one space per room. EV charging stations available at no extra cost.</p>
+      </div>
+      <div class="amenity-card">
+        <div class="icon"><i class="fas fa-mug-hot"></i></div>
+        <h4>Continental Breakfast</h4>
+        <p>Fresh pastries, tropical fruit, Cuban coffee, and cold-pressed juices. Served poolside 7am–10am.</p>
+      </div>
+      <div class="amenity-card">
+        <div class="icon"><i class="fas fa-bicycle"></i></div>
+        <h4>Beach Cruisers</h4>
+        <p>Complimentary bikes to explore the neighborhood. Beach is a 6-minute ride — towels and chairs included.</p>
+      </div>
+      <div class="amenity-card">
+        <div class="icon"><i class="fas fa-paw"></i></div>
+        <h4>Pet Friendly</h4>
+        <p>We love your dog as much as you do. No breed restrictions, no weight limits. Dog beds and bowls provided.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ████████ LOCATION ████████ -->
+<section class="location" id="location">
+  <div class="container">
+    <div class="location-grid">
+      <div>
+        <span class="section-label">Location</span>
+        <h2 class="section-title">Quiet street,<br>minutes from everything.</h2>
+        <p class="section-subtitle">Tucked away on a tree-lined street in Mid-Beach, The Palms is a 5-minute walk from the sand and a 10-minute drive from South Beach.</p>
+        <div class="location-details">
+          <div class="location-item">
+            <div class="icon-box"><i class="fas fa-umbrella-beach"></i></div>
+            <div><h4>Miami Beach</h4><p>5-minute walk to the shore — we'll pack your towels.</p></div>
+          </div>
+          <div class="location-item">
+            <div class="icon-box"><i class="fas fa-utensils"></i></div>
+            <div><h4>Dining & Nightlife</h4><p>20+ restaurants and bars within a 10-minute walk on Collins Ave.</p></div>
+          </div>
+          <div class="location-item">
+            <div class="icon-box"><i class="fas fa-plane"></i></div>
+            <div><h4>MIA Airport</h4><p>12 miles — ~20 minutes by car. We can arrange pickup.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <div class="inner">
+          <i class="fas fa-map-pin"></i>
+          <span>1234 Collins Avenue<br>Miami Beach, FL 33139</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ████████ REVIEWS ████████ -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="reviews-header">
+      <span class="section-label">Guest Reviews</span>
+      <h2 class="section-title">Our guests say it best.</h2>
+      <div class="rating-big">
+        <span class="score">4.9</span>
+        <div>
+          <div class="stars">★★★★★</div>
+          <span class="count">Based on 312 reviews</span>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text">"The Palms is a hidden gem. We stayed in the Sunset Suite and the balcony view was absolutely breathtaking. The staff treated us like family — we've already booked our return trip."</p>
+        <div class="author">Sarah & Michael K.<br><span>New York, NY · Stayed June 2026</span></div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text">"I've stayed at five-star resorts in Miami that didn't feel this special. The pool area is magic at golden hour, and the Palm House bungalow is worth every penny. My husband and I will be back."</p>
+        <div class="author">Jennifer R.<br><span>Chicago, IL · Stayed May 2026</span></div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="text">"We brought our golden retriever and the staff had a dog bed, bowls, and treats waiting in the room. The garden rooms are quiet and beautiful. Best pet-friendly stay we've ever had."</p>
+        <div class="author">David & Tom L.<br><span>Austin, TX · Stayed April 2026</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ████████ CTA ████████ -->
+<section class="cta-banner" id="book">
+  <div class="container">
+    <span class="section-label">Ready to unwind?</span>
+    <h2>Book your stay at The Palms.</h2>
+    <p>Garden rooms from $189/night. Free cancellation up to 48 hours before check-in. No hidden fees — ever.</p>
+    <div class="cta-group">
+      <a href="#" class="btn-primary">Check Availability <i class="fas fa-calendar"></i></a>
+      <a href="tel:+13055551234" class="btn-outline">Call Us <i class="fas fa-phone"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ████████ FOOTER ████████ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">🌴 The Palms Motel</div>
+        <p>A boutique Miami Beach motel with 42 rooms, tropical gardens, and a heated saltwater pool. Family-owned since 1962.</p>
+      </div>
+      <div>
+        <h4>Rooms</h4>
+        <a href="#rooms">Garden King</a>
+        <a href="#rooms">Poolside Queen</a>
+        <a href="#rooms">Sunset Suite</a>
+        <a href="#rooms">The Palm House</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cancellation Policy</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+13055551234">(305) 555-1234</a>
+        <a href="mailto:hello@thepalmsmotel.com">hello@thepalmsmotel.com</a>
+        <a href="#">1234 Collins Avenue</a>
+        <a href="#">Miami Beach, FL 33139</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 The Palms Motel. All rights reserved.</span>
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Header scroll effect
+window.addEventListener('scroll', () => {
+  document.getElementById('header').classList.toggle('scrolled', window.scrollY > 80);
+});
+
+// Mobile menu toggle
+function toggleMenu() {
+  const nav = document.querySelector('.nav-links');
+  nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+  if (nav.style.display === 'flex') {
+    nav.style.flexDirection = 'column';
+    nav.style.position = 'absolute';
+    nav.style.top = '100%';
+    nav.style.left = '0';
+    nav.style.right = '0';
+    nav.style.background = 'rgba(255,255,255,0.98)';
+    nav.style.padding = '24px';
+    nav.style.gap = '16px';
+    nav.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+    nav.querySelectorAll('a').forEach(a => a.style.color = '#3D3D3D');
+    nav.querySelector('.nav-cta').style.color = '#FFFFFF';
+  }
+}
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior:'smooth', block:'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
