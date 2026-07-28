@@ -74,7 +74,7 @@ def generate_demo(lead):
 def send_via_resend(to_email, subject, body):
     """Send via Resend API - works with verified domain"""
     payload = json.dumps({
-        "from": "Instaweb Agency <sales@instaweb.agency>",
+        "from": "Instaweb Agency <sales@mail.instaweb.agency>",
         "to": [to_email],
         "subject": subject,
         "text": body
