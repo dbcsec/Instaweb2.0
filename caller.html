@@ -196,7 +196,15 @@ let D=[],C=JSON.parse(localStorage.getItem('contacts')||'{}'),curId='';
 async function init(){
   var statusEl = document.getElementById('api-status');
   try {
-    var resp = await fetch('/api/caller/leads?limit=500');
+    // Use absolute www URL (non-www 308 redirects can fail in some browsers)
+    // Fetch first to get total count, then fetch all leads
+    var countResp = await fetch('https://www.instaweb.agency/api/caller/leads?limit=1&_=' + Date.now());
+    var totalNeeded = 828; // fallback
+    if (countResp.ok) {
+      var countData = await countResp.json();
+      totalNeeded = countData.total || 828;
+    }
+    var resp = await fetch('https://www.instaweb.agency/api/caller/leads?limit=' + totalNeeded + '&_=' + Date.now());
     if (resp.ok) {
       var data = await resp.json();
       D = (data.leads || []).map(function(l) {
@@ -213,7 +221,7 @@ async function init(){
         };
       });
       if (statusEl) {
-        statusEl.textContent = '✅ API OK — ' + D.length + ' leads loaded';
+        statusEl.textContent = '✅ API OK — ' + D.length + ' of ' + totalNeeded + ' leads loaded';
         statusEl.style.color = '#4ade80';
       }
     } else {
