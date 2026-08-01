@@ -1,0 +1,20 @@
+{
+  "baseline_count": 279,
+  "current_count": 828,
+  "new_count": 549,
+  "removed_count": 0,
+  "source_breakdown": {
+    "instaweb": 549
+  },
+  "industry_breakdown": {
+    "HVAC": 134,
+    "Electrical": 127,
+    "Plumbing": 124,
+    "Roofing": 164
+  },
+  "quality": {
+    "with_email": 461,
+    "with_demo": 549,
+    "total_new": 549
+  }
+}
