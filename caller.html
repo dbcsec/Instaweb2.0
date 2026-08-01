@@ -117,7 +117,8 @@ body { font-family:var(--font-body); background:var(--dark); color:var(--light);
   <div class="nav-title">Caller · Lead Queue</div>
 </nav>
 
-<div class="stats" id="stats">
+<div id="api-status" style="text-align:center;padding:4px 16px;font-size:13px;color:#fbbf24;background:#1a1a2e;border-bottom:1px solid #333;">⏳ Loading leads...</div>
+  <div class="stats" id="stats">
   <div class="stat"><b id="st">0</b><span>Total</span></div>
   <div class="stat"><b id="sp">0</b><span>Phones</span></div>
   <div class="stat"><b id="se">0</b><span>Emails</span></div>
@@ -193,23 +194,42 @@ body { font-family:var(--font-body); background:var(--dark); color:var(--light);
 let D=[],C=JSON.parse(localStorage.getItem('contacts')||'{}'),curId='';
 
 async function init(){
+  var statusEl = document.getElementById('api-status');
   try {
-    let resp = await fetch('/api/caller/leads?limit=500');
+    var resp = await fetch('/api/caller/leads?limit=500');
     if (resp.ok) {
-      let data = await resp.json();
-      D = (data.leads || []).map(l => ({
-        business_name: l.business_name || '',
-        phone: l.phone || '',
-        city: l.city || '',
-        state: l.state || '',
-        industry: l.industry || '',
-        email: l.email || '',
-        demo_url: l.demo_url || '',
-        emailed: !!l.emailed,
-        email_sent_at: l.email_sent_at || ''
-      }));
+      var data = await resp.json();
+      D = (data.leads || []).map(function(l) {
+        return {
+          business_name: l.business_name || '',
+          phone: l.phone || '',
+          city: l.city || '',
+          state: l.state || '',
+          industry: l.industry || '',
+          email: l.email || '',
+          demo_url: l.demo_url || '',
+          emailed: !!l.emailed,
+          email_sent_at: l.email_sent_at || ''
+        };
+      });
+      if (statusEl) {
+        statusEl.textContent = '✅ API OK — ' + D.length + ' leads loaded';
+        statusEl.style.color = '#4ade80';
+      }
+    } else {
+      if (statusEl) {
+        statusEl.textContent = '❌ API error: HTTP ' + resp.status;
+        statusEl.style.color = '#ef4444';
+      }
+      console.error('API returned', resp.status);
     }
-  } catch(e) { console.log('API fetch failed, using cache'); }
+  } catch(e) {
+    if (statusEl) {
+      statusEl.textContent = '❌ API fetch failed: ' + (e.message || 'network error');
+      statusEl.style.color = '#ef4444';
+    }
+    console.error('API fetch failed:', e);
+  }
   updateStats();
   draw();
   renderScript();

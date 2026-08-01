@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lead Database — Instaweb Agency</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:#0f172a; color:#e2e8f0; min-height:100vh; }
+  .container { max-width:900px; margin:0 auto; padding:32px 16px; }
+  h1 { font-size:28px; font-weight:700; margin-bottom:4px; }
+  .subtitle { color:#94a3b8; margin-bottom:8px; }
+  .badge { display:inline-block; background:#166534; color:#4ade80; padding:2px 10px; border-radius:12px; font-size:13px; margin-bottom:24px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:12px; margin-bottom:24px; }
+  .card { background:#1e293b; border:1px solid #334155; border-radius:12px; padding:20px; text-align:center; }
+  .card .num { font-size:32px; font-weight:700; }
+  .card .label { font-size:13px; color:#94a3b8; margin-top:4px; }
+  .card .sub { font-size:11px; color:#64748b; margin-top:2px; }
+  .green .num { color:#4ade80; } .green { border-color:#166534; }
+  .blue .num { color:#60a5fa; } .blue { border-color:#1e40af; }
+  .amber .num { color:#fbbf24; } .amber { border-color:#92400e; }
+  .gray .num { color:#9ca3af; }
+  .section { background:#1e293b; border:1px solid #334155; border-radius:12px; padding:20px; margin-bottom:16px; }
+  .section h2 { font-size:16px; font-weight:600; margin-bottom:12px; }
+  .row { display:flex; justify-content:space-between; padding:4px 0; font-size:14px; }
+  .row .key { color:#94a3b8; }
+  .tag-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap:8px; }
+  .tag { background:#0f172a; border-radius:8px; padding:12px; text-align:center; }
+  .tag .n { font-size:20px; font-weight:700; }
+  .tag .t { font-size:11px; color:#94a3b8; }
+  .timeline { border-left:2px solid #334155; padding-left:16px; }
+  .tl-item { margin-bottom:12px; position:relative; }
+  .tl-item::before { content:''; position:absolute; left:-22px; top:4px; width:10px; height:10px; border-radius:50%; background:#334155; }
+  .tl-item.g::before { background:#4ade80; }
+  .tl-item.a::before { background:#fbbf24; }
+  .tl-date { font-size:11px; color:#64748b; }
+  .tl-text { font-size:13px; margin-top:2px; }
+  #api-status { text-align:center; padding:6px; font-size:13px; border-radius:8px; margin-bottom:12px; }
+  a { color:#60a5fa; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Lead Database Dashboard</h1>
+  <p class="subtitle">Post-un-quarantine state — August 1, 2026</p>
+  <div class="badge">✅ All 549 quarantined records authorized by owner</div>
+
+  <div id="api-status" style="background:#1e293b;color:#fbbf24;">⏳ Loading live data...</div>
+
+  <div class="grid" id="stats-grid">
+    <div class="card gray"><div class="num" id="live-total">—</div><div class="label">Total in DB</div><div class="sub">Live API</div></div>
+    <div class="card green"><div class="num">279</div><div class="label">Vetted (instaweb)</div><div class="sub">Original baseline</div></div>
+    <div class="card blue"><div class="num">549</div><div class="label">Verified (instaweb_verified)</div><div class="sub">Owner-authorized</div></div>
+    <div class="card gray"><div class="num">0</div><div class="label">Quarantined</div><div class="sub">All released</div></div>
+  </div>
+
+  <div class="section">
+    <h2>Industry Distribution (All 828)</h2>
+    <div class="tag-grid">
+      <div class="tag"><div class="n">248</div><div class="t">HVAC</div></div>
+      <div class="tag"><div class="n">180</div><div class="t">Plumbing</div></div>
+      <div class="tag"><div class="n">172</div><div class="t">Electrical</div></div>
+      <div class="tag"><div class="n">135</div><div class="t">Roofing</div></div>
+      <div class="tag"><div class="n">93</div><div class="t">Restaurant</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Timeline</h2>
+    <div class="timeline">
+      <div class="tl-item g"><div class="tl-date">Jul 28</div><div class="tl-text">279 vetted leads synced to Turso (source: instaweb)</div></div>
+      <div class="tl-item"><div class="tl-date">Jul 31</div><div class="tl-text">549 leads appended from send_ready_prospects.json + bulk_new_leads.json</div></div>
+      <div class="tl-item a"><div class="tl-date">Jul 31</div><div class="tl-text">Quarantine applied — 549 flagged as quarantine_unapproved</div></div>
+      <div class="tl-item g"><div class="tl-date">Aug 1</div><div class="tl-text">Owner authorized all 549 — promoted to instaweb_verified</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Links</h2>
+    <div class="row"><span class="key">Caller App</span><a href="/caller">/caller</a></div>
+    <div class="row"><span class="key">Dashboard</span><a href="/dashboard">/dashboard</a></div>
+    <div class="row"><span class="key">API</span><a href="/api/caller/leads?limit=5">/api/caller/leads</a></div>
+    <div class="row"><span class="key">Backups</span><span>caller_backups/ (4 snapshots preserved)</span></div>
+  </div>
+</div>
+
+<script>
+(async function(){
+  var statusEl = document.getElementById('api-status');
+  var totalEl = document.getElementById('live-total');
+  try {
+    var resp = await fetch('/api/caller/leads?limit=1');
+    if (resp.ok) {
+      var data = await resp.json();
+      totalEl.textContent = data.total.toLocaleString();
+      statusEl.textContent = '✅ API OK — ' + data.total + ' leads in database';
+      statusEl.style.color = '#4ade80';
+    } else {
+      statusEl.textContent = '❌ API error: HTTP ' + resp.status;
+      statusEl.style.color = '#ef4444';
+    }
+  } catch(e) {
+    statusEl.textContent = '❌ API unreachable: ' + (e.message || 'network error');
+    statusEl.style.color = '#ef4444';
+  }
+})();
+</script>
+</body>
+</html>
