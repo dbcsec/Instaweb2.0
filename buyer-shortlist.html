@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Instaweb Agency — Buyer Shortlist Review</title>
+<meta name="description" content="Internal review page: potential lead buyer targets. No buyer intent confirmed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root {
+  --primary: #4F46E5; --primary-light: #6366F1; --primary-dark: #3730A3;
+  --primary-glow: rgba(79,70,229,0.12); --secondary: #F59E0B;
+  --accent: #10B981; --accent-glow: rgba(16,185,129,0.12);
+  --dark: #0B0F19; --dark-2: #111827; --dark-3: #1F2937;
+  --light: #F9FAFB; --gray-400: #9CA3AF; --gray-500: #6B7280;
+  --white: #FFFFFF; --border: rgba(255,255,255,0.06);
+  --font-display: 'Space Grotesk', sans-serif; --font-body: 'Inter', sans-serif;
+  --radius: 14px; --radius-sm: 10px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:var(--font-body); background:var(--dark); color:var(--light); line-height:1.6; padding-bottom:100px; }
+.container { max-width:800px; margin:0 auto; padding:0 20px; }
+.gradient-text { background:linear-gradient(135deg,var(--primary-light),var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+
+/* NAV */
+.nav { position:sticky; top:0; z-index:100; padding:12px 20px; background:rgba(11,15,25,0.95); backdrop-filter:blur(20px); border-bottom:1px solid var(--border); display:flex; align-items:center; gap:12px; }
+.nav-logo { display:flex; align-items:center; gap:10px; color:var(--white); text-decoration:none; }
+.nav-logo .mark { width:34px; height:34px; background:linear-gradient(135deg,var(--primary),var(--primary-light)); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:15px; color:var(--white); font-family:var(--font-display); font-weight:700; }
+.nav-logo .text { font-family:var(--font-display); font-size:18px; font-weight:700; letter-spacing:-1px; }
+.nav-logo .text span { background:linear-gradient(135deg,var(--secondary),#F97316); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.nav-title { margin-left:auto; font-size:12px; color:var(--gray-400); font-weight:500; background:rgba(255,255,255,0.04); padding:4px 12px; border-radius:20px; }
+
+/* PAGE HEADER */
+.page-header { padding:40px 0 20px; text-align:center; }
+.page-header h1 { font-family:var(--font-display); font-size:32px; font-weight:800; letter-spacing:-1.5px; margin-bottom:8px; }
+.page-header .subtitle { color:var(--gray-400); font-size:14px; max-width:600px; margin:0 auto; }
+
+/* DISCLAIMER BANNER */
+.disclaimer-banner { background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.2); border-radius:var(--radius); padding:16px 20px; margin-bottom:30px; }
+.disclaimer-banner .icon { color:var(--secondary); margin-right:8px; }
+.disclaimer-banner p { font-size:13px; color:var(--secondary); margin:0; line-height:1.6; }
+.disclaimer-banner strong { color:var(--white); }
+
+/* SECTION */
+.section { background:var(--dark-2); border:1px solid var(--border); border-radius:var(--radius); padding:24px; margin-bottom:20px; }
+.section h2 { font-family:var(--font-display); font-size:20px; font-weight:700; margin-bottom:16px; color:var(--white); letter-spacing:-0.5px; }
+.section h3 { font-size:14px; font-weight:600; color:var(--gray-400); text-transform:uppercase; letter-spacing:1px; margin-bottom:12px; }
+
+/* TABLE */
+.table-wrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th { text-align:left; padding:8px 10px; color:var(--gray-400); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:0.5px; border-bottom:1px solid var(--border); }
+td { padding:10px; border-bottom:1px solid var(--border); vertical-align:top; }
+tr:last-child td { border-bottom:none; }
+td.business { font-weight:600; color:var(--white); }
+td a { color:var(--primary-light); text-decoration:none; font-size:12px; }
+td a:hover { text-decoration:underline; }
+
+/* BADGES */
+.badge { display:inline-block; padding:3px 8px; border-radius:4px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; }
+.badge-high { background:rgba(16,185,129,0.15); color:var(--accent); }
+.badge-med { background:rgba(245,158,11,0.15); color:var(--secondary); }
+.badge-low { background:rgba(99,102,241,0.15); color:var(--primary-light); }
+.badge-excluded { background:rgba(220,38,38,0.1); color:#ef4444; }
+.badge-unknown { background:rgba(255,255,255,0.06); color:var(--gray-400); }
+
+/* EVIDENCE */
+.evidence-item { padding:10px 14px; background:var(--dark); border-radius:8px; margin-bottom:8px; font-size:13px; border-left:3px solid var(--border); }
+.evidence-item.confirmed { border-left-color:var(--accent); }
+.evidence-item.partial { border-left-color:var(--secondary); }
+.evidence-item.gap { border-left-color:var(--primary-light); }
+.evidence-item .label { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px; }
+.evidence-item .label.confirmed-label { color:var(--accent); }
+.evidence-item .label.partial-label { color:var(--secondary); }
+.evidence-item .label.gap-label { color:var(--primary-light); }
+.evidence-item .url { display:block; font-size:11px; color:var(--gray-500); margin-top:4px; word-break:break-all; }
+
+/* TARGET CARDS */
+.target-card { background:var(--dark); border:1px solid var(--border); border-radius:var(--radius-sm); padding:18px; margin-bottom:14px; }
+.target-card h3 { font-family:var(--font-display); font-size:18px; font-weight:700; color:var(--white); margin-bottom:8px; letter-spacing:-0.5px; }
+.target-card .meta { display:flex; gap:16px; flex-wrap:wrap; margin-bottom:12px; font-size:12px; color:var(--gray-400); }
+.target-card .meta span { display:flex; align-items:center; gap:4px; }
+.target-card p { font-size:13px; color:var(--gray-400); line-height:1.6; }
+
+/* FOOTER */
+.footer { text-align:center; padding:40px 20px 20px; border-top:1px solid var(--border); margin-top:40px; }
+.footer p { font-size:11px; color:var(--gray-500); }
+.footer a { color:var(--gray-400); text-decoration:none; }
+
+/* GAPS LIST */
+.gap-list { list-style:none; padding:0; }
+.gap-list li { padding:8px 12px; background:var(--dark); border-radius:6px; margin-bottom:6px; font-size:13px; color:var(--gray-400); }
+.gap-list li::before { content:'— '; color:var(--primary-light); }
+
+/* STATEMENT */
+.statement { background:rgba(16,185,129,0.05); border:1px solid rgba(16,185,129,0.15); border-radius:var(--radius-sm); padding:16px 20px; text-align:center; margin-top:12px; }
+.statement p { font-size:13px; color:var(--accent); margin:0; }
+.statement .fa { margin-right:6px; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="/" class="nav-logo">
+    <div class="mark"><i class="fas fa-bolt"></i></div>
+    <div class="text">Instaweb <span>Agency</span></div>
+  </a>
+  <div class="nav-title">Internal Review</div>
+</nav>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="page-header">
+  <h1>Buyer <span class="gradient-text">Shortlist</span></h1>
+  <p class="subtitle">Internal review of potential lead-data buyer targets. No outreach has been made. No buyer intent has been confirmed.</p>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer-banner">
+  <p><span class="icon"><i class="fas fa-exclamation-triangle"></i></span> <strong>This is an internal review page only.</strong> None of the organizations listed have been contacted. None have expressed interest in purchasing lead data. All information is sourced from publicly available web pages and corporate filings. Do not contact these organizations or claim they buy our data.</p>
+</div>
+
+<!-- EXCLUSIONS -->
+<div class="section">
+  <h2><i class="fas fa-ban" style="color:#ef4444;margin-right:10px;"></i>Seller / Platform Exclusions</h2>
+  <p style="font-size:13px;color:var(--gray-400);margin-bottom:16px;">These organizations have been researched and excluded from outreach consideration — they are lead sellers or platforms, not buyers.</p>
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>Organization</th><th>Type</th><th>Exclusion Reason</th><th>Confidence</th><th>Source</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="business">HomeAdvisor / Angi</td>
+        <td><span class="badge badge-excluded">Lead Seller</span></td>
+        <td>Sells leads to contractors; direct competitor model</td>
+        <td><span class="badge badge-high">High</span></td>
+        <td><a href="https://www.angi.com/pro" target="_blank" rel="noopener">angi.com/pro <i class="fas fa-external-link-alt"></i></a></td>
+      </tr>
+      <tr>
+        <td class="business">Thumbtack</td>
+        <td><span class="badge badge-excluded">Lead Seller</span></td>
+        <td>Marketplace selling leads to service pros</td>
+        <td><span class="badge badge-high">High</span></td>
+        <td><a href="https://www.thumbtack.com/pro" target="_blank" rel="noopener">thumbtack.com/pro <i class="fas fa-external-link-alt"></i></a></td>
+      </tr>
+      <tr>
+        <td class="business">Yelp Ads</td>
+        <td><span class="badge badge-excluded">Platform</span></td>
+        <td>Sells advertising, not a lead-data buyer</td>
+        <td><span class="badge badge-high">High</span></td>
+        <td><a href="https://business.yelp.com" target="_blank" rel="noopener">business.yelp.com <i class="fas fa-external-link-alt"></i></a></td>
+      </tr>
+      <tr>
+        <td class="business">ServiceTitan</td>
+        <td><span class="badge badge-excluded">SaaS Vendor</span></td>
+        <td>Sells software to contractors; no lead-buying program identified</td>
+        <td><span class="badge badge-med">Medium</span></td>
+        <td><a href="https://www.servicetitan.com" target="_blank" rel="noopener">servicetitan.com <i class="fas fa-external-link-alt"></i></a></td>
+      </tr>
+      <tr>
+        <td class="business">Housecall Pro</td>
+        <td><span class="badge badge-excluded">SaaS Vendor</span></td>
+        <td>Sells field service software; no lead-purchasing evidence</td>
+        <td><span class="badge badge-med">Medium</span></td>
+        <td><a href="https://www.housecallpro.com" target="_blank" rel="noopener">housecallpro.com <i class="fas fa-external-link-alt"></i></a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<!-- SECONDARY TARGETS -->
+<div class="section">
+  <h2><i class="fas fa-bullseye" style="color:var(--primary-light);margin-right:10px;"></i>Potential Secondary Targets</h2>
+  <p style="font-size:13px;color:var(--gray-400);margin-bottom:20px;">These organizations operate large networks of franchise service brands and may have internal lead-procurement or market-research interest. <strong>No contact has been made. No buyer intent confirmed.</strong></p>
+
+  <div class="target-card">
+    <h3>Authority Brands</h3>
+    <div class="meta">
+      <span><i class="fas fa-building"></i> Franchise Holding Company</span>
+      <span><i class="fas fa-map-marker-alt"></i> Columbia, MD</span>
+      <span><i class="fas fa-link"></i> <a href="https://www.authoritybrands.com" target="_blank" rel="noopener">authoritybrands.com</a></span>
+    </div>
+    <p>Owns 12+ home-service franchise brands including Benjamin Franklin Plumbing, Mister Sparky, One Hour Heating &amp; Air Conditioning, The Cleaning Authority, and Mosquito Squad. Operates across HVAC, plumbing, electrical, and residential cleaning verticals — directly overlapping with Instaweb's lead categories. As a franchisor serving thousands of owner-operators, they may have interest in lead-routing or market-intelligence data for territory planning and franchisee support.</p>
+  </div>
+
+  <div class="target-card">
+    <h3>Neighborly (fka Dwyer Group)</h3>
+    <div class="meta">
+      <span><i class="fas fa-building"></i> Franchise Holding Company</span>
+      <span><i class="fas fa-map-marker-alt"></i> Waco, TX</span>
+      <span><i class="fas fa-link"></i> <a href="https://www.neighborly.com" target="_blank" rel="noopener">neighborly.com</a></span>
+    </div>
+    <p>Owns 30+ home-service brands including Mr. Rooter Plumbing, Aire Serv, Mr. Electric, Rainbow International Restoration, and Molly Maid. Portfolio spans plumbing, HVAC, electrical, restoration, and cleaning — a broad match for Instaweb's lead verticals. As a large franchisor, Neighborly may evaluate third-party lead sources for franchisee lead generation or territory analytics.</p>
+  </div>
+</div>
+
+<!-- EVIDENCE -->
+<div class="section">
+  <h2><i class="fas fa-clipboard-check" style="color:var(--accent);margin-right:10px;"></i>Evidence Status</h2>
+
+  <div class="evidence-item confirmed">
+    <div class="label confirmed-label"><i class="fas fa-check-circle"></i> Confirmed</div>
+    <p>Both Authority Brands and Neighborly are publicly known franchise holding companies with documented brand portfolios.</p>
+    <span class="url">Sources: authoritybrands.com/brands, neighborly.com/brands, Wikipedia, corporate filings</span>
+  </div>
+
+  <div class="evidence-item partial">
+    <div class="label partial-label"><i class="fas fa-minus-circle"></i> Partial / Inferred</div>
+    <p>Franchisors may have centralized marketing or lead-procurement functions — but no public RFPs, vendor portals, or lead-buying programs have been identified for either organization.</p>
+    <span class="url">No lead-buying pages found on authoritybrands.com or neighborly.com</span>
+  </div>
+
+  <div class="evidence-item gap">
+    <div class="label gap-label"><i class="fas fa-question-circle"></i> Gap</div>
+    <p>No decision-maker contacts have been identified. No direct email or phone route to marketing, procurement, or franchise operations leadership has been confirmed for either organization.</p>
+    <span class="url">LinkedIn and corporate directory searches pending further research</span>
+  </div>
+</div>
+
+<!-- CONTACT GAPS -->
+<div class="section">
+  <h2><i class="fas fa-route" style="color:var(--secondary);margin-right:10px;"></i>Contact-Route Gaps</h2>
+  <ul class="gap-list">
+    <li>No verified email or phone contact for marketing/procurement at Authority Brands</li>
+    <li>No verified email or phone contact for marketing/procurement at Neighborly</li>
+    <li>Neither organization publishes a vendor/partner inquiry form for lead data</li>
+    <li>LinkedIn corporate pages exist but decision-maker identification requires additional research</li>
+    <li>No CRM or outreach infrastructure has been prepared for B2B franchisor sales</li>
+  </ul>
+</div>
+
+<!-- CONFIDENCE -->
+<div class="section">
+  <h2><i class="fas fa-signal" style="color:var(--secondary);margin-right:10px;"></i>Confidence Assessment</h2>
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>Target</th><th>Vertical Match</th><th>Buyer Need Fit</th><th>Contact Route</th><th>Overall</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="business">Authority Brands</td>
+        <td><span class="badge badge-high">High</span></td>
+        <td><span class="badge badge-med">Medium</span></td>
+        <td><span class="badge badge-low">None</span></td>
+        <td><span class="badge badge-low">Low — Research Stage</span></td>
+      </tr>
+      <tr>
+        <td class="business">Neighborly</td>
+        <td><span class="badge badge-high">High</span></td>
+        <td><span class="badge badge-med">Medium</span></td>
+        <td><span class="badge badge-low">None</span></td>
+        <td><span class="badge badge-low">Low — Research Stage</span></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<!-- NO INTENT STATEMENT -->
+<div class="statement">
+  <p><i class="fas fa-info-circle"></i> <strong>No buyer intent has been confirmed.</strong> Neither Authority Brands nor Neighborly has been contacted, expressed interest, or indicated any need for lead data. These organizations are identified solely as research-stage targets based on publicly available information about their business models and brand portfolios. All outreach decisions require further vetting and explicit review.</p>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Instaweb Agency · <a href="/">instaweb.agency</a> · <a href="/caller">Caller App</a> · <a href="/caller-pro">Caller Pro</a></p>
+  <p style="margin-top:4px;">Internal review page — last updated August 2026</p>
+</div>
+
+</body>
+</html>
