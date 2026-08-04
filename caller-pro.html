@@ -87,12 +87,17 @@ td:not(:first-child) { text-align:center; }
 /* FEATURES */
 .features-section { padding:60px 0; }
 .features-section h2 { font-family:var(--font-display); font-size:clamp(1.5rem,3vw,2rem); font-weight:700; text-align:center; margin-bottom:40px; }
-.features-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
-.feature-card { background:var(--dark-2); border-radius:var(--radius-sm); padding:24px; border:1px solid var(--border); transition:all .3s; }
+.features-grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; align-items:stretch; }
+@media (max-width:900px) { .features-grid { grid-template-columns:repeat(2, 1fr); } }
+@media (max-width:600px) { .features-grid { grid-template-columns:1fr; } }
+.feature-card { background:var(--dark-2); border-radius:var(--radius-sm); padding:24px; border:1px solid var(--border); transition:all .3s; display:flex; flex-direction:column; }
 .feature-card:hover { border-color:rgba(79,70,229,0.2); }
-.feature-card .icon { width:44px; height:44px; background:var(--primary-glow); border-radius:10px; display:flex; align-items:center; justify-content:center; color:var(--primary-light); font-size:18px; margin-bottom:14px; }
+.feature-card .icon { width:44px; height:44px; background:var(--primary-glow); border-radius:10px; display:flex; align-items:center; justify-content:center; color:var(--primary-light); font-size:18px; margin-bottom:14px; flex-shrink:0; }
 .feature-card h4 { font-weight:600; font-size:15px; margin-bottom:6px; }
-.feature-card p { font-size:13px; color:var(--gray-400); line-height:1.6; }
+.feature-card p { font-size:13px; color:var(--gray-400); line-height:1.6; margin:0; }
+.feature-card.feature-wide { grid-column:span 2; }
+.feature-card.feature-tall { grid-row:span 2; }
+@media (max-width:600px) { .feature-card.feature-wide, .feature-card.feature-tall { grid-column:span 1; grid-row:span 1; } }
 
 /* CTA */
 .cta-section { text-align:center; padding:80px 24px; border-top:1px solid var(--border); }
@@ -104,13 +109,14 @@ td:not(:first-child) { text-align:center; }
 .preview-section { padding:60px 0; }
 .preview-section h2 { font-family:var(--font-display); font-size:clamp(1.5rem,3vw,2rem); font-weight:700; text-align:center; margin-bottom:12px; }
 .preview-section .preview-sub { text-align:center; color:var(--gray-400); font-size:15px; margin-bottom:40px; }
-.phone-mockups { display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; max-width:960px; margin:0 auto; }
+.phone-mockups { display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; max-width:960px; margin:0 auto; align-items:stretch; }
+.phone-mockups > div { display:flex; flex-direction:column; }
 @media (max-width:800px) { .phone-mockups { grid-template-columns:1fr; max-width:360px; } }
-.phone-frame { background:var(--dark-2); border-radius:28px; border:2px solid var(--border); overflow:hidden; box-shadow:var(--shadow); transition:all .3s; }
+.phone-frame { background:var(--dark-2); border-radius:28px; border:2px solid var(--border); overflow:hidden; box-shadow:var(--shadow); transition:all .3s; flex:1; display:flex; flex-direction:column; }
 .phone-frame:hover { border-color:rgba(79,70,229,0.3); transform:translateY(-4px); }
-.phone-notch { height:28px; background:#000; display:flex; align-items:center; justify-content:center; }
+.phone-notch { height:28px; background:#000; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
 .phone-notch .dot { width:8px; height:8px; background:#1F2937; border-radius:50%; }
-.phone-screen { background:var(--dark); padding:10px; min-height:420px; font-size:12px; }
+.phone-screen { background:var(--dark); padding:10px; font-size:12px; flex:1; display:flex; flex-direction:column; }
 .phone-screen .app-header { display:flex; align-items:center; gap:8px; padding:6px 0 10px; border-bottom:1px solid var(--border); margin-bottom:10px; }
 .phone-screen .app-header .app-logo { width:24px; height:24px; background:linear-gradient(135deg, var(--primary), var(--primary-light)); border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:11px; color:#fff; font-weight:700; }
 .phone-screen .app-title { font-weight:600; font-size:12px; }
@@ -284,15 +290,15 @@ td:not(:first-child) { text-align:center; }
   <div class="container">
     <h2>Everything <span class="gradient-text">You Get</span></h2>
     <div class="features-grid">
-      <div class="feature-card"><div class="icon"><i class="fas fa-list-check"></i></div><h4>Lead Queue — Filtered & Sortable</h4><p>Search by business name, city, or industry. See who you've called and who's next.</p></div>
+      <div class="feature-card feature-wide"><div class="icon"><i class="fas fa-list-check"></i></div><h4>Lead Queue — Filtered & Sortable</h4><p>Search by business name, city, or industry. See who you've called and who's next.</p></div>
       <div class="feature-card"><div class="icon"><i class="fas fa-phone"></i></div><h4>One-Tap Dialing</h4><p>Tap any lead to call immediately. No copy-pasting phone numbers.</p></div>
       <div class="feature-card"><div class="icon"><i class="fas fa-check-double"></i></div><h4>Call Status Tracking</h4><p>Mark leads as Called, Voicemail, Callback, or Not Interested. Status badges on every card.</p></div>
       <div class="feature-card"><div class="icon"><i class="fas fa-note-sticky"></i></div><h4>Notes & Contact Names</h4><p>Log who you spoke to, what they said, and any follow-up details.</p></div>
-      <div class="feature-card"><div class="icon"><i class="fas fa-file-lines"></i></div><h4>Built-In Calling Script</h4><p>15 objection-handling rebuttals built right into the app. No memorizing.</p></div>
+      <div class="feature-card feature-tall"><div class="icon"><i class="fas fa-file-lines"></i></div><h4>Built-In Calling Script</h4><p>15 objection-handling rebuttals built right into the app. No memorizing. Scripts cover openers, objections, pricing, and close — right where you need them.</p></div>
       <div class="feature-card"><div class="icon"><i class="fas fa-credit-card"></i></div><h4>Payment Link Sharing</h4><p>Share a Stripe payment link in one tap when a lead says yes.</p></div>
       <div class="feature-card"><div class="icon"><i class="fas fa-cloud-arrow-up"></i></div><h4>Auto-Sync to Cloud</h4><p>Every save syncs to the server. Your call log is always backed up.</p></div>
       <div class="feature-card"><div class="icon"><i class="fas fa-mobile-screen"></i></div><h4>Works on Any Phone</h4><p>PWA — no app store needed. Open the link and start calling. Works on iOS and Android.</p></div>
-      <div class="feature-card"><div class="icon"><i class="fas fa-arrows-rotate"></i></div><h4>Monthly Lead Refresh</h4><p>Every month your lead pool updates with fresh contacts. Starter: 500 leads. Pro &amp; White Label: 1,500.</p></div>
+      <div class="feature-card feature-wide"><div class="icon"><i class="fas fa-arrows-rotate"></i></div><h4>Monthly Lead Refresh</h4><p>Every month your lead pool updates with fresh contacts. Starter: 500 leads. Pro &amp; White Label: 1,500.</p></div>
     </div>
   </div>
 </section>
