@@ -1,4 +1,3 @@
-<!-- deploy-v4 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -101,6 +100,71 @@ td:not(:first-child) { text-align:center; }
 .cta-section p { color:var(--gray-400); font-size:1.05rem; margin-bottom:28px; }
 
 /* FOOTER */
+/* ── PRODUCT PREVIEW / MOCKUPS ── */
+.preview-section { padding:60px 0; }
+.preview-section h2 { font-family:var(--font-display); font-size:clamp(1.5rem,3vw,2rem); font-weight:700; text-align:center; margin-bottom:12px; }
+.preview-section .preview-sub { text-align:center; color:var(--gray-400); font-size:15px; margin-bottom:40px; }
+.phone-mockups { display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; max-width:960px; margin:0 auto; }
+@media (max-width:800px) { .phone-mockups { grid-template-columns:1fr; max-width:360px; } }
+.phone-frame { background:var(--dark-2); border-radius:28px; border:2px solid var(--border); overflow:hidden; box-shadow:var(--shadow); transition:all .3s; }
+.phone-frame:hover { border-color:rgba(79,70,229,0.3); transform:translateY(-4px); }
+.phone-notch { height:28px; background:#000; display:flex; align-items:center; justify-content:center; }
+.phone-notch .dot { width:8px; height:8px; background:#1F2937; border-radius:50%; }
+.phone-screen { background:var(--dark); padding:10px; min-height:420px; font-size:12px; }
+.phone-screen .app-header { display:flex; align-items:center; gap:8px; padding:6px 0 10px; border-bottom:1px solid var(--border); margin-bottom:10px; }
+.phone-screen .app-header .app-logo { width:24px; height:24px; background:linear-gradient(135deg, var(--primary), var(--primary-light)); border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:11px; color:#fff; font-weight:700; }
+.phone-screen .app-title { font-weight:600; font-size:12px; }
+.phone-screen .app-title span { background:linear-gradient(135deg, var(--secondary), #F97316); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.phone-row { display:flex; align-items:center; justify-content:space-between; padding:8px 6px; border-bottom:1px solid var(--border); font-size:11px; gap:8px; }
+.phone-row .lead-name { font-weight:600; flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.phone-row .lead-city { color:var(--gray-500); font-size:10px; }
+.phone-row .lead-badge { padding:2px 7px; border-radius:4px; font-size:9px; font-weight:700; white-space:nowrap; }
+.bg-new { background:rgba(79,70,229,0.15); color:var(--primary-light); }
+.bg-called { background:rgba(16,185,129,0.15); color:var(--accent); }
+.bg-vm { background:rgba(245,158,11,0.15); color:var(--secondary); }
+.phone-pill-row { display:flex; gap:3px; padding:6px 0; flex-wrap:wrap; }
+.phone-pill { padding:3px 7px; border-radius:6px; font-size:10px; font-weight:600; border:1px solid var(--border); background:var(--dark); color:var(--gray-400); }
+.phone-pill.on { border-color:var(--accent); background:rgba(16,185,129,0.1); color:var(--accent); }
+.phone-detail-name { font-size:15px; font-weight:700; margin-bottom:2px; }
+.phone-detail-meta { color:var(--gray-500); font-size:10px; margin-bottom:10px; }
+.phone-btn { display:block; text-align:center; padding:8px; border-radius:8px; font-weight:600; font-size:11px; margin-bottom:6px; }
+.phone-btn-call { background:var(--accent); color:#fff; }
+.phone-btn-preview { background:var(--dark); color:var(--secondary); border:1px solid var(--border); }
+.phone-field { background:var(--dark-2); border:1px solid var(--border); border-radius:6px; padding:7px 10px; font-size:11px; color:var(--gray-400); margin-bottom:6px; }
+.phone-script { padding:8px 6px; border-bottom:1px solid var(--border); cursor:pointer; }
+.phone-script .script-label { font-size:11px; font-weight:600; margin-bottom:2px; }
+.phone-script .script-preview { font-size:10px; color:var(--gray-500); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.mockup-label { text-align:center; font-size:12px; font-weight:600; color:var(--gray-400); margin-top:14px; text-transform:uppercase; letter-spacing:0.5px; }
+
+/* ── VERIFICATION TIERS ── */
+.verify-section { padding:60px 0; }
+.verify-section h2 { font-family:var(--font-display); font-size:clamp(1.5rem,3vw,2rem); font-weight:700; text-align:center; margin-bottom:12px; }
+.verify-section .verify-sub { text-align:center; color:var(--gray-400); font-size:15px; margin-bottom:40px; }
+.verify-cards { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; max-width:900px; margin:0 auto; }
+@media (max-width:700px) { .verify-cards { grid-template-columns:1fr; max-width:380px; } }
+.verify-card { background:var(--dark-2); border-radius:var(--radius); padding:28px 24px; border:1px solid var(--border); text-align:center; transition:all .3s; }
+.verify-card:hover { transform:translateY(-4px); }
+.verify-card.bronze { border-color:rgba(180,130,70,0.3); }
+.verify-card.bronze:hover { border-color:rgba(180,130,70,0.5); }
+.verify-card.silver { border-color:rgba(168,168,168,0.3); }
+.verify-card.silver:hover { border-color:rgba(168,168,168,0.5); }
+.verify-card.gold { border-color:rgba(245,158,11,0.3); }
+.verify-card.gold:hover { border-color:rgba(245,158,11,0.5); }
+.verify-card .v-icon { width:56px; height:56px; margin:0 auto 16px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:24px; }
+.verify-card.bronze .v-icon { background:rgba(180,130,70,0.12); color:#B48246; }
+.verify-card.silver .v-icon { background:rgba(168,168,168,0.12); color:#A8A8A8; }
+.verify-card.gold .v-icon { background:rgba(245,158,11,0.12); color:var(--secondary); }
+.verify-card h4 { font-weight:700; font-size:16px; margin-bottom:4px; }
+.verify-card .v-tier { font-size:11px; color:var(--gray-500); text-transform:uppercase; letter-spacing:1px; margin-bottom:12px; }
+.verify-card p { font-size:13px; color:var(--gray-400); line-height:1.6; margin-bottom:14px; }
+.verify-card .v-checks { list-style:none; text-align:left; font-size:12px; }
+.verify-card .v-checks li { padding:5px 0; display:flex; align-items:center; gap:8px; color:var(--gray-400); }
+.verify-card .v-checks li i { color:var(--accent); font-size:10px; flex-shrink:0; }
+
+/* ── DISCLAIMER ── */
+.disclaimer { text-align:center; padding:30px 24px; font-size:12px; color:var(--gray-500); line-height:1.8; }
+.disclaimer strong { color:var(--gray-400); }
+
 .footer { text-align:center; padding:30px; font-size:13px; color:var(--gray-500); border-top:1px solid var(--border); }
 .footer a { color:var(--primary-light); text-decoration:none; }
 </style>
@@ -116,6 +180,7 @@ td:not(:first-child) { text-align:center; }
     <div class="nav-links">
       <a href="/">Home</a>
       <a href="/#pricing">Pricing</a>
+      <a href="#preview">Preview</a>
       <a href="/dashboard">Dashboard</a>
     </div>
   </div>
@@ -131,6 +196,7 @@ td:not(:first-child) { text-align:center; }
 
 <section class="pricing-section">
   <div class="container">
+	    <p style="font-size:11px;color:var(--gray-500);margin-bottom:10px;">Important: Leads are not exclusive. We do not guarantee conversions or perfect contact accuracy. Verify details independently before outreach.</p>
     <div class="pricing-grid">
       <!-- Starter -->
       <div class="tier">
@@ -185,6 +251,7 @@ td:not(:first-child) { text-align:center; }
 
 <section class="compare-section">
   <div class="container">
+	    <p style="font-size:11px;color:var(--gray-500);margin-bottom:10px;">Important: Leads are not exclusive. We do not guarantee conversions or perfect contact accuracy. Verify details independently before outreach.</p>
     <h2>Compare <span class="gradient-text-purple">Plans</span></h2>
     <div class="table-wrap">
       <table>
@@ -217,6 +284,7 @@ td:not(:first-child) { text-align:center; }
 
 <section class="features-section">
   <div class="container">
+	    <p style="font-size:11px;color:var(--gray-500);margin-bottom:10px;">Important: Leads are not exclusive. We do not guarantee conversions or perfect contact accuracy. Verify details independently before outreach.</p>
     <h2>Everything <span class="gradient-text">You Get</span></h2>
     <div class="features-grid">
       <div class="feature-card"><div class="icon"><i class="fas fa-list-check"></i></div><h4>Lead Queue — Filtered & Sortable</h4><p>Search by business name, city, or industry. See who you've called and who's next.</p></div>
@@ -231,17 +299,221 @@ td:not(:first-child) { text-align:center; }
   </div>
 </section>
 
+<!-- ████████ PRODUCT PREVIEW MOCKUPS ████████ -->
+<section class="preview-section" id="preview">
+  <div class="container">
+	    <p style="font-size:11px;color:var(--gray-500);margin-bottom:10px;">Important: Leads are not exclusive. We do not guarantee conversions or perfect contact accuracy. Verify details independently before outreach.</p>
+    <h2>See the <span class="gradient-text">App</span> in Action</h2>
+    <p class="preview-sub">Three screens from the Caller Pro experience. All sample data — no real businesses shown.</p>
+    <div class="phone-mockups">
+
+      <!-- Mockup 1: Lead Queue -->
+      <div>
+        <div class="phone-frame">
+          <div class="phone-notch"><div class="dot"></div></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <div class="app-logo">I</div>
+              <div class="app-title">Insta<span>web</span> Caller</div>
+            </div>
+            <div style="display:flex;gap:4px;margin-bottom:10px;">
+              <span style="font-size:10px;background:var(--dark-2);padding:3px 8px;border-radius:4px;">All Industries ▾</span>
+              <span style="font-size:10px;background:var(--dark-2);padding:3px 8px;border-radius:4px;">By City ▾</span>
+              <span style="margin-left:auto;font-size:10px;background:var(--accent);color:#fff;padding:3px 10px;border-radius:4px;font-weight:700;">📞 Call Next</span>
+            </div>
+            <div style="font-size:10px;color:var(--gray-500);margin-bottom:6px;">5 uncalled · 12 total</div>
+            <div class="phone-row" style="border-left:3px solid var(--secondary);">
+              <span class="lead-name">Apex Heating & Cooling</span>
+              <span class="lead-city">Denver</span>
+              <span class="lead-badge bg-new">✦ New</span>
+            </div>
+            <div class="phone-row">
+              <span class="lead-name"><span style="color:var(--gray-500);">→ Mike</span> Blue Sky Plumbing</span>
+              <span class="lead-city">Austin</span>
+              <span class="lead-badge bg-called">✅ Called</span>
+            </div>
+            <div class="phone-row">
+              <span class="lead-name">Summit Roofing LLC</span>
+              <span class="lead-city">Phoenix</span>
+              <span class="lead-badge bg-vm">📞 VM</span>
+            </div>
+            <div class="phone-row">
+              <span class="lead-name">Metro Electric Co.</span>
+              <span class="lead-city">Chicago</span>
+              <span class="lead-badge bg-new">✦ New</span>
+            </div>
+            <div class="phone-row">
+              <span class="lead-name">Green Leaf Landscaping</span>
+              <span class="lead-city">Portland</span>
+              <span class="lead-badge bg-new">✦ New</span>
+            </div>
+            <div class="phone-pill-row" style="margin-top:8px;">
+              <span class="phone-pill on">✅</span><span class="phone-pill">📞</span><span class="phone-pill">📧</span><span class="phone-pill">🔄</span><span class="phone-pill">❌</span>
+            </div>
+            <div style="display:flex;gap:4px;margin-top:6px;">
+              <span class="phone-btn phone-btn-call" style="flex:1;">📞 Call</span>
+              <span class="phone-btn phone-btn-preview" style="flex:1;">👁 Preview</span>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-label">Lead Queue — Filtered & Sortable</div>
+      </div>
+
+      <!-- Mockup 2: Lead Detail -->
+      <div>
+        <div class="phone-frame">
+          <div class="phone-notch"><div class="dot"></div></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <div class="app-logo">I</div>
+              <div class="app-title">Insta<span>web</span> Caller</div>
+              <span style="margin-left:auto;font-size:10px;color:var(--gray-500);">✕</span>
+            </div>
+            <div class="phone-detail-name">Blue Sky Plumbing</div>
+            <div class="phone-detail-meta">📞 (512) 555-0142 · Austin TX · Plumbing</div>
+            <span class="phone-btn phone-btn-call"><i class="fas fa-phone"></i> Call Now</span>
+            <div style="display:flex;gap:4px;">
+              <span class="phone-btn phone-btn-preview" style="flex:1;">👁 Preview Site</span>
+              <span class="phone-btn phone-btn-preview" style="flex:1;">✉ Email</span>
+            </div>
+            <div style="font-size:10px;color:var(--gray-500);margin:6px 0;">CONTACT NAME</div>
+            <div class="phone-field">Mike Reynolds</div>
+            <div style="font-size:10px;color:var(--gray-500);margin:6px 0;">STATUS</div>
+            <div class="phone-field" style="color:var(--accent);">✅ Called — Interested</div>
+            <div style="font-size:10px;color:var(--gray-500);margin:6px 0;">NOTES</div>
+            <div class="phone-field" style="min-height:40px;">Spoke with Mike — likes the demo. Wants to show his partner. Call back Thursday 10am.</div>
+            <div style="display:flex;gap:6px;margin-top:8px;">
+              <span style="flex:1;text-align:center;padding:8px;background:var(--accent);color:#fff;border-radius:8px;font-weight:600;font-size:10px;">💾 Save</span>
+              <span style="flex:1;text-align:center;padding:8px;background:var(--dark-2);color:var(--gray-400);border-radius:8px;font-weight:600;font-size:10px;">Cancel</span>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-label">Call Tracking — Notes & Status</div>
+      </div>
+
+      <!-- Mockup 3: Built-In Scripts -->
+      <div>
+        <div class="phone-frame">
+          <div class="phone-notch"><div class="dot"></div></div>
+          <div class="phone-screen">
+            <div class="app-header">
+              <div class="app-logo">I</div>
+              <div class="app-title">Insta<span>web</span> Caller</div>
+            </div>
+            <div style="font-size:10px;color:var(--gray-500);margin-bottom:8px;">📄 Calling Script</div>
+            <div class="phone-script">
+              <div class="script-label">🎯 Opener</div>
+              <div class="script-preview">"Hi, this is [name] from Instaweb. I sent you a preview..."</div>
+            </div>
+            <div class="phone-script">
+              <div class="script-label">👍 If they saw the demo</div>
+              <div class="script-preview">"What did you think? It's mobile-optimized, built for..."</div>
+            </div>
+            <div class="phone-script">
+              <div class="script-label">👎 If they didn't see it</div>
+              <div class="script-preview">"No problem — we built a lead-generating website for..."</div>
+            </div>
+            <div class="phone-script">
+              <div class="script-label">💰 "Too expensive"</div>
+              <div class="script-preview">"$399 is less than one ad click. $248/month includes..."</div>
+            </div>
+            <div class="phone-script">
+              <div class="script-label">🤔 "Need to think about it"</div>
+              <div class="script-preview">"I have a slot Thursday at 10 AM. If I don't hear from..."</div>
+            </div>
+            <div class="phone-script">
+              <div class="script-label">👨 "My nephew does it"</div>
+              <div class="script-preview">"Family isn't in the lead-gen business. We build sites..."</div>
+            </div>
+            <div class="phone-script">
+              <div class="script-label">✅ Close</div>
+              <div class="script-preview">"Great — I'll send the payment link. Live by Thursday..."</div>
+            </div>
+          </div>
+        </div>
+        <div class="mockup-label">Built-In Scripts — 14 Rebuttals</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section class="cta-section">
   <div class="container">
+	    <p style="font-size:11px;color:var(--gray-500);margin-bottom:10px;">Important: Leads are not exclusive. We do not guarantee conversions or perfect contact accuracy. Verify details independently before outreach.</p>
     <h2>Ready to <span class="gradient-text">start calling?</span></h2>
     <p>500 leads loaded into your phone in 5 minutes.</p>
     <a href="https://buy.stripe.com/00wcN503E512fNydpFdjO08" class="btn" style="display:inline-block;padding:16px 40px;background:linear-gradient(135deg,var(--secondary),var(--secondary-dark));color:var(--dark);border-radius:12px;font-weight:700;font-size:16px;text-decoration:none;">Subscribe — $49/mo <i class="fas fa-arrow-right"></i></a>
   </div>
 </section>
 
-<div class="footer">
-      <p style="font-size:11px;color:var(--gray-500);max-width:600px;margin:0 auto 8px auto;line-height:1.6;">Important: Leads are not exclusive. We do not guarantee conversions or perfect contact accuracy. Verify details independently before outreach.</p>
-      <p>Instaweb Agency · <a href="/">instaweb.agency</a></p>
+<!-- ████████ VERIFICATION TIERS ████████ -->
+<section class="verify-section">
+  <div class="container">
+	    <p style="font-size:11px;color:var(--gray-500);margin-bottom:10px;">Important: Leads are not exclusive. We do not guarantee conversions or perfect contact accuracy. Verify details independently before outreach.</p>
+    <h2>How We <span class="gradient-text-purple">Verify</span> Every Lead</h2>
+    <p class="verify-sub">Not all leads are created equal. Every business that enters your queue passes through our verification pipeline before you see it.</p>
+    <div class="verify-cards">
+      <div class="verify-card bronze">
+        <div class="v-icon"><i class="fas fa-check-circle"></i></div>
+        <h4>Basic Scan</h4>
+        <div class="v-tier">Every lead</div>
+        <p>Automated checks run on every lead before it enters the pipeline.</p>
+        <ul class="v-checks">
+          <li><i class="fas fa-check"></i> Business name + address match</li>
+          <li><i class="fas fa-check"></i> Phone format validation</li>
+          <li><i class="fas fa-check"></i> Industry classification</li>
+          <li><i class="fas fa-check"></i> Duplicate detection</li>
+        </ul>
+      </div>
+      <div class="verify-card silver">
+        <div class="v-icon"><i class="fas fa-shield-halved"></i></div>
+        <h4>Verified</h4>
+        <div class="v-tier">Pro tier &amp; above</div>
+        <p>Phone numbers are confirmed reachable. Emails pass deliverability checks.</p>
+        <ul class="v-checks">
+          <li><i class="fas fa-check"></i> Phone line test (no dead numbers)</li>
+          <li><i class="fas fa-check"></i> Email MX + SMTP verification</li>
+          <li><i class="fas fa-check"></i> Website existence check</li>
+          <li><i class="fas fa-check"></i> Business hours cross-reference</li>
+        </ul>
+      </div>
+      <div class="verify-card gold">
+        <div class="v-icon"><i class="fas fa-crown"></i></div>
+        <h4>Premium Verified</h4>
+        <div class="v-tier">White Label tier</div>
+        <p>Human-reviewed. Every premium lead is manually confirmed by our QA team before delivery.</p>
+        <ul class="v-checks">
+          <li><i class="fas fa-check"></i> Manual QA review</li>
+          <li><i class="fas fa-check"></i> Decision-maker contact confirmed</li>
+          <li><i class="fas fa-check"></i> Recent activity signals checked</li>
+          <li><i class="fas fa-check"></i> Priority refresh every 48 hours</li>
+        </ul>
+      </div>
     </div>
+  </div>
+</section>
+
+<section class="cta-section" style="border:none;">
+  <div class="container">
+	    <p style="font-size:11px;color:var(--gray-500);margin-bottom:10px;">Important: Leads are not exclusive. We do not guarantee conversions or perfect contact accuracy. Verify details independently before outreach.</p>
+    <h2>Explore <span class="gradient-text-purple">Caller Pro</span></h2>
+    <p>Start with 500 verified leads. Upgrade anytime. Cancel anytime.</p>
+    <a href="https://buy.stripe.com/00wcN503E512fNydpFdjO08" class="btn" style="display:inline-block;padding:16px 40px;background:linear-gradient(135deg,var(--primary),var(--primary-light));color:var(--white);border-radius:12px;font-weight:700;font-size:16px;text-decoration:none;margin-right:12px;">Try Starter — $49/mo <i class="fas fa-arrow-right"></i></a>
+    <a href="https://buy.stripe.com/cNi9AT9EedxydFqclBdjO09" class="btn" style="display:inline-block;padding:16px 40px;background:linear-gradient(135deg,var(--secondary),var(--secondary-dark));color:var(--dark);border-radius:12px;font-weight:700;font-size:16px;text-decoration:none;">Go Pro — $99/mo <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<!-- ████████ DISCLAIMER ████████ -->
+<div class="disclaimer">
+  <div class="container">
+	    <p style="font-size:11px;color:var(--gray-500);margin-bottom:10px;">Important: Leads are not exclusive. We do not guarantee conversions or perfect contact accuracy. Verify details independently before outreach.</p>
+    <p><strong>Disclaimer:</strong> Caller Pro is a lead delivery and calling application. Leads are sourced from publicly available business directories and verified through automated + manual processes. We do not guarantee that every lead will convert. All sample screenshots on this page use fabricated business names and data — no real customer information is displayed. Subscription pricing is billed monthly via Stripe and can be cancelled at any time. No long-term contracts.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Instaweb Agency · <a href="/">instaweb.agency</a> · <a href="#preview">Preview</a></p>
+</div>
 </body>
 </html>
