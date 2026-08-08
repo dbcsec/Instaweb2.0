@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lead Intake — Instaweb Agency</title>
+<style>
+:root {
+  --bg: #0a0a0f; --card: #12121a; --border: #1e1e2e;
+  --text: #e4e4ec; --muted: #8888a0; --accent: #6366f1;
+  --green: #22c55e; --red: #ef4444; --amber: #f59e0b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+.container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+h2 { font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: var(--muted); }
+.subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+.form-group { margin-bottom: 1rem; }
+label { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.25rem; }
+input, select, textarea { width: 100%; padding: 0.6rem 0.75rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 0.9rem; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+.btn { padding: 0.6rem 1.25rem; border-radius: 6px; border: none; font-size: 0.9rem; cursor: pointer; font-weight: 600; }
+.btn-primary { background: var(--accent); color: white; }
+.btn-primary:hover { background: #5558e6; }
+.btn-secondary { background: var(--border); color: var(--text); }
+.btn-danger { background: var(--red); color: white; }
+.btn-group { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
+.badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+.badge-ok { background: rgba(34,197,94,0.15); color: var(--green); }
+.badge-warn { background: rgba(245,158,11,0.15); color: var(--amber); }
+.badge-err { background: rgba(239,68,68,0.15); color: var(--red); }
+table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+tr.dup td { background: rgba(245,158,11,0.05); }
+tr.quar td { background: rgba(239,68,68,0.05); }
+.status { margin-top: 1rem; padding: 0.75rem; border-radius: 6px; font-size: 0.9rem; display: none; }
+.status-success { background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.3); display: block; }
+.status-error { background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); display: block; }
+.status-info { background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.3); display: block; }
+.checkbox-group { display: flex; align-items: center; gap: 0.5rem; }
+.checkbox-group input[type=checkbox] { width: auto; }
+.step-indicator { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; }
+.step { padding: 0.3rem 0.8rem; border-radius: 12px; font-size: 0.8rem; background: var(--border); color: var(--muted); }
+.step.active { background: var(--accent); color: white; }
+.step.done { background: rgba(34,197,94,0.2); color: var(--green); }
+.radio-group { display: flex; gap: 1rem; }
+.radio-group label { display: flex; align-items: center; gap: 0.3rem; color: var(--text); }
+.radio-group input[type=radio] { width: auto; }
+.hidden { display: none; }
+#csv-preview { max-height: 300px; overflow-y: auto; }
+textarea { min-height: 80px; resize: vertical; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>📥 Lead Intake</h1>
+<p class="subtitle">Review-first workflow — all imports require explicit owner approval.</p>
+
+<div class="step-indicator">
+  <span class="step active" id="step1">1. Upload</span>
+  <span class="step" id="step2">2. Validate</span>
+  <span class="step" id="step3">3. Review</span>
+  <span class="step" id="step4">4. Confirm</span>
+</div>
+
+<!-- STATUS -->
+<div class="status" id="status"></div>
+
+<!-- STEP 1: UPLOAD -->
+<div class="card" id="upload-section">
+  <h2>Upload Leads</h2>
+  <div class="form-group">
+    <label>Method</label>
+    <div class="radio-group">
+      <label><input type="radio" name="method" value="manual" checked onchange="toggleMethod()"> Manual Entry</label>
+      <label><input type="radio" name="method" value="csv" onchange="toggleMethod()"> CSV Upload</label>
+    </div>
+  </div>
+
+  <!-- Manual entry form -->
+  <div id="manual-form">
+    <div class="row">
+      <div class="form-group">
+        <label>Business Name *</label>
+        <input type="text" id="m-business_name" placeholder="e.g. Torres HVAC">
+      </div>
+      <div class="form-group">
+        <label>Trade / Industry</label>
+        <select id="m-trade">
+          <option value="">Select...</option>
+          <option>HVAC</option><option>Plumbing</option><option>Roofing</option>
+          <option>Electrical</option><option>Restaurant</option><option>Salon / Beauty</option>
+          <option>Dental</option><option>Landscaping</option><option>Automotive</option>
+          <option>Legal</option><option>Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" id="m-city">
+      </div>
+      <div class="form-group">
+        <label>State</label>
+        <input type="text" id="m-state" placeholder="e.g. TX" maxlength="2">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label>Phone</label>
+        <input type="text" id="m-phone" placeholder="(555) 123-4567">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="m-email" placeholder="contact@business.com">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label>Website</label>
+        <input type="url" id="m-website" placeholder="https://www.example.com">
+      </div>
+      <div class="form-group">
+        <label>Demo URL (if exists)</label>
+        <input type="text" id="m-demo_url" placeholder="https://instaweb.agency/demo/...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label>Source URL (where scraped from)</label>
+        <input type="url" id="m-source_url" placeholder="https://maps.google.com/...">
+      </div>
+      <div class="form-group">
+        <label>Scrape Date</label>
+        <input type="date" id="m-scrape_date">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group">
+        <label>Consent Status</label>
+        <select id="m-consent_status">
+          <option value="public_directory" selected>Public Directory (no consent)</option>
+          <option value="opted_in">Opted In (has consent)</option>
+          <option value="unknown">Unknown</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Opted In</label>
+        <select id="m-opted_in">
+          <option value="false" selected>No</option>
+          <option value="true">Yes</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Notes</label>
+      <textarea id="m-notes" placeholder="Any additional context..."></textarea>
+    </div>
+    <button class="btn btn-primary" onclick="addManualLead()">+ Add Lead to Batch</button>
+  </div>
+
+  <!-- CSV Upload -->
+  <div id="csv-form" class="hidden">
+    <div class="form-group">
+      <label>CSV File</label>
+      <input type="file" id="csv-file" accept=".csv" onchange="previewCSV()">
+    </div>
+    <div class="form-group">
+      <label>Preview</label>
+      <div id="csv-preview" class="card" style="font-size:0.8rem; padding:0.75rem;"></div>
+    </div>
+    <button class="btn btn-primary" onclick="addCSVLeads()">Parse & Add to Batch</button>
+  </div>
+</div>
+
+<!-- BATCH TABLE -->
+<div class="card hidden" id="batch-section">
+  <h2>Current Batch (<span id="batch-count">0</span> leads)</h2>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Business</th><th>Trade</th><th>City</th><th>Phone</th><th>Status</th><th></th></tr>
+    </thead>
+    <tbody id="batch-table"></tbody>
+  </table>
+  <div class="btn-group">
+    <button class="btn btn-primary" onclick="validateBatch()">Validate All →</button>
+    <button class="btn btn-secondary" onclick="clearBatch()">Clear Batch</button>
+  </div>
+</div>
+
+<!-- VALIDATION RESULTS -->
+<div class="card hidden" id="validation-section">
+  <h2>Validation Results</h2>
+  <div id="validation-summary"></div>
+  <table>
+    <thead><tr><th>Business</th><th>Issues</th><th>Duplicates</th><th>Action</th></tr></thead>
+    <tbody id="validation-table"></tbody>
+  </table>
+  <div class="btn-group">
+    <button class="btn btn-primary" onclick="prepareReview()">Proceed to Review →</button>
+    <button class="btn btn-secondary" onclick="goBack('batch')">← Back</button>
+  </div>
+</div>
+
+<!-- REVIEW & CONFIRM -->
+<div class="card hidden" id="review-section">
+  <h2>Final Review</h2>
+  <div id="review-summary"></div>
+  <table>
+    <thead><tr><th>#</th><th>Business</th><th>Trade</th><th>City</th><th>Phone</th><th>Consent</th><th>Dedup</th><th>Quarantine</th></tr></thead>
+    <tbody id="review-table"></tbody>
+  </table>
+  <div class="form-group">
+    <div class="checkbox-group">
+      <input type="checkbox" id="confirm-import" onchange="toggleConfirm()">
+      <label for="confirm-import">I confirm: all leads are from public directories or have consent. No fabricated data. I want to import the approved rows only.</label>
+    </div>
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-primary" id="btn-import" disabled onclick="submitImport()">✅ Import Approved Leads</button>
+    <button class="btn btn-secondary" onclick="goBack('validation')">← Back</button>
+  </div>
+</div>
+
+</div>
+
+<script>
+// ── State ──
+let batch = [];
+let validationResults = [];
+
+function showStatus(msg, type) {
+  const s = document.getElementById('status');
+  s.textContent = msg;
+  s.className = 'status status-' + type;
+}
+
+function toggleMethod() {
+  const method = document.querySelector('input[name="method"]:checked').value;
+  document.getElementById('manual-form').classList.toggle('hidden', method !== 'manual');
+  document.getElementById('csv-form').classList.toggle('hidden', method !== 'csv');
+}
+
+function addManualLead() {
+  const lead = {
+    business_name: document.getElementById('m-business_name').value.trim(),
+    trade: document.getElementById('m-trade').value,
+    city: document.getElementById('m-city').value.trim(),
+    state: document.getElementById('m-state').value.trim().toUpperCase(),
+    phone: document.getElementById('m-phone').value.trim(),
+    email: document.getElementById('m-email').value.trim(),
+    website: document.getElementById('m-website').value.trim(),
+    demo_url: document.getElementById('m-demo_url').value.trim(),
+    source_url: document.getElementById('m-source_url').value.trim(),
+    scrape_date: document.getElementById('m-scrape_date').value,
+    consent_status: document.getElementById('m-consent_status').value,
+    opted_in: document.getElementById('m-opted_in').value,
+    notes: document.getElementById('m-notes').value.trim(),
+  };
+  
+  if (!lead.business_name) { showStatus('Business name is required.', 'error'); return; }
+  
+  batch.push(lead);
+  renderBatch();
+  showStatus('Lead added. Batch: ' + batch.length, 'info');
+  
+  // Clear manual form
+  ['m-business_name','m-city','m-state','m-phone','m-email','m-website','m-demo_url','m-source_url','m-notes'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  document.getElementById('m-scrape_date').value = '';
+}
+
+function previewCSV() {
+  const file = document.getElementById('csv-file').files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const text = e.target.result;
+    const lines = text.split('\n').slice(0, 10);
+    const preview = lines.map(l => '<div>' + l.replace(/,/g, ' | ') + '</div>').join('');
+    document.getElementById('csv-preview').innerHTML = preview || '<em>Empty file</em>';
+  };
+  reader.readAsText(file);
+}
+
+function addCSVLeads() {
+  const file = document.getElementById('csv-file').files[0];
+  if (!file) { showStatus('Select a CSV file first.', 'error'); return; }
+  
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const text = e.target.result;
+    const lines = text.split('\n').filter(l => l.trim());
+    if (lines.length < 2) { showStatus('CSV must have a header row + data.', 'error'); return; }
+    
+    const headers = lines[0].split(',').map(h => h.trim().toLowerCase().replace(/[^a-z_]/g, '_'));
+    const fieldMap = {
+      'business_name': ['business_name','business','name','company','businessname'],
+      'trade': ['trade','industry','category','type'],
+      'city': ['city','location_city'],
+      'state': ['state','location_state','region'],
+      'phone': ['phone','phone_number','telephone','tel'],
+      'email': ['email','e_mail','email_address'],
+      'website': ['website','url','site','web'],
+      'demo_url': ['demo_url','demo','demo_site'],
+      'source_url': ['source_url','source','scraped_from','profile_url'],
+      'scrape_date': ['scrape_date','date','scraped_at','collected'],
+      'consent_status': ['consent_status','consent','permission'],
+      'opted_in': ['opted_in','opt_in','subscribed'],
+      'notes': ['notes','description','details'],
+    };
+    
+    const mapping = {};
+    for (const [field, aliases] of Object.entries(fieldMap)) {
+      for (const alias of aliases) {
+        const idx = headers.indexOf(alias);
+        if (idx >= 0) { mapping[field] = idx; break; }
+      }
+    }
+    
+    if (!mapping.business_name && mapping.business_name !== 0) {
+      showStatus('CSV must have a business_name/business/name column.', 'error'); return;
+    }
+    
+    let added = 0;
+    for (let i = 1; i < lines.length; i++) {
+      const cols = lines[i].split(',').map(c => c.trim().replace(/^"|"$/g, ''));
+      if (cols.length < 2) continue;
+      
+      const lead = {
+        business_name: cols[mapping.business_name] || '',
+        trade: cols[mapping.trade] || '',
+        city: cols[mapping.city] || '',
+        state: (cols[mapping.state] || '').toUpperCase().slice(0,2),
+        phone: cols[mapping.phone] || '',
+        email: cols[mapping.email] || '',
+        website: cols[mapping.website] || '',
+        demo_url: cols[mapping.demo_url] || '',
+        source_url: cols[mapping.source_url] || '',
+        scrape_date: cols[mapping.scrape_date] || new Date().toISOString().slice(0,10),
+        consent_status: cols[mapping.consent_status] || 'public_directory',
+        opted_in: cols[mapping.opted_in] || 'false',
+        notes: cols[mapping.notes] || '',
+      };
+      
+      if (!lead.business_name) continue;
+      // Force consent defaults for scraped leads
+      if (!lead.consent_status || lead.consent_status === '') lead.consent_status = 'public_directory';
+      if (!lead.opted_in || lead.opted_in === '') lead.opted_in = 'false';
+      
+      batch.push(lead);
+      added++;
+    }
+    
+    renderBatch();
+    showStatus(`Added ${added} leads from CSV. Batch: ${batch.length}`, 'success');
+  };
+  reader.readAsText(file);
+}
+
+function renderBatch() {
+  const countEl = document.getElementById('batch-count');
+  const tbody = document.getElementById('batch-table');
+  const section = document.getElementById('batch-section');
+  
+  if (batch.length === 0) {
+    section.classList.add('hidden');
+    return;
+  }
+  section.classList.remove('hidden');
+  countEl.textContent = batch.length;
+  
+  tbody.innerHTML = batch.map((l, i) => `
+    <tr>
+      <td>${i + 1}</td>
+      <td>${esc(l.business_name)}</td>
+      <td>${l.trade || '—'}</td>
+      <td>${l.city || '—'}, ${l.state || '—'}</td>
+      <td>${l.phone || '—'}</td>
+      <td><span class="badge badge-ok">pending</span></td>
+      <td><button class="btn btn-danger" style="padding:0.2rem 0.5rem;font-size:0.75rem;" onclick="removeLead(${i})">✕</button></td>
+    </tr>
+  `).join('');
+}
+
+function removeLead(i) {
+  batch.splice(i, 1);
+  renderBatch();
+}
+
+function clearBatch() {
+  if (confirm('Clear all ' + batch.length + ' leads?')) {
+    batch = [];
+    validationResults = [];
+    renderBatch();
+    document.getElementById('validation-section').classList.add('hidden');
+    document.getElementById('review-section').classList.add('hidden');
+  }
+}
+
+async function validateBatch() {
+  if (batch.length === 0) { showStatus('No leads to validate.', 'error'); return; }
+  showStatus('Validating ' + batch.length + ' leads...', 'info');
+  
+  try {
+    const resp = await fetch('/api/lead-intake/validate', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({leads: batch})
+    });
+    const data = await resp.json();
+    validationResults = data.results || [];
+    renderValidation();
+    document.getElementById('validation-section').classList.remove('hidden');
+    updateSteps(2);
+  } catch (e) {
+    showStatus('Validation failed: ' + e.message, 'error');
+  }
+}
+
+function renderValidation() {
+  const summary = document.getElementById('validation-summary');
+  const tbody = document.getElementById('validation-table');
+  
+  const ok = validationResults.filter(r => r.status === 'ok').length;
+  const dup = validationResults.filter(r => r.status === 'duplicate').length;
+  const quar = validationResults.filter(r => r.status === 'quarantine').length;
+  const err = validationResults.filter(r => r.status === 'error').length;
+  
+  summary.innerHTML = `
+    <span class="badge badge-ok">${ok} OK</span>
+    <span class="badge badge-warn">${dup} Duplicates</span>
+    <span class="badge badge-err">${quar} Quarantined</span>
+    ${err ? `<span class="badge badge-err">${err} Errors</span>` : ''}
+  `;
+  
+  tbody.innerHTML = validationResults.map(r => `
+    <tr class="${r.status === 'duplicate' ? 'dup' : r.status === 'quarantine' ? 'quar' : ''}">
+      <td>${esc(r.business_name)}</td>
+      <td>${(r.errors || []).join(', ') || '—'}</td>
+      <td>${r.duplicates ? r.duplicates.map(d => `${d.type}: ${d.business_name}`).join('; ') : '—'}</td>
+      <td><span class="badge badge-${r.status === 'ok' ? 'ok' : r.status === 'duplicate' ? 'warn' : 'err'}">${r.status}</span></td>
+    </tr>
+  `).join('');
+}
+
+function prepareReview() {
+  renderReview();
+  document.getElementById('review-section').classList.remove('hidden');
+  updateSteps(3);
+}
+
+function renderReview() {
+  const summary = document.getElementById('review-summary');
+  const tbody = document.getElementById('review-table');
+  
+  const approved = validationResults.filter(r => r.status === 'ok');
+  const duplicates = validationResults.filter(r => r.status === 'duplicate');
+  const quarantined = validationResults.filter(r => r.status === 'quarantine');
+  
+  summary.innerHTML = `
+    <p><strong>${approved.length}</strong> leads ready to import.</p>
+    <p style="color:var(--amber)"><strong>${duplicates.length}</strong> duplicates will be skipped.</p>
+    <p style="color:var(--red)"><strong>${quarantined.length}</strong> quarantined records will not be imported.</p>
+  `;
+  
+  tbody.innerHTML = validationResults.map((r, i) => `
+    <tr class="${r.status === 'duplicate' ? 'dup' : r.status === 'quarantine' ? 'quar' : ''}">
+      <td>${i + 1}</td>
+      <td>${esc(r.business_name)}</td>
+      <td>${r.trade || '—'}</td>
+      <td>${r.city || '—'}</td>
+      <td>${r.phone || '—'}</td>
+      <td>${r.consent_status || 'public_directory'}</td>
+      <td>${r.status === 'duplicate' ? '⚠ Duplicate' : '✅'}</td>
+      <td>${r.status === 'quarantine' ? '🚫 Yes' : '—'}</td>
+    </tr>
+  `).join('');
+}
+
+function toggleConfirm() {
+  document.getElementById('btn-import').disabled = !document.getElementById('confirm-import').checked;
+}
+
+async function submitImport() {
+  const approved = validationResults.filter(r => r.status === 'ok');
+  if (approved.length === 0) { showStatus('No approved leads to import.', 'error'); return; }
+  
+  showStatus('Importing ' + approved.length + ' leads...', 'info');
+  
+  try {
+    const resp = await fetch('/api/lead-intake/import', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({leads: approved})
+    });
+    const data = await resp.json();
+    
+    if (data.status === 'ok') {
+      showStatus(`✅ Imported ${data.imported} leads successfully!`, 'success');
+      updateSteps(4);
+      document.getElementById('btn-import').disabled = true;
+    } else {
+      showStatus('Import error: ' + (data.message || 'Unknown'), 'error');
+    }
+  } catch (e) {
+    showStatus('Import failed: ' + e.message, 'error');
+  }
+}
+
+function updateSteps(n) {
+  for (let i = 1; i <= 4; i++) {
+    const el = document.getElementById('step' + i);
+    el.classList.remove('active', 'done');
+    if (i < n) el.classList.add('done');
+    if (i === n) el.classList.add('active');
+  }
+}
+
+function goBack(section) {
+  if (section === 'batch') {
+    document.getElementById('validation-section').classList.add('hidden');
+    updateSteps(1);
+    return;
+  }
+  if (section === 'validation') {
+    document.getElementById('review-section').classList.add('hidden');
+    updateSteps(2);
+    return;
+  }
+}
+
+function esc(s) {
+  if (!s) return '';
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+</script>
+</body>
+</html>
