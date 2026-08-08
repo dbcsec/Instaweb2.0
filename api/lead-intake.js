@@ -316,13 +316,16 @@ async function handleImport(req, res) {
             continue;
           }
           
-          // Build metadata JSON — store website here, NOT as a separate column
-          // api/caller/leads.js does NOT use a 'website' column; neither do we.
+          // Build metadata JSON — store extras here since the schema has no
+          // dedicated columns for website, consent_status, or opted_in.
+          // api/caller/leads.js does NOT use these as columns; neither do we.
           const metadataObj = {
             scrape_date: lead.scrape_date || null,
             source_url: lead.source_url || null,
             import_method: 'lead_intake_form',
             website: lead.website || null,
+            consent_status: lead.consent_status || 'public_directory',
+            opted_in: lead.opted_in || 'false',
           };
           
           // NOTE: Schema has NO 'website' column (confirmed via PRAGMA table_info).
