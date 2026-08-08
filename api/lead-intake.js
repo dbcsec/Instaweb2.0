@@ -21,6 +21,21 @@ async function dbQuery(sql) {
   return await resp.json();
 }
 
+/**
+ * Check whether a Turso pipeline response contains an error in the first result.
+ * Returns { ok: true } or { ok: false, error: string }.
+ */
+function checkDbResult(dbResp, context) {
+  if (!dbResp || !dbResp.results || !Array.isArray(dbResp.results)) {
+    return { ok: false, error: context + ': unexpected response structure' };
+  }
+  const first = dbResp.results[0];
+  if (first.type === 'error') {
+    return { ok: false, error: context + ': ' + (first.error?.message || 'unknown DB error') };
+  }
+  return { ok: true };
+}
+
 function escape(s) {
   if (s === null || s === undefined) return '';
   return String(s).replace(/'/g, "''");
@@ -91,7 +106,7 @@ function validateLead(lead) {
     }
   }
   
-  // URL validation (optional)
+  // URL validation (optional — website is stored in metadata JSON, not as a DB column)
   if (lead.website && lead.website.trim()) {
     try { new URL(lead.website.startsWith('http') ? lead.website : 'https://' + lead.website); }
     catch { errors.push('Invalid website URL'); }
@@ -166,8 +181,9 @@ async function handleValidate(req, res) {
           continue;
         }
         
-        // Dedup checks
+        // Dedup checks — with explicit error surfacing
         const duplicates = [];
+        const dedupErrors = [];
         const normPhone = normalizePhone(lead.phone);
         const domain = extractDomain(lead.website);
         
@@ -176,30 +192,41 @@ async function handleValidate(req, res) {
           const phoneResp = await dbQuery(
             "SELECT lead_id, business_name, phone FROM leads_pool WHERE phone = '" + escape(normPhone) + "' LIMIT 3"
           );
-          const phoneRows = phoneResp?.results?.[0]?.response?.result?.rows || [];
-          for (const row of phoneRows) {
-            duplicates.push({
-              type: 'phone_match',
-              lead_id: val(row[0]),
-              business_name: val(row[1]),
-              phone: val(row[2]),
-            });
+          const phoneCheck = checkDbResult(phoneResp, 'Phone dedup query');
+          if (!phoneCheck.ok) {
+            dedupErrors.push(phoneCheck.error);
+          } else {
+            const phoneRows = phoneResp.results[0].response.result.rows || [];
+            for (const row of phoneRows) {
+              duplicates.push({
+                type: 'phone_match',
+                lead_id: val(row[0]),
+                business_name: val(row[1]),
+                phone: val(row[2]),
+              });
+            }
           }
         }
         
-        // Check domain from website
+        // Check domain from website (stored in metadata JSON column)
+        // Schema has NO dedicated 'website' column — match api/caller/leads.js convention
         if (domain) {
           const domainResp = await dbQuery(
-            "SELECT lead_id, business_name, website FROM leads_pool WHERE website LIKE '%" + escape(domain) + "%' LIMIT 3"
+            "SELECT lead_id, business_name, metadata FROM leads_pool WHERE metadata LIKE '%" + escape(domain) + "%' LIMIT 3"
           );
-          const domainRows = domainResp?.results?.[0]?.response?.result?.rows || [];
-          for (const row of domainRows) {
-            if (!duplicates.find(d => d.lead_id === val(row[0]))) {
-              duplicates.push({
-                type: 'domain_match',
-                lead_id: val(row[0]),
-                business_name: val(row[1]),
-              });
+          const domainCheck = checkDbResult(domainResp, 'Domain dedup query');
+          if (!domainCheck.ok) {
+            dedupErrors.push(domainCheck.error);
+          } else {
+            const domainRows = domainResp.results[0].response.result.rows || [];
+            for (const row of domainRows) {
+              if (!duplicates.find(d => d.lead_id === val(row[0]))) {
+                duplicates.push({
+                  type: 'domain_match',
+                  lead_id: val(row[0]),
+                  business_name: val(row[1]),
+                });
+              }
             }
           }
         }
@@ -212,23 +239,36 @@ async function handleValidate(req, res) {
             "SELECT lead_id, business_name, city FROM leads_pool WHERE LOWER(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(business_name,' ',''),'-',''),\"'\",''),'.',''),',','')) = '" +
             escape(nameNorm) + "' AND LOWER(REPLACE(REPLACE(city,' ',''),'-','')) = '" + escape(cityNorm) + "' LIMIT 1"
           );
-          const nameRows = nameResp?.results?.[0]?.response?.result?.rows || [];
-          for (const row of nameRows) {
-            if (!duplicates.find(d => d.lead_id === val(row[0]))) {
-              duplicates.push({
-                type: 'name_location_match',
-                lead_id: val(row[0]),
-                business_name: val(row[1]),
-                city: val(row[2]),
-              });
+          const nameCheck = checkDbResult(nameResp, 'Name+city dedup query');
+          if (!nameCheck.ok) {
+            dedupErrors.push(nameCheck.error);
+          } else {
+            const nameRows = nameResp.results[0].response.result.rows || [];
+            for (const row of nameRows) {
+              if (!duplicates.find(d => d.lead_id === val(row[0]))) {
+                duplicates.push({
+                  type: 'name_location_match',
+                  lead_id: val(row[0]),
+                  business_name: val(row[1]),
+                  city: val(row[2]),
+                });
+              }
             }
           }
         }
         
+        // Determine status: if dedup errors occurred, surface them
+        let status;
+        if (dedupErrors.length > 0 && duplicates.length === 0) {
+          status = 'dedup_error';
+        } else {
+          status = duplicates.length > 0 ? 'duplicate' : 'ok';
+        }
+        
         results.push({
           ...lead,
-          status: duplicates.length > 0 ? 'duplicate' : 'ok',
-          errors: [],
+          status,
+          errors: dedupErrors,
           duplicates,
         });
       }
@@ -265,14 +305,33 @@ async function handleImport(req, res) {
           const checkResp = await dbQuery(
             "SELECT lead_id FROM leads_pool WHERE lead_id = '" + escape(leadId) + "'"
           );
-          const existingRows = checkResp?.results?.[0]?.response?.result?.rows || [];
+          const checkResult = checkDbResult(checkResp, 'Existence check');
+          if (!checkResult.ok) {
+            errors.push({ business_name: lead.business_name, error: checkResult.error });
+            continue;
+          }
+          const existingRows = checkResp.results[0].response.result.rows || [];
           if (existingRows.length > 0) {
             errors.push({ business_name: lead.business_name, error: 'Already exists (lead_id match)' });
             continue;
           }
           
+          // Build metadata JSON — store website here, NOT as a separate column
+          // api/caller/leads.js does NOT use a 'website' column; neither do we.
+          const metadataObj = {
+            scrape_date: lead.scrape_date || null,
+            source_url: lead.source_url || null,
+            import_method: 'lead_intake_form',
+            website: lead.website || null,
+          };
+          
+          // NOTE: Schema has NO 'website' column (confirmed via PRAGMA table_info).
+          // Columns: id, lead_id, business_name, phone, city, state, industry, email,
+          //   demo_url, source, status, notes, metadata, first_seen_at, last_updated_at,
+          //   contacted_at, conflict_flag, last_activity_at, merge_history,
+          //   superseded_by, outage_queued, stale
           const insertSql = 
-            "INSERT INTO leads_pool (lead_id, business_name, phone, city, state, industry, email, website, demo_url, source, notes, metadata, opted_in, consent_status, first_seen_at, last_updated_at, last_activity_at) VALUES ('" +
+            "INSERT INTO leads_pool (lead_id, business_name, phone, city, state, industry, email, demo_url, source, notes, metadata, first_seen_at, last_updated_at, last_activity_at) VALUES ('" +
             escape(leadId) + "','" +
             escape(lead.business_name) + "','" +
             escape(normalizePhone(lead.phone)) + "','" +
@@ -280,21 +339,18 @@ async function handleImport(req, res) {
             escape(lead.state) + "','" +
             escape(lead.trade || lead.industry || '') + "','" +
             escape(lead.email) + "','" +
-            escape(lead.website) + "','" +
             escape(lead.demo_url) + "','" +
             escape(lead.source_url || 'owner_upload') + "','" +
             escape(lead.notes) + "','" +
-            escape(JSON.stringify({ scrape_date: lead.scrape_date, source_url: lead.source_url, import_method: 'lead_intake_form' })) + "','" +
-            escape(lead.opted_in || 'false') + "','" +
-            escape(lead.consent_status || 'public_directory') + "','" +
+            escape(JSON.stringify(metadataObj)) + "','" +
             escape(lead.scrape_date ? lead.scrape_date + 'T00:00:00Z' : now) + "','" +
             escape(now) + "','" +
             escape(now) + "')";
           
           const insertResp = await dbQuery(insertSql);
-          const insertResult = insertResp?.results?.[0];
-          if (insertResult?.type === 'error') {
-            errors.push({ business_name: lead.business_name, error: insertResult.error?.message || 'Insert error' });
+          const insertCheck = checkDbResult(insertResp, 'Insert');
+          if (!insertCheck.ok) {
+            errors.push({ business_name: lead.business_name, error: insertCheck.error });
             continue;
           }
           
