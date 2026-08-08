@@ -235,8 +235,11 @@ async function handleValidate(req, res) {
         if (lead.business_name && lead.city) {
           const nameNorm = lead.business_name.toLowerCase().replace(/[^a-z0-9]/g, '');
           const cityNorm = lead.city.toLowerCase().replace(/[^a-z]/g, '');
+          // Use 4 single quotes ('''') in SQL — produces one literal apostrophe char
+          // for REPLACE search. Previously used double-quoted \"'\" which SQLite
+          // interprets as an identifier, causing: no such column: \"'\"
           const nameResp = await dbQuery(
-            "SELECT lead_id, business_name, city FROM leads_pool WHERE LOWER(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(business_name,' ',''),'-',''),\"'\",''),'.',''),',','')) = '" +
+            "SELECT lead_id, business_name, city FROM leads_pool WHERE LOWER(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(business_name,' ',''),'-',''),'''' ,''),'.',''),',','')) = '" +
             escape(nameNorm) + "' AND LOWER(REPLACE(REPLACE(city,' ',''),'-','')) = '" + escape(cityNorm) + "' LIMIT 1"
           );
           const nameCheck = checkDbResult(nameResp, 'Name+city dedup query');
@@ -285,9 +288,15 @@ async function handleImport(req, res) {
   req.on('data', chunk => body += chunk);
   req.on('end', async () => {
     try {
-      const { leads } = JSON.parse(body);
+      const bodyParsed = JSON.parse(body);
+      const { leads } = bodyParsed;
       if (!Array.isArray(leads) || leads.length === 0) {
         return res.status(422).json({ status: 'error', message: 'leads array required' });
+      }
+      
+      // Server-side consent gate — client checkbox is not a security control
+      if (bodyParsed.consent_confirmed !== true) {
+        return res.status(422).json({ status: 'error', message: 'consent_confirmed=true required' });
       }
       
       let imported = 0;
@@ -296,6 +305,42 @@ async function handleImport(req, res) {
       
       for (const lead of leads) {
         try {
+          // Enforce consent defaults
+          lead.consent_status = lead.consent_status || 'public_directory';
+          lead.opted_in = lead.opted_in || 'false';
+          
+          // Server-side re-validation — do not trust client blindly
+          const valErrors = validateLead(lead);
+          if (valErrors.length > 0) {
+            errors.push({ business_name: lead.business_name, error: 'Validation failed: ' + valErrors.join('; ') });
+            continue;
+          }
+          
+          const quarantineReason = isSuspicious(lead);
+          if (quarantineReason) {
+            errors.push({ business_name: lead.business_name, error: 'Quarantined: ' + quarantineReason });
+            continue;
+          }
+          
+          // Server-side dedup check (phone match only — fast check before import)
+          const normPhone = normalizePhone(lead.phone);
+          if (normPhone && normPhone !== '+') {
+            const phoneResp = await dbQuery(
+              "SELECT lead_id, business_name FROM leads_pool WHERE phone = '" + escape(normPhone) + "' LIMIT 1"
+            );
+            const phoneCheck = checkDbResult(phoneResp, 'Import phone dedup');
+            if (phoneCheck.ok) {
+              const phoneRows = phoneResp.results[0].response.result.rows || [];
+              if (phoneRows.length > 0) {
+                errors.push({
+                  business_name: lead.business_name,
+                  error: 'Duplicate phone: ' + val(phoneRows[0][1]) + ' (' + val(phoneRows[0][0]) + ')'
+                });
+                continue;
+              }
+            }
+          }
+          
           const leadId = lead.lead_id || 
             require('crypto').createHash('sha256')
               .update((lead.business_name + '|' + (lead.phone || '') + '|' + (lead.city || '') + ',' + (lead.state || '')).toLowerCase())
