@@ -499,7 +499,10 @@ async function submitImport() {
     const resp = await fetch('/api/lead-intake/import', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({leads: approved})
+      body: JSON.stringify({
+        leads: approved,
+        consent_confirmed: document.getElementById('confirm-import').checked
+      })
     });
     const data = await resp.json();
     
